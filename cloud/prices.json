@@ -1,0 +1,36 @@
+{
+ "_source": "Cloud Billing Catalog API, Compute Engine service 6F81-5844-456A, SKUs 'TpuV6e/TpuV5e attached to Spot Preemptible VMs running in ...', USD per chip-hour, fetched 2026-10-03",
+ "v6e": {
+  "us-central1": 0.6469,
+  "us-east1": 0.6469,
+  "us-west1": 0.6469,
+  "us-south1": 0.7295,
+  "asia-southeast1": 0.2673,
+  "us-east4": 0.243,
+  "us-east5": 1.62,
+  "europe-west4": 1.782,
+  "asia-northeast1": 1.4462,
+  "asia-south1": 1.1736,
+  "southamerica-west1": 1.08
+ },
+ "v5litepod": {
+  "us-central1": 0.3422,
+  "us-east1": 0.3422,
+  "us-west1": 0.3422,
+  "us-west4": 0.5202,
+  "europe-west4": 0.5624,
+  "us-east5": 0.57,
+  "asia-southeast1": 0.78,
+  "us-south1": 0.7916
+ },
+ "on_demand": {
+  "_source": "Cloud Billing Catalog API, SKUs 'TpuV6e running in Americas / Dallas / Singapore' (on-demand), USD per chip-hour, fetched 2026-10-03",
+  "v6e": {
+   "us-central1": 2.7,
+   "us-east1": 2.7,
+   "us-west1": 2.7,
+   "us-south1": 2.7,
+   "asia-southeast1": 2.97
+  }
+ }
+}
