@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the report."
+title: "Multi-Head mHC: No Gain at Equal Parameters"
+type: software
+authors:
+  - family-names: Hernanz
+    given-names: Marcos
+date-released: 2026-10-08
+license: MIT
+repository-code: "https://github.com/marcoshernanz/multi-head-mhc"
+preferred-citation:
+  type: report
+  title: "Multi-Head mHC: No Gain at Equal Parameters"
+  authors:
+    - family-names: Hernanz
+      given-names: Marcos
+  year: 2026
+  month: 10
+  url: "https://github.com/marcoshernanz/multi-head-mhc"
