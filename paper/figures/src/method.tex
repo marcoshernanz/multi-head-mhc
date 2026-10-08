@@ -1,0 +1,93 @@
+% The method figure (../method.pdf): one mHC sublayer, and the same sublayer with h channel groups.
+% Build: cd paper/figures/src && latexmk -pdf -outdir=build method.tex && cp build/method.pdf ..
+\documentclass[border=1pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb}
+\usepackage{stix2}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, decorations.pathreplacing}
+
+% The paper's figure palette (analysis/paper_style.py); a fourth group colour for h = 4.
+\definecolor{ink}{HTML}{0B0B0B}
+\definecolor{muted}{HTML}{52514E}
+\definecolor{rule}{HTML}{E4E3DF}
+\definecolor{g1}{HTML}{2A78D6}
+\definecolor{g2}{HTML}{EB6834}
+\definecolor{g3}{HTML}{1BAF7A}
+\definecolor{g4}{HTML}{8A5CD6}
+\newcommand{\Hpre}{H^{\mathrm{pre}}}
+\newcommand{\Hpost}{H^{\mathrm{post}}}
+\newcommand{\Hres}{H^{\mathrm{res}}}
+
+% Geometry (cm): a stream of n = 4 copies, each a bar of width \W; the sublayer row at height \U.
+\def\W{1.5}\def\bh{0.2}\def\gap{0.09}\def\Hs{1.07}\def\U{2.4}
+
+% \stream{x}{groups}: the n x D stream at x, its channels cut into 1 or 4 groups.
+\newcommand{\stream}[2]{%
+  \foreach \k in {0,...,3} {%
+    \ifnum#2=1
+      \fill[ink!14] (#1, \k*\bh+\k*\gap) rectangle ++(\W, \bh);
+      \draw[ink!55, line width=0.4pt] (#1, \k*\bh+\k*\gap) rectangle ++(\W, \bh);
+    \else
+      \foreach \c [count=\g from 0] in {g1, g2, g3, g4} {%
+        \fill[\c!30] (#1+\g*\W/4, \k*\bh+\k*\gap) rectangle ++(\W/4, \bh);
+        \draw[\c, line width=0.4pt] (#1+\g*\W/4, \k*\bh+\k*\gap) rectangle ++(\W/4, \bh);
+      }%
+    \fi
+  }%
+}
+% \coef{x0}{y0}{x1}{y1}{groups}: a coefficient block, shared by all channels or split into one block per group.
+\newcommand{\coef}[5]{%
+  \ifnum#5=1
+    \filldraw[fill=ink!14, draw=ink!55, line width=0.4pt, rounded corners=1.5pt] (#1, #2) rectangle (#3, #4);
+  \else
+    \foreach \c [count=\g from 0] in {g1, g2, g3, g4} {%
+      \filldraw[fill=\c!30, draw=\c, line width=0.4pt, rounded corners=1.5pt]
+        ({#1+\g*(#3-#1)/4+0.025}, #2) rectangle ({#1+(\g+1)*(#3-#1)/4-0.025}, #4);
+    }%
+  \fi
+}
+% \sublayer{groups}{title}{pre}{post}{res}{stream label}
+\newcommand{\sublayer}[6]{%
+  \node[anchor=west] at (-0.15, \U+1.2) {#2};
+  \stream{0}{#1}
+  \stream{5.3}{#1}
+  \coef{0.1}{\U-0.22}{1.4}{\U+0.22}{#1}
+  \coef{3.95}{\U-0.22}{5.25}{\U+0.22}{#1}
+  \coef{2.2}{-0.06}{3.4}{\Hs+0.06}{#1}
+  \filldraw[fill=rule, draw=ink!55, line width=0.4pt, rounded corners=2pt] (2.25, \U-0.3) rectangle (3.35, \U+0.3);
+  \node at (2.8, \U) {$F$};
+  \node[above, font=\small] at (0.75, \U+0.22) {#3};
+  \node[above, font=\small] at (4.6, \U+0.22) {#4};
+  \node[below, font=\small] at (2.8, -0.06) {#5};
+  \node[below, font=\small] at (0.75, -0.02) {#6};
+  \node[below, font=\small] at (6.05, -0.02) {$X'$};
+  \draw[ink, line width=0.5pt] (4.6, \Hs/2) circle (0.15);
+  \draw[ink, line width=0.5pt] (4.45, \Hs/2) -- (4.75, \Hs/2) (4.6, \Hs/2-0.15) -- (4.6, \Hs/2+0.15);
+  \begin{scope}[-{Stealth[length=4pt, width=3.5pt]}, ink, line width=0.6pt]
+    \draw (1.55, \Hs/2) -- (2.15, \Hs/2);
+    \draw (0.75, \Hs+0.05) -- (0.75, \U-0.27);
+    \draw (1.45, \U) -- node[above, font=\small] {$u$} (2.2, \U);
+    \draw (3.4, \U) -- node[above, font=\small] {$y$} (3.9, \U);
+    \draw (4.6, \U-0.27) -- (4.6, \Hs/2+0.2);
+    \draw (3.45, \Hs/2) -- (4.4, \Hs/2);
+    \draw (4.8, \Hs/2) -- (5.25, \Hs/2);
+  \end{scope}
+}
+
+\begin{document}
+\begin{tikzpicture}
+  \sublayer{1}{(a) mHC}{$\Hpre$}{$\Hpost$}{$\Hres$}{$X$}
+  \begin{scope}[font=\scriptsize, muted]
+    \node at (0.75, \U) {$1 \times n$};
+    \node at (4.6, \U) {$1 \times n$};
+    \node at (2.8, \Hs/2) {$n \times n$};
+  \end{scope}
+  \draw[decorate, decoration={brace, amplitude=3pt}, muted, line width=0.4pt] (-0.1, 0) -- node[left=3pt, font=\footnotesize] {$n$} (-0.1, \Hs);
+  \draw[decorate, decoration={brace, amplitude=3pt, mirror}, muted, line width=0.4pt] (0, -0.5) -- node[below=3pt, font=\footnotesize] {$D$ channels} (\W, -0.5);
+  \begin{scope}[xshift=7.75cm]
+    \sublayer{4}{(b) Multi-head mHC, here with $h = 4$}{$\Hpre_{(g)}$}{$\Hpost_{(g)}$}{$\Hres_{(g)}$}{$X$}
+    \draw[decorate, decoration={brace, amplitude=3pt, mirror}, muted, line width=0.4pt] (0, -0.5) -- node[below=3pt, font=\footnotesize] {$h$ groups of $D/h$} (\W, -0.5);
+  \end{scope}
+\end{tikzpicture}
+\end{document}
