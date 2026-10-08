@@ -1,0 +1,20 @@
+data/
+.venv/
+__pycache__/
+*.pyc
+results/**/*.pt
+results/**/controller.pid
+results/**/controller.out
+paper/build/
+.DS_Store
+
+# LaTeX output when a build skips .latexmkrc (editors often do)
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+*.toc
+paper/figures/src/build/
