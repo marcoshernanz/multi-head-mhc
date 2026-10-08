@@ -1,0 +1,37 @@
+[    3.8s] jax                          0.10.2
+jaxlib                       0.10.2
+libtpu                       0.0.17
+numpy                        2.5.0
+torch                        2.8.0+cpu
+torch_xla                    2.8.0
+
+[    3.9s] TPU_CHIPS_PER_HOST_BOUNDS=2,4,1
+TPU_SKIP_MDS_QUERY=1
+TPU_RUNTIME_METRICS_PORTS=8431,8432,8433,8434,8435,8436,8437,8438
+TPU_WORKER_ID=0
+PJRT_DEVICE=TPU
+TPU_WORKER_HOSTNAMES=localhost
+TPU_ACCELERATOR_TYPE=v5litepod-8
+TPU_HOST_BOUNDS=1,1,1
+TPU_PROCESS_ADDRESSES=local
+96
+               total        used        free      shared  buff/cache   available
+Mem:             377           4         358           0          16         373
+
+[   36.2s] downloaded 21 shards
+[   93.6s] single process: SMOKE devices 8 tflops 1.8
+[  120.6s] recipe visible_chips chip 0: rc 0 SMOKE devices 1 tflops 1.6
+[  120.6s] recipe visible_chips chip 1: rc 0 SMOKE devices 1 tflops 1.7
+[  121.1s] recipe visible_chips chip 2: rc 0 SMOKE devices 1 tflops 1.7
+[  121.6s] recipe visible_chips chip 3: rc 0 SMOKE devices 1 tflops 1.7
+[  121.6s] recipe visible_chips chip 4: rc 0 SMOKE devices 1 tflops 1.7
+[  121.8s] recipe visible_chips chip 5: rc 0 SMOKE devices 1 tflops 1.7
+[  121.8s] recipe visible_chips chip 6: rc 0 SMOKE devices 1 tflops 1.7
+[  122.0s] recipe visible_chips chip 7: rc 0 SMOKE devices 1 tflops 1.6
+[  122.0s] per-chip recipe: visible_chips
+[  362.0s] d768-a-global-h4-s0: exit 1 in 240s on chip 1
+[  382.0s] d768-a-global-h4-s1: exit 1 in 260s on chip 3
+[  382.0s] d768-a-global-h4-s2: exit 1 in 260s on chip 5
+[  402.0s] d768-mhc-h1-s1: exit 1 in 280s on chip 2
+[  412.0s] d768-mhc-h1-s2: exit 1 in 290s on chip 4
+[  422.0s] d768-mhc-h1-s0: exit 1 in 300s on chip 0

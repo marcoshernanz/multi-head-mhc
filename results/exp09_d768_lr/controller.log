@@ -1,0 +1,977 @@
+[10-03 19:23:51] status: 0/31 done, 31 queued, 0 running on 0 VMs, spent $0.87
+[10-03 19:24:36] status: 0/31 done, 31 queued, 0 running on 0 VMs, spent $0.89
+[10-03 19:25:20] create mhc-exp09-5547624 in us-central1-a failed: quota
+[10-03 19:25:21] create mhc-exp09-554766 in us-central1-a failed: quota
+[10-03 19:25:22] create mhc-exp09-5547629 in us-central1-a failed: quota
+[10-03 19:25:23] create mhc-exp09-554764 in us-central1-a failed: quota
+[10-03 19:25:23] create mhc-exp09-5547620 in us-central1-a failed: quota
+[10-03 19:25:23] create mhc-exp09-5547621 in us-central1-a failed: quota
+[10-03 19:25:23] create mhc-exp09-5547610 in us-central1-a failed: quota
+[10-03 19:25:24] create mhc-exp09-5547616 in us-central1-a failed: quota
+[10-03 19:25:24] create mhc-exp09-5547626 in us-central1-a failed: quota
+[10-03 19:25:24] create mhc-exp09-554768 in us-central1-a failed: quota
+[10-03 19:25:25] create mhc-exp09-5547622 in us-central1-a failed: quota
+[10-03 19:25:25] create mhc-exp09-554762 in us-central1-a failed: quota
+[10-03 19:25:25] create mhc-exp09-5547611 in us-central1-a failed: quota
+[10-03 19:25:26] create mhc-exp09-5547623 in us-central1-a failed: quota
+[10-03 19:25:27] create mhc-exp09-554763 in us-central1-a failed: quota
+[10-03 19:25:28] create mhc-exp09-5547614 in us-central1-a failed: quota
+[10-03 19:25:28] create mhc-exp09-5547627 in us-central1-a failed: quota
+[10-03 19:25:28] create mhc-exp09-5547612 in us-central1-a failed: quota
+[10-03 19:25:29] create mhc-exp09-554767 in us-central1-a failed: quota
+[10-03 19:25:29] create mhc-exp09-5547628 in us-central1-a failed: quota
+[10-03 19:25:30] create mhc-exp09-5547625 in us-central1-a failed: quota
+[10-03 19:25:30] create mhc-exp09-5547630 in us-central1-a failed: quota
+[10-03 19:25:30] create mhc-exp09-5547631 in us-central1-a failed: quota
+[10-03 19:25:30] create mhc-exp09-5547615 in us-central1-a failed: quota
+[10-03 19:25:30] create mhc-exp09-5547619 in us-central1-a failed: quota
+[10-03 19:25:30] create mhc-exp09-5547617 in us-central1-a failed: quota
+[10-03 19:25:32] create mhc-exp09-5547613 in us-central1-a failed: quota
+[10-03 19:25:59] create mhc-exp09-554768 in us-east1-c failed: quota
+[10-03 19:26:00] create mhc-exp09-5547616 in us-east1-c failed: quota
+[10-03 19:26:01] create mhc-exp09-5547611 in us-east1-c failed: quota
+[10-03 19:26:02] create mhc-exp09-5547622 in us-east1-c failed: quota
+[10-03 19:26:02] create mhc-exp09-554766 in us-east1-c failed: quota
+[10-03 19:26:03] create mhc-exp09-5547614 in us-east1-c failed: quota
+[10-03 19:26:04] create mhc-exp09-5547615 in us-east1-c failed: quota
+[10-03 19:26:04] create mhc-exp09-5547618 in us-central1-a failed: capacity
+[10-03 19:26:04] create mhc-exp09-554762 in us-east1-c failed: quota
+[10-03 19:26:05] create mhc-exp09-554764 in us-east1-c failed: quota
+[10-03 19:26:05] create mhc-exp09-5547620 in us-east1-c failed: quota
+[10-03 19:26:05] create mhc-exp09-5547617 in us-east1-c failed: quota
+[10-03 19:26:06] create mhc-exp09-554769 in us-central1-a failed: capacity
+[10-03 19:26:06] create mhc-exp09-5547630 in us-east1-c failed: quota
+[10-03 19:26:06] create mhc-exp09-5547612 in us-east1-c failed: quota
+[10-03 19:26:07] create mhc-exp09-554763 in us-east1-c failed: quota
+[10-03 19:26:07] create mhc-exp09-5547626 in us-east1-c failed: quota
+[10-03 19:26:07] create mhc-exp09-5547631 in us-east1-c failed: quota
+[10-03 19:26:08] create mhc-exp09-5547623 in us-east1-c failed: quota
+[10-03 19:26:08] create mhc-exp09-5547627 in us-east1-c failed: quota
+[10-03 19:26:11] create mhc-exp09-5547610 in us-east1-c failed: quota
+[10-03 19:26:12] create mhc-exp09-5547625 in us-east1-c failed: quota
+[10-03 19:26:12] create mhc-exp09-5547628 in us-east1-c failed: quota
+[10-03 19:26:12] create mhc-exp09-554767 in us-east1-c failed: quota
+[10-03 19:26:13] create mhc-exp09-5547613 in us-east1-c failed: quota
+[10-03 19:26:15] create mhc-exp09-5547619 in us-east1-c failed: quota
+[10-03 19:26:47] create mhc-exp09-5547617 in us-west1-c failed: quota
+[10-03 19:26:47] create mhc-exp09-5547614 in us-west1-c failed: quota
+[10-03 19:26:47] create mhc-exp09-554762 in us-west1-c failed: quota
+[10-03 19:26:47] create mhc-exp09-554769 in us-west1-c failed: quota
+[10-03 19:26:48] create mhc-exp09-5547615 in us-west1-c failed: quota
+[10-03 19:26:50] create mhc-exp09-554763 in us-west1-c failed: quota
+[10-03 19:26:50] create mhc-exp09-554766 in us-west1-c failed: quota
+[10-03 19:26:51] create mhc-exp09-5547630 in us-west1-c failed: quota
+[10-03 19:26:51] create mhc-exp09-5547626 in us-west1-c failed: quota
+[10-03 19:26:52] create mhc-exp09-5547610 in us-west1-c failed: quota
+[10-03 19:26:52] create mhc-exp09-5547625 in us-west1-c failed: quota
+[10-03 19:26:53] create mhc-exp09-5547618 in us-west1-c failed: quota
+[10-03 19:26:53] create mhc-exp09-5547620 in us-west1-c failed: quota
+[10-03 19:26:53] create mhc-exp09-5547613 in us-west1-c failed: quota
+[10-03 19:26:54] create mhc-exp09-5547631 in us-west1-c failed: quota
+[10-03 19:26:57] create mhc-exp09-554767 in us-west1-c failed: quota
+[10-03 19:26:57] create mhc-exp09-5547623 in us-west1-c failed: quota
+[10-03 19:26:57] create mhc-exp09-5547628 in us-west1-c failed: quota
+[10-03 19:26:58] create mhc-exp09-5547619 in us-west1-c failed: quota
+[10-03 19:26:58] create mhc-exp09-5547612 in us-west1-c failed: quota
+[10-03 19:27:01] create mhc-exp09-5547627 in us-west1-c failed: quota
+[10-03 19:27:06] create mhc-exp09-554764 in us-west1-c failed: quota
+[10-03 19:27:06] created mhc-exp09-5547624 in us-east1-c
+[10-03 19:27:08] created mhc-exp09-5547629 in us-east1-c
+[10-03 19:27:09] created mhc-exp09-5547621 in us-east1-c
+[10-03 19:27:51] mhc-exp09-5547624: set up (data ok: 21 shards)
+[10-03 19:27:52] mhc-exp09-5547629: set up (data ok: 21 shards)
+[10-03 19:27:53] mhc-exp09-5547621: set up (data ok: 21 shards)
+[10-03 19:28:28] created mhc-exp09-554768 in us-west1-c
+[10-03 19:28:29] created mhc-exp09-5547622 in us-west1-c
+[10-03 19:28:29] created mhc-exp09-5547616 in us-west1-c
+[10-03 19:28:30] created mhc-exp09-5547611 in us-west1-c
+[10-03 19:28:43] adopted mhc-exp09-5547621 (us-east1-c): running []
+[10-03 19:28:45] adopted mhc-exp09-5547624 (us-east1-c): running []
+[10-03 19:28:46] adopted mhc-exp09-5547629 (us-east1-c): running []
+[10-03 19:28:49] found mhc-exp09-554768 (us-west1-c), not set up: setting it up
+[10-03 19:28:51] found mhc-exp09-5547616 (us-west1-c), not set up: setting it up
+[10-03 19:28:54] found mhc-exp09-5547611 (us-west1-c), not set up: setting it up
+[10-03 19:28:56] found mhc-exp09-5547622 (us-west1-c), not set up: setting it up
+[10-03 19:28:58] d768-a-global-h4-lr7.5e-4-s0: started on mhc-exp09-5547624 chip 0
+[10-03 19:28:58] d768-mhc-h1-lr7.5e-4-s0: started on mhc-exp09-5547621 chip 0
+[10-03 19:28:58] d768-ctrl-mlp2240-lr7.5e-4-s0: started on mhc-exp09-5547629 chip 0
+[10-03 19:28:58] status: 0/31 done, 28 queued, 3 running on 7 VMs, spent $1.14
+[10-03 19:29:26] mhc-exp09-554768: set up (data ok: 21 shards)
+[10-03 19:29:26] mhc-exp09-5547616: set up (data ok: 21 shards)
+[10-03 19:29:29] mhc-exp09-5547622: set up (data ok: 21 shards)
+[10-03 19:29:39] mhc-exp09-5547611: set up (data ok: 21 shards)
+[10-03 19:29:53] create mhc-exp09-557381 in us-central1-a failed: request rate (crease" } ] } ] } } > This may be due to network connectivity issues. Please check your network settings, and the status of the service you are trying to reach.)
+[10-03 19:30:00] create mhc-exp09-557384 in us-central1-a failed: capacity
+[10-03 19:30:04] d768-a-local-h4-lr7.5e-4-s0: started on mhc-exp09-5547622 chip 0
+[10-03 19:30:04] d768-mhc-h1-lr7.5e-4-s1: started on mhc-exp09-5547616 chip 0
+[10-03 19:30:04] d768-a-global-h4-lr7.5e-4-s1: started on mhc-exp09-5547611 chip 0
+[10-03 19:30:05] d768-ctrl-mlp2240-lr7.5e-4-s1: started on mhc-exp09-554768 chip 0
+[10-03 19:30:50] create mhc-exp09-558058 in us-east1-c failed: quota (ast1-c" } ] } ] } } > This may be due to network connectivity issues. Please check your network settings, and the status of the service you are trying to reach.)
+[10-03 19:30:51] create mhc-exp09-557384 in us-east1-c failed: quota (ast1-c" } ] } ] } } > This may be due to network connectivity issues. Please check your network settings, and the status of the service you are trying to reach.)
+[10-03 19:30:51] create mhc-exp09-558055 in us-east1-c failed: quota (ast1-c" } ] } ] } } > This may be due to network connectivity issues. Please check your network settings, and the status of the service you are trying to reach.)
+[10-03 19:30:57] create mhc-exp09-558057 in us-east1-c failed: quota (ast1-c" } ] } ] } } > This may be due to network connectivity issues. Please check your network settings, and the status of the service you are trying to reach.)
+[10-03 19:30:59] create mhc-exp09-558056 in us-east1-c failed: quota (ast1-c" } ] } ] } } > This may be due to network connectivity issues. Please check your network settings, and the status of the service you are trying to reach.)
+[10-03 19:31:26] create mhc-exp09-557381 in us-east1-c failed: quota (ast1-c" } ] } ] } } > This may be due to network connectivity issues. Please check your network settings, and the status of the service you are trying to reach.)
+[10-03 19:31:32] create mhc-exp09-557384 in us-west1-c failed: quota (est1-c" } ] } ] } } > This may be due to network connectivity issues. Please check your network settings, and the status of the service you are trying to reach.)
+[10-03 19:31:37] create mhc-exp09-558058 in us-west1-c failed: quota (est1-c" } ] } ] } } > This may be due to network connectivity issues. Please check your network settings, and the status of the service you are trying to reach.)
+[10-03 19:31:39] create mhc-exp09-558055 in us-west1-c failed: quota (est1-c" } ] } ] } } > This may be due to network connectivity issues. Please check your network settings, and the status of the service you are trying to reach.)
+[10-03 19:31:44] create mhc-exp09-558057 in us-west1-c failed: quota (est1-c" } ] } ] } } > This may be due to network connectivity issues. Please check your network settings, and the status of the service you are trying to reach.)
+[10-03 19:31:44] create mhc-exp09-558056 in us-west1-c failed: quota (est1-c" } ] } ] } } > This may be due to network connectivity issues. Please check your network settings, and the status of the service you are trying to reach.)
+[10-03 19:31:51] create mhc-exp09-5586810 in us-west1-c failed: quota (est1-c" } ] } ] } } > This may be due to network connectivity issues. Please check your network settings, and the status of the service you are trying to reach.)
+[10-03 19:31:52] create mhc-exp09-558689 in us-west1-c failed: quota (est1-c" } ] } ] } } > This may be due to network connectivity issues. Please check your network settings, and the status of the service you are trying to reach.)
+[10-03 19:31:57] create mhc-exp09-5586811 in us-west1-c failed: quota (est1-c" } ] } ] } } > This may be due to network connectivity issues. Please check your network settings, and the status of the service you are trying to reach.)
+[10-03 19:31:58] create mhc-exp09-5586812 in us-west1-c failed: quota (est1-c" } ] } ] } } > This may be due to network connectivity issues. Please check your network settings, and the status of the service you are trying to reach.)
+[10-03 19:32:15] create mhc-exp09-557381 in us-west1-c failed: quota (est1-c" } ] } ] } } > This may be due to network connectivity issues. Please check your network settings, and the status of the service you are trying to reach.)
+[10-03 19:33:06] create mhc-exp09-557382 in us-central1-a failed: capacity
+[10-03 19:33:07] create mhc-exp09-557383 in us-central1-a failed: capacity
+[10-03 19:37:49] adopted mhc-exp09-5547621 (us-east1-c): running ['d768-mhc-h1-lr7.5e-4-s0']
+[10-03 19:37:50] adopted mhc-exp09-5547624 (us-east1-c): running ['d768-a-global-h4-lr7.5e-4-s0']
+[10-03 19:37:51] adopted mhc-exp09-5547629 (us-east1-c): running ['d768-ctrl-mlp2240-lr7.5e-4-s0']
+[10-03 19:37:53] adopted mhc-exp09-554768 (us-west1-c): running ['d768-ctrl-mlp2240-lr7.5e-4-s1']
+[10-03 19:37:55] adopted mhc-exp09-5547616 (us-west1-c): running ['d768-mhc-h1-lr7.5e-4-s1']
+[10-03 19:37:57] adopted mhc-exp09-5547611 (us-west1-c): running ['d768-a-global-h4-lr7.5e-4-s1']
+[10-03 19:37:59] adopted mhc-exp09-5547622 (us-west1-c): running ['d768-a-local-h4-lr7.5e-4-s0']
+[10-03 19:38:03] status: 0/31 done, 24 queued, 7 running on 7 VMs, spent $1.70
+[10-03 19:38:18] adopted mhc-exp09-5547621 (us-east1-c): running ['d768-mhc-h1-lr7.5e-4-s0']
+[10-03 19:38:19] adopted mhc-exp09-5547624 (us-east1-c): running ['d768-a-global-h4-lr7.5e-4-s0']
+[10-03 19:38:20] adopted mhc-exp09-5547629 (us-east1-c): running ['d768-ctrl-mlp2240-lr7.5e-4-s0']
+[10-03 19:38:22] adopted mhc-exp09-554768 (us-west1-c): running ['d768-ctrl-mlp2240-lr7.5e-4-s1']
+[10-03 19:38:24] adopted mhc-exp09-5547616 (us-west1-c): running ['d768-mhc-h1-lr7.5e-4-s1']
+[10-03 19:38:26] adopted mhc-exp09-5547611 (us-west1-c): running ['d768-a-global-h4-lr7.5e-4-s1']
+[10-03 19:38:27] adopted mhc-exp09-5547622 (us-west1-c): running ['d768-a-local-h4-lr7.5e-4-s0']
+[10-03 19:38:32] status: 0/31 done, 24 queued, 7 running on 7 VMs, spent $1.72
+[10-03 19:39:11] create mhc-exp09-563122 in us-central1-a failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-central1-a.)
+[10-03 19:39:12] create mhc-exp09-563121 in us-central1-a failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-central1-a.)
+[10-03 19:39:13] create mhc-exp09-563123 in us-central1-a failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-central1-a.)
+[10-03 19:40:13] create mhc-exp09-563123 in us-east1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-east1-c.)
+[10-03 19:40:13] create mhc-exp09-563121 in us-east1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-east1-c.)
+[10-03 19:40:30] create mhc-exp09-563768 in us-east1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-east1-c.)
+[10-03 19:40:31] create mhc-exp09-563767 in us-east1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-east1-c.)
+[10-03 19:40:32] create mhc-exp09-563766 in us-east1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-east1-c.)
+[10-03 19:40:34] create mhc-exp09-563765 in us-east1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-east1-c.)
+[10-03 19:40:39] create mhc-exp09-563124 in us-central1-a failed: capacity
+[10-03 19:40:55] created mhc-exp09-563122 in us-east1-c
+[10-03 19:40:58] create mhc-exp09-563123 in us-west1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-west1-c.)
+[10-03 19:41:01] create mhc-exp09-563121 in us-west1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-west1-c.)
+[10-03 19:41:05] create mhc-exp09-563123 in us-west4-b failed: capacity
+[10-03 19:41:07] create mhc-exp09-563121 in us-west4-b failed: capacity
+[10-03 19:41:17] create mhc-exp09-563765 in us-west1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-west1-c.)
+[10-03 19:41:18] create mhc-exp09-563768 in us-west1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-west1-c.)
+[10-03 19:41:19] create mhc-exp09-563767 in us-west1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-west1-c.)
+[10-03 19:41:20] create mhc-exp09-563766 in us-west1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-west1-c.)
+[10-03 19:41:22] create mhc-exp09-5644012 in us-west1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-west1-c.)
+[10-03 19:41:23] create mhc-exp09-564409 in us-west1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-west1-c.)
+[10-03 19:41:25] create mhc-exp09-5644011 in us-west1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-west1-c.)
+[10-03 19:41:26] create mhc-exp09-563124 in us-west1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-west1-c.)
+[10-03 19:41:29] create mhc-exp09-5644010 in us-west1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-west1-c.)
+[10-03 19:41:40] mhc-exp09-563122: set up (data ok: 21 shards)
+[10-03 19:41:44] d768-a-local-h4-lr7.5e-4-s1: started on mhc-exp09-563122 chip 0
+[10-03 19:42:29] create mhc-exp09-563767 in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 19:42:30] create mhc-exp09-5644011 in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 19:42:30] create mhc-exp09-563768 in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 19:42:31] create mhc-exp09-564409 in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 19:42:32] create mhc-exp09-563766 in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 19:42:34] create mhc-exp09-563767 in us-east5-a failed: Reservation not found
+[10-03 19:42:35] create mhc-exp09-563124 in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 19:42:35] create mhc-exp09-563768 in us-east5-a failed: Reservation not found
+[10-03 19:42:37] create mhc-exp09-5644010 in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 19:42:39] create mhc-exp09-5644011 in us-east5-a failed: Reservation not found
+[10-03 19:42:39] create mhc-exp09-563766 in us-east5-a failed: Reservation not found
+[10-03 19:42:40] create mhc-exp09-564409 in us-east5-a failed: Reservation not found
+[10-03 19:42:43] create mhc-exp09-5644010 in us-east5-b failed: capacity
+[10-03 19:42:43] create mhc-exp09-563124 in us-east5-b failed: capacity
+[10-03 19:42:44] create mhc-exp09-563767 in us-east5-b failed: capacity
+[10-03 19:42:44] create mhc-exp09-5650415 in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 19:42:45] create mhc-exp09-563768 in us-east5-b failed: capacity
+[10-03 19:42:45] create mhc-exp09-5650413 in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 19:42:46] create mhc-exp09-564409 in us-east5-b failed: capacity
+[10-03 19:42:46] create mhc-exp09-563766 in us-east5-b failed: capacity
+[10-03 19:42:46] create mhc-exp09-5650416 in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 19:42:48] create mhc-exp09-5644011 in us-east5-b failed: capacity
+[10-03 19:42:48] create mhc-exp09-5644010 in us-east5-c failed: Reservation not found
+[10-03 19:42:50] create mhc-exp09-5650415 in us-east5-c failed: Reservation not found
+[10-03 19:42:51] create mhc-exp09-564409 in us-east5-c failed: Reservation not found
+[10-03 19:42:51] create mhc-exp09-5650414 in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 19:42:51] create mhc-exp09-5650416 in us-east5-c failed: Reservation not found
+[10-03 19:42:51] create mhc-exp09-563124 in us-east5-c failed: Reservation not found
+[10-03 19:42:53] create mhc-exp09-563767 in us-east5-c failed: Reservation not found
+[10-03 19:42:53] create mhc-exp09-563768 in us-east5-c failed: Reservation not found
+[10-03 19:42:54] create mhc-exp09-5644011 in us-east5-c failed: Reservation not found
+[10-03 19:42:55] create mhc-exp09-5650413 in us-east5-c failed: Reservation not found
+[10-03 19:42:55] create mhc-exp09-563766 in us-east5-c failed: Reservation not found
+[10-03 19:42:55] create mhc-exp09-5656717 in us-east5-c failed: Reservation not found
+[10-03 19:42:55] create mhc-exp09-5656720 in us-east5-c failed: Reservation not found
+[10-03 19:42:56] create mhc-exp09-5656719 in us-east5-c failed: Reservation not found
+[10-03 19:42:57] create mhc-exp09-5656718 in us-east5-c failed: Reservation not found
+[10-03 19:43:36] created mhc-exp09-563123 in europe-west4-b
+[10-03 19:43:37] created mhc-exp09-563121 in europe-west4-b
+[10-03 19:44:04] created mhc-exp09-5644012 in europe-west4-b
+[10-03 19:44:04] created mhc-exp09-563765 in europe-west4-b
+[10-03 19:44:16] mhc-exp09-563121: set up (data ok: 21 shards)
+[10-03 19:44:16] mhc-exp09-563123: set up (data ok: 21 shards)
+[10-03 19:44:38] mhc-exp09-5644012: set up (data ok: 21 shards)
+[10-03 19:44:41] mhc-exp09-563765: set up (data ok: 21 shards)
+[10-03 19:44:54] d768-mhc-h1-lr1.06e-3-s0: started on mhc-exp09-5644012 chip 0
+[10-03 19:44:54] d768-a-global-h4-lr1.06e-3-s0: started on mhc-exp09-563765 chip 0
+[10-03 19:44:54] d768-a-local-h4-lr1.06e-3-s0: started on mhc-exp09-563123 chip 0
+[10-03 19:44:56] d768-ctrl-mlp2240-lr1.06e-3-s0: started on mhc-exp09-563121 chip 0
+[10-03 19:48:12] create mhc-exp09-5688740 in us-east5-a failed: Reservation not found
+[10-03 19:48:12] create mhc-exp09-5688737 in us-east5-a failed: Reservation not found
+[10-03 19:48:12] create mhc-exp09-5688738 in us-east5-a failed: Reservation not found
+[10-03 19:48:12] create mhc-exp09-5688739 in us-east5-a failed: Reservation not found
+[10-03 19:48:18] create mhc-exp09-5688737 in us-east5-c failed: Reservation not found
+[10-03 19:48:21] create mhc-exp09-5688738 in us-east5-c failed: Reservation not found
+[10-03 19:48:21] create mhc-exp09-5688740 in us-east5-c failed: Reservation not found
+[10-03 19:48:22] create mhc-exp09-5688739 in us-east5-c failed: Reservation not found
+[10-03 19:53:32] create mhc-exp09-5720759 in us-east5-a failed: Reservation not found
+[10-03 19:53:32] create mhc-exp09-5720758 in us-east5-a failed: Reservation not found
+[10-03 19:53:32] create mhc-exp09-5720757 in us-east5-a failed: Reservation not found
+[10-03 19:53:32] create mhc-exp09-5720760 in us-east5-a failed: Reservation not found
+[10-03 19:53:38] create mhc-exp09-5720758 in us-east5-c failed: Reservation not found
+[10-03 19:53:38] create mhc-exp09-5720759 in us-east5-c failed: Reservation not found
+[10-03 19:53:38] create mhc-exp09-5720760 in us-east5-c failed: Reservation not found
+[10-03 19:53:38] create mhc-exp09-5720757 in us-east5-c failed: Reservation not found
+[10-03 19:54:30] status: 0/31 done, 19 queued, 12 running on 12 VMs, spent $3.24
+[10-03 19:58:00] create mhc-exp09-5739872 in us-central1-a failed: capacity
+[10-03 19:58:01] create mhc-exp09-5739870 in us-central1-a failed: capacity
+[10-03 19:58:24] create mhc-exp09-5746174 in us-central1-a failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-central1-a.)
+[10-03 19:58:25] create mhc-exp09-5746175 in us-central1-a failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-central1-a.)
+[10-03 19:58:42] create mhc-exp09-5746176 in us-central1-a failed: capacity
+[10-03 19:58:48] create mhc-exp09-5746173 in us-central1-a failed: capacity
+[10-03 19:58:59] create mhc-exp09-5739872 in us-east1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-east1-c.)
+[10-03 19:59:04] create mhc-exp09-5739870 in us-east1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-east1-c.)
+[10-03 19:59:22] create mhc-exp09-5746174 in us-east1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-east1-c.)
+[10-03 19:59:26] create mhc-exp09-5746175 in us-east1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-east1-c.)
+[10-03 19:59:38] create mhc-exp09-5752480 in us-east1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-east1-c.)
+[10-03 19:59:41] create mhc-exp09-5746176 in us-east1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-east1-c.)
+[10-03 19:59:43] create mhc-exp09-5739872 in us-west1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-west1-c.)
+[10-03 19:59:44] create mhc-exp09-5752477 in us-east1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-east1-c.)
+[10-03 19:59:45] create mhc-exp09-5746173 in us-east1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-east1-c.)
+[10-03 19:59:46] create mhc-exp09-5752479 in us-east1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-east1-c.)
+[10-03 19:59:48] create mhc-exp09-5752478 in us-east1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-east1-c.)
+[10-03 19:59:49] create mhc-exp09-5739872 in us-west4-b failed: capacity
+[10-03 19:59:49] create mhc-exp09-5752477 in us-west4-b failed: capacity
+[10-03 19:59:50] create mhc-exp09-5746173 in us-west4-b failed: capacity
+[10-03 19:59:52] create mhc-exp09-5752479 in us-west4-b failed: capacity
+[10-03 19:59:52] create mhc-exp09-5739870 in us-west1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-west1-c.)
+[10-03 19:59:53] create mhc-exp09-5752478 in us-west4-b failed: capacity
+[10-03 20:00:08] create mhc-exp09-5746174 in us-west1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-west1-c.)
+[10-03 20:00:11] create mhc-exp09-5746175 in us-west1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-west1-c.)
+[10-03 20:00:23] create mhc-exp09-5752480 in us-west1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-west1-c.)
+[10-03 20:00:30] create mhc-exp09-5746176 in us-west1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-west1-c.)
+[10-03 20:00:40] create mhc-exp09-5752479 in europe-west4-b failed: request rate (Quota exceeded for quota metric 'Create requests for the Cloud TPU API' and limit 'Maximum number of CreateNode requests per minute.' of service 'tpu.googleapis.com' for consumer 'project_number:90422)
+[10-03 20:00:41] create mhc-exp09-5752477 in europe-west4-b failed: request rate (Quota exceeded for quota metric 'Create requests for the Cloud TPU API' and limit 'Maximum number of CreateNode requests per minute.' of service 'tpu.googleapis.com' for consumer 'project_number:90422)
+[10-03 20:00:42] create mhc-exp09-5758984 in europe-west4-b failed: request rate (Quota exceeded for quota metric 'Create requests for the Cloud TPU API' and limit 'Maximum number of CreateNode requests per minute.' of service 'tpu.googleapis.com' for consumer 'project_number:90422)
+[10-03 20:00:44] create mhc-exp09-5758981 in europe-west4-b failed: request rate (Quota exceeded for quota metric 'Create requests for the Cloud TPU API' and limit 'Maximum number of CreateNode requests per minute.' of service 'tpu.googleapis.com' for consumer 'project_number:90422)
+[10-03 20:00:46] create mhc-exp09-5739871 in us-central1-a failed: capacity
+[10-03 20:00:46] create mhc-exp09-5739869 in us-central1-a failed: capacity
+[10-03 20:00:47] create mhc-exp09-5739870 in europe-west4-b failed: request rate (Quota exceeded for quota metric 'Create requests for the Cloud TPU API' and limit 'Maximum number of CreateNode requests per minute.' of service 'tpu.googleapis.com' for consumer 'project_number:90422)
+[10-03 20:00:47] create mhc-exp09-5758982 in europe-west4-b failed: request rate (Quota exceeded for quota metric 'Create requests for the Cloud TPU API' and limit 'Maximum number of CreateNode requests per minute.' of service 'tpu.googleapis.com' for consumer 'project_number:90422)
+[10-03 20:00:48] create mhc-exp09-5746173 in europe-west4-b failed: request rate (Quota exceeded for quota metric 'Create requests for the Cloud TPU API' and limit 'Maximum number of CreateNode requests per minute.' of service 'tpu.googleapis.com' for consumer 'project_number:90422)
+[10-03 20:00:51] create mhc-exp09-5739872 in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 20:00:52] create mhc-exp09-5758983 in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 20:00:55] create mhc-exp09-5752478 in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 20:00:56] create mhc-exp09-5739872 in us-east5-a failed: Reservation not found
+[10-03 20:00:58] create mhc-exp09-5765386 in us-east5-a failed: Reservation not found
+[10-03 20:00:58] create mhc-exp09-5765387 in us-east5-a failed: Reservation not found
+[10-03 20:00:59] create mhc-exp09-5752478 in us-east5-a failed: Reservation not found
+[10-03 20:01:00] create mhc-exp09-5758983 in us-east5-a failed: Reservation not found
+[10-03 20:01:00] create mhc-exp09-5765385 in us-east5-a failed: Reservation not found
+[10-03 20:01:03] create mhc-exp09-5765387 in us-east5-b failed: capacity
+[10-03 20:01:04] create mhc-exp09-5765386 in us-east5-b failed: capacity
+[10-03 20:01:04] create mhc-exp09-5746174 in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 20:01:05] create mhc-exp09-5739872 in us-east5-b failed: capacity
+[10-03 20:01:08] create mhc-exp09-5746175 in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 20:01:08] create mhc-exp09-5752478 in us-east5-b failed: capacity
+[10-03 20:01:08] create mhc-exp09-5758983 in us-east5-b failed: capacity
+[10-03 20:01:09] create mhc-exp09-5765387 in us-east5-c failed: Reservation not found
+[10-03 20:01:09] create mhc-exp09-5765386 in us-east5-c failed: Reservation not found
+[10-03 20:01:09] create mhc-exp09-5746174 in us-east5-c failed: Reservation not found
+[10-03 20:01:09] create mhc-exp09-5765385 in us-east5-b failed: capacity
+[10-03 20:01:12] create mhc-exp09-5746175 in us-east5-c failed: Reservation not found
+[10-03 20:01:13] create mhc-exp09-5739872 in us-east5-c failed: Reservation not found
+[10-03 20:01:13] create mhc-exp09-5758983 in us-east5-c failed: Reservation not found
+[10-03 20:01:16] create mhc-exp09-5752478 in us-east5-c failed: Reservation not found
+[10-03 20:01:19] create mhc-exp09-5752480 in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 20:01:31] create mhc-exp09-5746176 in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 20:01:34] create mhc-exp09-5739869 in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 20:01:41] create mhc-exp09-5739871 in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 20:06:16] create mhc-exp09-57971105 in us-east5-a failed: Reservation not found
+[10-03 20:06:16] create mhc-exp09-57971104 in us-east5-a failed: Reservation not found
+[10-03 20:06:16] create mhc-exp09-57971106 in us-east5-a failed: Reservation not found
+[10-03 20:06:16] create mhc-exp09-57971107 in us-east5-a failed: Reservation not found
+[10-03 20:06:22] create mhc-exp09-57971104 in us-east5-c failed: Reservation not found
+[10-03 20:06:22] create mhc-exp09-57971106 in us-east5-c failed: Reservation not found
+[10-03 20:06:24] create mhc-exp09-57971107 in us-east5-c failed: Reservation not found
+[10-03 20:06:25] create mhc-exp09-57971105 in us-east5-c failed: Reservation not found
+[10-03 20:10:26] status: 0/31 done, 19 queued, 12 running on 12 VMs, spent $4.90
+[10-03 20:11:35] create mhc-exp09-58290126 in us-east5-a failed: Reservation not found
+[10-03 20:11:38] create mhc-exp09-58290125 in us-east5-a failed: Reservation not found
+[10-03 20:11:39] create mhc-exp09-58290124 in us-east5-a failed: Reservation not found
+[10-03 20:11:41] create mhc-exp09-58290127 in us-east5-a failed: Reservation not found
+[10-03 20:11:41] create mhc-exp09-58290126 in us-east5-c failed: Reservation not found
+[10-03 20:11:44] create mhc-exp09-58290125 in us-east5-c failed: Reservation not found
+[10-03 20:11:48] create mhc-exp09-58290124 in us-east5-c failed: Reservation not found
+[10-03 20:16:37] create mhc-exp09-58544141 in us-east1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-east1-c.)
+[10-03 20:16:38] create mhc-exp09-58544143 in us-east1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-east1-c.)
+[10-03 20:16:40] create mhc-exp09-58544142 in us-east1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-east1-c.)
+[10-03 20:16:43] create mhc-exp09-58544140 in us-east1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-east1-c.)
+[10-03 20:17:21] create mhc-exp09-58544141 in us-west1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-west1-c.)
+[10-03 20:17:25] create mhc-exp09-58544143 in us-west1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-west1-c.)
+[10-03 20:17:27] create mhc-exp09-58544141 in us-west4-b failed: capacity
+[10-03 20:17:29] create mhc-exp09-58544142 in us-west1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-west1-c.)
+[10-03 20:17:31] create mhc-exp09-58544143 in us-west4-b failed: capacity
+[10-03 20:17:33] create mhc-exp09-58544140 in us-west1-c failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-west1-c.)
+[10-03 20:18:10] create mhc-exp09-58607146 in us-central1-a failed: capacity
+[10-03 20:18:10] create mhc-exp09-58607144 in us-central1-a failed: capacity
+[10-03 20:18:20] create mhc-exp09-58544142 in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 20:18:28] create mhc-exp09-58544141 in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 20:18:28] create mhc-exp09-58544142 in us-east5-a failed: Reservation not found
+[10-03 20:18:30] create mhc-exp09-58544143 in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 20:18:33] create mhc-exp09-58544141 in us-east5-a failed: Reservation not found
+[10-03 20:18:34] create mhc-exp09-58671148 in us-central1-a failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-central1-a.)
+[10-03 20:18:34] create mhc-exp09-58544142 in us-east5-b failed: capacity
+[10-03 20:18:35] create mhc-exp09-58544143 in us-east5-b failed: capacity
+[10-03 20:18:35] create mhc-exp09-58544140 in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 20:18:36] create mhc-exp09-58671149 in us-central1-a failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-central1-a.)
+[10-03 20:18:38] create mhc-exp09-58544141 in us-east5-b failed: capacity
+[10-03 20:18:40] create mhc-exp09-58544143 in us-east5-c failed: Reservation not found
+[10-03 20:18:41] create mhc-exp09-58544140 in us-east5-c failed: Reservation not found
+[10-03 20:18:42] create mhc-exp09-58671148 in us-east5-b failed: capacity
+[10-03 20:18:42] create mhc-exp09-58544142 in us-east5-c failed: Reservation not found
+[10-03 20:18:43] create mhc-exp09-58544141 in us-east5-c failed: Reservation not found
+[10-03 20:18:44] create mhc-exp09-58671149 in us-east5-c failed: Reservation not found
+[10-03 20:18:55] create mhc-exp09-58671150 in us-central1-a failed: capacity
+[10-03 20:19:06] create mhc-exp09-58607146 in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 20:19:10] create mhc-exp09-58607144 in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 20:19:17] create mhc-exp09-58671151 in us-central1-a failed: capacity
+[10-03 20:20:55] create mhc-exp09-58607145 in us-central1-a failed: capacity
+[10-03 20:20:56] create mhc-exp09-58607147 in us-central1-a failed: capacity
+[10-03 20:21:25] adopted mhc-exp09-563121 (europe-west4-b): running ['d768-ctrl-mlp2240-lr1.06e-3-s0']
+[10-03 20:21:25] adopted mhc-exp09-563123 (europe-west4-b): running ['d768-a-local-h4-lr1.06e-3-s0']
+[10-03 20:21:26] adopted mhc-exp09-563765 (europe-west4-b): running ['d768-a-global-h4-lr1.06e-3-s0']
+[10-03 20:21:27] adopted mhc-exp09-5644012 (europe-west4-b): running ['d768-mhc-h1-lr1.06e-3-s0']
+[10-03 20:21:28] adopted mhc-exp09-563122 (us-east1-c): running ['d768-a-local-h4-lr7.5e-4-s1']
+[10-03 20:21:29] adopted mhc-exp09-5547621 (us-east1-c): running ['d768-mhc-h1-lr7.5e-4-s0']
+[10-03 20:21:30] adopted mhc-exp09-5547624 (us-east1-c): running ['d768-a-global-h4-lr7.5e-4-s0']
+[10-03 20:21:31] adopted mhc-exp09-5547629 (us-east1-c): running ['d768-ctrl-mlp2240-lr7.5e-4-s0']
+[10-03 20:21:33] adopted mhc-exp09-554768 (us-west1-c): running ['d768-ctrl-mlp2240-lr7.5e-4-s1']
+[10-03 20:21:35] adopted mhc-exp09-5547616 (us-west1-c): running ['d768-mhc-h1-lr7.5e-4-s1']
+[10-03 20:21:37] adopted mhc-exp09-5547611 (us-west1-c): running ['d768-a-global-h4-lr7.5e-4-s1']
+[10-03 20:21:38] adopted mhc-exp09-5547622 (us-west1-c): running ['d768-a-local-h4-lr7.5e-4-s0']
+[10-03 20:21:42] status: 0/31 done, 19 queued, 12 running on 12 VMs, spent $6.08
+[10-03 20:22:34] create mhc-exp09-589022 (v5litepod-4) in us-central1-a failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-central1-a.)
+[10-03 20:22:44] create mhc-exp09-589022 (v5litepod-4) in us-west4-b failed: capacity
+[10-03 20:22:55] create mhc-exp09-589022 (v5litepod-4) in us-east5-a failed: needs a reservation
+[10-03 20:23:00] create mhc-exp09-589022 (v5litepod-4) in us-east5-b failed: capacity
+[10-03 20:23:05] create mhc-exp09-589022 (v5litepod-4) in us-east5-c failed: needs a reservation
+[10-03 20:23:05] create mhc-exp09-589021 (v5litepod-4) in us-central1-a failed: capacity
+[10-03 20:36:31] mhc-exp09-563121: status failed (1): ssh: connect to host 34.141.157.202 port 22: Connection refused
+[10-03 20:37:34] d768-ctrl-mlp2240-lr1.06e-3-s0: back in the queue (state PREEMPTED, attempt 2)
+[10-03 20:38:47] deleted mhc-exp09-563121 (state PREEMPTED)
+[10-03 20:38:49] status: 0/31 done, 20 queued, 11 running on 11 VMs, spent $9.18
+[10-03 20:39:25] create mhc-exp09-5992930 (v5litepod-4) in us-central1-a failed: capacity
+[10-03 20:39:35] create mhc-exp09-5992930 (v5litepod-4) in us-west4-b failed: capacity
+[10-03 20:40:39] create mhc-exp09-5992930 (v5litepod-4) in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 20:40:39] create mhc-exp09-5992929 (v5litepod-4) in us-central1-a failed: capacity
+[10-03 20:40:45] create mhc-exp09-5992930 (v5litepod-4) in us-east5-b failed: capacity
+[10-03 20:40:53] create mhc-exp09-5992929 (v5litepod-4) in us-east5-b failed: capacity
+[10-03 20:51:02] adopted mhc-exp09-563123 (europe-west4-b): running ['d768-a-local-h4-lr1.06e-3-s0']
+[10-03 20:51:03] adopted mhc-exp09-563765 (europe-west4-b): running ['d768-a-global-h4-lr1.06e-3-s0']
+[10-03 20:51:04] adopted mhc-exp09-5644012 (europe-west4-b): running ['d768-mhc-h1-lr1.06e-3-s0']
+[10-03 20:51:05] adopted mhc-exp09-563122 (us-east1-c): running ['d768-a-local-h4-lr7.5e-4-s1']
+[10-03 20:51:06] adopted mhc-exp09-5547621 (us-east1-c): running ['d768-mhc-h1-lr7.5e-4-s0']
+[10-03 20:51:07] adopted mhc-exp09-5547624 (us-east1-c): running ['d768-a-global-h4-lr7.5e-4-s0']
+[10-03 20:51:08] adopted mhc-exp09-5547629 (us-east1-c): running ['d768-ctrl-mlp2240-lr7.5e-4-s0']
+[10-03 20:51:10] adopted mhc-exp09-554768 (us-west1-c): running ['d768-ctrl-mlp2240-lr7.5e-4-s1']
+[10-03 20:51:12] adopted mhc-exp09-5547616 (us-west1-c): running ['d768-mhc-h1-lr7.5e-4-s1']
+[10-03 20:51:14] adopted mhc-exp09-5547611 (us-west1-c): running ['d768-a-global-h4-lr7.5e-4-s1']
+[10-03 20:51:15] adopted mhc-exp09-5547622 (us-west1-c): running ['d768-a-local-h4-lr7.5e-4-s0']
+[10-03 20:51:19] status: 0/31 done, 20 queued, 11 running on 11 VMs, spent $11.31
+[10-03 20:51:55] create mhc-exp09-606791 (v5litepod-4) in us-central1-a failed: capacity
+[10-03 20:52:05] create mhc-exp09-606791 (v5litepod-4) in us-west4-b failed: capacity
+[10-03 20:52:47] create mhc-exp09-606792 (v5litepod-4) in us-central1-a failed: capacity
+[10-03 20:52:56] create mhc-exp09-606792 (v5litepod-4) in us-east5-a failed: needs a reservation
+[10-03 20:53:05] create mhc-exp09-606792 (v5litepod-4) in us-east5-b failed: capacity
+[10-03 20:53:05] create mhc-exp09-606791 (v5litepod-4) in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 20:53:13] create mhc-exp09-606792 (v5litepod-4) in us-east5-c failed: needs a reservation
+[10-03 20:53:14] create mhc-exp09-606791 (v5litepod-4) in us-east5-c failed: needs a reservation
+[10-03 20:53:38] create mhc-exp09-606791 (v5litepod-1) in us-central1-a failed: capacity
+[10-03 20:53:45] create mhc-exp09-606791 (v5litepod-1) in us-west4-b failed: capacity
+[10-03 20:56:06] created mhc-exp09-606791 (v5litepod-1) in europe-west4-b
+[10-03 20:56:43] mhc-exp09-606791: set up (data ok: 21 shards)
+[10-03 20:57:00] create mhc-exp09-606792 (v5litepod-1) in us-central1-a failed: capacity
+[10-03 20:57:12] create mhc-exp09-606792 (v5litepod-1) in us-east5-a failed: needs a reservation
+[10-03 20:57:17] create mhc-exp09-606792 (v5litepod-1) in us-east5-b failed: capacity
+[10-03 20:57:22] create mhc-exp09-606792 (v5litepod-1) in us-east5-c failed: needs a reservation
+[10-03 20:57:39] d768-ctrl-mlp2240-lr1.06e-3-s0: started on mhc-exp09-606791 chip 0
+[10-03 21:00:04] mhc-exp09-606791: status failed (1): ssh: connect to host 34.141.157.202 port 22: Operation timed out
+[10-03 21:01:06] d768-ctrl-mlp2240-lr1.06e-3-s0: back in the queue (state PREEMPTED, attempt 2)
+[10-03 21:01:08] create mhc-exp09-612048 (v5litepod-1) in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 21:02:20] deleted mhc-exp09-606791 (state PREEMPTED)
+[10-03 21:06:41] status: 0/31 done, 20 queued, 11 running on 11 VMs, spent $13.75
+[10-03 21:07:52] create mhc-exp09-6166420 (v5litepod-4) in us-west4-b failed: capacity
+[10-03 21:08:02] create mhc-exp09-6166419 (v5litepod-4) in us-west4-b failed: capacity
+[10-03 21:09:31] create mhc-exp09-6172822 (v5litepod-4) in us-central1-a failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-central1-a.)
+[10-03 21:10:12] create mhc-exp09-6172821 (v5litepod-4) in us-central1-a failed: capacity
+[10-03 21:10:21] create mhc-exp09-6172821 (v5litepod-4) in us-east5-b failed: capacity
+[10-03 21:10:29] create mhc-exp09-6172821 (v5litepod-1) in us-west4-b failed: capacity
+[10-03 21:10:35] create mhc-exp09-6172822 (v5litepod-4) in europe-west4-b failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone europe-west4-b.)
+[10-03 21:13:24] create mhc-exp09-6191826 (v5litepod-1) in us-central1-a failed: capacity
+[10-03 21:13:25] create mhc-exp09-6191825 (v5litepod-1) in us-central1-a failed: capacity
+[10-03 21:13:31] create mhc-exp09-6191825 (v5litepod-1) in us-east5-b failed: capacity
+[10-03 21:13:34] create mhc-exp09-6191826 (v5litepod-1) in us-east5-b failed: capacity
+[10-03 21:18:34] created mhc-exp09-6218932 (v5litepod-1) in europe-west4-b
+[10-03 21:19:09] mhc-exp09-6218932: set up (data ok: 21 shards)
+[10-03 21:19:39] d768-ctrl-mlp2240-lr1.06e-3-s0: started on mhc-exp09-6218932 chip 0
+[10-03 21:19:58] mhc-exp09-5547622: status failed (1): ssh: connect to host 136.117.22.85 port 22: Operation timed out
+[10-03 21:22:05] status: 0/31 done, 19 queued, 12 running on 12 VMs, spent $15.77
+[10-03 21:23:21] create mhc-exp09-6259042 (v5litepod-4) in us-west4-b failed: capacity
+[10-03 21:23:26] create mhc-exp09-6259041 (v5litepod-4) in us-west4-b failed: capacity
+[10-03 21:25:44] create mhc-exp09-6271746 (v5litepod-4) in us-central1-a failed: capacity
+[10-03 21:25:57] create mhc-exp09-6271746 (v5litepod-4) in us-east5-b failed: capacity
+[10-03 21:26:05] create mhc-exp09-6271746 (v5litepod-1) in us-west4-b failed: capacity
+[10-03 21:27:27] create mhc-exp09-6271745 (v5litepod-4) in us-central1-a failed: capacity
+[10-03 21:32:47] create mhc-exp09-6291449 (v5litepod-1) in us-central1-a failed: capacity
+[10-03 21:32:49] create mhc-exp09-6291450 (v5litepod-1) in us-central1-a failed: capacity
+[10-03 21:32:57] create mhc-exp09-6291449 (v5litepod-1) in us-east5-b failed: capacity
+[10-03 21:33:00] create mhc-exp09-6291450 (v5litepod-1) in us-east5-b failed: capacity
+[10-03 21:37:12] status: 0/31 done, 19 queued, 12 running on 12 VMs, spent $17.58
+[10-03 21:41:33] create mhc-exp09-6362262 (v5litepod-4) in us-west4-b failed: capacity
+[10-03 21:41:46] create mhc-exp09-6362261 (v5litepod-4) in us-west4-b failed: capacity
+[10-03 21:41:56] create mhc-exp09-6362262 (v5litepod-4) in us-east5-b failed: capacity
+[10-03 21:42:02] create mhc-exp09-6362261 (v5litepod-4) in us-east5-b failed: capacity
+[10-03 21:42:04] create mhc-exp09-6362262 (v5litepod-1) in us-west4-b failed: capacity
+[10-03 21:42:10] create mhc-exp09-6362261 (v5litepod-1) in us-west4-b failed: capacity
+[10-03 21:43:52] create mhc-exp09-6378163 (v5litepod-4) in us-central1-a failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-central1-a.)
+[10-03 21:44:26] create mhc-exp09-6378164 (v5litepod-4) in us-central1-a failed: capacity
+[10-03 21:49:38] d768-mhc-h1-lr7.5e-4-s0: done — exit 0 in 8393s on mhc-exp09-5547621 (us-east1-c), val 3.9381, tok/s 12034, preempted 0x
+[10-03 21:49:41] d768-mhc-h1-lr2.1e-3-s0: started on mhc-exp09-5547621 chip 0
+[10-03 21:51:31] adopted mhc-exp09-563123 (europe-west4-b): running ['d768-a-local-h4-lr1.06e-3-s0']
+[10-03 21:51:31] adopted mhc-exp09-563765 (europe-west4-b): running ['d768-a-global-h4-lr1.06e-3-s0']
+[10-03 21:51:32] adopted mhc-exp09-6218932 (europe-west4-b): running ['d768-ctrl-mlp2240-lr1.06e-3-s0']
+[10-03 21:51:33] adopted mhc-exp09-5644012 (europe-west4-b): running ['d768-mhc-h1-lr1.06e-3-s0']
+[10-03 21:51:34] adopted mhc-exp09-563122 (us-east1-c): running ['d768-a-local-h4-lr7.5e-4-s1']
+[10-03 21:51:36] adopted mhc-exp09-5547621 (us-east1-c): running ['d768-mhc-h1-lr2.1e-3-s0']
+[10-03 21:51:37] adopted mhc-exp09-5547624 (us-east1-c): running ['d768-a-global-h4-lr7.5e-4-s0']
+[10-03 21:51:38] adopted mhc-exp09-5547629 (us-east1-c): running ['d768-ctrl-mlp2240-lr7.5e-4-s0']
+[10-03 21:51:40] adopted mhc-exp09-554768 (us-west1-c): running ['d768-ctrl-mlp2240-lr7.5e-4-s1']
+[10-03 21:51:50] adopted mhc-exp09-5547616 (us-west1-c): running ['d768-mhc-h1-lr7.5e-4-s1']
+[10-03 21:51:52] adopted mhc-exp09-5547611 (us-west1-c): running ['d768-a-global-h4-lr7.5e-4-s1']
+[10-03 21:51:54] adopted mhc-exp09-5547622 (us-west1-c): running ['d768-a-local-h4-lr7.5e-4-s0']
+[10-03 21:52:00] status: 1/39 done, 26 queued, 12 running on 12 VMs, spent $18.90
+[10-03 21:52:44] create mhc-exp09-643202 (v5litepod-4) in us-central1-a failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-central1-a.)
+[10-03 21:52:46] create mhc-exp09-643201 (v5litepod-4) in us-central1-a failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-central1-a.)
+[10-03 21:52:55] create mhc-exp09-643202 (v5litepod-4) in us-west4-b failed: capacity
+[10-03 21:53:01] create mhc-exp09-643201 (v5litepod-4) in us-west4-b failed: capacity
+[10-03 21:53:08] create mhc-exp09-643202 (v5litepod-4) in us-east5-a failed: needs a reservation
+[10-03 21:53:10] create mhc-exp09-643201 (v5litepod-4) in us-east5-a failed: needs a reservation
+[10-03 21:53:16] create mhc-exp09-643202 (v5litepod-4) in us-east5-b failed: capacity
+[10-03 21:53:19] create mhc-exp09-643201 (v5litepod-4) in us-east5-b failed: capacity
+[10-03 21:53:22] create mhc-exp09-643202 (v5litepod-4) in us-east5-c failed: needs a reservation
+[10-03 21:53:24] create mhc-exp09-643201 (v5litepod-4) in us-east5-c failed: needs a reservation
+[10-03 21:57:31] create mhc-exp09-643202 (v5litepod-1) in us-central1-a failed: capacity
+[10-03 21:57:33] create mhc-exp09-643201 (v5litepod-1) in us-central1-a failed: capacity
+[10-03 21:57:41] create mhc-exp09-643202 (v5litepod-1) in us-west4-b failed: capacity
+[10-03 21:57:42] create mhc-exp09-643201 (v5litepod-1) in us-west4-b failed: capacity
+[10-03 21:57:52] create mhc-exp09-643202 (v5litepod-1) in us-east5-a failed: needs a reservation
+[10-03 21:57:53] create mhc-exp09-643201 (v5litepod-1) in us-east5-a failed: needs a reservation
+[10-03 21:57:57] create mhc-exp09-643202 (v5litepod-1) in us-east5-b failed: capacity
+[10-03 21:57:58] create mhc-exp09-643201 (v5litepod-1) in us-east5-b failed: capacity
+[10-03 21:58:02] create mhc-exp09-643202 (v5litepod-1) in us-east5-c failed: needs a reservation
+[10-03 21:58:03] create mhc-exp09-643201 (v5litepod-1) in us-east5-c failed: needs a reservation
+[10-03 22:01:50] d768-a-global-h4-lr7.5e-4-s0: done — exit 0 in 9085s on mhc-exp09-5547624 (us-east1-c), val 3.9433, tok/s 11111, preempted 0x
+[10-03 22:01:53] a-local-h4-lr2x-s0: started on mhc-exp09-5547624 chip 0
+[10-03 22:03:07] d768-ctrl-mlp2240-lr7.5e-4-s0: done — exit 0 in 9170s on mhc-exp09-5547629 (us-east1-c), val 3.9486, tok/s 11004, preempted 0x
+[10-03 22:03:10] a-local-h4-lr2x-s1: started on mhc-exp09-5547629 chip 0
+[10-03 22:03:14] d768-mhc-h1-lr7.5e-4-s1: done — exit 0 in 9155s on mhc-exp09-5547616 (us-west1-c), val 3.9203, tok/s 11014, preempted 0x
+[10-03 22:03:14] d768-a-local-h4-lr7.5e-4-s0: done — exit 0 in 9109s on mhc-exp09-5547622 (us-west1-c), val 3.9599, tok/s 11053, preempted 0x
+[10-03 22:03:18] d768-mhc-h1-lr5.3e-4-s0: started on mhc-exp09-5547616 chip 0
+[10-03 22:03:18] d768-a-global-h4-lr5.3e-4-s0: started on mhc-exp09-5547622 chip 0
+[10-03 22:04:41] d768-ctrl-mlp2240-lr7.5e-4-s1: done — exit 0 in 9215s on mhc-exp09-554768 (us-west1-c), val 3.9287, tok/s 10943, preempted 0x
+[10-03 22:04:41] d768-a-global-h4-lr7.5e-4-s1: done — exit 0 in 9170s on mhc-exp09-5547611 (us-west1-c), val 3.9301, tok/s 11003, preempted 0x
+[10-03 22:04:45] d768-ctrl-mlp2240-lr5.3e-4-s0: started on mhc-exp09-554768 chip 0
+[10-03 22:04:45] d768-a-local-h4-lr5.3e-4-s0: started on mhc-exp09-5547611 chip 0
+[10-03 22:07:57] status: 7/39 done, 20 queued, 12 running on 12 VMs, spent $21.88
+[10-03 22:08:33] create mhc-exp09-6527720 (v5litepod-4) in us-central1-a failed: capacity
+[10-03 22:08:44] create mhc-exp09-6527720 (v5litepod-4) in us-west4-b failed: capacity
+[10-03 22:08:53] create mhc-exp09-6527720 (v5litepod-4) in us-east5-b failed: capacity
+[10-03 22:09:42] create mhc-exp09-6527719 (v5litepod-4) in us-central1-a failed: capacity
+[10-03 22:14:35] d768-a-local-h4-lr7.5e-4-s1: done — exit 0 in 9136s on mhc-exp09-563122 (us-east1-c), val 3.9435, tok/s 11023, preempted 0x
+[10-03 22:14:38] d768-mhc-h1-lr1.06e-3-s1: started on mhc-exp09-563122 chip 0
+[10-03 22:15:46] d768-a-global-h4-lr1.06e-3-s0: done — exit 0 in 9026s on mhc-exp09-563765 (europe-west4-b), val 3.9190, tok/s 11185, preempted 0x
+[10-03 22:15:48] d768-a-global-h4-lr1.06e-3-s1: started on mhc-exp09-563765 chip 0
+[10-03 22:17:36] create mhc-exp09-6560129 (v5litepod-1) in us-central1-a failed: capacity
+[10-03 22:17:38] create mhc-exp09-6560128 (v5litepod-1) in us-central1-a failed: capacity
+[10-03 22:17:47] create mhc-exp09-6560129 (v5litepod-1) in us-west4-b failed: capacity
+[10-03 22:17:47] create mhc-exp09-6560128 (v5litepod-1) in us-west4-b failed: capacity
+[10-03 22:17:55] create mhc-exp09-6560129 (v5litepod-1) in us-east5-b failed: capacity
+[10-03 22:17:58] create mhc-exp09-6560128 (v5litepod-1) in us-east5-b failed: capacity
+[10-03 22:18:01] d768-mhc-h1-lr1.06e-3-s0: done — exit 0 in 9158s on mhc-exp09-5644012 (europe-west4-b), val 3.9746, tok/s 11016, preempted 0x
+[10-03 22:18:03] d768-ctrl-mlp2240-lr1.06e-3-s1: started on mhc-exp09-5644012 chip 0
+[10-03 22:19:11] d768-a-local-h4-lr1.06e-3-s0: done — exit 0 in 9194s on mhc-exp09-563123 (europe-west4-b), val 3.9593, tok/s 10956, preempted 0x
+[10-03 22:19:12] d768-a-local-h4-lr1.06e-3-s1: started on mhc-exp09-563123 chip 0
+[10-03 22:23:29] status: 11/39 done, 16 queued, 12 running on 12 VMs, spent $25.19
+[10-03 22:24:44] create mhc-exp09-6627342 (v5litepod-4) in us-west4-b failed: capacity
+[10-03 22:24:49] create mhc-exp09-6627343 (v5litepod-4) in us-west4-b failed: capacity
+[10-03 22:24:54] create mhc-exp09-6627342 (v5litepod-4) in us-east5-b failed: capacity
+[10-03 22:24:57] create mhc-exp09-6627343 (v5litepod-4) in us-east5-b failed: capacity
+[10-03 22:26:23] create mhc-exp09-6633944 (v5litepod-4) in us-central1-a failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-central1-a.)
+[10-03 22:27:03] create mhc-exp09-6633945 (v5litepod-4) in us-central1-a failed: capacity
+[10-03 22:27:14] adopted mhc-exp09-563123 (europe-west4-b): running ['d768-a-local-h4-lr1.06e-3-s1']
+[10-03 22:27:15] adopted mhc-exp09-563765 (europe-west4-b): running ['d768-a-global-h4-lr1.06e-3-s1']
+[10-03 22:27:16] adopted mhc-exp09-6218932 (europe-west4-b): running ['d768-ctrl-mlp2240-lr1.06e-3-s0']
+[10-03 22:27:17] adopted mhc-exp09-5644012 (europe-west4-b): running ['d768-ctrl-mlp2240-lr1.06e-3-s1']
+[10-03 22:27:18] adopted mhc-exp09-563122 (us-east1-c): running ['d768-mhc-h1-lr1.06e-3-s1']
+[10-03 22:27:19] adopted mhc-exp09-5547621 (us-east1-c): running ['d768-mhc-h1-lr2.1e-3-s0']
+[10-03 22:27:21] adopted mhc-exp09-5547624 (us-east1-c): running ['a-local-h4-lr2x-s0']
+[10-03 22:27:23] adopted mhc-exp09-5547629 (us-east1-c): running ['a-local-h4-lr2x-s1']
+[10-03 22:27:25] adopted mhc-exp09-554768 (us-west1-c): running ['d768-ctrl-mlp2240-lr5.3e-4-s0']
+[10-03 22:27:27] adopted mhc-exp09-5547616 (us-west1-c): running ['d768-mhc-h1-lr5.3e-4-s0']
+[10-03 22:27:30] adopted mhc-exp09-5547611 (us-west1-c): running ['d768-a-local-h4-lr5.3e-4-s0']
+[10-03 22:27:32] adopted mhc-exp09-5547622 (us-west1-c): running ['d768-a-global-h4-lr5.3e-4-s0']
+[10-03 22:27:36] status: 11/39 done, 16 queued, 12 running on 12 VMs, spent $26.06
+[10-03 22:28:03] create mhc-exp09-664562 (v5litepod-4) in us-central1-a failed: capacity
+[10-03 22:28:15] create mhc-exp09-664562 (v5litepod-4) in us-west4-b failed: capacity
+[10-03 22:28:27] create mhc-exp09-664562 (v5litepod-4) in us-east5-a failed: needs a reservation
+[10-03 22:28:32] create mhc-exp09-664562 (v5litepod-4) in us-east5-b failed: capacity
+[10-03 22:28:38] create mhc-exp09-664562 (v5litepod-4) in us-east5-c failed: needs a reservation
+[10-03 22:29:23] create mhc-exp09-664561 (v5litepod-4) in us-central1-a failed: capacity
+[10-03 22:33:35] create mhc-exp09-664561 (v5litepod-1) in us-central1-a failed: capacity
+[10-03 22:33:46] create mhc-exp09-664561 (v5litepod-1) in us-west4-b failed: capacity
+[10-03 22:33:53] create mhc-exp09-664562 (v5litepod-1) in us-central1-a failed: capacity
+[10-03 22:33:57] create mhc-exp09-664561 (v5litepod-1) in us-east5-a failed: needs a reservation
+[10-03 22:33:59] create mhc-exp09-664562 (v5litepod-1) in us-east5-a failed: needs a reservation
+[10-03 22:34:02] create mhc-exp09-664561 (v5litepod-1) in us-east5-b failed: capacity
+[10-03 22:34:03] create mhc-exp09-664562 (v5litepod-1) in us-east5-b failed: capacity
+[10-03 22:34:07] create mhc-exp09-664561 (v5litepod-1) in us-east5-c failed: needs a reservation
+[10-03 22:34:11] create mhc-exp09-664562 (v5litepod-1) in us-east5-c failed: needs a reservation
+[10-03 22:42:41] status: 11/39 done, 16 queued, 12 running on 12 VMs, spent $29.27
+[10-03 22:43:53] create mhc-exp09-6742521 (v5litepod-4) in us-west4-b failed: capacity
+[10-03 22:43:59] create mhc-exp09-6742520 (v5litepod-4) in us-west4-b failed: capacity
+[10-03 22:44:02] create mhc-exp09-6742521 (v5litepod-4) in us-east5-b failed: capacity
+[10-03 22:44:07] create mhc-exp09-6742520 (v5litepod-4) in us-east5-b failed: capacity
+[10-03 22:45:16] create mhc-exp09-6748923 (v5litepod-4) in us-central1-a failed: capacity
+[10-03 22:46:25] create mhc-exp09-6748922 (v5litepod-4) in us-central1-a failed: capacity
+[10-03 22:49:43] create mhc-exp09-6774830 (v5litepod-1) in us-central1-a failed: capacity
+[10-03 22:49:44] create mhc-exp09-6774829 (v5litepod-1) in us-central1-a failed: capacity
+[10-03 22:49:51] create mhc-exp09-6774830 (v5litepod-1) in us-west4-b failed: capacity
+[10-03 22:49:52] create mhc-exp09-6774829 (v5litepod-1) in us-west4-b failed: capacity
+[10-03 22:50:00] create mhc-exp09-6774830 (v5litepod-1) in us-east5-b failed: capacity
+[10-03 22:50:01] create mhc-exp09-6774829 (v5litepod-1) in us-east5-b failed: capacity
+[10-03 22:57:42] status: 11/39 done, 16 queued, 12 running on 12 VMs, spent $32.46
+[10-03 23:00:00] create mhc-exp09-6839249 (v5litepod-4) in us-west4-b failed: capacity
+[10-03 23:00:05] create mhc-exp09-6839250 (v5litepod-4) in us-west4-b failed: capacity
+[10-03 23:00:06] create mhc-exp09-6839249 (v5litepod-4) in us-east5-b failed: capacity
+[10-03 23:00:10] create mhc-exp09-6839250 (v5litepod-4) in us-east5-b failed: capacity
+[10-03 23:01:11] a-local-h4-lr2x-s0: done — exit 0 in 3485s on mhc-exp09-5547624 (us-east1-c), val 4.8969, tok/s 29706, preempted 0x
+[10-03 23:01:15] d768-mhc-h1-lr5.3e-4-s1: started on mhc-exp09-5547624 chip 0
+[10-03 23:02:30] a-local-h4-lr2x-s1: done — exit 0 in 3514s on mhc-exp09-5547629 (us-east1-c), val 4.8759, tok/s 29436, preempted 0x
+[10-03 23:02:32] d768-a-global-h4-lr5.3e-4-s1: started on mhc-exp09-5547629 chip 0
+[10-03 23:02:57] create mhc-exp09-6855254 (v5litepod-4) in us-central1-a failed: capacity
+[10-03 23:04:20] create mhc-exp09-6855253 (v5litepod-4) in us-central1-a failed: capacity
+[10-03 23:05:58] create mhc-exp09-6874459 (v5litepod-1) in us-west4-b failed: capacity
+[10-03 23:06:07] create mhc-exp09-6874459 (v5litepod-1) in us-east5-b failed: capacity
+[10-03 23:08:55] create mhc-exp09-6887161 (v5litepod-1) in us-central1-a failed: capacity
+[10-03 23:12:25] create mhc-exp09-6874458 (v5litepod-1) in us-central1-a failed: capacity
+[10-03 23:13:13] status: 13/39 done, 14 queued, 12 running on 12 VMs, spent $35.58
+[10-03 23:15:29] create mhc-exp09-6932171 (v5litepod-4) in us-west4-b failed: capacity
+[10-03 23:15:34] create mhc-exp09-6932170 (v5litepod-4) in us-west4-b failed: capacity
+[10-03 23:15:36] create mhc-exp09-6932171 (v5litepod-4) in us-east5-b failed: capacity
+[10-03 23:15:41] create mhc-exp09-6932170 (v5litepod-4) in us-east5-b failed: capacity
+[10-03 23:20:24] create mhc-exp09-6957778 (v5litepod-4) in us-central1-a failed: capacity
+[10-03 23:21:25] create mhc-exp09-6957779 (v5litepod-4) in us-central1-a failed: capacity
+[10-03 23:21:33] create mhc-exp09-6957779 (v5litepod-1) in us-west4-b failed: capacity
+[10-03 23:21:43] create mhc-exp09-6957779 (v5litepod-1) in us-east5-b failed: capacity
+[10-03 23:28:13] status: 13/39 done, 14 queued, 12 running on 12 VMs, spent $39.09
+[10-03 23:32:44] create mhc-exp09-7009394 (v5litepod-1) in us-central1-a failed: capacity
+[10-03 23:32:45] create mhc-exp09-7009393 (v5litepod-1) in us-central1-a failed: capacity
+[10-03 23:33:43] create mhc-exp09-7041696 (v5litepod-4) in us-west4-b failed: capacity
+[10-03 23:33:48] create mhc-exp09-7041695 (v5litepod-4) in us-west4-b failed: capacity
+[10-03 23:33:53] create mhc-exp09-7041696 (v5litepod-4) in us-east5-a failed: needs a reservation
+[10-03 23:33:56] create mhc-exp09-7041695 (v5litepod-4) in us-east5-a failed: needs a reservation
+[10-03 23:33:57] create mhc-exp09-7041696 (v5litepod-4) in us-east5-b failed: capacity
+[10-03 23:34:03] create mhc-exp09-7041696 (v5litepod-4) in us-east5-c failed: needs a reservation
+[10-03 23:34:04] create mhc-exp09-7041695 (v5litepod-4) in us-east5-b failed: capacity
+[10-03 23:34:07] create mhc-exp09-7041696 (v5litepod-1) in us-east5-a failed: needs a reservation
+[10-03 23:34:12] create mhc-exp09-7041695 (v5litepod-1) in us-east5-a failed: needs a reservation
+[10-03 23:34:19] create mhc-exp09-7041695 (v5litepod-1) in us-east5-c failed: needs a reservation
+[10-03 23:37:16] create mhc-exp09-70609101 (v5litepod-4) in us-central1-a failed: capacity
+[10-03 23:37:24] create mhc-exp09-70609101 (v5litepod-1) in us-west4-b failed: capacity
+[10-03 23:37:31] create mhc-exp09-70609101 (v5litepod-1) in us-east5-b failed: capacity
+[10-03 23:38:34] create mhc-exp09-70609102 (v5litepod-4) in us-central1-a failed: capacity
+[10-03 23:43:16] status: 13/39 done, 14 queued, 12 running on 12 VMs, spent $42.29
+[10-03 23:49:48] create mhc-exp09-71379124 (v5litepod-4) in us-west4-b failed: capacity
+[10-03 23:49:55] create mhc-exp09-71379124 (v5litepod-4) in us-east5-b failed: capacity
+[10-03 23:52:55] adopted mhc-exp09-563123 (europe-west4-b): running ['d768-a-local-h4-lr1.06e-3-s1']
+[10-03 23:52:56] adopted mhc-exp09-563765 (europe-west4-b): running ['d768-a-global-h4-lr1.06e-3-s1']
+[10-03 23:52:57] adopted mhc-exp09-6218932 (europe-west4-b): running ['d768-ctrl-mlp2240-lr1.06e-3-s0']
+[10-03 23:52:58] adopted mhc-exp09-5644012 (europe-west4-b): running ['d768-ctrl-mlp2240-lr1.06e-3-s1']
+[10-03 23:52:59] adopted mhc-exp09-563122 (us-east1-c): running ['d768-mhc-h1-lr1.06e-3-s1']
+[10-03 23:53:01] adopted mhc-exp09-5547621 (us-east1-c): running ['d768-mhc-h1-lr2.1e-3-s0']
+[10-03 23:53:02] adopted mhc-exp09-5547624 (us-east1-c): running ['d768-mhc-h1-lr5.3e-4-s1']
+[10-03 23:53:04] adopted mhc-exp09-5547629 (us-east1-c): running ['d768-a-global-h4-lr5.3e-4-s1']
+[10-03 23:53:06] adopted mhc-exp09-554768 (us-west1-c): running ['d768-ctrl-mlp2240-lr5.3e-4-s0']
+[10-03 23:53:08] adopted mhc-exp09-5547616 (us-west1-c): running ['d768-mhc-h1-lr5.3e-4-s0']
+[10-03 23:53:10] adopted mhc-exp09-5547611 (us-west1-c): running ['d768-a-local-h4-lr5.3e-4-s0']
+[10-03 23:53:12] adopted mhc-exp09-5547622 (us-west1-c): running ['d768-a-global-h4-lr5.3e-4-s0']
+[10-03 23:53:18] d768-ctrl-mlp2240-lr1.06e-3-s0: done — exit 0 in 9167s on mhc-exp09-6218932 (europe-west4-b), val 3.9541, tok/s 11002, preempted 0x
+[10-03 23:53:19] v5e-long-residual-s0: started on mhc-exp09-6218932 chip 0
+[10-03 23:53:19] status: 14/54 done, 28 queued, 12 running on 12 VMs, spent $44.43
+[10-03 23:54:05] create mhc-exp09-715992 (v5litepod-4) in us-central1-a failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-central1-a.)
+[10-03 23:54:05] create mhc-exp09-715991 (v5litepod-4) in us-central1-a failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-central1-a.)
+[10-03 23:54:17] adopted mhc-exp09-563123 (europe-west4-b): running ['d768-a-local-h4-lr1.06e-3-s1']
+[10-03 23:54:18] adopted mhc-exp09-563765 (europe-west4-b): running ['d768-a-global-h4-lr1.06e-3-s1']
+[10-03 23:54:19] adopted mhc-exp09-6218932 (europe-west4-b): running ['v5e-long-residual-s0']
+[10-03 23:54:20] adopted mhc-exp09-5644012 (europe-west4-b): running ['d768-ctrl-mlp2240-lr1.06e-3-s1']
+[10-03 23:54:21] adopted mhc-exp09-563122 (us-east1-c): running ['d768-mhc-h1-lr1.06e-3-s1']
+[10-03 23:54:23] adopted mhc-exp09-5547621 (us-east1-c): running ['d768-mhc-h1-lr2.1e-3-s0']
+[10-03 23:54:24] adopted mhc-exp09-5547624 (us-east1-c): running ['d768-mhc-h1-lr5.3e-4-s1']
+[10-03 23:54:26] adopted mhc-exp09-5547629 (us-east1-c): running ['d768-a-global-h4-lr5.3e-4-s1']
+[10-03 23:54:28] adopted mhc-exp09-554768 (us-west1-c): running ['d768-ctrl-mlp2240-lr5.3e-4-s0']
+[10-03 23:54:30] adopted mhc-exp09-5547616 (us-west1-c): running ['d768-mhc-h1-lr5.3e-4-s0']
+[10-03 23:54:32] adopted mhc-exp09-5547611 (us-west1-c): running ['d768-a-local-h4-lr5.3e-4-s0']
+[10-03 23:54:34] adopted mhc-exp09-5547622 (us-west1-c): running ['d768-a-global-h4-lr5.3e-4-s0']
+[10-03 23:54:37] status: 14/54 done, 28 queued, 12 running on 12 VMs, spent $44.70
+[10-03 23:55:25] create mhc-exp09-716772 (v5litepod-4) in us-central1-a failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-central1-a.)
+[10-03 23:55:35] create mhc-exp09-716772 (v5litepod-4) in us-west4-b failed: capacity
+[10-03 23:55:45] create mhc-exp09-716772 (v5litepod-4) in us-east5-a failed: needs a reservation
+[10-03 23:55:50] create mhc-exp09-716772 (v5litepod-4) in us-east5-b failed: capacity
+[10-03 23:55:55] create mhc-exp09-716772 (v5litepod-4) in us-east5-c failed: needs a reservation
+[10-03 23:56:11] create mhc-exp09-716771 (v5litepod-4) in us-central1-a failed: capacity
+[10-04 00:01:01] create mhc-exp09-716771 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 00:01:06] create mhc-exp09-716772 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 00:01:12] create mhc-exp09-716772 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 00:01:12] create mhc-exp09-716771 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 00:01:18] create mhc-exp09-716772 (v5litepod-1) in us-east5-a failed: needs a reservation
+[10-04 00:01:19] create mhc-exp09-716771 (v5litepod-1) in us-east5-a failed: needs a reservation
+[10-04 00:01:26] create mhc-exp09-716772 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 00:01:27] create mhc-exp09-716771 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 00:01:31] create mhc-exp09-716772 (v5litepod-1) in us-east5-c failed: needs a reservation
+[10-04 00:01:35] create mhc-exp09-716771 (v5litepod-1) in us-east5-c failed: needs a reservation
+[10-04 00:08:34] d768-mhc-h1-lr2.1e-3-s0: done — exit 0 in 8298s on mhc-exp09-5547621 (us-east1-c), val 4.6578, tok/s 12164, preempted 0x
+[10-04 00:08:37] d768-ctrl-mlp2240-lr5.3e-4-s1: started on mhc-exp09-5547621 chip 0
+[10-04 00:09:40] status: 15/54 done, 27 queued, 12 running on 12 VMs, spent $47.90
+[10-04 00:10:51] create mhc-exp09-7264419 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 00:10:57] create mhc-exp09-7264420 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 00:10:58] create mhc-exp09-7264419 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 00:11:05] create mhc-exp09-7264420 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 00:12:32] create mhc-exp09-7270721 (v5litepod-4) in us-central1-a failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-central1-a.)
+[10-04 00:12:50] create mhc-exp09-7270722 (v5litepod-4) in us-central1-a failed: capacity
+[10-04 00:21:51] create mhc-exp09-7302731 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 00:21:52] create mhc-exp09-7302732 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 00:22:02] create mhc-exp09-7302731 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 00:22:02] create mhc-exp09-7302732 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 00:22:09] create mhc-exp09-7302731 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 00:22:13] create mhc-exp09-7302732 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 00:25:35] status: 15/54 done, 27 queued, 12 running on 12 VMs, spent $51.28
+[10-04 00:26:50] create mhc-exp09-7360042 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 00:26:56] create mhc-exp09-7360041 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 00:26:59] create mhc-exp09-7360042 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 00:27:00] create mhc-exp09-7360041 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 00:29:13] create mhc-exp09-7372745 (v5litepod-4) in us-central1-a failed: capacity
+[10-04 00:30:12] create mhc-exp09-7372746 (v5litepod-4) in us-central1-a failed: capacity
+[10-04 00:33:18] d768-a-global-h4-lr5.3e-4-s0: done — exit 0 in 8949s on mhc-exp09-5547622 (us-west1-c), val 3.9697, tok/s 11269, preempted 0x
+[10-04 00:33:22] d768-a-local-h4-lr5.3e-4-s1: started on mhc-exp09-5547622 chip 0
+[10-04 00:36:47] d768-a-local-h4-lr5.3e-4-s0: done — exit 0 in 9048s on mhc-exp09-5547611 (us-west1-c), val 3.9965, tok/s 11121, preempted 0x
+[10-04 00:36:51] d768-a-local-h4-s0: started on mhc-exp09-5547611 chip 0
+[10-04 00:38:10] d768-mhc-h1-lr5.3e-4-s0: done — exit 0 in 9196s on mhc-exp09-5547616 (us-west1-c), val 3.9890, tok/s 10962, preempted 0x
+[10-04 00:38:14] d768-a-local-h4-s1: started on mhc-exp09-5547616 chip 0
+[10-04 00:39:32] d768-ctrl-mlp2240-lr5.3e-4-s0: done — exit 0 in 9241s on mhc-exp09-554768 (us-west1-c), val 3.9615, tok/s 10912, preempted 0x
+[10-04 00:39:36] d768-a-global-h4-lr2.1e-3-s0: started on mhc-exp09-554768 chip 0
+[10-04 00:40:40] status: 19/54 done, 23 queued, 12 running on 12 VMs, spent $54.49
+[10-04 00:42:06] create mhc-exp09-7421158 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 00:42:08] create mhc-exp09-7421159 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 00:42:17] create mhc-exp09-7421158 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 00:42:17] create mhc-exp09-7421159 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 00:42:24] create mhc-exp09-7421158 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 00:42:27] create mhc-exp09-7421159 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 00:42:53] create mhc-exp09-7456760 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 00:42:58] create mhc-exp09-7456761 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 00:43:01] create mhc-exp09-7456760 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 00:43:05] create mhc-exp09-7456761 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 00:46:43] create mhc-exp09-7475966 (v5litepod-4) in us-central1-a failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-central1-a.)
+[10-04 00:47:02] create mhc-exp09-7475967 (v5litepod-4) in us-central1-a failed: capacity
+[10-04 00:47:13] d768-mhc-h1-lr1.06e-3-s1: done — exit 0 in 9084s on mhc-exp09-563122 (us-east1-c), val 3.9440, tok/s 11099, preempted 0x
+[10-04 00:47:15] d768-ctrl-mlp2240-lr2.1e-3-s0: started on mhc-exp09-563122 chip 0
+[10-04 00:49:28] v5e-long-residual-s0: done — exit 0 in 3291s on mhc-exp09-6218932 (europe-west4-b), val 3.8974, tok/s 123209, preempted 0x
+[10-04 00:49:29] d768-a-local-h4-lr2.1e-3-s0: started on mhc-exp09-6218932 chip 0
+[10-04 00:50:36] d768-a-global-h4-lr1.06e-3-s1: done — exit 0 in 9267s on mhc-exp09-563765 (europe-west4-b), val 3.9255, tok/s 10877, preempted 0x
+[10-04 00:50:37] d768-ctrl-mlp2240-lr1.06e-3-s1: done — exit 0 in 9092s on mhc-exp09-5644012 (europe-west4-b), val 3.9402, tok/s 11098, preempted 0x
+[10-04 00:50:38] d768-residual-s0: started on mhc-exp09-563765 chip 0
+[10-04 00:50:38] d768-residual-s1: started on mhc-exp09-5644012 chip 0
+[10-04 00:54:56] d768-a-local-h4-lr1.06e-3-s1: done — exit 0 in 9272s on mhc-exp09-563123 (europe-west4-b), val 3.9706, tok/s 10848, preempted 0x
+[10-04 00:54:58] d768-mhc-h1-lr2.1e-3-s1: started on mhc-exp09-563123 chip 0
+[10-04 00:56:01] status: 24/54 done, 18 queued, 12 running on 12 VMs, spent $57.75
+[10-04 00:56:14] create mhc-exp09-7536184 (v5litepod-4) in us-east5-a failed: needs a reservation
+[10-04 00:56:19] create mhc-exp09-7536185 (v5litepod-4) in us-east5-a failed: needs a reservation
+[10-04 00:56:22] create mhc-exp09-7536184 (v5litepod-4) in us-east5-c failed: needs a reservation
+[10-04 00:56:26] create mhc-exp09-7536185 (v5litepod-4) in us-east5-c failed: needs a reservation
+[10-04 00:58:18] create mhc-exp09-7548888 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 00:58:23] create mhc-exp09-7548889 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 00:58:28] create mhc-exp09-7548888 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 00:58:32] create mhc-exp09-7548889 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 01:03:39] create mhc-exp09-7548888 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 01:03:42] create mhc-exp09-7548889 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 01:03:50] create mhc-exp09-7548889 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 01:03:50] create mhc-exp09-7548888 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 01:03:57] create mhc-exp09-7548888 (v5litepod-1) in us-east5-a failed: needs a reservation
+[10-04 01:03:57] create mhc-exp09-7548889 (v5litepod-1) in us-east5-a failed: needs a reservation
+[10-04 01:04:02] create mhc-exp09-7548889 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 01:04:02] create mhc-exp09-7548888 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 01:04:07] create mhc-exp09-7548889 (v5litepod-1) in us-east5-c failed: needs a reservation
+[10-04 01:04:10] create mhc-exp09-7548888 (v5litepod-1) in us-east5-c failed: needs a reservation
+[10-04 01:05:14] create mhc-exp09-7587190 (v5litepod-4) in us-central1-a failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-central1-a.)
+[10-04 01:05:55] create mhc-exp09-7587191 (v5litepod-4) in us-central1-a failed: capacity
+[10-04 01:11:58] status: 24/54 done, 18 queued, 12 running on 12 VMs, spent $61.14
+[10-04 01:14:12] create mhc-exp09-76445107 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 01:14:18] create mhc-exp09-76445107 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 01:14:18] create mhc-exp09-76445108 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 01:24:16] create mhc-exp09-76763118 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 01:24:18] create mhc-exp09-76763117 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 01:24:26] create mhc-exp09-76763118 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 01:24:26] create mhc-exp09-76763117 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 01:24:36] create mhc-exp09-76763117 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 01:24:36] create mhc-exp09-76763118 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 01:25:16] create mhc-exp09-77082119 (v5litepod-4) in us-central1-a failed: capacity
+[10-04 01:26:27] create mhc-exp09-77082120 (v5litepod-4) in us-central1-a failed: capacity
+[10-04 01:26:53] d768-residual-s1: done — exit 0 in 2155s on mhc-exp09-5644012 (europe-west4-b), val 4.1573, tok/s 47544, preempted 0x
+[10-04 01:26:54] d768-a-global-h4-lr2.1e-3-s1: started on mhc-exp09-5644012 chip 0
+[10-04 01:28:02] d768-residual-s0: done — exit 0 in 2175s on mhc-exp09-563765 (europe-west4-b), val 4.1765, tok/s 47091, preempted 0x
+[10-04 01:28:03] d768-ctrl-mlp2240-lr2.1e-3-s1: started on mhc-exp09-563765 chip 0
+[10-04 01:28:03] status: 26/54 done, 16 queued, 12 running on 12 VMs, spent $64.56
+[10-04 01:30:17] create mhc-exp09-77410128 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 01:30:26] create mhc-exp09-77410129 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 01:30:26] create mhc-exp09-77410128 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 01:30:30] create mhc-exp09-77410129 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 01:33:32] d768-mhc-h1-lr5.3e-4-s1: done — exit 0 in 9111s on mhc-exp09-5547624 (us-east1-c), val 3.9672, tok/s 11069, preempted 0x
+[10-04 01:33:35] d768-a-local-h4-lr2.1e-3-s1: started on mhc-exp09-5547624 chip 0
+[10-04 01:36:56] d768-a-global-h4-lr5.3e-4-s1: done — exit 0 in 9222s on mhc-exp09-5547629 (us-east1-c), val 3.9605, tok/s 10927, preempted 0x
+[10-04 01:36:58] repro-d768-mhc-h1-s0: started on mhc-exp09-5547629 chip 0
+[10-04 01:41:37] create mhc-exp09-78009147 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 01:41:45] create mhc-exp09-78009147 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 01:41:52] create mhc-exp09-78009147 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 01:43:03] create mhc-exp09-78138148 (v5litepod-4) in us-central1-a failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-central1-a.)
+[10-04 01:43:21] status: 28/54 done, 14 queued, 12 running on 12 VMs, spent $67.81
+[10-04 01:45:39] create mhc-exp09-78328151 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 01:45:46] create mhc-exp09-78328151 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 01:47:50] create mhc-exp09-78009146 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 01:57:15] create mhc-exp09-79029171 (v5litepod-4) in us-east5-a failed: needs a reservation
+[10-04 01:57:20] create mhc-exp09-79029171 (v5litepod-4) in us-east5-c failed: needs a reservation
+[10-04 01:57:21] create mhc-exp09-79029170 (v5litepod-4) in us-east5-a failed: needs a reservation
+[10-04 01:57:29] create mhc-exp09-79029170 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 01:57:33] create mhc-exp09-79029170 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 01:57:37] create mhc-exp09-79029171 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 01:58:48] create mhc-exp09-79093172 (v5litepod-4) in us-central1-a failed: capacity
+[10-04 01:59:16] status: 28/54 done, 14 queued, 12 running on 12 VMs, spent $71.19
+[10-04 02:00:15] create mhc-exp09-79093173 (v5litepod-4) in us-central1-a failed: capacity
+[10-04 02:01:34] create mhc-exp09-79283177 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 02:01:39] create mhc-exp09-79283178 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 02:01:40] create mhc-exp09-79283177 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 02:01:47] create mhc-exp09-79283178 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 02:05:19] create mhc-exp09-79412181 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 02:05:28] create mhc-exp09-79412181 (v5litepod-1) in us-east5-a failed: needs a reservation
+[10-04 02:05:33] create mhc-exp09-79412181 (v5litepod-1) in us-east5-c failed: needs a reservation
+[10-04 02:09:07] create mhc-exp09-79412182 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 02:13:11] create mhc-exp09-79984194 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 02:13:12] create mhc-exp09-79984193 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 02:13:18] create mhc-exp09-79984194 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 02:13:21] create mhc-exp09-79984193 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 02:15:12] status: 28/54 done, 14 queued, 12 running on 12 VMs, spent $74.58
+[10-04 02:17:05] create mhc-exp09-80176199 (v5litepod-4) in us-central1-a failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-central1-a.)
+[10-04 02:17:15] create mhc-exp09-80176199 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 02:17:25] create mhc-exp09-80176199 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 02:18:01] create mhc-exp09-80176200 (v5litepod-4) in us-central1-a failed: capacity
+[10-04 02:25:20] create mhc-exp09-80686213 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 02:25:20] create mhc-exp09-80686214 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 02:27:03] d768-ctrl-mlp2240-lr5.3e-4-s1: done — exit 0 in 8228s on mhc-exp09-5547621 (us-east1-c), val 3.9533, tok/s 12275, preempted 0x
+[10-04 02:27:05] v5e-long-mhc-h1-s0: started on mhc-exp09-5547621 chip 0
+[10-04 02:28:20] create mhc-exp09-80889220 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 02:28:20] create mhc-exp09-80889219 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 02:29:22] create mhc-exp09-80952222 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 02:29:22] create mhc-exp09-80952221 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 02:30:16] status: 29/54 done, 13 queued, 12 running on 12 VMs, spent $77.78
+[10-04 02:32:33] create mhc-exp09-81143227 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 02:32:39] create mhc-exp09-81143228 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 02:32:43] create mhc-exp09-81143227 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 02:32:44] create mhc-exp09-81143228 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 02:34:03] create mhc-exp09-81206229 (v5litepod-4) in us-central1-a failed: capacity
+[10-04 02:35:15] create mhc-exp09-81206230 (v5litepod-4) in us-central1-a failed: capacity
+[10-04 02:42:41] create mhc-exp09-81653243 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 02:43:00] create mhc-exp09-81653242 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 02:44:11] create mhc-exp09-81844245 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 02:44:11] create mhc-exp09-81844246 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 02:45:17] create mhc-exp09-81907247 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 02:45:20] create mhc-exp09-81907248 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 02:46:12] status: 29/54 done, 13 queued, 12 running on 12 VMs, spent $81.16
+[10-04 02:48:29] create mhc-exp09-82099253 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 02:48:32] create mhc-exp09-82099254 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 02:48:38] create mhc-exp09-82099253 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 02:48:44] create mhc-exp09-82099254 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 02:51:11] create mhc-exp09-82226257 (v5litepod-4) in us-central1-a failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-central1-a.)
+[10-04 02:51:51] create mhc-exp09-82226258 (v5litepod-4) in us-central1-a failed: capacity
+[10-04 02:58:06] create mhc-exp09-82673271 (v5litepod-4) in us-east5-a failed: needs a reservation
+[10-04 02:58:10] create mhc-exp09-82673270 (v5litepod-4) in us-east5-a failed: needs a reservation
+[10-04 02:58:14] create mhc-exp09-82673271 (v5litepod-4) in us-east5-c failed: needs a reservation
+[10-04 02:58:18] create mhc-exp09-82673270 (v5litepod-4) in us-east5-c failed: needs a reservation
+[10-04 02:59:40] create mhc-exp09-82673270 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 02:59:48] create mhc-exp09-82673270 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 03:01:16] create mhc-exp09-82864273 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 03:02:08] status: 29/54 done, 13 queued, 12 running on 12 VMs, spent $84.19
+[10-04 03:02:44] create mhc-exp09-82673271 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 03:04:25] create mhc-exp09-83055278 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 03:04:30] create mhc-exp09-83055277 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 03:04:36] create mhc-exp09-83055277 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 03:04:36] create mhc-exp09-83055278 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 03:05:34] d768-a-local-h4-lr5.3e-4-s1: done — exit 0 in 9052s on mhc-exp09-5547622 (us-west1-c), val 3.9862, tok/s 11116, preempted 0x
+[10-04 03:05:38] v5e-long-a-global-h4-s0: started on mhc-exp09-5547622 chip 0
+[10-04 03:05:43] create mhc-exp09-83138280 (v5litepod-1) in us-east5-a failed: needs a reservation
+[10-04 03:05:46] create mhc-exp09-83138279 (v5litepod-1) in us-east5-a failed: needs a reservation
+[10-04 03:05:48] create mhc-exp09-83138280 (v5litepod-1) in us-east5-c failed: needs a reservation
+[10-04 03:05:51] create mhc-exp09-83138279 (v5litepod-1) in us-east5-c failed: needs a reservation
+[10-04 03:08:33] create mhc-exp09-83267284 (v5litepod-4) in us-central1-a failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-central1-a.)
+[10-04 03:09:32] create mhc-exp09-83267283 (v5litepod-4) in us-central1-a failed: capacity
+[10-04 03:11:13] d768-a-global-h4-lr2.1e-3-s0: done — exit 0 in 9022s on mhc-exp09-554768 (us-west1-c), val 4.7648, tok/s 11177, preempted 0x
+[10-04 03:11:17] v5e-long-ctrl-mlp1216-s0: started on mhc-exp09-554768 chip 0
+[10-04 03:12:36] d768-a-local-h4-s0: done — exit 0 in 9313s on mhc-exp09-5547611 (us-west1-c), val 4.0466, tok/s 10807, preempted 0x
+[10-04 03:12:39] v5e-long-a-local-h4-s0: started on mhc-exp09-5547611 chip 0
+[10-04 03:13:58] d768-a-local-h4-s1: done — exit 0 in 9247s on mhc-exp09-5547616 (us-west1-c), val 4.0343, tok/s 10882, preempted 0x
+[10-04 03:14:02] v5e-long-mhc-h1-s1: started on mhc-exp09-5547616 chip 0
+[10-04 03:15:13] create mhc-exp09-83706294 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 03:15:13] create mhc-exp09-83706295 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 03:17:23] d768-ctrl-mlp2240-lr2.1e-3-s0: done — exit 0 in 8979s on mhc-exp09-563122 (us-east1-c), val 4.8281, tok/s 11234, preempted 0x
+[10-04 03:17:25] v5e-long-a-global-h4-s1: started on mhc-exp09-563122 chip 0
+[10-04 03:17:25] status: 34/54 done, 8 queued, 12 running on 12 VMs, spent $86.91
+[10-04 03:17:32] create mhc-exp09-83845299 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 03:17:36] create mhc-exp09-83845298 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 03:20:17] create mhc-exp09-83910300 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 03:20:47] create mhc-exp09-84037302 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 03:20:54] create mhc-exp09-84037302 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 03:23:52] d768-a-local-h4-lr2.1e-3-s0: done — exit 0 in 9196s on mhc-exp09-6218932 (europe-west4-b), val 4.7450, tok/s 10939, preempted 0x
+[10-04 03:23:54] v5e-long-ctrl-mlp1216-s1: started on mhc-exp09-6218932 chip 0
+[10-04 03:24:08] create mhc-exp09-83910301 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 03:25:39] create mhc-exp09-84298307 (v5litepod-4) in us-central1-a failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-central1-a.)
+[10-04 03:26:23] create mhc-exp09-84298306 (v5litepod-4) in us-central1-a failed: capacity
+[10-04 03:29:15] d768-mhc-h1-lr2.1e-3-s1: done — exit 0 in 9234s on mhc-exp09-563123 (europe-west4-b), val 4.8397, tok/s 10919, preempted 0x
+[10-04 03:29:17] v5e-long-a-local-h4-s1: started on mhc-exp09-563123 chip 0
+[10-04 03:30:31] create mhc-exp09-84620316 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 03:30:32] create mhc-exp09-84620315 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 03:32:28] status: 36/54 done, 6 queued, 12 running on 12 VMs, spent $89.62
+[10-04 03:33:41] create mhc-exp09-84812321 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 03:33:41] create mhc-exp09-84812322 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 03:36:53] create mhc-exp09-85002328 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 03:36:58] create mhc-exp09-85002327 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 03:37:03] create mhc-exp09-85002328 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 03:37:12] create mhc-exp09-85002327 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 03:40:59] create mhc-exp09-85195334 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 03:42:58] create mhc-exp09-85322335 (v5litepod-4) in us-central1-a failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-central1-a.)
+[10-04 03:44:47] create mhc-exp09-85195333 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 03:46:23] create mhc-exp09-85576341 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 03:46:23] create mhc-exp09-85576340 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 03:48:23] status: 36/54 done, 6 queued, 12 running on 12 VMs, spent $92.49
+[10-04 03:49:36] create mhc-exp09-85766346 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 03:49:39] create mhc-exp09-85766347 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 03:52:47] create mhc-exp09-85958352 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 03:52:52] create mhc-exp09-85958353 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 03:52:57] create mhc-exp09-85958352 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 03:53:00] create mhc-exp09-85958353 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 03:59:45] create mhc-exp09-86340364 (v5litepod-4) in us-central1-a failed: quota (Quota limit 'TPUV5sPreemptibleLitepodServingPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 4 in zone us-central1-a.)
+[10-04 03:59:51] create mhc-exp09-86340364 (v5litepod-4) in us-east5-a failed: needs a reservation
+[10-04 03:59:56] create mhc-exp09-86340364 (v5litepod-4) in us-east5-c failed: needs a reservation
+[10-04 04:00:08] d768-a-global-h4-lr2.1e-3-s1: done — exit 0 in 9116s on mhc-exp09-5644012 (europe-west4-b), val 4.7935, tok/s 11058, preempted 0x
+[10-04 04:00:09] v5e-long-residual-s1: started on mhc-exp09-5644012 chip 0
+[10-04 04:00:26] create mhc-exp09-86340365 (v5litepod-4) in us-central1-a failed: capacity
+[10-04 04:01:40] create mhc-exp09-86340365 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 04:01:47] create mhc-exp09-86340365 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 04:04:28] d768-ctrl-mlp2240-lr2.1e-3-s1: done — exit 0 in 9331s on mhc-exp09-563765 (europe-west4-b), val 4.6199, tok/s 10800, preempted 0x
+[10-04 04:04:30] v5e-long-mhc-h1-s2: started on mhc-exp09-563765 chip 0
+[10-04 04:04:30] status: 38/54 done, 4 queued, 12 running on 12 VMs, spent $95.39
+[10-04 04:05:26] create mhc-exp09-86340364 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 04:05:36] create mhc-exp09-86340364 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 04:06:47] d768-a-local-h4-lr2.1e-3-s1: done — exit 0 in 9118s on mhc-exp09-5547624 (us-east1-c), val 4.7596, tok/s 11037, preempted 0x
+[10-04 04:06:49] v5e-long-a-global-h4-s2: started on mhc-exp09-5547624 chip 0
+[10-04 04:06:57] create mhc-exp09-86809368 (v5litepod-1) in us-east5-a failed: needs a reservation
+[10-04 04:07:07] create mhc-exp09-86809368 (v5litepod-1) in us-east5-c failed: needs a reservation
+[10-04 04:08:03] create mhc-exp09-86873369 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 04:08:10] create mhc-exp09-86873369 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 04:11:13] repro-d768-mhc-h1-s0: done — exit 0 in 9223s on mhc-exp09-5547629 (us-east1-c), val 4.1462, tok/s 10929, preempted 0x
+[10-04 04:11:16] v5e-long-ctrl-mlp1216-s2: started on mhc-exp09-5547629 chip 0
+[10-04 04:17:15] create mhc-exp09-87332376 (v5litepod-4) in us-central1-a failed: capacity
+[10-04 04:17:26] create mhc-exp09-87332376 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 04:19:47] status: 40/54 done, 2 queued, 12 running on 12 VMs, spent $98.14
+[10-04 04:26:23] create mhc-exp09-87650380 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 04:26:35] create mhc-exp09-87650380 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 04:27:21] create mhc-exp09-88034381 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 04:27:26] create mhc-exp09-88034381 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 04:34:16] create mhc-exp09-88351386 (v5litepod-4) in us-central1-a failed: capacity
+[10-04 04:34:28] create mhc-exp09-88351386 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 04:35:44] status: 40/54 done, 2 queued, 12 running on 12 VMs, spent $101.02
+[10-04 04:46:17] create mhc-exp09-88925394 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 04:46:30] create mhc-exp09-88925394 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 04:47:32] create mhc-exp09-89245395 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 04:47:40] create mhc-exp09-89245395 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 04:50:36] create mhc-exp09-89372397 (v5litepod-4) in us-central1-a failed: capacity
+[10-04 04:50:48] create mhc-exp09-89372397 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 04:51:38] status: 40/54 done, 2 queued, 12 running on 12 VMs, spent $103.88
+[10-04 04:57:02] v5e-long-residual-s1: done — exit 0 in 3360s on mhc-exp09-5644012 (europe-west4-b), val 3.8839, tok/s 120643, preempted 0x
+[10-04 04:57:03] v5e-long-a-local-h4-s2: started on mhc-exp09-5644012 chip 0
+[10-04 05:00:19] create mhc-exp09-90013406 (v5litepod-4) in us-east5-a failed: needs a reservation
+[10-04 05:00:28] create mhc-exp09-90013406 (v5litepod-4) in us-east5-c failed: needs a reservation
+[10-04 05:05:09] create mhc-exp09-90077407 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 05:05:19] create mhc-exp09-90077407 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 05:05:40] create mhc-exp09-90333408 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 05:05:47] create mhc-exp09-90333408 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 05:07:02] create mhc-exp09-90396409 (v5litepod-4) in us-central1-a failed: capacity
+[10-04 05:07:09] create mhc-exp09-90396409 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 05:07:17] create mhc-exp09-90396409 (v5litepod-1) in us-east5-a failed: needs a reservation
+[10-04 05:07:26] create mhc-exp09-90396409 (v5litepod-1) in us-east5-c failed: needs a reservation
+[10-04 05:07:40] status: 41/54 done, 1 queued, 12 running on 12 VMs, spent $106.77
+[10-04 05:23:35] status: 41/54 done, 1 queued, 12 running on 12 VMs, spent $109.64
+[10-04 05:24:58] create mhc-exp09-91225422 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 05:25:08] create mhc-exp09-91225422 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 05:25:18] create mhc-exp09-91225422 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 05:26:45] create mhc-exp09-91543423 (v5litepod-4) in us-central1-a failed: capacity
+[10-04 05:26:51] create mhc-exp09-91543423 (v5litepod-4) in us-west4-b failed: capacity
+[10-04 05:26:56] create mhc-exp09-91543423 (v5litepod-4) in us-east5-b failed: capacity
+[10-04 05:39:33] status: 41/54 done, 1 queued, 12 running on 12 VMs, spent $112.51
+[10-04 05:41:49] v5e-long-mhc-h1-s0: done — exit 0 in 11629s on mhc-exp09-5547621 (us-east1-c), val 3.8617, tok/s 34566, preempted 0x
+[10-04 05:41:52] v5e-long-residual-s2: started on mhc-exp09-5547621 chip 0
+[10-04 05:44:31] create mhc-exp09-92436436 (v5litepod-1) in us-central1-a failed: capacity
+[10-04 05:44:41] create mhc-exp09-92436436 (v5litepod-1) in us-west4-b failed: capacity
+[10-04 05:44:48] create mhc-exp09-92436436 (v5litepod-1) in us-east5-b failed: capacity
+[10-04 05:54:36] status: 42/54 done, 0 queued, 12 running on 12 VMs, spent $115.23
+[10-04 06:10:33] status: 42/54 done, 0 queued, 12 running on 12 VMs, spent $118.10
+[10-04 06:26:29] status: 42/54 done, 0 queued, 12 running on 12 VMs, spent $120.97
+[10-04 06:33:03] v5e-long-residual-s2: done — exit 0 in 3012s on mhc-exp09-5547621 (us-east1-c), val 3.8962, tok/s 134947, preempted 0x
+[10-04 06:34:03] deleted mhc-exp09-5547621 (no jobs left)
+[10-04 06:38:36] v5e-long-a-global-h4-s0: done — exit 0 in 12734s on mhc-exp09-5547622 (us-west1-c), val 3.8361, tok/s 31496, preempted 0x
+[10-04 06:41:02] deleted mhc-exp09-5547622 (no jobs left)
+[10-04 06:42:07] status: 44/54 done, 0 queued, 10 running on 10 VMs, spent $123.74
+[10-04 06:46:37] v5e-long-a-local-h4-s0: done — exit 0 in 12755s on mhc-exp09-5547611 (us-west1-c), val 3.8525, tok/s 31397, preempted 0x
+[10-04 06:47:41] deleted mhc-exp09-5547611 (no jobs left)
+[10-04 06:49:59] v5e-long-a-global-h4-s1: done — exit 0 in 12717s on mhc-exp09-563122 (us-east1-c), val 3.8148, tok/s 31538, preempted 0x
+[10-04 06:50:03] v5e-long-ctrl-mlp1216-s0: done — exit 0 in 13095s on mhc-exp09-554768 (us-west1-c), val 3.8019, tok/s 30657, preempted 0x
+[10-04 06:51:06] deleted mhc-exp09-554768 (no jobs left)
+[10-04 06:51:19] deleted mhc-exp09-563122 (no jobs left)
+[10-04 06:52:37] v5e-long-mhc-h1-s1: done — exit 0 in 12960s on mhc-exp09-5547616 (us-west1-c), val 3.8251, tok/s 30979, preempted 0x
+[10-04 06:53:41] deleted mhc-exp09-5547616 (no jobs left)
+[10-04 06:57:54] status: 48/54 done, 0 queued, 6 running on 6 VMs, spent $126.09
+[10-04 07:03:14] v5e-long-ctrl-mlp1216-s1: done — exit 0 in 13093s on mhc-exp09-6218932 (europe-west4-b), val 3.8446, tok/s 30671, preempted 0x
+[10-04 07:04:30] deleted mhc-exp09-6218932 (no jobs left)
+[10-04 07:08:46] v5e-long-a-local-h4-s1: done — exit 0 in 13154s on mhc-exp09-563123 (europe-west4-b), val 3.8257, tok/s 30437, preempted 0x
+[10-04 07:11:22] deleted mhc-exp09-563123 (no jobs left)
+[10-04 07:13:32] status: 50/54 done, 0 queued, 4 running on 4 VMs, spent $127.43
+[10-04 07:29:24] status: 50/54 done, 0 queued, 4 running on 4 VMs, spent $127.91
+[10-04 07:37:59] v5e-long-mhc-h1-s2: done — exit 0 in 12777s on mhc-exp09-563765 (europe-west4-b), val 3.8473, tok/s 31420, preempted 0x
+[10-04 07:39:14] deleted mhc-exp09-563765 (no jobs left)
+[10-04 07:41:34] v5e-long-a-global-h4-s2: done — exit 0 in 12809s on mhc-exp09-5547624 (us-east1-c), val 3.8145, tok/s 31310, preempted 0x
+[10-04 07:42:36] deleted mhc-exp09-5547624 (no jobs left)
+[10-04 07:44:46] status: 52/54 done, 0 queued, 2 running on 2 VMs, spent $128.31
+[10-04 07:48:09] v5e-long-ctrl-mlp1216-s2: done — exit 0 in 12937s on mhc-exp09-5547629 (us-east1-c), val 3.8185, tok/s 31050, preempted 0x
+[10-04 07:49:12] deleted mhc-exp09-5547629 (no jobs left)
+[10-04 08:00:09] status: 53/54 done, 0 queued, 1 running on 1 VMs, spent $128.48
+[10-04 08:15:37] status: 53/54 done, 0 queued, 1 running on 1 VMs, spent $128.62
+[10-04 08:31:38] status: 53/54 done, 0 queued, 1 running on 1 VMs, spent $128.77
+[10-04 08:34:53] v5e-long-a-local-h4-s2: done — exit 0 in 13018s on mhc-exp09-5644012 (europe-west4-b), val 3.8300, tok/s 30759, preempted 0x
+[10-04 08:36:09] deleted mhc-exp09-5644012 (no jobs left)
+[10-04 08:36:09] batch finished: 54 done, failed []; spent $128.81

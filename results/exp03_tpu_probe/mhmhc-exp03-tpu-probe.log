@@ -1,0 +1,36 @@
+[{"stream_name":"stdout","time":7.143530726,"data":"[    3.4s] jax                          0.10.2\n"}
+,{"stream_name":"stdout","time":7.143586316,"data":"jaxlib                       0.10.2\n"}
+,{"stream_name":"stdout","time":7.143591156,"data":"libtpu                       0.0.17\n"}
+,{"stream_name":"stdout","time":7.143594966,"data":"numpy                        2.5.0\n"}
+,{"stream_name":"stdout","time":7.143598426,"data":"torch                        2.8.0+cpu\n"}
+,{"stream_name":"stdout","time":7.143601606,"data":"torch_xla                    2.8.0\n"}
+,{"stream_name":"stdout","time":7.143604716,"data":"\n"}
+,{"stream_name":"stdout","time":7.5172597549999995,"data":"[    3.8s] TPU_CHIPS_PER_HOST_BOUNDS=2,4,1\n"}
+,{"stream_name":"stdout","time":7.518261344,"data":"TPU_SKIP_MDS_QUERY=1\n"}
+,{"stream_name":"stdout","time":7.518268574,"data":"TPU_RUNTIME_METRICS_PORTS=8431,8432,8433,8434,8435,8436,8437,8438\n"}
+,{"stream_name":"stdout","time":7.518273154,"data":"TPU_WORKER_ID=0\n"}
+,{"stream_name":"stdout","time":7.518277114,"data":"PJRT_DEVICE=TPU\n"}
+,{"stream_name":"stdout","time":7.518280854,"data":"TPU_WORKER_HOSTNAMES=localhost\n"}
+,{"stream_name":"stdout","time":7.5182846340000005,"data":"TPU_ACCELERATOR_TYPE=v5litepod-8\n"}
+,{"stream_name":"stdout","time":7.518288424,"data":"TPU_HOST_BOUNDS=1,1,1\n"}
+,{"stream_name":"stdout","time":7.5182920939999995,"data":"TPU_PROCESS_ADDRESSES=local\n"}
+,{"stream_name":"stdout","time":7.518295684,"data":"96\n"}
+,{"stream_name":"stdout","time":7.518299634,"data":"               total        used        free      shared  buff/cache   available\n"}
+,{"stream_name":"stdout","time":7.518303624,"data":"Mem:             377           4         358           0          16         373\n"}
+,{"stream_name":"stdout","time":7.518307414,"data":"\n"}
+,{"stream_name":"stdout","time":31.644529987,"data":"[   27.9s] downloaded 2 shards\n"}
+,{"stream_name":"stdout","time":112.601678573,"data":"[  108.9s] recipe visible_chips chip 0: rc 0 SMOKE devices 1 tflops 1.7\n"}
+,{"stream_name":"stdout","time":113.015949524,"data":"[  109.3s] recipe visible_chips chip 1: rc 0 SMOKE devices 1 tflops 1.6\n"}
+,{"stream_name":"stdout","time":113.016030934,"data":"[  109.3s] recipe visible_chips chip 2: rc 0 SMOKE devices 1 tflops 1.6\n"}
+,{"stream_name":"stdout","time":113.016207834,"data":"[  109.3s] recipe visible_chips chip 3: rc 0 SMOKE devices 1 tflops 1.7\n"}
+,{"stream_name":"stdout","time":113.016322024,"data":"[  109.3s] recipe visible_chips chip 4: rc 0 SMOKE devices 1 tflops 1.6\n"}
+,{"stream_name":"stdout","time":113.016468364,"data":"[  109.3s] recipe visible_chips chip 5: rc 0 SMOKE devices 1 tflops 1.6\n"}
+,{"stream_name":"stdout","time":113.016609684,"data":"[  109.3s] recipe visible_chips chip 6: rc 0 SMOKE devices 1 tflops 1.7\n"}
+,{"stream_name":"stdout","time":113.016700404,"data":"[  109.3s] recipe visible_chips chip 7: rc 0 SMOKE devices 1 tflops 1.7\n"}
+,{"stream_name":"stdout","time":113.016742264,"data":"[  109.3s] per-chip recipe: visible_chips\n"}
+,{"stream_name":"stdout","time":169.287288774,"data":"[  165.6s] residual-mb16: exit 0 in 56s on chip 6\n"}
+,{"stream_name":"stdout","time":188.180043033,"data":"[  184.4s] residual: exit 0 in 75s on chip 0\n"}
+,{"stream_name":"stdout","time":501.145696966,"data":"[  497.4s] mhc-h4-joint: exit 0 in 388s on chip 3\n"}
+,{"stream_name":"stdout","time":5726.59409214,"data":"[ 5722.9s] mhc-h16-local: exit -9 in 5614s on chip 4\n"}
+,{"stream_name":"stdout","time":8469.826123999,"data":"[ 8466.1s] mhc-h8-local: exit -9 in 8357s on chip 2\n"}
+]

@@ -1,0 +1,15 @@
+{
+ "v6e-a-global-h4-pre-lr0.7x-s0": "exit 0 in 1314s on mhc-exp11-642934 (us-central1-b), val 4.1119, tok/s 83060, preempted 0x",
+ "v6e-a-global-h4-post-lr0.7x-s0": "exit 0 in 1300s on mhc-exp11-642934 (us-central1-b), val 4.1209, tok/s 84653, preempted 0x",
+ "v6e-a-global-h4-res-lr0.7x-s0": "exit 0 in 1292s on mhc-exp11-642934 (us-central1-b), val 4.1219, tok/s 83952, preempted 0x",
+ "v6e-a-global-h4-prepost-lr0.7x-s0": "exit 0 in 1296s on mhc-exp11-642934 (us-central1-b), val 4.1355, tok/s 84199, preempted 0x",
+ "v6e-a-global-h4-pre-lr0.7x-s1": "exit 0 in 1526s on mhc-exp11-82553115 (us-central1-b), val 4.1371, tok/s 70875, preempted 0x",
+ "v6e-a-global-h4-post-lr0.7x-s1": "exit 0 in 1359s on mhc-exp11-642934 (us-central1-b), val 4.1046, tok/s 81053, preempted 0x",
+ "v6e-a-global-h4-res-lr0.7x-s1": "exit 0 in 1323s on mhc-exp11-642934 (us-central1-b), val 4.1073, tok/s 82488, preempted 0x",
+ "v6e-a-global-h4-prepost-lr0.7x-s1": "exit 0 in 1317s on mhc-exp11-642934 (us-central1-b), val 4.1086, tok/s 82289, preempted 0x",
+ "v6e-a-global-h4-pre-lr0.7x-s2": "exit 0 in 1345s on mhc-exp11-642934 (us-central1-b), val 4.1206, tok/s 83361, preempted 0x",
+ "v6e-a-global-h4-post-lr0.7x-s2": "exit 0 in 1299s on mhc-exp11-642934 (us-central1-b), val 4.1121, tok/s 84280, preempted 0x",
+ "v6e-a-global-h4-res-lr0.7x-s2": "exit 0 in 1283s on mhc-exp11-642934 (us-central1-b), val 4.1337, tok/s 84572, preempted 0x",
+ "v6e-a-global-h4-prepost-lr0.7x-s2": "exit 0 in 1318s on mhc-exp11-642934 (us-central1-b), val 4.1147, tok/s 82936, preempted 0x",
+ "_attempts": {}
+}

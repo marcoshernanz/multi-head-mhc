@@ -1,0 +1,2 @@
+W0926 13:41:46.144000 896 torch/_inductor/utils.py:1679] [0/0] Not enough SMs to use max_autotune_gemm mode
+{"args": {"out": "/kaggle/working/runs/mhc-h8-global-new", "data_dir": null, "conn": "mhc", "hc_heads": 8, "hc_predictor": "global", "dim": 384, "layers": 8, "heads": 6, "mlp_dim": 1024, "micro_batch": 8, "seq_len": 1024, "steps": 30, "old_sinkhorn": 0, "compile": 1}, "first_step_s": 2522.2236421108246, "median_step_s": 0.3468327522277832, "tok_s": 23619.453316853665, "peak_mem_gb": 3.521005056, "total_s": 2532.2258598804474}

@@ -1,0 +1,23 @@
+{
+ "args": {
+  "out": "/kaggle/working/runs/mhc-h1-old-sinkhorn",
+  "data_dir": null,
+  "conn": "mhc",
+  "hc_heads": 1,
+  "hc_predictor": "global",
+  "dim": 384,
+  "layers": 8,
+  "heads": 6,
+  "mlp_dim": 1024,
+  "micro_batch": 8,
+  "seq_len": 1024,
+  "steps": 30,
+  "old_sinkhorn": 1,
+  "compile": 1
+ },
+ "first_step_s": 280.9173984527588,
+ "median_step_s": 0.19048643112182617,
+ "tok_s": 43005.68786844865,
+ "peak_mem_gb": 3.519418368,
+ "total_s": 286.46091890335083
+}

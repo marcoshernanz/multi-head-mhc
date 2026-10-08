@@ -1,0 +1,57 @@
+[{"stream_name":"stdout","time":14.417853929,"data":"[    9.8s] jax                          0.10.2\n"}
+,{"stream_name":"stdout","time":14.417919559,"data":"jaxlib                       0.10.2\n"}
+,{"stream_name":"stdout","time":14.417924159,"data":"libtpu                       0.0.17\n"}
+,{"stream_name":"stdout","time":14.417927109,"data":"numpy                        2.5.0\n"}
+,{"stream_name":"stdout","time":14.417929959,"data":"torch                        2.8.0+cpu\n"}
+,{"stream_name":"stdout","time":14.417932579,"data":"torch_xla                    2.8.0\n"}
+,{"stream_name":"stdout","time":14.417935249,"data":"\n"}
+,{"stream_name":"stdout","time":14.458298338,"data":"[    9.8s] TPU_CHIPS_PER_HOST_BOUNDS=2,4,1\n"}
+,{"stream_name":"stdout","time":14.458313358,"data":"TPU_SKIP_MDS_QUERY=1\n"}
+,{"stream_name":"stdout","time":14.458316828,"data":"TPU_RUNTIME_METRICS_PORTS=8431,8432,8433,8434,8435,8436,8437,8438\n"}
+,{"stream_name":"stdout","time":14.458319438,"data":"TPU_WORKER_ID=0\n"}
+,{"stream_name":"stdout","time":14.458321888,"data":"PJRT_DEVICE=TPU\n"}
+,{"stream_name":"stdout","time":14.458324158,"data":"TPU_WORKER_HOSTNAMES=localhost\n"}
+,{"stream_name":"stdout","time":14.458326548,"data":"TPU_ACCELERATOR_TYPE=v5litepod-8\n"}
+,{"stream_name":"stdout","time":14.458329298,"data":"TPU_HOST_BOUNDS=1,1,1\n"}
+,{"stream_name":"stdout","time":14.458331588,"data":"TPU_PROCESS_ADDRESSES=local\n"}
+,{"stream_name":"stdout","time":14.458333918,"data":"96\n"}
+,{"stream_name":"stdout","time":14.458336288,"data":"               total        used        free      shared  buff/cache   available\n"}
+,{"stream_name":"stdout","time":14.458338698,"data":"Mem:             377           4         358           0          16         373\n"}
+,{"stream_name":"stdout","time":14.458341088,"data":"\n"}
+,{"stream_name":"stdout","time":43.565938276,"data":"[   38.9s] downloaded 21 shards\n"}
+,{"stream_name":"stdout","time":99.129889463,"data":"[   94.5s] single process: SMOKE devices 8 tflops 1.8\n"}
+,{"stream_name":"stdout","time":127.302662917,"data":"[  122.7s] recipe visible_chips chip 0: rc 0 SMOKE devices 1 tflops 1.7\n"}
+,{"stream_name":"stdout","time":127.302715487,"data":"[  122.7s] recipe visible_chips chip 1: rc 0 SMOKE devices 1 tflops 1.8\n"}
+,{"stream_name":"stdout","time":127.302908797,"data":"[  122.7s] recipe visible_chips chip 2: rc 0 SMOKE devices 1 tflops 1.6\n"}
+,{"stream_name":"stdout","time":127.303007857,"data":"[  122.7s] recipe visible_chips chip 3: rc 0 SMOKE devices 1 tflops 1.8\n"}
+,{"stream_name":"stdout","time":127.416857615,"data":"[  122.8s] recipe visible_chips chip 4: rc 0 SMOKE devices 1 tflops 1.7\n"}
+,{"stream_name":"stdout","time":127.417001235,"data":"[  122.8s] recipe visible_chips chip 5: rc 0 SMOKE devices 1 tflops 1.8\n"}
+,{"stream_name":"stdout","time":127.417086365,"data":"[  122.8s] recipe visible_chips chip 6: rc 0 SMOKE devices 1 tflops 1.7\n"}
+,{"stream_name":"stdout","time":127.417184665,"data":"[  122.8s] recipe visible_chips chip 7: rc 0 SMOKE devices 1 tflops 1.7\n"}
+,{"stream_name":"stdout","time":127.417237815,"data":"[  122.8s] per-chip recipe: visible_chips\n"}
+,{"stream_name":"stdout","time":3617.504341409,"data":"[ 3612.9s] mhc-h1-s6: exit 0 in 3490s on chip 6\n"}
+,{"stream_name":"stdout","time":3657.507511615,"data":"[ 3652.9s] a-global-h4-s6: exit 0 in 3530s on chip 7\n"}
+,{"stream_name":"stdout","time":7107.589849268,"data":"[ 7103.0s] mhc-h1-lr2x-s0: exit 0 in 3450s on chip 7\n"}
+,{"stream_name":"stdout","time":7207.595446898,"data":"[ 7203.0s] ctrl-mlp1216-s6: exit 0 in 3590s on chip 6\n"}
+,{"stream_name":"stdout","time":9087.635819996,"data":"[ 9083.0s] d768-ctrl-mlp2240-s0: exit 0 in 8960s on chip 2\n"}
+,{"stream_name":"stdout","time":9127.643602669,"data":"[ 9123.0s] d768-mhc-h1-s1: exit 0 in 9000s on chip 3\n"}
+,{"stream_name":"stdout","time":9197.645065923,"data":"[ 9193.0s] d768-ctrl-mlp2240-s1: exit 0 in 9070s on chip 5\n"}
+,{"stream_name":"stdout","time":9217.65037135,"data":"[ 9213.0s] d768-mhc-h1-s0: exit 0 in 9090s on chip 0\n"}
+,{"stream_name":"stdout","time":9257.651320244,"data":"[ 9253.0s] d768-a-global-h4-s0: exit 0 in 9130s on chip 1\n"}
+,{"stream_name":"stdout","time":9447.65816395,"data":"[ 9443.0s] d768-a-global-h4-s1: exit 0 in 9320s on chip 4\n"}
+,{"stream_name":"stdout","time":10677.689140175,"data":"[10673.1s] a-global-h4-lr2x-s0: exit 0 in 3570s on chip 7\n"}
+,{"stream_name":"stdout","time":10697.68559238,"data":"[10693.1s] mhc-h1-s7: exit 0 in 3490s on chip 6\n"}
+,{"stream_name":"stdout","time":12547.721742101,"data":"[12543.1s] a-global-h4-s7: exit 0 in 3460s on chip 2\n"}
+,{"stream_name":"stdout","time":12767.744461648,"data":"[12763.1s] ctrl-mlp1216-s7: exit 0 in 3640s on chip 3\n"}
+,{"stream_name":"stdout","time":12777.744717949,"data":"[12773.1s] a-global-h4-lr2x-s1: exit 0 in 3560s on chip 0\n"}
+,{"stream_name":"stdout","time":12807.746465382,"data":"[12803.1s] mhc-h1-lr2x-s1: exit 0 in 3610s on chip 5\n"}
+,{"stream_name":"stdout","time":12867.751231548,"data":"[12863.1s] mhc-h1-s8: exit 0 in 3610s on chip 1\n"}
+,{"stream_name":"stdout","time":12957.746196638,"data":"[12953.1s] a-global-h4-s8: exit 0 in 3510s on chip 4\n"}
+,{"stream_name":"stdout","time":14237.78404707,"data":"[14233.2s] mhc-h1-s9: exit 0 in 3540s on chip 6\n"}
+,{"stream_name":"stdout","time":14277.786958451,"data":"[14273.2s] ctrl-mlp1216-s8: exit 0 in 3600s on chip 7\n"}
+,{"stream_name":"stdout","time":16157.814502456,"data":"[16153.2s] a-global-h4-s9: exit 0 in 3610s on chip 2\n"}
+,{"stream_name":"stdout","time":16317.830906446,"data":"[16313.2s] ctrl-mlp1216-s9: exit 0 in 3550s on chip 3\n"}
+,{"stream_name":"stdout","time":16317.831917186,"data":"[16313.2s] all done\n"}
+,{"stream_name":"stderr","time":16322.3597037,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":16328.832982793,"data":"[NbConvertApp] Writing 516976 bytes to __results__.html\n"}
+]

@@ -1,0 +1,3 @@
+{"params": 27341621, "hc_params": 596405}
+first step (with compilation) 103.9s, compiles 3
+{"final_val_loss": 5.631920166015625, "tok_s": 30398.618939394135, "xla_compiles": 7, "seconds": 458.69685077667236, "diverged": false}

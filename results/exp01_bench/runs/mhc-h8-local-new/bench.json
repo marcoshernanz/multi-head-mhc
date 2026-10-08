@@ -1,0 +1,23 @@
+{
+ "args": {
+  "out": "/kaggle/working/runs/mhc-h8-local-new",
+  "data_dir": null,
+  "conn": "mhc",
+  "hc_heads": 8,
+  "hc_predictor": "local",
+  "dim": 384,
+  "layers": 8,
+  "heads": 6,
+  "mlp_dim": 1024,
+  "micro_batch": 8,
+  "seq_len": 1024,
+  "steps": 30,
+  "old_sinkhorn": 0,
+  "compile": 1
+ },
+ "first_step_s": 2431.8906767368317,
+ "median_step_s": 0.23214364051818848,
+ "tok_s": 35288.496302176995,
+ "peak_mem_gb": 3.68432896,
+ "total_s": 2438.6191272735596
+}

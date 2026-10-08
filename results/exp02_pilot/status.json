@@ -1,0 +1,10 @@
+{
+ "mhc-hc-lr3e-3": "exit 0 in 1660s on gpu 1",
+ "mhc-h8-local-lr3e-3": "exit 0 in 2101s on gpu 0",
+ "mhc-hc-lr1.5e-3": "exit 0 in 1322s on gpu 1",
+ "mhc-hc-lr6e-3": "exit 0 in 1326s on gpu 0",
+ "residual-lr3e-3": "exit 0 in 865s on gpu 0",
+ "mhc-sym-lr3e-3": "exit 0 in 1322s on gpu 1",
+ "residual-lr6e-3": "exit 0 in 298s on gpu 1",
+ "residual-lr1.5e-3": "exit 0 in 861s on gpu 0"
+}

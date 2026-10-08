@@ -1,0 +1,22 @@
+[{"stream_name":"stdout","time":1.281571623,"data":"name, memory.total [MiB], driver_version\n"}
+,{"stream_name":"stdout","time":1.281630663,"data":"Tesla T4, 15360 MiB, 580.159.04\n"}
+,{"stream_name":"stdout","time":1.2816347829999999,"data":"Tesla T4, 15360 MiB, 580.159.04\n"}
+,{"stream_name":"stdout","time":1.2816372600000001,"data":"\n"}
+,{"stream_name":"stdout","time":11.522251823,"data":"2.10.0+cu128 3.6.0\n"}
+,{"stream_name":"stdout","time":11.522319093,"data":"\n"}
+,{"stream_name":"stdout","time":14.366698089,"data":"downloaded 2 shards in 13s\n"}
+,{"stream_name":"stdout","time":14.406641536,"data":"2 GPUs, 10 jobs\n"}
+,{"stream_name":"stdout","time":61.060199898,"data":"[60s] residual: exit 0 in 47s on gpu 0\n"}
+,{"stream_name":"stdout","time":358.925799528,"data":"[358s] mhc-h1-old-sinkhorn: exit 0 in 298s on gpu 0\n"}
+,{"stream_name":"stdout","time":2361.85697161,"data":"[2361s] mhc-h1-new: exit 0 in 2347s on gpu 1\n"}
+,{"stream_name":"stdout","time":2836.950229706,"data":"[2836s] mhc-h8-local-new: exit 0 in 2478s on gpu 0\n"}
+,{"stream_name":"stdout","time":4933.442067223,"data":"[4932s] mhc-h8-global-new: exit 0 in 2572s on gpu 1\n"}
+,{"stream_name":"stdout","time":5388.512520383,"data":"[5387s] mhc-h64-local-new: exit 0 in 2552s on gpu 0\n"}
+,{"stream_name":"stdout","time":5388.513511544,"data":"all done in 5387s\n"}
+,{"stream_name":"stderr","time":5391.405406616,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":5391.405465921,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":5391.758133226,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":5391.758163334,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":5392.49236822,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":5393.92640969,"data":"[NbConvertApp] Writing 374248 bytes to __results__.html\n"}
+]

@@ -1,0 +1,8 @@
+{
+ "v6e-d768-a-global-h4-prepost-lr7.5e-4-s0": "exit 0 in 1896s on mhc-exp11-642934 (us-central1-b), val 3.9425, tok/s 57264, preempted 0x",
+ "v6e-d768-a-global-h4-prepost-lr7.5e-4-s1": "exit 0 in 1988s on mhc-exp11-642934 (us-central1-b), val 3.9289, tok/s 54482, preempted 0x",
+ "v6e-d768-a-global-h4-prepost-lr7.5e-4-s2": "exit 0 in 1941s on mhc-exp11-642934 (us-central1-b), val 3.9364, tok/s 55790, preempted 0x",
+ "v6e-d768-a-global-h4-prepost-lr7.5e-4-s3": "exit 0 in 1981s on mhc-exp11-642934 (us-central1-b), val 3.9219, tok/s 54844, preempted 0x",
+ "v6e-d768-a-global-h4-prepost-lr7.5e-4-s4": "exit 0 in 1940s on mhc-exp11-642934 (us-central1-b), val 3.9548, tok/s 55870, preempted 0x",
+ "_attempts": {}
+}

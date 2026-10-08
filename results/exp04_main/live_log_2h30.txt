@@ -1,0 +1,58 @@
+[    2.6s] jax                          0.10.2
+jaxlib                       0.10.2
+libtpu                       0.0.17
+numpy                        2.5.0
+torch                        2.8.0+cpu
+torch_xla                    2.8.0
+
+[    2.6s] TPU_CHIPS_PER_HOST_BOUNDS=2,4,1
+TPU_SKIP_MDS_QUERY=1
+TPU_RUNTIME_METRICS_PORTS=8431,8432,8433,8434,8435,8436,8437,8438
+TPU_WORKER_ID=0
+PJRT_DEVICE=TPU
+TPU_WORKER_HOSTNAMES=localhost
+TPU_ACCELERATOR_TYPE=v5litepod-8
+TPU_HOST_BOUNDS=1,1,1
+TPU_PROCESS_ADDRESSES=local
+96
+               total        used        free      shared  buff/cache   available
+Mem:             377           4         358           0          16         373
+
+[   32.0s] downloaded 21 shards
+[   88.2s] single process: SMOKE devices 8 tflops 1.7
+[  117.4s] recipe visible_chips chip 0: rc 0 SMOKE devices 1 tflops 1.5
+[  117.4s] recipe visible_chips chip 1: rc 0 SMOKE devices 1 tflops 1.6
+[  118.3s] recipe visible_chips chip 2: rc 0 SMOKE devices 1 tflops 1.6
+[  118.3s] recipe visible_chips chip 3: rc 0 SMOKE devices 1 tflops 1.6
+[  118.3s] recipe visible_chips chip 4: rc 0 SMOKE devices 1 tflops 1.6
+[  118.4s] recipe visible_chips chip 5: rc 0 SMOKE devices 1 tflops 1.6
+[  118.4s] recipe visible_chips chip 6: rc 0 SMOKE devices 1 tflops 1.7
+[  118.4s] recipe visible_chips chip 7: rc 0 SMOKE devices 1 tflops 1.7
+[  118.4s] per-chip recipe: visible_chips
+[  198.4s] bench-residual: exit 0 in 80s on chip 0
+[  358.4s] bench-mhc-h1-mb16: exit 0 in 240s on chip 3
+[  438.4s] bench-mhc-h1: exit 0 in 320s on chip 1
+[  438.4s] gate bench-mhc-h1: tok/s 29600.582678706553, needs 15000
+[  468.4s] bench-mhc-h1-tokens: exit 0 in 350s on chip 2
+[  508.4s] bench-a-local-h16: exit 0 in 390s on chip 4
+[  568.4s] bench-d-joint-h4-global: exit 0 in 450s on chip 6
+[  578.4s] bench-a-global-h16: exit 0 in 460s on chip 5
+[  588.4s] bench-mhc-n8: exit 0 in 470s on chip 7
+[ 1098.4s] residual-s0: exit 0 in 900s on chip 0
+[ 3978.5s] a-global-h2-s0: exit 0 in 3540s on chip 1
+[ 4028.5s] mhc-h1-s0: exit 0 in 3670s on chip 3
+[ 4098.5s] a-global-h4-s0: exit 0 in 3630s on chip 2
+[ 4128.5s] a-local-h4-s0: exit 0 in 3540s on chip 7
+[ 4208.5s] a-global-h8-s0: exit 0 in 3700s on chip 4
+[ 4248.5s] a-local-h2-s0: exit 0 in 3670s on chip 5
+[ 4268.5s] a-global-h16-s0: exit 0 in 3700s on chip 6
+[ 4668.5s] a-local-h8-s0: exit 0 in 3570s on chip 0
+[ 5518.6s] residual-s1: exit 0 in 850s on chip 0
+[ 7218.6s] static-h1-s0: exit 0 in 3190s on chip 3
+[ 7388.6s] static-h4-s0: exit 0 in 3290s on chip 2
+[ 7618.6s] static-h8-s0: exit 0 in 3490s on chip 7
+[ 7618.6s] d-joint-h4-static-s0: exit 0 in 3370s on chip 5
+[ 7668.6s] a-local-h16-s0: exit 0 in 3690s on chip 1
+[ 7968.6s] mhc-n8-s0: exit 0 in 3700s on chip 6
+[ 8138.6s] d-joint-h4-global-s0: exit 0 in 3930s on chip 4
+[ 9058.7s] mhc-h1-s1: exit 0 in 3540s on chip 0

@@ -1,0 +1,8 @@
+{"params": 26745216, "hc_params": 0}
+W0926 21:25:14.112000 1662 torch/_inductor/utils.py:1679] [0/0] Not enough SMs to use max_autotune_gemm mode
+step 500 val 5.8240 tok/s 67005
+step 1000 val 5.3304 tok/s 66651
+step 1500 val 4.9654 tok/s 66519
+step 2000 val 4.7458 tok/s 66482
+step 2500 val 4.6014 tok/s 66453
+{"final_val_loss": 4.496264328956604, "tok_s": 66380.63591156507, "peak_mem_gb": 3.422984192, "seconds": 760.0457589626312, "diverged": false}

@@ -1,0 +1,18 @@
+{
+ "v5e-long-mhc-h1-s0": "exit 0 in 11629s on mhc-exp09-5547621 (us-east1-c), val 3.8617, tok/s 34566, preempted 0x",
+ "v5e-long-a-global-h4-s0": "exit 0 in 12734s on mhc-exp09-5547622 (us-west1-c), val 3.8361, tok/s 31496, preempted 0x",
+ "v5e-long-ctrl-mlp1216-s0": "exit 0 in 13095s on mhc-exp09-554768 (us-west1-c), val 3.8019, tok/s 30657, preempted 0x",
+ "v5e-long-a-local-h4-s0": "exit 0 in 12755s on mhc-exp09-5547611 (us-west1-c), val 3.8525, tok/s 31397, preempted 0x",
+ "v5e-long-residual-s0": "exit 0 in 3291s on mhc-exp09-6218932 (europe-west4-b), val 3.8974, tok/s 123209, preempted 0x",
+ "v5e-long-mhc-h1-s1": "exit 0 in 12960s on mhc-exp09-5547616 (us-west1-c), val 3.8251, tok/s 30979, preempted 0x",
+ "v5e-long-a-global-h4-s1": "exit 0 in 12717s on mhc-exp09-563122 (us-east1-c), val 3.8148, tok/s 31538, preempted 0x",
+ "v5e-long-ctrl-mlp1216-s1": "exit 0 in 13093s on mhc-exp09-6218932 (europe-west4-b), val 3.8446, tok/s 30671, preempted 0x",
+ "v5e-long-a-local-h4-s1": "exit 0 in 13154s on mhc-exp09-563123 (europe-west4-b), val 3.8257, tok/s 30437, preempted 0x",
+ "v5e-long-residual-s1": "exit 0 in 3360s on mhc-exp09-5644012 (europe-west4-b), val 3.8839, tok/s 120643, preempted 0x",
+ "v5e-long-mhc-h1-s2": "exit 0 in 12777s on mhc-exp09-563765 (europe-west4-b), val 3.8473, tok/s 31420, preempted 0x",
+ "v5e-long-a-global-h4-s2": "exit 0 in 12809s on mhc-exp09-5547624 (us-east1-c), val 3.8145, tok/s 31310, preempted 0x",
+ "v5e-long-ctrl-mlp1216-s2": "exit 0 in 12937s on mhc-exp09-5547629 (us-east1-c), val 3.8185, tok/s 31050, preempted 0x",
+ "v5e-long-a-local-h4-s2": "exit 0 in 13018s on mhc-exp09-5644012 (europe-west4-b), val 3.8300, tok/s 30759, preempted 0x",
+ "v5e-long-residual-s2": "exit 0 in 3012s on mhc-exp09-5547621 (us-east1-c), val 3.8962, tok/s 134947, preempted 0x",
+ "_attempts": {}
+}

@@ -1,0 +1,7 @@
+{
+ "residual-mb16": "exit 0 in 56s on chip 6",
+ "residual": "exit 0 in 75s on chip 0",
+ "mhc-h4-joint": "exit 0 in 388s on chip 3",
+ "mhc-h16-local": "exit -9 in 5614s on chip 4",
+ "mhc-h8-local": "exit -9 in 8357s on chip 2"
+}

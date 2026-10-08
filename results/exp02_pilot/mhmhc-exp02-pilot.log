@@ -1,0 +1,24 @@
+[{"stream_name":"stdout","time":0.965898664,"data":"name, memory.total [MiB], driver_version\n"}
+,{"stream_name":"stdout","time":0.96594968,"data":"Tesla T4, 15360 MiB, 580.159.04\n"}
+,{"stream_name":"stdout","time":0.965955602,"data":"Tesla T4, 15360 MiB, 580.159.04\n"}
+,{"stream_name":"stdout","time":0.965959428,"data":"\n"}
+,{"stream_name":"stdout","time":9.432175525,"data":"2.10.0+cu128 3.6.0\n"}
+,{"stream_name":"stdout","time":9.432211885,"data":"\n"}
+,{"stream_name":"stdout","time":15.615480672,"data":"downloaded 11 shards in 15s\n"}
+,{"stream_name":"stdout","time":15.656762198,"data":"2 GPUs, 8 jobs\n"}
+,{"stream_name":"stdout","time":1675.505741878,"data":"[1675s] mhc-hc-lr3e-3: exit 0 in 1660s on gpu 1\n"}
+,{"stream_name":"stdout","time":2116.986742985,"data":"[2116s] mhc-h8-local-lr3e-3: exit 0 in 2101s on gpu 0\n"}
+,{"stream_name":"stdout","time":2997.243151699,"data":"[2996s] mhc-hc-lr1.5e-3: exit 0 in 1322s on gpu 1\n"}
+,{"stream_name":"stdout","time":3443.022203085,"data":"[3442s] mhc-hc-lr6e-3: exit 0 in 1326s on gpu 0\n"}
+,{"stream_name":"stdout","time":4307.742498098,"data":"[4307s] residual-lr3e-3: exit 0 in 865s on gpu 0\n"}
+,{"stream_name":"stdout","time":4318.943736259,"data":"[4318s] mhc-sym-lr3e-3: exit 0 in 1322s on gpu 1\n"}
+,{"stream_name":"stdout","time":4616.678053147,"data":"[4616s] residual-lr6e-3: exit 0 in 298s on gpu 1\n"}
+,{"stream_name":"stdout","time":5169.162396812,"data":"[5168s] residual-lr1.5e-3: exit 0 in 861s on gpu 0\n"}
+,{"stream_name":"stdout","time":5169.163209354,"data":"all done in 5168s\n"}
+,{"stream_name":"stderr","time":5171.992217733,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":5171.992277354,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":5172.309496844,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":5172.309528177,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":5173.149454678,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":5174.690707831,"data":"[NbConvertApp] Writing 402336 bytes to __results__.html\n"}
+]

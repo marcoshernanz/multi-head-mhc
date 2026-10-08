@@ -1,0 +1,1693 @@
+[10-05 11:46:25] status: 0/240 done, 240 queued, 0 running on 0 VMs, spent $128.81
+[10-05 11:47:11] create mhc-exp19-007852 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 11:47:11] create mhc-exp19-007853 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 11:47:17] create mhc-exp19-007851 (v6e-8) in us-central1-a failed: capacity
+[10-05 11:47:48] create mhc-exp19-007854 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 11:47:57] create mhc-exp19-007852 (v6e-8) in us-central1-a failed: capacity
+[10-05 11:48:03] create mhc-exp19-007853 (v6e-8) in us-central1-a failed: capacity
+[10-05 11:48:38] create mhc-exp19-007852 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 11:48:49] create mhc-exp19-007852 (v6e-8) in us-central1-c failed: capacity
+[10-05 11:48:52] create mhc-exp19-007853 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 11:54:32] created mhc-exp19-007851 (v6e-8) in us-central1-b
+[10-05 11:54:43] created mhc-exp19-007854 (v6e-8) in us-central1-b
+[10-05 11:54:44] create mhc-exp19-007853 (v6e-8) in us-east1-d failed: capacity
+[10-05 11:54:44] create mhc-exp19-007852 (v6e-8) in us-east1-d failed: capacity
+[10-05 11:54:52] create mhc-exp19-007853 (v6e-8) in us-west1-c failed: capacity
+[10-05 11:54:52] create mhc-exp19-007852 (v6e-8) in us-west1-c failed: capacity
+[10-05 11:54:58] create mhc-exp19-007852 (v6e-8) in us-south1-a failed: capacity
+[10-05 11:54:59] create mhc-exp19-007853 (v6e-8) in us-south1-a failed: capacity
+[10-05 11:55:15] mhc-exp19-007851: set up (data ok: 21 shards)
+[10-05 11:55:26] mhc-exp19-007854: set up (data ok: 21 shards)
+[10-05 11:55:43] v6e-mhc-h1-diag-lr2.1e-3-s0: started on mhc-exp19-007851 chip 0
+[10-05 11:55:43] v6e-a-global-h4-diag-lr2.1e-3-s0: started on mhc-exp19-007854 chip 0
+[10-05 11:55:44] v6e-a-local-h4-diag-lr2.1e-3-s0: started on mhc-exp19-007854 chip 1
+[10-05 11:55:44] v6e-ctrl-mlp1216-diag-lr2.1e-3-s0: started on mhc-exp19-007851 chip 1
+[10-05 11:55:45] v6e-mhc-h1-diag-lr6e-3-s0: started on mhc-exp19-007851 chip 2
+[10-05 11:55:45] v6e-residual-diag-lr2.1e-3-s0: started on mhc-exp19-007854 chip 2
+[10-05 11:55:47] v6e-ctrl-mlp1216-diag-lr6e-3-s0: started on mhc-exp19-007854 chip 3
+[10-05 11:55:47] v6e-a-global-h4-diag-lr6e-3-s0: started on mhc-exp19-007851 chip 3
+[10-05 11:55:48] v6e-a-local-h4-diag-lr6e-3-s0: started on mhc-exp19-007854 chip 4
+[10-05 11:55:48] v6e-residual-diag-lr6e-3-s0: started on mhc-exp19-007851 chip 4
+[10-05 11:55:49] v6e-a-global-h4-diag-lr2.1e-3-s1: started on mhc-exp19-007851 chip 5
+[10-05 11:55:50] v6e-ctrl-mlp1216-diag-lr2.1e-3-s1: started on mhc-exp19-007851 chip 6
+[10-05 11:55:52] v6e-a-local-h4-diag-lr2.1e-3-s1: started on mhc-exp19-007851 chip 7
+[10-05 11:55:53] v6e-mhc-h1-diag-lr2.1e-3-s1: started on mhc-exp19-007854 chip 5
+[10-05 11:55:55] v6e-residual-diag-lr2.1e-3-s1: started on mhc-exp19-007854 chip 6
+[10-05 11:55:56] v6e-mhc-h1-diag-lr6e-3-s1: started on mhc-exp19-007854 chip 7
+[10-05 11:56:21] create mhc-exp19-007852 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 11:56:22] create mhc-exp19-007853 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 11:57:13] v6e-ctrl-mlp1216-diag-lr2.1e-3-s0: FAILED exit 134 (failure 1):
+  https://symbolize.stripped_domain/r/?trace=7e5d24a969fc,7e5bdbfb47e4,7e5d24a4251f&map= 
+  E1005 11:56:53.961725    7076 coredump_hook.cc:301] RAW: Remote crash data gathering hook invoked.
+  E1005 11:56:53.961744    7076 coredump_hook.cc:340] RAW: Skipping coredump since rlimit was 0 at process start.
+  E1005 11:56:53.961748    7076 client.cc:270] RAW: Coroner client retries enabled, will retry for up to 30 sec.
+  E1005 11:56:53.961751    7076 coredump_hook.cc:396] RAW: Sending fingerprint to remote end.
+  E1005 11:56:53.961782    7076 coredump_hook.cc:405] RAW: Cannot send fingerprint to Coroner: [NOT_FOUND] stat failed on crash reporting socket /var/google/services/logmanagerd/remote_coredump.socket (Is the listener running?): No such file or directory
+  E1005 11:56:53.961786    7076 coredump_hook.cc:457] RAW: Dumping core locally.
+  E1005 11:56:54.716131    7076 process_state.cc:808] RAW: Raising signal 6 with default behavior
+[10-05 11:57:14] v6e-residual-diag-lr2.1e-3-s0: FAILED exit 134 (failure 1):
+  https://symbolize.stripped_domain/r/?trace=78a5b7e969fc,78a46f3b47e4,78a5b7e4251f&map= 
+  E1005 11:56:09.719527    7222 coredump_hook.cc:301] RAW: Remote crash data gathering hook invoked.
+  E1005 11:56:09.719539    7222 coredump_hook.cc:340] RAW: Skipping coredump since rlimit was 0 at process start.
+  E1005 11:56:09.719543    7222 client.cc:270] RAW: Coroner client retries enabled, will retry for up to 30 sec.
+  E1005 11:56:09.719545    7222 coredump_hook.cc:396] RAW: Sending fingerprint to remote end.
+  E1005 11:56:09.719565    7222 coredump_hook.cc:405] RAW: Cannot send fingerprint to Coroner: [NOT_FOUND] stat failed on crash reporting socket /var/google/services/logmanagerd/remote_coredump.socket (Is the listener running?): No such file or directory
+  E1005 11:56:09.719568    7222 coredump_hook.cc:457] RAW: Dumping core locally.
+  E1005 11:56:09.841667    7222 process_state.cc:808] RAW: Raising signal 6 with default behavior
+[10-05 11:57:23] create mhc-exp19-007852 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 11:57:23] create mhc-exp19-007853 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 11:57:26] v6e-ctrl-mlp1216-diag-lr6e-3-s0: FAILED exit 134 (failure 1):
+  https://symbolize.stripped_domain/r/?trace=7147cb8969fc,714682fb47e4,7147cb84251f&map= 
+  E1005 11:56:48.260253    7341 coredump_hook.cc:301] RAW: Remote crash data gathering hook invoked.
+  E1005 11:56:48.260272    7341 coredump_hook.cc:340] RAW: Skipping coredump since rlimit was 0 at process start.
+  E1005 11:56:48.260276    7341 client.cc:270] RAW: Coroner client retries enabled, will retry for up to 30 sec.
+  E1005 11:56:48.260279    7341 coredump_hook.cc:396] RAW: Sending fingerprint to remote end.
+  E1005 11:56:48.260312    7341 coredump_hook.cc:405] RAW: Cannot send fingerprint to Coroner: [NOT_FOUND] stat failed on crash reporting socket /var/google/services/logmanagerd/remote_coredump.socket (Is the listener running?): No such file or directory
+  E1005 11:56:48.260316    7341 coredump_hook.cc:457] RAW: Dumping core locally.
+  E1005 11:56:48.405500    7341 process_state.cc:808] RAW: Raising signal 6 with default behavior
+[10-05 11:57:26] v6e-residual-diag-lr6e-3-s0: FAILED exit 134 (failure 1):
+  https://symbolize.stripped_domain/r/?trace=76be3ee969fc,76bcf63b47e4,76be3ee4251f&map= 
+  E1005 11:56:13.379358    7437 coredump_hook.cc:301] RAW: Remote crash data gathering hook invoked.
+  E1005 11:56:13.379370    7437 coredump_hook.cc:340] RAW: Skipping coredump since rlimit was 0 at process start.
+  E1005 11:56:13.379373    7437 client.cc:270] RAW: Coroner client retries enabled, will retry for up to 30 sec.
+  E1005 11:56:13.379376    7437 coredump_hook.cc:396] RAW: Sending fingerprint to remote end.
+  E1005 11:56:13.379393    7437 coredump_hook.cc:405] RAW: Cannot send fingerprint to Coroner: [NOT_FOUND] stat failed on crash reporting socket /var/google/services/logmanagerd/remote_coredump.socket (Is the listener running?): No such file or directory
+  E1005 11:56:13.379397    7437 coredump_hook.cc:457] RAW: Dumping core locally.
+  E1005 11:56:13.494266    7437 process_state.cc:808] RAW: Raising signal 6 with default behavior
+[10-05 11:57:38] v6e-mhc-h1-diag-lr2.1e-3-s1: FAILED exit 134 (failure 1):
+  https://symbolize.stripped_domain/r/?trace=73ca84a969fc,73c93c3b47e4,73ca84a4251f&map= 
+  E1005 11:56:54.748657    9857 coredump_hook.cc:301] RAW: Remote crash data gathering hook invoked.
+  E1005 11:56:54.748671    9857 coredump_hook.cc:340] RAW: Skipping coredump since rlimit was 0 at process start.
+  E1005 11:56:54.748675    9857 client.cc:270] RAW: Coroner client retries enabled, will retry for up to 30 sec.
+  E1005 11:56:54.748678    9857 coredump_hook.cc:396] RAW: Sending fingerprint to remote end.
+  E1005 11:56:54.748703    9857 coredump_hook.cc:405] RAW: Cannot send fingerprint to Coroner: [NOT_FOUND] stat failed on crash reporting socket /var/google/services/logmanagerd/remote_coredump.socket (Is the listener running?): No such file or directory
+  E1005 11:56:54.748708    9857 coredump_hook.cc:457] RAW: Dumping core locally.
+  E1005 11:56:54.891663    9857 process_state.cc:808] RAW: Raising signal 6 with default behavior
+[10-05 11:57:38] v6e-ctrl-mlp1216-diag-lr2.1e-3-s1: FAILED exit 134 (failure 1):
+  https://symbolize.stripped_domain/r/?trace=7109a94969fc,710860db47e4,7109a944251f&map= 
+  E1005 11:56:53.059572    7675 coredump_hook.cc:301] RAW: Remote crash data gathering hook invoked.
+  E1005 11:56:53.059588    7675 coredump_hook.cc:340] RAW: Skipping coredump since rlimit was 0 at process start.
+  E1005 11:56:53.059593    7675 client.cc:270] RAW: Coroner client retries enabled, will retry for up to 30 sec.
+  E1005 11:56:53.059596    7675 coredump_hook.cc:396] RAW: Sending fingerprint to remote end.
+  E1005 11:56:53.059621    7675 coredump_hook.cc:405] RAW: Cannot send fingerprint to Coroner: [NOT_FOUND] stat failed on crash reporting socket /var/google/services/logmanagerd/remote_coredump.socket (Is the listener running?): No such file or directory
+  E1005 11:56:53.059624    7675 coredump_hook.cc:457] RAW: Dumping core locally.
+  E1005 11:56:53.205695    7675 process_state.cc:808] RAW: Raising signal 6 with default behavior
+[10-05 11:57:41] v6e-ctrl-mlp1216-diag-lr2.1e-3-s0: started on mhc-exp19-007851 chip 1
+[10-05 11:57:42] v6e-residual-diag-lr2.1e-3-s0: started on mhc-exp19-007851 chip 4
+[10-05 11:57:43] v6e-ctrl-mlp1216-diag-lr6e-3-s0: started on mhc-exp19-007851 chip 6
+[10-05 12:04:28] adopted mhc-exp19-007854 (us-central1-b): running []
+[10-05 12:04:30] adopted mhc-exp19-007851 (us-central1-b): running []
+[10-05 12:04:32] v6e-mhc-h1-diag-lr2.1e-3-s0: started on mhc-exp19-007854 chip 0
+[10-05 12:04:32] v6e-a-global-h4-diag-lr2.1e-3-s0: started on mhc-exp19-007851 chip 0
+[10-05 12:04:34] v6e-ctrl-mlp1216-diag-lr2.1e-3-s0: started on mhc-exp19-007854 chip 1
+[10-05 12:04:34] v6e-a-local-h4-diag-lr2.1e-3-s0: started on mhc-exp19-007851 chip 1
+[10-05 12:04:35] v6e-residual-diag-lr2.1e-3-s0: started on mhc-exp19-007854 chip 2
+[10-05 12:04:35] v6e-mhc-h1-diag-lr6e-3-s0: started on mhc-exp19-007851 chip 2
+[10-05 12:04:38] v6e-a-global-h4-diag-lr6e-3-s0: started on mhc-exp19-007854 chip 3
+[10-05 12:04:39] v6e-ctrl-mlp1216-diag-lr6e-3-s0: started on mhc-exp19-007851 chip 3
+[10-05 12:04:41] v6e-a-local-h4-diag-lr6e-3-s0: started on mhc-exp19-007854 chip 4
+[10-05 12:04:41] v6e-residual-diag-lr6e-3-s0: started on mhc-exp19-007851 chip 4
+[10-05 12:04:43] v6e-a-global-h4-diag-lr2.1e-3-s1: started on mhc-exp19-007851 chip 5
+[10-05 12:04:44] v6e-mhc-h1-diag-lr2.1e-3-s1: started on mhc-exp19-007854 chip 5
+[10-05 12:04:45] v6e-ctrl-mlp1216-diag-lr2.1e-3-s1: started on mhc-exp19-007851 chip 6
+[10-05 12:04:46] v6e-a-local-h4-diag-lr2.1e-3-s1: started on mhc-exp19-007854 chip 6
+[10-05 12:04:47] v6e-residual-diag-lr2.1e-3-s1: started on mhc-exp19-007851 chip 7
+[10-05 12:04:48] v6e-mhc-h1-diag-lr6e-3-s1: started on mhc-exp19-007854 chip 7
+[10-05 12:04:48] status: 0/240 done, 224 queued, 16 running on 2 VMs, spent $131.79
+[10-05 12:05:43] create mhc-exp19-018881 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 12:05:56] create mhc-exp19-018882 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 12:06:23] create mhc-exp19-018882 (v6e-8) in us-central1-a failed: capacity
+[10-05 12:06:31] create mhc-exp19-018881 (v6e-8) in us-central1-a failed: capacity
+[10-05 12:07:22] create mhc-exp19-018881 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 12:07:25] create mhc-exp19-018882 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 12:07:31] create mhc-exp19-018881 (v6e-8) in us-central1-c failed: capacity
+[10-05 12:07:32] create mhc-exp19-018882 (v6e-8) in us-central1-c failed: capacity
+[10-05 12:11:26] v6e-residual-diag-lr2.1e-3-s0: done — exit 0 in 357s on mhc-exp19-007854 (us-central1-b), val 4.1951, tok/s 312620, preempted 0x
+[10-05 12:11:26] v6e-residual-diag-lr6e-3-s0: done — exit 0 in 354s on mhc-exp19-007851 (us-central1-b), val 5.1080, tok/s 314570, preempted 0x
+[10-05 12:11:29] v6e-a-global-h4-diag-lr6e-3-s1: started on mhc-exp19-007854 chip 2
+[10-05 12:11:39] v6e-residual-diag-lr2.1e-3-s1: done — exit 0 in 355s on mhc-exp19-007851 (us-central1-b), val 4.1805, tok/s 309246, preempted 0x
+[10-05 12:11:42] v6e-ctrl-mlp1216-diag-lr6e-3-s1: started on mhc-exp19-007851 chip 4
+[10-05 12:11:43] v6e-a-local-h4-diag-lr6e-3-s1: started on mhc-exp19-007851 chip 7
+[10-05 12:14:28] create mhc-exp19-018882 (v6e-8) in us-east1-d failed: capacity
+[10-05 12:14:29] create mhc-exp19-018881 (v6e-8) in us-east1-d failed: capacity
+[10-05 12:14:36] create mhc-exp19-018882 (v6e-8) in us-west1-c failed: capacity
+[10-05 12:14:41] create mhc-exp19-018881 (v6e-8) in us-west1-c failed: capacity
+[10-05 12:14:43] create mhc-exp19-018882 (v6e-8) in us-south1-a failed: capacity
+[10-05 12:14:49] create mhc-exp19-018881 (v6e-8) in us-south1-a failed: capacity
+[10-05 12:15:16] create mhc-exp19-018882 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 12:15:23] create mhc-exp19-018881 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 12:16:18] create mhc-exp19-018882 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 12:16:20] create mhc-exp19-018881 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 12:16:54] create mhc-exp19-018882 (v6e-4) in us-central1-a failed: capacity
+[10-05 12:17:05] create mhc-exp19-018881 (v6e-4) in us-central1-a failed: capacity
+[10-05 12:17:38] create mhc-exp19-018882 (v6e-4) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 12:17:48] create mhc-exp19-018882 (v6e-4) in us-central1-c failed: capacity
+[10-05 12:17:50] create mhc-exp19-018881 (v6e-4) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 12:20:36] status: 3/240 done, 221 queued, 16 running on 2 VMs, spent $134.52
+[10-05 12:22:19] create mhc-exp19-018881 (v6e-4) in us-east1-d failed: capacity
+[10-05 12:22:21] create mhc-exp19-018882 (v6e-4) in us-east1-d failed: capacity
+[10-05 12:22:27] create mhc-exp19-018881 (v6e-4) in us-west1-c failed: capacity
+[10-05 12:22:29] create mhc-exp19-018882 (v6e-4) in us-west1-c failed: capacity
+[10-05 12:22:34] create mhc-exp19-018881 (v6e-4) in us-south1-a failed: capacity
+[10-05 12:22:37] create mhc-exp19-018882 (v6e-4) in us-south1-a failed: capacity
+[10-05 12:23:19] create mhc-exp19-018881 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 12:23:22] create mhc-exp19-018882 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 12:25:06] create mhc-exp19-030273 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 12:25:06] create mhc-exp19-030274 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 12:25:26] create mhc-exp19-030273 (v6e-8) in us-central1-a failed: capacity
+[10-05 12:25:31] create mhc-exp19-030274 (v6e-8) in us-central1-a failed: capacity
+[10-05 12:26:10] v6e-mhc-h1-diag-lr2.1e-3-s0: done — exit 0 in 1218s on mhc-exp19-007854 (us-central1-b), val 4.1360, tok/s 91272, preempted 0x
+[10-05 12:26:12] create mhc-exp19-030273 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 12:26:19] create mhc-exp19-030274 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 12:26:20] create mhc-exp19-030273 (v6e-8) in us-central1-c failed: capacity
+[10-05 12:26:28] create mhc-exp19-030274 (v6e-8) in us-central1-c failed: capacity
+[10-05 12:26:32] v6e-residual-diag-lr6e-3-s1: started on mhc-exp19-007854 chip 0
+[10-05 12:27:25] create mhc-exp19-030273 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 12:27:30] create mhc-exp19-030274 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 12:27:47] v6e-ctrl-mlp1216-diag-lr2.1e-3-s0: done — exit 0 in 1230s on mhc-exp19-007854 (us-central1-b), val 4.0924, tok/s 90402, preempted 0x
+[10-05 12:27:47] v6e-mhc-h1-diag-lr6e-3-s0: done — exit 0 in 1214s on mhc-exp19-007851 (us-central1-b), val 5.0836, tok/s 91236, preempted 0x
+[10-05 12:28:00] v6e-mhc-h1-diag-lr2.1e-3-s1: done — exit 0 in 1229s on mhc-exp19-007854 (us-central1-b), val 4.1101, tok/s 90228, preempted 0x
+[10-05 12:28:01] v6e-ctrl-mlp1216-diag-lr6e-3-s0: done — exit 0 in 1209s on mhc-exp19-007851 (us-central1-b), val 5.0534, tok/s 91214, preempted 0x
+[10-05 12:28:13] v6e-mhc-h1-diag-lr6e-3-s1: done — exit 0 in 1277s on mhc-exp19-007854 (us-central1-b), val 5.0928, tok/s 88046, preempted 0x
+[10-05 12:28:15] v6e-ctrl-mlp1216-diag-lr2.1e-3-s1: done — exit 0 in 1243s on mhc-exp19-007851 (us-central1-b), val 4.1021, tok/s 89388, preempted 0x
+[10-05 12:28:16] v6e-mhc-h1-diag-lr2.1e-3-s2: started on mhc-exp19-007854 chip 1
+[10-05 12:28:18] v6e-a-global-h4-diag-lr2.1e-3-s2: started on mhc-exp19-007854 chip 5
+[10-05 12:28:18] v6e-ctrl-mlp1216-diag-lr2.1e-3-s2: started on mhc-exp19-007851 chip 2
+[10-05 12:28:19] v6e-a-local-h4-diag-lr2.1e-3-s2: started on mhc-exp19-007854 chip 7
+[10-05 12:28:19] v6e-residual-diag-lr2.1e-3-s2: started on mhc-exp19-007851 chip 3
+[10-05 12:28:21] v6e-mhc-h1-diag-lr6e-3-s2: started on mhc-exp19-007851 chip 6
+[10-05 12:29:35] v6e-a-global-h4-diag-lr6e-3-s0: done — exit 0 in 1317s on mhc-exp19-007854 (us-central1-b), val 4.9573, tok/s 85181, preempted 0x
+[10-05 12:29:36] v6e-a-global-h4-diag-lr2.1e-3-s0: done — exit 0 in 1234s on mhc-exp19-007851 (us-central1-b), val 4.1077, tok/s 90698, preempted 0x
+[10-05 12:29:48] v6e-a-local-h4-diag-lr6e-3-s0: done — exit 0 in 1296s on mhc-exp19-007854 (us-central1-b), val 4.8602, tok/s 86574, preempted 0x
+[10-05 12:29:49] v6e-a-local-h4-diag-lr2.1e-3-s0: done — exit 0 in 1270s on mhc-exp19-007851 (us-central1-b), val 4.1480, tok/s 87837, preempted 0x
+[10-05 12:30:02] v6e-a-global-h4-diag-lr2.1e-3-s1: done — exit 0 in 1275s on mhc-exp19-007851 (us-central1-b), val 4.1148, tok/s 87131, preempted 0x
+[10-05 12:30:02] v6e-a-local-h4-diag-lr2.1e-3-s1: done — exit 0 in 1281s on mhc-exp19-007854 (us-central1-b), val 4.1327, tok/s 88194, preempted 0x
+[10-05 12:30:04] v6e-a-global-h4-diag-lr6e-3-s2: started on mhc-exp19-007851 chip 0
+[10-05 12:30:05] v6e-ctrl-mlp1216-diag-lr6e-3-s2: started on mhc-exp19-007854 chip 3
+[10-05 12:30:06] v6e-a-local-h4-diag-lr6e-3-s2: started on mhc-exp19-007851 chip 1
+[10-05 12:30:06] v6e-residual-diag-lr6e-3-s2: started on mhc-exp19-007854 chip 4
+[10-05 12:30:07] v6e-mhc-h1-diag-lr4.2e-3-s0: started on mhc-exp19-007851 chip 5
+[10-05 12:30:07] v6e-a-global-h4-diag-lr4.2e-3-s0: started on mhc-exp19-007854 chip 6
+[10-05 12:34:37] adopted mhc-exp19-007854 (us-central1-b): running ['v6e-a-global-h4-diag-lr2.1e-3-s2', 'v6e-a-global-h4-diag-lr4.2e-3-s0', 'v6e-a-global-h4-diag-lr6e-3-s1', 'v6e-a-local-h4-diag-lr2.1e-3-s2', 'v6e-ctrl-mlp1216-diag-lr6e-3-s2', 'v6e-mhc-h1-diag-lr2.1e-3-s2', 'v6e-residual-diag-lr6e-3-s1', 'v6e-residual-diag-lr6e-3-s2']
+[10-05 12:34:38] adopted mhc-exp19-007851 (us-central1-b): running ['v6e-a-global-h4-diag-lr6e-3-s2', 'v6e-a-local-h4-diag-lr6e-3-s1', 'v6e-a-local-h4-diag-lr6e-3-s2', 'v6e-ctrl-mlp1216-diag-lr2.1e-3-s2', 'v6e-ctrl-mlp1216-diag-lr6e-3-s1', 'v6e-mhc-h1-diag-lr4.2e-3-s0', 'v6e-mhc-h1-diag-lr6e-3-s2', 'v6e-residual-diag-lr2.1e-3-s2']
+[10-05 12:35:02] v6e-ctrl-mlp1216-diag-lr6e-3-s1: done — exit 0 in 1277s on mhc-exp19-007851 (us-central1-b), val 5.2278, tok/s 86292, preempted 0x
+[10-05 12:35:08] v6e-residual-diag-lr6e-3-s1: done — exit 0 in 398s on mhc-exp19-007854 (us-central1-b), val 5.0499, tok/s 284931, preempted 0x
+[10-05 12:35:13] v6e-ctrl-mlp1216-diag-lr4.2e-3-s0: started on mhc-exp19-007854 chip 0
+[10-05 12:35:20] v6e-residual-diag-lr2.1e-3-s2: done — exit 0 in 351s on mhc-exp19-007851 (us-central1-b), val 4.2041, tok/s 312246, preempted 0x
+[10-05 12:35:23] v6e-a-local-h4-diag-lr4.2e-3-s0: started on mhc-exp19-007851 chip 3
+[10-05 12:35:24] v6e-residual-diag-lr4.2e-3-s0: started on mhc-exp19-007851 chip 4
+[10-05 12:35:24] status: 19/240 done, 205 queued, 16 running on 2 VMs, spent $137.07
+[10-05 12:36:25] create mhc-exp19-037242 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 12:36:39] v6e-a-local-h4-diag-lr6e-3-s1: done — exit 0 in 1353s on mhc-exp19-007851 (us-central1-b), val 5.0837, tok/s 81570, preempted 0x
+[10-05 12:36:39] v6e-a-global-h4-diag-lr6e-3-s1: done — exit 0 in 1366s on mhc-exp19-007854 (us-central1-b), val 5.1195, tok/s 81517, preempted 0x
+[10-05 12:36:42] create mhc-exp19-037241 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 12:36:42] v6e-mhc-h1-diag-lr4.2e-3-s1: started on mhc-exp19-007851 chip 7
+[10-05 12:36:52] v6e-residual-diag-lr6e-3-s2: done — exit 0 in 362s on mhc-exp19-007854 (us-central1-b), val 5.0713, tok/s 304142, preempted 0x
+[10-05 12:36:55] v6e-a-global-h4-diag-lr4.2e-3-s1: started on mhc-exp19-007854 chip 2
+[10-05 12:36:56] v6e-ctrl-mlp1216-diag-lr4.2e-3-s1: started on mhc-exp19-007854 chip 4
+[10-05 12:36:59] create mhc-exp19-037241 (v6e-8) in us-central1-a failed: capacity
+[10-05 12:37:01] create mhc-exp19-037242 (v6e-8) in us-central1-a failed: capacity
+[10-05 12:37:45] create mhc-exp19-037241 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 12:37:45] create mhc-exp19-037242 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 12:37:54] create mhc-exp19-037241 (v6e-8) in us-central1-c failed: capacity
+[10-05 12:37:55] create mhc-exp19-037242 (v6e-8) in us-central1-c failed: capacity
+[10-05 12:41:47] create mhc-exp19-037241 (v6e-8) in us-east1-d failed: capacity
+[10-05 12:41:47] create mhc-exp19-037242 (v6e-8) in us-east1-d failed: capacity
+[10-05 12:41:55] create mhc-exp19-037242 (v6e-8) in us-west1-c failed: capacity
+[10-05 12:41:55] create mhc-exp19-037241 (v6e-8) in us-west1-c failed: capacity
+[10-05 12:42:01] create mhc-exp19-037242 (v6e-8) in us-south1-a failed: capacity
+[10-05 12:42:01] create mhc-exp19-037241 (v6e-8) in us-south1-a failed: capacity
+[10-05 12:42:14] create mhc-exp19-037241 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 12:42:18] create mhc-exp19-037242 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 12:42:24] v6e-residual-diag-lr4.2e-3-s0: done — exit 0 in 351s on mhc-exp19-007851 (us-central1-b), val 4.2513, tok/s 312960, preempted 0x
+[10-05 12:42:27] v6e-a-local-h4-diag-lr4.2e-3-s1: started on mhc-exp19-007851 chip 4
+[10-05 12:43:00] create mhc-exp19-037241 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 12:43:34] create mhc-exp19-037242 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 12:43:35] create mhc-exp19-037241 (v6e-4) in us-central1-a failed: capacity
+[10-05 12:44:09] create mhc-exp19-037242 (v6e-4) in us-central1-a failed: capacity
+[10-05 12:44:20] create mhc-exp19-037241 (v6e-4) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 12:44:29] create mhc-exp19-037241 (v6e-4) in us-central1-c failed: capacity
+[10-05 12:44:55] create mhc-exp19-037242 (v6e-4) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 12:50:24] v6e-ctrl-mlp1216-diag-lr2.1e-3-s2: done — exit 0 in 1221s on mhc-exp19-007851 (us-central1-b), val 4.1048, tok/s 90233, preempted 0x
+[10-05 12:50:26] v6e-mhc-h1-diag-lr2.1e-3-s2: done — exit 0 in 1225s on mhc-exp19-007854 (us-central1-b), val 4.1183, tok/s 91078, preempted 0x
+[10-05 12:50:29] v6e-residual-diag-lr4.2e-3-s1: started on mhc-exp19-007854 chip 1
+[10-05 12:50:37] v6e-mhc-h1-diag-lr6e-3-s2: done — exit 0 in 1244s on mhc-exp19-007851 (us-central1-b), val 4.9678, tok/s 89547, preempted 0x
+[10-05 12:50:40] v6e-mhc-h1-diag-lr4.2e-3-s2: started on mhc-exp19-007851 chip 2
+[10-05 12:50:41] v6e-a-global-h4-diag-lr4.2e-3-s2: started on mhc-exp19-007851 chip 6
+[10-05 12:50:41] status: 26/240 done, 198 queued, 16 running on 2 VMs, spent $139.71
+[10-05 12:51:27] created mhc-exp19-037241 (v6e-4) in us-east1-d
+[10-05 12:51:31] created mhc-exp19-037242 (v6e-4) in us-east1-d
+[10-05 12:51:56] v6e-mhc-h1-diag-lr4.2e-3-s0: done — exit 0 in 1218s on mhc-exp19-007851 (us-central1-b), val 4.1768, tok/s 90390, preempted 0x
+[10-05 12:51:56] v6e-a-global-h4-diag-lr2.1e-3-s2: done — exit 0 in 1261s on mhc-exp19-007854 (us-central1-b), val 4.1314, tok/s 89682, preempted 0x
+[10-05 12:51:59] v6e-ctrl-mlp1216-diag-lr4.2e-3-s2: started on mhc-exp19-007851 chip 5
+[10-05 12:52:09] mhc-exp19-037241: set up (data ok: 21 shards)
+[10-05 12:52:10] v6e-a-local-h4-diag-lr2.1e-3-s2: done — exit 0 in 1299s on mhc-exp19-007854 (us-central1-b), val 4.1425, tok/s 86085, preempted 0x
+[10-05 12:52:11] mhc-exp19-037242: set up (data ok: 21 shards)
+[10-05 12:52:24] v6e-ctrl-mlp1216-diag-lr6e-3-s2: done — exit 0 in 1220s on mhc-exp19-007854 (us-central1-b), val 5.1782, tok/s 90395, preempted 0x
+[10-05 12:52:26] v6e-a-local-h4-diag-lr4.2e-3-s2: started on mhc-exp19-007854 chip 3
+[10-05 12:52:28] v6e-residual-diag-lr4.2e-3-s2: started on mhc-exp19-007854 chip 5
+[10-05 12:52:29] v6e-mhc-h1-qk-lr1.5e-3-s0: started on mhc-exp19-007854 chip 7
+[10-05 12:53:30] create mhc-exp19-047493 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 12:53:34] v6e-ctrl-mlp1216-qk-lr1.5e-3-s0: started on mhc-exp19-037241 chip 0
+[10-05 12:53:34] v6e-a-global-h4-qk-lr1.5e-3-s0: started on mhc-exp19-037242 chip 0
+[10-05 12:53:35] v6e-a-local-h4-qk-lr1.5e-3-s0: started on mhc-exp19-037241 chip 1
+[10-05 12:53:35] v6e-residual-qk-lr1.5e-3-s0: started on mhc-exp19-037242 chip 1
+[10-05 12:53:36] v6e-a-global-h4-qk-lr2.1e-3-s0: started on mhc-exp19-037242 chip 2
+[10-05 12:53:36] v6e-mhc-h1-qk-lr2.1e-3-s0: started on mhc-exp19-037241 chip 2
+[10-05 12:53:38] v6e-ctrl-mlp1216-qk-lr2.1e-3-s0: started on mhc-exp19-037242 chip 3
+[10-05 12:53:38] v6e-a-local-h4-qk-lr2.1e-3-s0: started on mhc-exp19-037241 chip 3
+[10-05 12:53:44] v6e-a-global-h4-diag-lr6e-3-s2: done — exit 0 in 1250s on mhc-exp19-007851 (us-central1-b), val 4.8633, tok/s 89153, preempted 0x
+[10-05 12:53:44] v6e-a-global-h4-diag-lr4.2e-3-s0: done — exit 0 in 1277s on mhc-exp19-007854 (us-central1-b), val 4.1632, tok/s 87234, preempted 0x
+[10-05 12:53:47] v6e-residual-qk-lr2.1e-3-s0: started on mhc-exp19-007854 chip 6
+[10-05 12:53:57] v6e-a-local-h4-diag-lr6e-3-s2: done — exit 0 in 1269s on mhc-exp19-007851 (us-central1-b), val 4.8955, tok/s 87314, preempted 0x
+[10-05 12:54:00] v6e-mhc-h1-qk-lr3e-3-s0: started on mhc-exp19-007851 chip 0
+[10-05 12:54:01] v6e-a-global-h4-qk-lr3e-3-s0: started on mhc-exp19-007851 chip 1
+[10-05 12:54:07] create mhc-exp19-047493 (v6e-8) in us-central1-a failed: capacity
+[10-05 12:54:56] create mhc-exp19-047493 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 12:55:05] create mhc-exp19-047493 (v6e-8) in us-central1-c failed: capacity
+[10-05 12:56:30] create mhc-exp19-047493 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 12:57:47] v6e-ctrl-mlp1216-diag-lr4.2e-3-s0: done — exit 0 in 1244s on mhc-exp19-007854 (us-central1-b), val 4.1912, tok/s 88716, preempted 0x
+[10-05 12:58:00] v6e-residual-diag-lr4.2e-3-s1: done — exit 0 in 362s on mhc-exp19-007854 (us-central1-b), val 4.2396, tok/s 307475, preempted 0x
+[10-05 12:58:02] v6e-ctrl-mlp1216-qk-lr3e-3-s0: started on mhc-exp19-007854 chip 0
+[10-05 12:58:04] v6e-a-local-h4-qk-lr3e-3-s0: started on mhc-exp19-007854 chip 1
+[10-05 12:59:18] v6e-a-local-h4-diag-lr4.2e-3-s0: done — exit 0 in 1305s on mhc-exp19-007851 (us-central1-b), val 4.2095, tok/s 84481, preempted 0x
+[10-05 12:59:20] v6e-a-global-h4-diag-lr4.2e-3-s1: done — exit 0 in 1279s on mhc-exp19-007854 (us-central1-b), val 4.1602, tok/s 86823, preempted 0x
+[10-05 12:59:33] v6e-ctrl-mlp1216-diag-lr4.2e-3-s1: done — exit 0 in 1212s on mhc-exp19-007854 (us-central1-b), val 4.2237, tok/s 90685, preempted 0x
+[10-05 12:59:33] v6e-mhc-h1-diag-lr4.2e-3-s1: done — exit 0 in 1238s on mhc-exp19-007851 (us-central1-b), val 4.1516, tok/s 89201, preempted 0x
+[10-05 12:59:35] v6e-residual-qk-lr3e-3-s0: started on mhc-exp19-007851 chip 3
+[10-05 12:59:37] v6e-mhc-h1-qk-lr4.2e-3-s0: started on mhc-exp19-007851 chip 7
+[10-05 12:59:45] v6e-residual-diag-lr4.2e-3-s2: done — exit 0 in 354s on mhc-exp19-007854 (us-central1-b), val 4.2674, tok/s 309862, preempted 0x
+[10-05 12:59:48] v6e-a-global-h4-qk-lr4.2e-3-s0: started on mhc-exp19-007854 chip 2
+[10-05 12:59:49] v6e-ctrl-mlp1216-qk-lr4.2e-3-s0: started on mhc-exp19-007854 chip 4
+[10-05 12:59:51] v6e-a-local-h4-qk-lr4.2e-3-s0: started on mhc-exp19-007854 chip 5
+[10-05 13:01:29] create mhc-exp19-047493 (v6e-4) in us-east1-d failed: an internal error has occurred
+[10-05 13:01:42] create mhc-exp19-047493 (v6e-4) in us-west1-c failed: capacity
+[10-05 13:01:48] create mhc-exp19-047493 (v6e-4) in us-south1-a failed: capacity
+[10-05 13:02:09] v6e-residual-qk-lr2.1e-3-s0: done — exit 0 in 423s on mhc-exp19-007854 (us-central1-b), val 4.1737, tok/s 257188, preempted 0x
+[10-05 13:02:11] v6e-residual-qk-lr4.2e-3-s0: started on mhc-exp19-007854 chip 6
+[10-05 13:02:22] v6e-residual-qk-lr1.5e-3-s0: FAILED exit 0 (failure 1):
+  
+[10-05 13:02:24] create mhc-exp19-047493 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 13:04:22] v6e-residual-qk-lr1.5e-3-s0: start on mhc-exp19-037242 failed: timeout
+[10-05 13:05:24] v6e-ctrl-mlp1216-qk-lr1.5e-3-s0: back in the queue (state PREEMPTED, attempt 2)
+[10-05 13:05:24] v6e-a-local-h4-qk-lr1.5e-3-s0: back in the queue (state PREEMPTED, attempt 2)
+[10-05 13:05:24] v6e-mhc-h1-qk-lr2.1e-3-s0: back in the queue (state PREEMPTED, attempt 2)
+[10-05 13:05:24] v6e-a-local-h4-qk-lr2.1e-3-s0: back in the queue (state PREEMPTED, attempt 2)
+[10-05 13:06:43] deleted mhc-exp19-037241 (state PREEMPTED)
+[10-05 13:06:43] v6e-a-global-h4-qk-lr1.5e-3-s0: back in the queue (state PREEMPTED, attempt 2)
+[10-05 13:06:43] v6e-a-global-h4-qk-lr2.1e-3-s0: back in the queue (state PREEMPTED, attempt 2)
+[10-05 13:06:43] v6e-ctrl-mlp1216-qk-lr2.1e-3-s0: back in the queue (state PREEMPTED, attempt 2)
+[10-05 13:08:03] deleted mhc-exp19-037242 (state PREEMPTED)
+[10-05 13:08:16] v6e-a-local-h4-diag-lr4.2e-3-s1: done — exit 0 in 1373s on mhc-exp19-007851 (us-central1-b), val 4.1891, tok/s 80740, preempted 0x
+[10-05 13:08:42] v6e-residual-qk-lr3e-3-s0: done — exit 0 in 412s on mhc-exp19-007851 (us-central1-b), val 4.1732, tok/s 265836, preempted 0x
+[10-05 13:08:47] v6e-a-global-h4-qk-lr1.5e-3-s0: started on mhc-exp19-007851 chip 3
+[10-05 13:08:48] v6e-ctrl-mlp1216-qk-lr1.5e-3-s0: started on mhc-exp19-007851 chip 4
+[10-05 13:08:48] status: 43/240 done, 181 queued, 16 running on 2 VMs, spent $144.79
+[10-05 13:08:58] create mhc-exp19-054624 (v6e-8) in us-east1-d failed: capacity
+[10-05 13:09:06] create mhc-exp19-054624 (v6e-8) in us-west1-c failed: capacity
+[10-05 13:09:13] create mhc-exp19-054624 (v6e-8) in us-south1-a failed: capacity
+[10-05 13:09:25] create mhc-exp19-057285 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 13:10:03] v6e-residual-qk-lr4.2e-3-s0: done — exit 0 in 418s on mhc-exp19-007854 (us-central1-b), val 4.1515, tok/s 261633, preempted 0x
+[10-05 13:10:06] v6e-a-local-h4-qk-lr1.5e-3-s0: started on mhc-exp19-007854 chip 6
+[10-05 13:10:10] create mhc-exp19-057285 (v6e-8) in us-central1-a failed: capacity
+[10-05 13:10:36] create mhc-exp19-054624 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 13:10:57] create mhc-exp19-057285 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 13:11:06] create mhc-exp19-057285 (v6e-8) in us-central1-c failed: capacity
+[10-05 13:11:21] create mhc-exp19-054624 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 13:11:39] create mhc-exp19-054624 (v6e-4) in us-central1-a failed: capacity
+[10-05 13:12:06] create mhc-exp19-057285 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 13:12:24] v6e-mhc-h1-diag-lr4.2e-3-s2: done — exit 0 in 1235s on mhc-exp19-007851 (us-central1-b), val 4.2317, tok/s 90067, preempted 0x
+[10-05 13:12:27] create mhc-exp19-054624 (v6e-4) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 13:12:27] v6e-residual-qk-lr1.5e-3-s0: started on mhc-exp19-007851 chip 2
+[10-05 13:12:35] create mhc-exp19-054624 (v6e-4) in us-central1-c failed: capacity
+[10-05 13:13:02] create mhc-exp19-057285 (v6e-4) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 13:13:42] v6e-ctrl-mlp1216-diag-lr4.2e-3-s2: done — exit 0 in 1245s on mhc-exp19-007851 (us-central1-b), val 4.2049, tok/s 88790, preempted 0x
+[10-05 13:13:45] v6e-mhc-h1-qk-lr2.1e-3-s0: started on mhc-exp19-007851 chip 5
+[10-05 13:15:00] v6e-a-global-h4-diag-lr4.2e-3-s2: done — exit 0 in 1343s on mhc-exp19-007851 (us-central1-b), val 4.1617, tok/s 84362, preempted 0x
+[10-05 13:15:02] v6e-a-global-h4-qk-lr2.1e-3-s0: started on mhc-exp19-007851 chip 6
+[10-05 13:16:17] v6e-a-local-h4-diag-lr4.2e-3-s2: done — exit 0 in 1311s on mhc-exp19-007854 (us-central1-b), val 4.1965, tok/s 85162, preempted 0x
+[10-05 13:16:29] create mhc-exp19-057285 (v6e-4) in us-east1-d failed: capacity
+[10-05 13:16:30] v6e-mhc-h1-qk-lr1.5e-3-s0: done — exit 0 in 1322s on mhc-exp19-007854 (us-central1-b), val 4.0871, tok/s 83532, preempted 0x
+[10-05 13:16:33] v6e-ctrl-mlp1216-qk-lr2.1e-3-s0: started on mhc-exp19-007854 chip 3
+[10-05 13:16:34] v6e-a-local-h4-qk-lr2.1e-3-s0: started on mhc-exp19-007854 chip 7
+[10-05 13:17:09] created mhc-exp19-054624 (v6e-4) in us-east1-d
+[10-05 13:17:33] create mhc-exp19-057285 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 13:17:49] v6e-mhc-h1-qk-lr3e-3-s0: done — exit 0 in 1323s on mhc-exp19-007851 (us-central1-b), val 4.0917, tok/s 83472, preempted 0x
+[10-05 13:17:51] mhc-exp19-054624: set up (data ok: 21 shards)
+[10-05 13:18:02] v6e-a-global-h4-qk-lr3e-3-s0: done — exit 0 in 1344s on mhc-exp19-007851 (us-central1-b), val 4.0942, tok/s 82474, preempted 0x
+[10-05 13:18:04] v6e-mhc-h1-qk-lr6e-3-s0: started on mhc-exp19-007851 chip 0
+[10-05 13:18:06] v6e-a-global-h4-qk-lr6e-3-s0: started on mhc-exp19-007851 chip 1
+[10-05 13:18:18] create mhc-exp19-062866 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 13:18:28] create mhc-exp19-062866 (v6e-4) in us-west1-c failed: capacity
+[10-05 13:18:37] create mhc-exp19-062866 (v6e-4) in us-south1-a failed: capacity
+[10-05 13:19:10] v6e-ctrl-mlp1216-qk-lr6e-3-s0: started on mhc-exp19-054624 chip 0
+[10-05 13:19:11] v6e-a-local-h4-qk-lr6e-3-s0: started on mhc-exp19-054624 chip 1
+[10-05 13:19:13] v6e-residual-qk-lr6e-3-s0: started on mhc-exp19-054624 chip 2
+[10-05 13:19:14] v6e-mhc-h1-qk-lr8.5e-3-s0: started on mhc-exp19-054624 chip 3
+[10-05 13:20:44] v6e-residual-qk-lr1.5e-3-s0: done — exit 0 in 437s on mhc-exp19-007851 (us-central1-b), val 4.1683, tok/s 248183, preempted 0x
+[10-05 13:20:44] v6e-ctrl-mlp1216-qk-lr3e-3-s0: done — exit 0 in 1300s on mhc-exp19-007854 (us-central1-b), val 4.0583, tok/s 85062, preempted 0x
+[10-05 13:20:47] v6e-a-global-h4-qk-lr8.5e-3-s0: started on mhc-exp19-007851 chip 2
+[10-05 13:20:47] v6e-ctrl-mlp1216-qk-lr8.5e-3-s0: started on mhc-exp19-007854 chip 0
+[10-05 13:22:02] v6e-a-local-h4-qk-lr3e-3-s0: done — exit 0 in 1350s on mhc-exp19-007854 (us-central1-b), val 4.1227, tok/s 82385, preempted 0x
+[10-05 13:22:05] v6e-a-local-h4-qk-lr8.5e-3-s0: started on mhc-exp19-007854 chip 1
+[10-05 13:23:20] v6e-mhc-h1-qk-lr4.2e-3-s0: done — exit 0 in 1308s on mhc-exp19-007851 (us-central1-b), val 4.0991, tok/s 83982, preempted 0x
+[10-05 13:23:20] v6e-ctrl-mlp1216-qk-lr4.2e-3-s0: done — exit 0 in 1330s on mhc-exp19-007854 (us-central1-b), val 4.0695, tok/s 83240, preempted 0x
+[10-05 13:23:22] v6e-residual-qk-lr8.5e-3-s0: started on mhc-exp19-007851 chip 7
+[10-05 13:23:23] v6e-mhc-h1-qk-lr1.2e-2-s0: started on mhc-exp19-007854 chip 4
+[10-05 13:24:27] create mhc-exp19-0660310 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 13:24:38] v6e-a-global-h4-qk-lr4.2e-3-s0: done — exit 0 in 1354s on mhc-exp19-007854 (us-central1-b), val 4.1073, tok/s 82575, preempted 0x
+[10-05 13:24:51] v6e-a-local-h4-qk-lr4.2e-3-s0: done — exit 0 in 1375s on mhc-exp19-007854 (us-central1-b), val 4.1109, tok/s 80738, preempted 0x
+[10-05 13:24:54] v6e-a-global-h4-qk-lr1.2e-2-s0: started on mhc-exp19-007854 chip 2
+[10-05 13:24:55] v6e-ctrl-mlp1216-qk-lr1.2e-2-s0: started on mhc-exp19-007854 chip 5
+[10-05 13:24:55] status: 58/240 done, 162 queued, 20 running on 3 VMs, spent $148.10
+[10-05 13:25:29] create mhc-exp19-0660310 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 13:28:16] v6e-residual-qk-lr6e-3-s0: done — exit 0 in 477s on mhc-exp19-054624 (us-east1-d), val 4.1587, tok/s 223541, preempted 0x
+[10-05 13:28:18] v6e-a-local-h4-qk-lr1.2e-2-s0: started on mhc-exp19-054624 chip 2
+[10-05 13:30:13] create mhc-exp19-0675911 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 13:30:50] create mhc-exp19-0675911 (v6e-8) in us-central1-a failed: capacity
+[10-05 13:30:54] v6e-residual-qk-lr8.5e-3-s0: done — exit 0 in 411s on mhc-exp19-007851 (us-central1-b), val 4.1794, tok/s 263891, preempted 0x
+[10-05 13:30:57] v6e-residual-qk-lr1.2e-2-s0: started on mhc-exp19-007851 chip 7
+[10-05 13:31:36] create mhc-exp19-0675911 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 13:31:44] create mhc-exp19-0675911 (v6e-8) in us-central1-c failed: capacity
+[10-05 13:32:14] v6e-ctrl-mlp1216-qk-lr1.5e-3-s0: done — exit 0 in 1308s on mhc-exp19-007851 (us-central1-b), val 4.0772, tok/s 83969, preempted 1x
+[10-05 13:32:17] v6e-mhc-h1-qk-lr1.7e-2-s0: started on mhc-exp19-007851 chip 4
+[10-05 13:33:32] v6e-a-global-h4-qk-lr1.5e-3-s0: done — exit 0 in 1351s on mhc-exp19-007851 (us-central1-b), val 4.0872, tok/s 81546, preempted 1x
+[10-05 13:33:35] v6e-a-global-h4-qk-lr1.7e-2-s0: started on mhc-exp19-007851 chip 3
+[10-05 13:34:50] v6e-a-local-h4-qk-lr1.5e-3-s0: done — exit 0 in 1350s on mhc-exp19-007854 (us-central1-b), val 4.1289, tok/s 81846, preempted 1x
+[10-05 13:34:52] v6e-ctrl-mlp1216-qk-lr1.7e-2-s0: started on mhc-exp19-007854 chip 6
+[10-05 13:37:10] v6e-mhc-h1-qk-lr2.1e-3-s0: done — exit 0 in 1339s on mhc-exp19-007851 (us-central1-b), val 4.0755, tok/s 82089, preempted 1x
+[10-05 13:37:13] v6e-a-local-h4-qk-lr1.7e-2-s0: started on mhc-exp19-007851 chip 5
+[10-05 13:37:20] create mhc-exp19-0675911 (v6e-8) in us-east1-d failed: capacity
+[10-05 13:37:29] create mhc-exp19-0675911 (v6e-8) in us-west1-c failed: capacity
+[10-05 13:37:36] create mhc-exp19-0675911 (v6e-8) in us-south1-a failed: capacity
+[10-05 13:38:21] create mhc-exp19-0675911 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 13:38:28] v6e-a-global-h4-qk-lr2.1e-3-s0: done — exit 0 in 1333s on mhc-exp19-007851 (us-central1-b), val 4.1002, tok/s 83121, preempted 1x
+[10-05 13:38:41] v6e-residual-qk-lr1.2e-2-s0: done — exit 0 in 423s on mhc-exp19-007851 (us-central1-b), val 4.2602, tok/s 257002, preempted 0x
+[10-05 13:38:43] v6e-residual-qk-lr1.7e-2-s0: started on mhc-exp19-007851 chip 6
+[10-05 13:38:45] v6e-mhc-h1-qk-lr2.4e-2-s0: started on mhc-exp19-007851 chip 7
+[10-05 13:39:22] create mhc-exp19-0675911 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 13:39:47] create mhc-exp19-0675911 (v6e-4) in us-central1-a failed: capacity
+[10-05 13:39:59] v6e-ctrl-mlp1216-qk-lr2.1e-3-s0: done — exit 0 in 1348s on mhc-exp19-007854 (us-central1-b), val 4.0771, tok/s 81571, preempted 1x
+[10-05 13:40:02] v6e-a-global-h4-qk-lr2.4e-2-s0: started on mhc-exp19-007854 chip 3
+[10-05 13:40:02] status: 67/240 done, 153 queued, 20 running on 3 VMs, spent $151.36
+[10-05 13:40:31] create mhc-exp19-0675911 (v6e-4) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 13:40:40] create mhc-exp19-0675911 (v6e-4) in us-central1-c failed: capacity
+[10-05 13:42:42] v6e-a-local-h4-qk-lr2.1e-3-s0: done — exit 0 in 1445s on mhc-exp19-007854 (us-central1-b), val 4.1288, tok/s 76675, preempted 1x
+[10-05 13:42:45] v6e-ctrl-mlp1216-qk-lr2.4e-2-s0: started on mhc-exp19-007854 chip 7
+[10-05 13:44:00] v6e-ctrl-mlp1216-qk-lr8.5e-3-s0: done — exit 0 in 1329s on mhc-exp19-007854 (us-central1-b), val 4.1651, tok/s 83624, preempted 0x
+[10-05 13:44:01] v6e-mhc-h1-qk-lr6e-3-s0: done — exit 0 in 1421s on mhc-exp19-007851 (us-central1-b), val 4.0981, tok/s 77254, preempted 0x
+[10-05 13:44:02] v6e-a-local-h4-qk-lr2.4e-2-s0: started on mhc-exp19-007854 chip 0
+[10-05 13:44:14] v6e-a-global-h4-qk-lr6e-3-s0: done — exit 0 in 1410s on mhc-exp19-007851 (us-central1-b), val 4.1325, tok/s 78720, preempted 0x
+[10-05 13:44:16] v6e-residual-qk-lr2.4e-2-s0: started on mhc-exp19-007851 chip 0
+[10-05 13:44:18] v6e-mhc-h1-qk-lr1.5e-3-s1: started on mhc-exp19-007851 chip 1
+[10-05 13:44:31] create mhc-exp19-0675911 (v6e-4) in us-east1-d failed: capacity
+[10-05 13:44:39] create mhc-exp19-0675911 (v6e-4) in us-west1-c failed: capacity
+[10-05 13:44:46] create mhc-exp19-0675911 (v6e-4) in us-south1-a failed: capacity
+[10-05 13:45:31] v6e-ctrl-mlp1216-qk-lr6e-3-s0: done — exit 0 in 1477s on mhc-exp19-054624 (us-east1-d), val 4.0638, tok/s 74055, preempted 0x
+[10-05 13:45:32] v6e-a-global-h4-qk-lr8.5e-3-s0: done — exit 0 in 1337s on mhc-exp19-007851 (us-central1-b), val 4.1176, tok/s 82881, preempted 0x
+[10-05 13:45:33] create mhc-exp19-0675911 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 13:45:35] v6e-a-global-h4-qk-lr1.5e-3-s1: started on mhc-exp19-007851 chip 2
+[10-05 13:45:43] v6e-a-local-h4-qk-lr6e-3-s0: done — exit 0 in 1536s on mhc-exp19-054624 (us-east1-d), val 4.1288, tok/s 71615, preempted 0x
+[10-05 13:45:55] v6e-mhc-h1-qk-lr8.5e-3-s0: done — exit 0 in 1488s on mhc-exp19-054624 (us-east1-d), val 4.1250, tok/s 73881, preempted 0x
+[10-05 13:45:57] v6e-ctrl-mlp1216-qk-lr1.5e-3-s1: started on mhc-exp19-054624 chip 0
+[10-05 13:45:58] v6e-a-local-h4-qk-lr1.5e-3-s1: started on mhc-exp19-054624 chip 1
+[10-05 13:46:00] v6e-residual-qk-lr1.5e-3-s1: started on mhc-exp19-054624 chip 3
+[10-05 13:46:59] create mhc-exp19-0796012 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 13:47:13] create mhc-exp19-0796012 (v6e-8) in us-central1-a failed: capacity
+[10-05 13:47:14] v6e-residual-qk-lr1.7e-2-s0: done — exit 0 in 439s on mhc-exp19-007851 (us-central1-b), val 4.2888, tok/s 247448, preempted 0x
+[10-05 13:47:15] v6e-a-local-h4-qk-lr8.5e-3-s0: done — exit 0 in 1353s on mhc-exp19-007854 (us-central1-b), val 4.1186, tok/s 82133, preempted 0x
+[10-05 13:47:17] v6e-mhc-h1-qk-lr2.1e-3-s1: started on mhc-exp19-007851 chip 6
+[10-05 13:47:28] v6e-mhc-h1-qk-lr1.2e-2-s0: done — exit 0 in 1336s on mhc-exp19-007854 (us-central1-b), val 4.1464, tok/s 82969, preempted 0x
+[10-05 13:47:31] v6e-a-global-h4-qk-lr2.1e-3-s1: started on mhc-exp19-007854 chip 1
+[10-05 13:47:33] v6e-ctrl-mlp1216-qk-lr2.1e-3-s1: started on mhc-exp19-007854 chip 4
+[10-05 13:48:00] create mhc-exp19-0796012 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 13:48:09] create mhc-exp19-0796012 (v6e-8) in us-central1-c failed: capacity
+[10-05 13:48:47] v6e-a-global-h4-qk-lr1.2e-2-s0: done — exit 0 in 1347s on mhc-exp19-007854 (us-central1-b), val 4.1434, tok/s 82988, preempted 0x
+[10-05 13:49:01] v6e-ctrl-mlp1216-qk-lr1.2e-2-s0: done — exit 0 in 1308s on mhc-exp19-007854 (us-central1-b), val 4.1496, tok/s 83695, preempted 0x
+[10-05 13:49:04] v6e-a-local-h4-qk-lr2.1e-3-s1: started on mhc-exp19-007854 chip 2
+[10-05 13:49:05] v6e-residual-qk-lr2.1e-3-s1: started on mhc-exp19-007854 chip 5
+[10-05 13:49:33] create mhc-exp19-0796012 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 13:52:36] create mhc-exp19-0827214 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 13:52:37] v6e-residual-qk-lr2.4e-2-s0: done — exit 0 in 419s on mhc-exp19-007851 (us-central1-b), val 4.3541, tok/s 258612, preempted 0x
+[10-05 13:52:47] v6e-mhc-h1-qk-lr3e-3-s1: started on mhc-exp19-007851 chip 0
+[10-05 13:54:01] v6e-a-local-h4-qk-lr1.2e-2-s0: done — exit 0 in 1519s on mhc-exp19-054624 (us-east1-d), val 4.1550, tok/s 72366, preempted 0x
+[10-05 13:54:12] v6e-residual-qk-lr1.5e-3-s1: done — exit 0 in 456s on mhc-exp19-054624 (us-east1-d), val 4.1493, tok/s 234520, preempted 0x
+[10-05 13:54:15] v6e-a-global-h4-qk-lr3e-3-s1: started on mhc-exp19-054624 chip 2
+[10-05 13:54:16] v6e-ctrl-mlp1216-qk-lr3e-3-s1: started on mhc-exp19-054624 chip 3
+[10-05 13:55:31] v6e-mhc-h1-qk-lr1.7e-2-s0: done — exit 0 in 1305s on mhc-exp19-007851 (us-central1-b), val 4.1970, tok/s 84520, preempted 0x
+[10-05 13:55:33] v6e-a-local-h4-qk-lr3e-3-s1: started on mhc-exp19-007851 chip 4
+[10-05 13:55:33] status: 84/240 done, 136 queued, 20 running on 3 VMs, spent $154.71
+[10-05 13:56:50] v6e-residual-qk-lr2.1e-3-s1: done — exit 0 in 416s on mhc-exp19-007854 (us-central1-b), val 4.1570, tok/s 261207, preempted 0x
+[10-05 13:56:53] v6e-residual-qk-lr3e-3-s1: started on mhc-exp19-007854 chip 5
+[10-05 13:58:09] v6e-a-global-h4-qk-lr1.7e-2-s0: done — exit 0 in 1341s on mhc-exp19-007851 (us-central1-b), val 4.2345, tok/s 82753, preempted 0x
+[10-05 13:58:12] v6e-mhc-h1-qk-lr4.2e-3-s1: started on mhc-exp19-007851 chip 3
+[10-05 13:59:28] v6e-ctrl-mlp1216-qk-lr1.7e-2-s0: done — exit 0 in 1354s on mhc-exp19-007854 (us-central1-b), val 4.1738, tok/s 81284, preempted 0x
+[10-05 13:59:31] v6e-a-global-h4-qk-lr4.2e-3-s1: started on mhc-exp19-007854 chip 6
+[10-05 13:59:46] create mhc-exp19-0836715 (v6e-8) in us-east1-d failed: capacity
+[10-05 13:59:58] create mhc-exp19-0836715 (v6e-8) in us-west1-c failed: capacity
+[10-05 14:00:09] create mhc-exp19-0836715 (v6e-8) in us-south1-a failed: capacity
+[10-05 14:00:25] create mhc-exp19-0836715 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 14:01:46] create mhc-exp19-0836715 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 14:01:51] v6e-a-local-h4-qk-lr1.7e-2-s0: done — exit 0 in 1360s on mhc-exp19-007851 (us-central1-b), val 4.2452, tok/s 81802, preempted 0x
+[10-05 14:02:05] v6e-mhc-h1-qk-lr2.4e-2-s0: done — exit 0 in 1330s on mhc-exp19-007851 (us-central1-b), val 4.2280, tok/s 82907, preempted 0x
+[10-05 14:02:08] v6e-ctrl-mlp1216-qk-lr4.2e-3-s1: started on mhc-exp19-007851 chip 5
+[10-05 14:02:10] v6e-a-local-h4-qk-lr4.2e-3-s1: started on mhc-exp19-007851 chip 7
+[10-05 14:02:21] create mhc-exp19-0836715 (v6e-4) in us-central1-a failed: capacity
+[10-05 14:03:09] create mhc-exp19-0836715 (v6e-4) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 14:03:18] create mhc-exp19-0836715 (v6e-4) in us-central1-c failed: capacity
+[10-05 14:04:11] mhc-exp19-007854: status failed (1): ssh: connect to host 35.254.239.151 port 22: Operation timed out
+[10-05 14:05:14] v6e-a-global-h4-qk-lr2.4e-2-s0: back in the queue (state PREEMPTED, attempt 2)
+[10-05 14:05:14] v6e-ctrl-mlp1216-qk-lr2.4e-2-s0: back in the queue (state PREEMPTED, attempt 2)
+[10-05 14:05:14] v6e-a-local-h4-qk-lr2.4e-2-s0: back in the queue (state PREEMPTED, attempt 2)
+[10-05 14:05:14] v6e-a-global-h4-qk-lr2.1e-3-s1: back in the queue (state PREEMPTED, attempt 2)
+[10-05 14:05:14] v6e-ctrl-mlp1216-qk-lr2.1e-3-s1: back in the queue (state PREEMPTED, attempt 2)
+[10-05 14:05:14] v6e-a-local-h4-qk-lr2.1e-3-s1: back in the queue (state PREEMPTED, attempt 2)
+[10-05 14:05:14] v6e-residual-qk-lr3e-3-s1: back in the queue (state PREEMPTED, attempt 2)
+[10-05 14:05:14] v6e-a-global-h4-qk-lr4.2e-3-s1: back in the queue (state PREEMPTED, attempt 2)
+[10-05 14:06:38] deleted mhc-exp19-007854 (state PREEMPTED)
+[10-05 14:07:11] created mhc-exp19-0836715 (v6e-4) in us-east1-d
+[10-05 14:07:22] create mhc-exp19-0920016 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 14:07:52] create mhc-exp19-0920016 (v6e-8) in us-central1-a failed: capacity
+[10-05 14:08:01] v6e-mhc-h1-qk-lr1.5e-3-s1: done — exit 0 in 1323s on mhc-exp19-007851 (us-central1-b), val 4.0568, tok/s 83556, preempted 0x
+[10-05 14:08:04] v6e-a-global-h4-qk-lr2.4e-2-s0: started on mhc-exp19-007851 chip 1
+[10-05 14:09:22] v6e-a-global-h4-qk-lr1.5e-3-s1: done — exit 0 in 1353s on mhc-exp19-007851 (us-central1-b), val 4.0669, tok/s 82450, preempted 0x
+[10-05 14:09:25] v6e-ctrl-mlp1216-qk-lr2.4e-2-s0: started on mhc-exp19-007851 chip 2
+[10-05 14:10:43] v6e-mhc-h1-qk-lr2.1e-3-s1: done — exit 0 in 1350s on mhc-exp19-007851 (us-central1-b), val 4.0893, tok/s 81832, preempted 0x
+[10-05 14:10:46] v6e-a-local-h4-qk-lr2.4e-2-s0: started on mhc-exp19-007851 chip 6
+[10-05 14:10:46] status: 92/240 done, 136 queued, 12 running on 3 VMs, spent $157.95
+[10-05 14:12:05] v6e-ctrl-mlp1216-qk-lr1.5e-3-s1: done — exit 0 in 1476s on mhc-exp19-054624 (us-east1-d), val 4.0605, tok/s 74035, preempted 0x
+[10-05 14:12:20] v6e-a-local-h4-qk-lr1.5e-3-s1: done — exit 0 in 1508s on mhc-exp19-054624 (us-east1-d), val 4.0979, tok/s 72605, preempted 0x
+[10-05 14:12:23] v6e-a-global-h4-qk-lr2.1e-3-s1: started on mhc-exp19-054624 chip 0
+[10-05 14:12:24] v6e-ctrl-mlp1216-qk-lr2.1e-3-s1: started on mhc-exp19-054624 chip 1
+[10-05 14:13:49] created mhc-exp19-0920016 (v6e-8) in us-central1-b
+[10-05 14:14:37] mhc-exp19-0920016: set up (data ok: 21 shards)
+[10-05 14:15:58] v6e-a-local-h4-qk-lr2.1e-3-s1: started on mhc-exp19-0920016 chip 0
+[10-05 14:15:59] v6e-residual-qk-lr3e-3-s1: started on mhc-exp19-0920016 chip 1
+[10-05 14:16:00] mhc-exp19-0836715: setup failed (ssh: connect to host 136.108.188.199 port 22: Operation timed out
+); deleting
+[10-05 14:16:01] v6e-a-global-h4-qk-lr4.2e-3-s1: started on mhc-exp19-0920016 chip 2
+[10-05 14:16:02] v6e-residual-qk-lr4.2e-3-s1: started on mhc-exp19-0920016 chip 3
+[10-05 14:16:04] v6e-mhc-h1-qk-lr6e-3-s1: started on mhc-exp19-0920016 chip 4
+[10-05 14:16:11] v6e-a-global-h4-qk-lr6e-3-s1: started on mhc-exp19-0920016 chip 5
+[10-05 14:16:12] v6e-ctrl-mlp1216-qk-lr6e-3-s1: started on mhc-exp19-0920016 chip 6
+[10-05 14:16:13] v6e-a-local-h4-qk-lr6e-3-s1: started on mhc-exp19-0920016 chip 7
+[10-05 14:17:01] deleted mhc-exp19-0836715 ()
+[10-05 14:17:30] v6e-mhc-h1-qk-lr3e-3-s1: done — exit 0 in 1421s on mhc-exp19-007851 (us-central1-b), val 4.0770, tok/s 77296, preempted 0x
+[10-05 14:17:33] v6e-residual-qk-lr6e-3-s1: started on mhc-exp19-007851 chip 0
+[10-05 14:18:22] create mhc-exp19-0985317 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 14:18:31] create mhc-exp19-0985317 (v6e-8) in us-central1-c failed: capacity
+[10-05 14:19:53] v6e-a-global-h4-qk-lr3e-3-s1: done — exit 0 in 1503s on mhc-exp19-054624 (us-east1-d), val 4.0737, tok/s 72910, preempted 0x
+[10-05 14:19:55] v6e-a-local-h4-qk-lr3e-3-s1: done — exit 0 in 1348s on mhc-exp19-007851 (us-central1-b), val 4.0907, tok/s 82344, preempted 0x
+[10-05 14:19:58] v6e-mhc-h1-qk-lr8.5e-3-s1: started on mhc-exp19-007851 chip 4
+[10-05 14:20:07] v6e-ctrl-mlp1216-qk-lr3e-3-s1: done — exit 0 in 1490s on mhc-exp19-054624 (us-east1-d), val 4.0669, tok/s 73029, preempted 0x
+[10-05 14:20:10] v6e-a-global-h4-qk-lr8.5e-3-s1: started on mhc-exp19-054624 chip 2
+[10-05 14:20:12] v6e-ctrl-mlp1216-qk-lr8.5e-3-s1: started on mhc-exp19-054624 chip 3
+[10-05 14:21:28] v6e-mhc-h1-qk-lr4.2e-3-s1: done — exit 0 in 1296s on mhc-exp19-007851 (us-central1-b), val 4.0752, tok/s 85098, preempted 0x
+[10-05 14:21:31] v6e-a-local-h4-qk-lr8.5e-3-s1: started on mhc-exp19-007851 chip 3
+[10-05 14:23:45] created mhc-exp19-0985317 (v6e-8) in us-east1-d
+[10-05 14:23:53] v6e-residual-qk-lr3e-3-s1: done — exit 0 in 435s on mhc-exp19-0920016 (us-central1-b), val 4.1620, tok/s 250706, preempted 1x
+[10-05 14:24:07] v6e-residual-qk-lr4.2e-3-s1: done — exit 0 in 423s on mhc-exp19-0920016 (us-central1-b), val 4.1555, tok/s 260264, preempted 0x
+[10-05 14:24:10] v6e-residual-qk-lr8.5e-3-s1: started on mhc-exp19-0920016 chip 1
+[10-05 14:24:12] v6e-mhc-h1-qk-lr1.2e-2-s1: started on mhc-exp19-0920016 chip 3
+[10-05 14:24:31] mhc-exp19-0985317: set up (data ok: 21 shards)
+[10-05 14:25:16] v6e-a-global-h4-qk-lr1.2e-2-s1: started on mhc-exp19-0985317 chip 0
+[10-05 14:25:18] v6e-ctrl-mlp1216-qk-lr1.2e-2-s1: started on mhc-exp19-0985317 chip 1
+[10-05 14:25:19] v6e-a-local-h4-qk-lr1.2e-2-s1: started on mhc-exp19-0985317 chip 2
+[10-05 14:25:20] v6e-residual-qk-lr1.2e-2-s1: started on mhc-exp19-0985317 chip 3
+[10-05 14:25:21] v6e-mhc-h1-qk-lr1.7e-2-s1: started on mhc-exp19-0985317 chip 4
+[10-05 14:25:23] v6e-a-global-h4-qk-lr1.7e-2-s1: started on mhc-exp19-0985317 chip 5
+[10-05 14:25:28] v6e-ctrl-mlp1216-qk-lr1.7e-2-s1: started on mhc-exp19-0985317 chip 6
+[10-05 14:25:29] v6e-ctrl-mlp1216-qk-lr4.2e-3-s1: done — exit 0 in 1314s on mhc-exp19-007851 (us-central1-b), val 4.0858, tok/s 83947, preempted 0x
+[10-05 14:25:31] v6e-a-local-h4-qk-lr1.7e-2-s1: started on mhc-exp19-0985317 chip 7
+[10-05 14:25:32] v6e-residual-qk-lr1.7e-2-s1: started on mhc-exp19-007851 chip 5
+[10-05 14:26:51] v6e-a-local-h4-qk-lr4.2e-3-s1: done — exit 0 in 1386s on mhc-exp19-007851 (us-central1-b), val 4.0768, tok/s 79864, preempted 0x
+[10-05 14:27:04] v6e-residual-qk-lr6e-3-s1: done — exit 0 in 467s on mhc-exp19-007851 (us-central1-b), val 4.1580, tok/s 232348, preempted 0x
+[10-05 14:27:08] v6e-mhc-h1-qk-lr2.4e-2-s1: started on mhc-exp19-007851 chip 0
+[10-05 14:27:09] v6e-a-global-h4-qk-lr2.4e-2-s1: started on mhc-exp19-007851 chip 7
+[10-05 14:27:09] status: 104/240 done, 108 queued, 28 running on 4 VMs, spent $162.74
+[10-05 14:31:35] v6e-residual-qk-lr8.5e-3-s1: done — exit 0 in 409s on mhc-exp19-0920016 (us-central1-b), val 4.2173, tok/s 266775, preempted 0x
+[10-05 14:31:36] v6e-a-global-h4-qk-lr2.4e-2-s0: done — exit 0 in 1317s on mhc-exp19-007851 (us-central1-b), val 4.3079, tok/s 84659, preempted 1x
+[10-05 14:31:38] v6e-ctrl-mlp1216-qk-lr2.4e-2-s1: started on mhc-exp19-0920016 chip 1
+[10-05 14:31:39] v6e-a-local-h4-qk-lr2.4e-2-s1: started on mhc-exp19-007851 chip 1
+[10-05 14:32:54] v6e-residual-qk-lr1.2e-2-s1: done — exit 0 in 421s on mhc-exp19-0985317 (us-east1-d), val 4.2667, tok/s 259694, preempted 0x
+[10-05 14:32:56] v6e-ctrl-mlp1216-qk-lr2.4e-2-s0: done — exit 0 in 1347s on mhc-exp19-007851 (us-central1-b), val 4.2534, tok/s 82315, preempted 1x
+[10-05 14:32:57] v6e-residual-qk-lr2.4e-2-s1: started on mhc-exp19-0985317 chip 3
+[10-05 14:32:59] v6e-mhc-h1-qk-lr1.5e-3-s2: started on mhc-exp19-007851 chip 2
+[10-05 14:34:16] v6e-residual-qk-lr1.7e-2-s1: done — exit 0 in 429s on mhc-exp19-007851 (us-central1-b), val 4.2926, tok/s 255755, preempted 0x
+[10-05 14:34:19] v6e-a-global-h4-qk-lr1.5e-3-s2: started on mhc-exp19-007851 chip 5
+[10-05 14:34:57] adopted mhc-exp19-0920016 (us-central1-b): running ['v6e-a-global-h4-qk-lr4.2e-3-s1', 'v6e-a-global-h4-qk-lr6e-3-s1', 'v6e-a-local-h4-qk-lr2.1e-3-s1', 'v6e-a-local-h4-qk-lr6e-3-s1', 'v6e-ctrl-mlp1216-qk-lr2.4e-2-s1', 'v6e-ctrl-mlp1216-qk-lr6e-3-s1', 'v6e-mhc-h1-qk-lr1.2e-2-s1', 'v6e-mhc-h1-qk-lr6e-3-s1']
+[10-05 14:34:59] adopted mhc-exp19-007851 (us-central1-b): running ['v6e-a-global-h4-qk-lr1.5e-3-s2', 'v6e-a-global-h4-qk-lr2.4e-2-s1', 'v6e-a-local-h4-qk-lr2.4e-2-s0', 'v6e-a-local-h4-qk-lr2.4e-2-s1', 'v6e-a-local-h4-qk-lr8.5e-3-s1', 'v6e-mhc-h1-qk-lr1.5e-3-s2', 'v6e-mhc-h1-qk-lr2.4e-2-s1', 'v6e-mhc-h1-qk-lr8.5e-3-s1']
+[10-05 14:35:59] found mhc-exp19-0985317 (us-east1-d), not set up: setting it up
+[10-05 14:36:01] adopted mhc-exp19-054624 (us-east1-d): running ['v6e-a-global-h4-qk-lr2.1e-3-s1', 'v6e-a-global-h4-qk-lr8.5e-3-s1', 'v6e-ctrl-mlp1216-qk-lr2.1e-3-s1', 'v6e-ctrl-mlp1216-qk-lr8.5e-3-s1']
+[10-05 14:36:21] v6e-a-local-h4-qk-lr2.4e-2-s0: done — exit 0 in 1347s on mhc-exp19-007851 (us-central1-b), val 4.2769, tok/s 82627, preempted 0x
+[10-05 14:36:40] v6e-a-global-h4-qk-lr1.2e-2-s1: started on mhc-exp19-007851 chip 6
+[10-05 14:36:40] status: 110/240 done, 110 queued, 20 running on 4 VMs, spent $165.62
+[10-05 14:37:56] v6e-a-global-h4-qk-lr2.1e-3-s1: done — exit 0 in 1500s on mhc-exp19-054624 (us-east1-d), val 4.0896, tok/s 73057, preempted 0x
+[10-05 14:38:09] v6e-ctrl-mlp1216-qk-lr2.1e-3-s1: done — exit 0 in 1482s on mhc-exp19-054624 (us-east1-d), val 4.0537, tok/s 73478, preempted 0x
+[10-05 14:38:12] v6e-ctrl-mlp1216-qk-lr1.2e-2-s1: started on mhc-exp19-054624 chip 0
+[10-05 14:38:13] v6e-a-local-h4-qk-lr1.2e-2-s1: started on mhc-exp19-054624 chip 1
+[10-05 14:39:30] v6e-ctrl-mlp1216-qk-lr6e-3-s1: done — exit 0 in 1286s on mhc-exp19-0920016 (us-central1-b), val 4.0746, tok/s 85786, preempted 0x
+[10-05 14:39:45] v6e-mhc-h1-qk-lr6e-3-s1: done — exit 0 in 1289s on mhc-exp19-0920016 (us-central1-b), val 4.0921, tok/s 86023, preempted 0x
+[10-05 14:39:48] v6e-mhc-h1-qk-lr1.7e-2-s1: started on mhc-exp19-0920016 chip 4
+[10-05 14:39:48] mhc-exp19-0985317: setup failed (ssh: connect to host 34.73.178.5 port 22: Operation timed out
+); deleting
+[10-05 14:39:51] v6e-a-global-h4-qk-lr1.7e-2-s1: started on mhc-exp19-0920016 chip 6
+[10-05 14:40:49] deleted mhc-exp19-0985317 ()
+[10-05 14:41:06] v6e-a-global-h4-qk-lr4.2e-3-s1: done — exit 0 in 1314s on mhc-exp19-0920016 (us-central1-b), val 4.1032, tok/s 84698, preempted 0x
+[10-05 14:41:22] v6e-a-global-h4-qk-lr6e-3-s1: done — exit 0 in 1300s on mhc-exp19-0920016 (us-central1-b), val 4.1080, tok/s 85150, preempted 0x
+[10-05 14:41:25] v6e-ctrl-mlp1216-qk-lr1.7e-2-s1: started on mhc-exp19-0920016 chip 2
+[10-05 14:41:27] v6e-a-local-h4-qk-lr1.7e-2-s1: started on mhc-exp19-0920016 chip 5
+[10-05 14:41:52] mhc-exp19-007851: status failed (1): ssh: connect to host 34.72.237.223 port 22: Operation timed out
+[10-05 14:42:29] create mhc-exp19-113121 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 14:42:54] v6e-a-global-h4-qk-lr1.5e-3-s2: back in the queue (state PREEMPTED, attempt 2)
+[10-05 14:42:54] v6e-a-global-h4-qk-lr2.4e-2-s1: back in the queue (state PREEMPTED, attempt 2)
+[10-05 14:42:54] v6e-a-local-h4-qk-lr2.4e-2-s1: back in the queue (state PREEMPTED, attempt 2)
+[10-05 14:42:54] v6e-a-local-h4-qk-lr8.5e-3-s1: back in the queue (state PREEMPTED, attempt 2)
+[10-05 14:42:54] v6e-mhc-h1-qk-lr1.5e-3-s2: back in the queue (state PREEMPTED, attempt 2)
+[10-05 14:42:54] v6e-mhc-h1-qk-lr2.4e-2-s1: back in the queue (state PREEMPTED, attempt 2)
+[10-05 14:42:54] v6e-mhc-h1-qk-lr8.5e-3-s1: back in the queue (state PREEMPTED, attempt 2)
+[10-05 14:42:54] v6e-a-global-h4-qk-lr1.2e-2-s1: back in the queue (state PREEMPTED, attempt 2)
+[10-05 14:42:56] create mhc-exp19-113121 (v6e-8) in us-central1-a failed: capacity
+[10-05 14:43:41] create mhc-exp19-113121 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 14:43:46] create mhc-exp19-113121 (v6e-8) in us-central1-c failed: capacity
+[10-05 14:43:55] deleted mhc-exp19-007851 (state PREEMPTED)
+[10-05 14:44:10] v6e-a-local-h4-qk-lr2.1e-3-s1: done — exit 0 in 1400s on mhc-exp19-0920016 (us-central1-b), val 4.1020, tok/s 80298, preempted 0x
+[10-05 14:44:24] v6e-a-local-h4-qk-lr6e-3-s1: done — exit 0 in 1377s on mhc-exp19-0920016 (us-central1-b), val 4.1236, tok/s 81072, preempted 0x
+[10-05 14:44:27] v6e-mhc-h1-qk-lr8.5e-3-s1: started on mhc-exp19-0920016 chip 0
+[10-05 14:44:28] v6e-a-local-h4-qk-lr8.5e-3-s1: started on mhc-exp19-0920016 chip 7
+[10-05 14:45:40] create mhc-exp19-114682 (v6e-8) in us-east1-d failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-east1-d.)
+[10-05 14:45:45] v6e-a-global-h4-qk-lr8.5e-3-s1: done — exit 0 in 1488s on mhc-exp19-054624 (us-east1-d), val 4.1011, tok/s 73743, preempted 0x
+[10-05 14:45:47] create mhc-exp19-114682 (v6e-8) in us-west1-c failed: capacity
+[10-05 14:45:54] create mhc-exp19-114682 (v6e-8) in us-south1-a failed: capacity
+[10-05 14:45:57] v6e-ctrl-mlp1216-qk-lr8.5e-3-s1: done — exit 0 in 1468s on mhc-exp19-054624 (us-east1-d), val 4.0767, tok/s 74261, preempted 0x
+[10-05 14:46:00] v6e-a-global-h4-qk-lr1.2e-2-s1: started on mhc-exp19-054624 chip 2
+[10-05 14:46:01] v6e-mhc-h1-qk-lr2.4e-2-s1: started on mhc-exp19-054624 chip 3
+[10-05 14:46:39] create mhc-exp19-114682 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 14:47:30] create mhc-exp19-114682 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 14:47:56] create mhc-exp19-114682 (v6e-4) in us-central1-a failed: capacity
+[10-05 14:48:43] v6e-mhc-h1-qk-lr1.2e-2-s1: done — exit 0 in 1379s on mhc-exp19-0920016 (us-central1-b), val 4.1183, tok/s 79407, preempted 0x
+[10-05 14:48:46] v6e-a-global-h4-qk-lr2.4e-2-s1: started on mhc-exp19-0920016 chip 3
+[10-05 14:50:43] created mhc-exp19-113121 (v6e-8) in us-east1-d
+[10-05 14:51:27] mhc-exp19-113121: set up (data ok: 21 shards)
+[10-05 14:51:58] v6e-a-local-h4-qk-lr2.4e-2-s1: started on mhc-exp19-113121 chip 0
+[10-05 14:51:59] v6e-residual-qk-lr2.4e-2-s1: started on mhc-exp19-113121 chip 1
+[10-05 14:52:00] v6e-mhc-h1-qk-lr1.5e-3-s2: started on mhc-exp19-113121 chip 2
+[10-05 14:52:02] v6e-a-global-h4-qk-lr1.5e-3-s2: started on mhc-exp19-113121 chip 3
+[10-05 14:52:03] v6e-ctrl-mlp1216-qk-lr1.5e-3-s2: started on mhc-exp19-113121 chip 4
+[10-05 14:52:04] v6e-a-local-h4-qk-lr1.5e-3-s2: started on mhc-exp19-113121 chip 5
+[10-05 14:52:12] v6e-residual-qk-lr1.5e-3-s2: started on mhc-exp19-113121 chip 6
+[10-05 14:52:13] v6e-mhc-h1-qk-lr2.1e-3-s2: started on mhc-exp19-113121 chip 7
+[10-05 14:52:13] status: 121/240 done, 99 queued, 20 running on 3 VMs, spent $169.34
+[10-05 14:55:38] v6e-ctrl-mlp1216-qk-lr2.4e-2-s1: done — exit 0 in 1364s on mhc-exp19-0920016 (us-central1-b), val 4.2327, tok/s 80363, preempted 0x
+[10-05 14:55:41] v6e-a-global-h4-qk-lr2.1e-3-s2: started on mhc-exp19-0920016 chip 1
+[10-05 14:56:21] created mhc-exp19-114682 (v6e-4) in us-central1-b
+[10-05 14:57:08] mhc-exp19-114682: set up (data ok: 21 shards)
+[10-05 14:57:50] v6e-ctrl-mlp1216-qk-lr2.1e-3-s2: started on mhc-exp19-114682 chip 0
+[10-05 14:57:52] v6e-a-local-h4-qk-lr2.1e-3-s2: started on mhc-exp19-114682 chip 1
+[10-05 14:57:53] v6e-residual-qk-lr2.1e-3-s2: started on mhc-exp19-114682 chip 2
+[10-05 14:57:55] v6e-mhc-h1-qk-lr3e-3-s2: started on mhc-exp19-114682 chip 3
+[10-05 14:59:12] create mhc-exp19-122913 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 15:00:06] create mhc-exp19-122913 (v6e-8) in us-central1-a failed: capacity
+[10-05 15:00:30] v6e-residual-qk-lr2.4e-2-s1: done — exit 0 in 434s on mhc-exp19-113121 (us-east1-d), val 4.3739, tok/s 254870, preempted 0x
+[10-05 15:00:42] v6e-residual-qk-lr1.5e-3-s2: done — exit 0 in 419s on mhc-exp19-113121 (us-east1-d), val 4.1507, tok/s 260955, preempted 0x
+[10-05 15:00:45] v6e-a-global-h4-qk-lr3e-3-s2: started on mhc-exp19-113121 chip 1
+[10-05 15:00:46] v6e-ctrl-mlp1216-qk-lr3e-3-s2: started on mhc-exp19-113121 chip 6
+[10-05 15:00:54] create mhc-exp19-122913 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 15:01:00] create mhc-exp19-122913 (v6e-8) in us-central1-c failed: capacity
+[10-05 15:02:00] create mhc-exp19-122913 (v6e-8) in us-east1-d failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-east1-d.)
+[10-05 15:02:08] create mhc-exp19-122913 (v6e-8) in us-west1-c failed: capacity
+[10-05 15:02:14] create mhc-exp19-122913 (v6e-8) in us-south1-a failed: capacity
+[10-05 15:02:32] create mhc-exp19-122913 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 15:03:05] v6e-ctrl-mlp1216-qk-lr1.2e-2-s1: done — exit 0 in 1465s on mhc-exp19-054624 (us-east1-d), val 4.1546, tok/s 74507, preempted 0x
+[10-05 15:03:08] v6e-mhc-h1-qk-lr1.7e-2-s1: done — exit 0 in 1306s on mhc-exp19-0920016 (us-central1-b), val 4.1608, tok/s 85389, preempted 0x
+[10-05 15:03:08] v6e-a-local-h4-qk-lr3e-3-s2: started on mhc-exp19-054624 chip 0
+[10-05 15:03:11] v6e-residual-qk-lr3e-3-s2: started on mhc-exp19-0920016 chip 4
+[10-05 15:03:33] create mhc-exp19-122913 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 15:04:09] create mhc-exp19-122913 (v6e-4) in us-central1-a failed: capacity
+[10-05 15:04:25] v6e-a-local-h4-qk-lr1.2e-2-s1: done — exit 0 in 1518s on mhc-exp19-054624 (us-east1-d), val 4.1343, tok/s 72011, preempted 0x
+[10-05 15:04:27] v6e-a-global-h4-qk-lr1.7e-2-s1: done — exit 0 in 1337s on mhc-exp19-0920016 (us-central1-b), val 4.2209, tok/s 84069, preempted 0x
+[10-05 15:04:28] v6e-mhc-h1-qk-lr4.2e-3-s2: started on mhc-exp19-054624 chip 1
+[10-05 15:04:42] v6e-ctrl-mlp1216-qk-lr1.7e-2-s1: done — exit 0 in 1292s on mhc-exp19-0920016 (us-central1-b), val 4.1604, tok/s 84762, preempted 0x
+[10-05 15:04:46] v6e-a-global-h4-qk-lr4.2e-3-s2: started on mhc-exp19-0920016 chip 2
+[10-05 15:04:47] v6e-ctrl-mlp1216-qk-lr4.2e-3-s2: started on mhc-exp19-0920016 chip 6
+[10-05 15:06:04] v6e-residual-qk-lr2.1e-3-s2: done — exit 0 in 459s on mhc-exp19-114682 (us-central1-b), val 4.1743, tok/s 232814, preempted 0x
+[10-05 15:06:04] v6e-a-local-h4-qk-lr1.7e-2-s1: done — exit 0 in 1327s on mhc-exp19-0920016 (us-central1-b), val 4.2099, tok/s 83215, preempted 0x
+[10-05 15:06:07] v6e-a-local-h4-qk-lr4.2e-3-s2: started on mhc-exp19-114682 chip 2
+[10-05 15:06:07] v6e-residual-qk-lr4.2e-3-s2: started on mhc-exp19-0920016 chip 5
+[10-05 15:07:09] v6e-a-global-h4-qk-lr1.2e-2-s1: back in the queue (state PREEMPTED, attempt 3)
+[10-05 15:07:09] v6e-mhc-h1-qk-lr2.4e-2-s1: back in the queue (state PREEMPTED, attempt 3)
+[10-05 15:07:09] v6e-a-local-h4-qk-lr3e-3-s2: back in the queue (state PREEMPTED, attempt 2)
+[10-05 15:07:09] v6e-mhc-h1-qk-lr4.2e-3-s2: back in the queue (state PREEMPTED, attempt 2)
+[10-05 15:08:09] deleted mhc-exp19-054624 (state PREEMPTED)
+[10-05 15:08:28] v6e-a-local-h4-qk-lr8.5e-3-s1: done — exit 0 in 1360s on mhc-exp19-0920016 (us-central1-b), val 4.1257, tok/s 81786, preempted 1x
+[10-05 15:08:48] v6e-a-global-h4-qk-lr1.2e-2-s1: started on mhc-exp19-0920016 chip 7
+[10-05 15:08:48] status: 132/240 done, 88 queued, 20 running on 3 VMs, spent $173.79
+[10-05 15:10:04] v6e-mhc-h1-qk-lr8.5e-3-s1: done — exit 0 in 1407s on mhc-exp19-0920016 (us-central1-b), val 4.0682, tok/s 77782, preempted 1x
+[10-05 15:10:05] create mhc-exp19-122913 (v6e-4) in us-central1-b failed: an internal error has occurred
+[10-05 15:10:07] v6e-mhc-h1-qk-lr2.4e-2-s1: started on mhc-exp19-0920016 chip 0
+[10-05 15:10:16] create mhc-exp19-122913 (v6e-4) in us-central1-c failed: capacity
+[10-05 15:11:23] v6e-residual-qk-lr3e-3-s2: done — exit 0 in 423s on mhc-exp19-0920016 (us-central1-b), val 4.1597, tok/s 257271, preempted 0x
+[10-05 15:11:26] v6e-a-local-h4-qk-lr3e-3-s2: started on mhc-exp19-0920016 chip 4
+[10-05 15:12:43] v6e-a-global-h4-qk-lr2.4e-2-s1: done — exit 0 in 1330s on mhc-exp19-0920016 (us-central1-b), val 4.2540, tok/s 83219, preempted 1x
+[10-05 15:12:46] v6e-mhc-h1-qk-lr4.2e-3-s2: started on mhc-exp19-0920016 chip 3
+[10-05 15:14:01] v6e-residual-qk-lr4.2e-3-s2: done — exit 0 in 422s on mhc-exp19-0920016 (us-central1-b), val 4.1731, tok/s 257632, preempted 0x
+[10-05 15:14:05] v6e-mhc-h1-qk-lr6e-3-s2: started on mhc-exp19-0920016 chip 5
+[10-05 15:14:11] created mhc-exp19-122913 (v6e-4) in us-east1-d
+[10-05 15:14:54] mhc-exp19-122913: set up (data ok: 21 shards)
+[10-05 15:15:09] v6e-a-global-h4-qk-lr6e-3-s2: started on mhc-exp19-122913 chip 0
+[10-05 15:15:11] v6e-ctrl-mlp1216-qk-lr6e-3-s2: started on mhc-exp19-122913 chip 1
+[10-05 15:15:12] v6e-a-local-h4-qk-lr6e-3-s2: started on mhc-exp19-122913 chip 2
+[10-05 15:15:13] v6e-residual-qk-lr6e-3-s2: started on mhc-exp19-122913 chip 3
+[10-05 15:15:20] v6e-mhc-h1-qk-lr1.5e-3-s2: done — exit 0 in 1293s on mhc-exp19-113121 (us-east1-d), val 4.0776, tok/s 85575, preempted 1x
+[10-05 15:15:34] v6e-ctrl-mlp1216-qk-lr1.5e-3-s2: done — exit 0 in 1302s on mhc-exp19-113121 (us-east1-d), val 4.0735, tok/s 84904, preempted 0x
+[10-05 15:15:47] v6e-mhc-h1-qk-lr2.1e-3-s2: done — exit 0 in 1268s on mhc-exp19-113121 (us-east1-d), val 4.0829, tok/s 87143, preempted 0x
+[10-05 15:15:49] v6e-mhc-h1-qk-lr8.5e-3-s2: started on mhc-exp19-113121 chip 2
+[10-05 15:15:51] v6e-a-global-h4-qk-lr8.5e-3-s2: started on mhc-exp19-113121 chip 4
+[10-05 15:15:52] v6e-ctrl-mlp1216-qk-lr8.5e-3-s2: started on mhc-exp19-113121 chip 7
+[10-05 15:17:08] v6e-a-local-h4-qk-lr2.4e-2-s1: done — exit 0 in 1345s on mhc-exp19-113121 (us-east1-d), val 4.2765, tok/s 82715, preempted 1x
+[10-05 15:17:11] v6e-a-local-h4-qk-lr8.5e-3-s2: started on mhc-exp19-113121 chip 0
+[10-05 15:17:24] create mhc-exp19-133524 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 15:18:13] create mhc-exp19-133524 (v6e-8) in us-central1-a failed: capacity
+[10-05 15:18:26] v6e-a-global-h4-qk-lr1.5e-3-s2: done — exit 0 in 1349s on mhc-exp19-113121 (us-east1-d), val 4.1117, tok/s 83294, preempted 1x
+[10-05 15:18:38] v6e-a-local-h4-qk-lr1.5e-3-s2: done — exit 0 in 1350s on mhc-exp19-113121 (us-east1-d), val 4.1234, tok/s 83070, preempted 0x
+[10-05 15:18:41] v6e-residual-qk-lr8.5e-3-s2: started on mhc-exp19-113121 chip 3
+[10-05 15:18:42] v6e-mhc-h1-qk-lr1.2e-2-s2: started on mhc-exp19-113121 chip 5
+[10-05 15:18:55] create mhc-exp19-133524 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 15:19:05] create mhc-exp19-133524 (v6e-8) in us-central1-c failed: capacity
+[10-05 15:20:03] create mhc-exp19-133524 (v6e-8) in us-east1-d failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-east1-d.)
+[10-05 15:20:10] create mhc-exp19-133524 (v6e-8) in us-west1-c failed: capacity
+[10-05 15:20:20] create mhc-exp19-133524 (v6e-8) in us-south1-a failed: capacity
+[10-05 15:20:31] create mhc-exp19-133524 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 15:21:09] create mhc-exp19-133524 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 15:21:25] v6e-a-global-h4-qk-lr2.1e-3-s2: done — exit 0 in 1453s on mhc-exp19-0920016 (us-central1-b), val 4.1109, tok/s 76336, preempted 0x
+[10-05 15:21:28] v6e-a-global-h4-qk-lr1.2e-2-s2: started on mhc-exp19-0920016 chip 1
+[10-05 15:21:36] create mhc-exp19-133524 (v6e-4) in us-central1-a failed: capacity
+[10-05 15:22:45] v6e-ctrl-mlp1216-qk-lr2.1e-3-s2: done — exit 0 in 1459s on mhc-exp19-114682 (us-central1-b), val 4.0453, tok/s 74981, preempted 0x
+[10-05 15:22:48] v6e-ctrl-mlp1216-qk-lr1.2e-2-s2: started on mhc-exp19-114682 chip 0
+[10-05 15:24:02] v6e-residual-qk-lr6e-3-s2: done — exit 0 in 469s on mhc-exp19-122913 (us-east1-d), val 4.1524, tok/s 227274, preempted 0x
+[10-05 15:24:04] v6e-a-local-h4-qk-lr2.1e-3-s2: done — exit 0 in 1519s on mhc-exp19-114682 (us-central1-b), val 4.1007, tok/s 72472, preempted 0x
+[10-05 15:24:06] v6e-a-local-h4-qk-lr1.2e-2-s2: started on mhc-exp19-122913 chip 3
+[10-05 15:24:19] v6e-mhc-h1-qk-lr3e-3-s2: done — exit 0 in 1486s on mhc-exp19-114682 (us-central1-b), val 4.0703, tok/s 73838, preempted 0x
+[10-05 15:24:23] v6e-residual-qk-lr1.2e-2-s2: started on mhc-exp19-114682 chip 1
+[10-05 15:24:25] v6e-mhc-h1-qk-lr1.7e-2-s2: started on mhc-exp19-114682 chip 3
+[10-05 15:24:25] status: 147/240 done, 69 queued, 24 running on 4 VMs, spent $177.76
+[10-05 15:25:39] v6e-a-global-h4-qk-lr3e-3-s2: done — exit 0 in 1336s on mhc-exp19-113121 (us-east1-d), val 4.0762, tok/s 82652, preempted 0x
+[10-05 15:25:50] v6e-ctrl-mlp1216-qk-lr3e-3-s2: done — exit 0 in 1354s on mhc-exp19-113121 (us-east1-d), val 4.0790, tok/s 80776, preempted 0x
+[10-05 15:25:53] v6e-a-global-h4-qk-lr1.7e-2-s2: started on mhc-exp19-113121 chip 1
+[10-05 15:25:54] v6e-ctrl-mlp1216-qk-lr1.7e-2-s2: started on mhc-exp19-113121 chip 6
+[10-05 15:26:10] create mhc-exp19-133524 (v6e-4) in us-central1-b failed: an internal error has occurred
+[10-05 15:26:22] create mhc-exp19-133524 (v6e-4) in us-central1-c failed: capacity
+[10-05 15:26:57] v6e-a-global-h4-qk-lr6e-3-s2: back in the queue (state PREEMPTED, attempt 2)
+[10-05 15:26:57] v6e-ctrl-mlp1216-qk-lr6e-3-s2: back in the queue (state PREEMPTED, attempt 2)
+[10-05 15:26:57] v6e-a-local-h4-qk-lr6e-3-s2: back in the queue (state PREEMPTED, attempt 2)
+[10-05 15:26:57] v6e-a-local-h4-qk-lr1.2e-2-s2: back in the queue (state PREEMPTED, attempt 2)
+[10-05 15:27:56] deleted mhc-exp19-122913 (state PREEMPTED)
+[10-05 15:28:07] v6e-residual-qk-lr8.5e-3-s2: done — exit 0 in 425s on mhc-exp19-113121 (us-east1-d), val 4.1543, tok/s 255951, preempted 0x
+[10-05 15:28:10] v6e-a-global-h4-qk-lr6e-3-s2: started on mhc-exp19-113121 chip 3
+[10-05 15:28:10] v6e-a-global-h4-qk-lr4.2e-3-s2: done — exit 0 in 1342s on mhc-exp19-0920016 (us-central1-b), val 4.0940, tok/s 82873, preempted 0x
+[10-05 15:28:23] v6e-ctrl-mlp1216-qk-lr4.2e-3-s2: done — exit 0 in 1299s on mhc-exp19-0920016 (us-central1-b), val 4.0600, tok/s 84823, preempted 0x
+[10-05 15:28:26] v6e-ctrl-mlp1216-qk-lr6e-3-s2: started on mhc-exp19-0920016 chip 2
+[10-05 15:28:27] v6e-a-local-h4-qk-lr6e-3-s2: started on mhc-exp19-0920016 chip 6
+[10-05 15:32:11] v6e-a-local-h4-qk-lr4.2e-3-s2: done — exit 0 in 1529s on mhc-exp19-114682 (us-central1-b), val 4.1038, tok/s 71854, preempted 0x
+[10-05 15:32:11] v6e-a-global-h4-qk-lr1.2e-2-s1: done — exit 0 in 1327s on mhc-exp19-0920016 (us-central1-b), val 4.1907, tok/s 84019, preempted 2x
+[10-05 15:32:13] v6e-a-local-h4-qk-lr1.2e-2-s2: started on mhc-exp19-114682 chip 2
+[10-05 15:32:14] v6e-a-local-h4-qk-lr1.7e-2-s2: started on mhc-exp19-0920016 chip 7
+[10-05 15:33:29] v6e-residual-qk-lr1.2e-2-s2: done — exit 0 in 465s on mhc-exp19-114682 (us-central1-b), val 4.2679, tok/s 229790, preempted 0x
+[10-05 15:33:29] v6e-mhc-h1-qk-lr2.4e-2-s1: done — exit 0 in 1311s on mhc-exp19-0920016 (us-central1-b), val 4.2733, tok/s 84072, preempted 2x
+[10-05 15:33:32] v6e-residual-qk-lr1.7e-2-s2: started on mhc-exp19-114682 chip 1
+[10-05 15:33:32] v6e-mhc-h1-qk-lr2.4e-2-s2: started on mhc-exp19-0920016 chip 0
+[10-05 15:35:51] v6e-a-local-h4-qk-lr3e-3-s2: done — exit 0 in 1342s on mhc-exp19-0920016 (us-central1-b), val 4.0930, tok/s 82899, preempted 1x
+[10-05 15:36:05] v6e-mhc-h1-qk-lr4.2e-3-s2: done — exit 0 in 1318s on mhc-exp19-0920016 (us-central1-b), val 4.0995, tok/s 83662, preempted 1x
+[10-05 15:36:07] v6e-a-global-h4-qk-lr2.4e-2-s2: started on mhc-exp19-0920016 chip 3
+[10-05 15:36:09] v6e-ctrl-mlp1216-qk-lr2.4e-2-s2: started on mhc-exp19-0920016 chip 4
+[10-05 15:37:24] v6e-mhc-h1-qk-lr6e-3-s2: done — exit 0 in 1311s on mhc-exp19-0920016 (us-central1-b), val 4.1048, tok/s 83894, preempted 0x
+[10-05 15:37:27] v6e-a-local-h4-qk-lr2.4e-2-s2: started on mhc-exp19-0920016 chip 5
+[10-05 15:38:41] v6e-ctrl-mlp1216-qk-lr8.5e-3-s2: done — exit 0 in 1306s on mhc-exp19-113121 (us-east1-d), val 4.0670, tok/s 84912, preempted 0x
+[10-05 15:38:43] v6e-residual-qk-lr2.4e-2-s2: started on mhc-exp19-113121 chip 7
+[10-05 15:39:57] v6e-mhc-h1-qk-lr8.5e-3-s2: done — exit 0 in 1343s on mhc-exp19-113121 (us-east1-d), val 4.0559, tok/s 83289, preempted 0x
+[10-05 15:40:09] v6e-a-global-h4-qk-lr8.5e-3-s2: done — exit 0 in 1376s on mhc-exp19-113121 (us-east1-d), val 4.1242, tok/s 82000, preempted 0x
+[10-05 15:40:12] v6e-mhc-h1-diag-lr8.5e-3-s0: started on mhc-exp19-113121 chip 2
+[10-05 15:40:13] v6e-a-global-h4-diag-lr8.5e-3-s0: started on mhc-exp19-113121 chip 4
+[10-05 15:40:13] status: 162/240 done, 58 queued, 20 running on 3 VMs, spent $181.32
+[10-05 15:41:24] create mhc-exp19-133524 (v6e-4) in us-east1-d failed: timeout
+[10-05 15:41:29] v6e-a-local-h4-qk-lr8.5e-3-s2: done — exit 0 in 1365s on mhc-exp19-113121 (us-east1-d), val 4.0870, tok/s 81198, preempted 0x
+[10-05 15:41:48] v6e-ctrl-mlp1216-diag-lr8.5e-3-s0: started on mhc-exp19-113121 chip 0
+[10-05 15:43:02] v6e-mhc-h1-qk-lr1.2e-2-s2: done — exit 0 in 1341s on mhc-exp19-113121 (us-east1-d), val 4.1397, tok/s 82528, preempted 0x
+[10-05 15:43:04] v6e-a-local-h4-diag-lr8.5e-3-s0: started on mhc-exp19-113121 chip 5
+[10-05 15:43:12] create mhc-exp19-133524 (v6e-4) in us-west1-c failed: capacity
+[10-05 15:43:19] create mhc-exp19-133524 (v6e-4) in us-south1-a failed: capacity
+[10-05 15:43:37] create mhc-exp19-133524 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 15:43:50] mhc-exp19-114682: status failed (1): ssh: connect to host 35.254.239.151 port 22: Operation timed out
+[10-05 15:44:51] v6e-a-global-h4-qk-lr1.7e-2-s2: back in the queue (state gone, attempt 2)
+[10-05 15:44:51] v6e-ctrl-mlp1216-qk-lr1.7e-2-s2: back in the queue (state gone, attempt 2)
+[10-05 15:44:51] v6e-a-global-h4-qk-lr6e-3-s2: back in the queue (state gone, attempt 3)
+[10-05 15:44:51] v6e-residual-qk-lr2.4e-2-s2: back in the queue (state gone, attempt 2)
+[10-05 15:44:51] v6e-mhc-h1-diag-lr8.5e-3-s0: back in the queue (state gone, attempt 2)
+[10-05 15:44:51] v6e-a-global-h4-diag-lr8.5e-3-s0: back in the queue (state gone, attempt 2)
+[10-05 15:44:51] v6e-ctrl-mlp1216-diag-lr8.5e-3-s0: back in the queue (state gone, attempt 2)
+[10-05 15:44:51] v6e-a-local-h4-diag-lr8.5e-3-s0: back in the queue (state gone, attempt 2)
+[10-05 15:44:52] deleted mhc-exp19-113121 (state gone) — delete failed: unt specified by the [core/account] property
+- '@type': type.googleapis.com/google.rpc.ResourceInfo
+  resourceName: projects/PROJECT_ID/locations/us-east1-d/nodes/mhc-exp19-113121
+
+[10-05 15:44:52] v6e-ctrl-mlp1216-qk-lr1.2e-2-s2: back in the queue (state PREEMPTED, attempt 2)
+[10-05 15:44:52] v6e-mhc-h1-qk-lr1.7e-2-s2: back in the queue (state PREEMPTED, attempt 2)
+[10-05 15:44:52] v6e-a-local-h4-qk-lr1.2e-2-s2: back in the queue (state PREEMPTED, attempt 3)
+[10-05 15:44:52] v6e-residual-qk-lr1.7e-2-s2: back in the queue (state PREEMPTED, attempt 2)
+[10-05 15:45:08] create mhc-exp19-150305 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 15:45:44] create mhc-exp19-150305 (v6e-8) in us-central1-a failed: capacity
+[10-05 15:46:13] deleted mhc-exp19-114682 (state PREEMPTED)
+[10-05 15:46:27] v6e-a-global-h4-qk-lr1.2e-2-s2: done — exit 0 in 1338s on mhc-exp19-0920016 (us-central1-b), val 4.1852, tok/s 82862, preempted 0x
+[10-05 15:46:30] v6e-a-global-h4-qk-lr6e-3-s2: started on mhc-exp19-0920016 chip 1
+[10-05 15:47:12] create mhc-exp19-151907 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 15:47:12] create mhc-exp19-151906 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 15:47:21] create mhc-exp19-151907 (v6e-8) in us-central1-c failed: capacity
+[10-05 15:47:22] create mhc-exp19-151906 (v6e-8) in us-central1-c failed: capacity
+[10-05 15:50:31] create mhc-exp19-151907 (v6e-8) in us-east1-d failed: capacity
+[10-05 15:50:31] create mhc-exp19-151906 (v6e-8) in us-east1-d failed: capacity
+[10-05 15:50:39] create mhc-exp19-151906 (v6e-8) in us-west1-c failed: capacity
+[10-05 15:50:40] create mhc-exp19-151907 (v6e-8) in us-west1-c failed: capacity
+[10-05 15:50:46] create mhc-exp19-151907 (v6e-8) in us-south1-a failed: capacity
+[10-05 15:50:46] create mhc-exp19-151906 (v6e-8) in us-south1-a failed: capacity
+[10-05 15:51:49] create mhc-exp19-151906 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 15:51:50] create mhc-exp19-151907 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 15:52:00] v6e-ctrl-mlp1216-qk-lr6e-3-s2: done — exit 0 in 1334s on mhc-exp19-0920016 (us-central1-b), val 4.0498, tok/s 82388, preempted 1x
+[10-05 15:52:23] v6e-ctrl-mlp1216-qk-lr1.2e-2-s2: started on mhc-exp19-0920016 chip 2
+[10-05 15:52:52] create mhc-exp19-151907 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 15:53:08] create mhc-exp19-151906 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 15:53:12] create mhc-exp19-151907 (v6e-4) in us-central1-a failed: capacity
+[10-05 15:53:39] v6e-a-local-h4-qk-lr6e-3-s2: done — exit 0 in 1386s on mhc-exp19-0920016 (us-central1-b), val 4.1006, tok/s 80317, preempted 1x
+[10-05 15:53:42] v6e-a-local-h4-qk-lr1.2e-2-s2: started on mhc-exp19-0920016 chip 6
+[10-05 15:53:51] create mhc-exp19-151907 (v6e-4) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 15:54:03] create mhc-exp19-151907 (v6e-4) in us-central1-c failed: capacity
+[10-05 15:54:17] create mhc-exp19-151906 (v6e-4) in us-east1-d failed: capacity
+[10-05 16:09:13] created mhc-exp19-150305 (v6e-8) in us-central1-b
+[10-05 16:09:36] create mhc-exp19-151907 (v6e-4) in us-east1-d failed: capacity
+[10-05 16:09:38] v6e-a-local-h4-qk-lr1.7e-2-s2: done — exit 0 in 1353s on mhc-exp19-0920016 (us-central1-b), val 4.2723, tok/s 82476, preempted 0x
+[10-05 16:09:45] create mhc-exp19-151907 (v6e-4) in us-west1-c failed: capacity
+[10-05 16:09:54] v6e-mhc-h1-qk-lr2.4e-2-s2: done — exit 0 in 1362s on mhc-exp19-0920016 (us-central1-b), val 4.2622, tok/s 81321, preempted 0x
+[10-05 16:09:56] create mhc-exp19-151907 (v6e-4) in us-south1-a failed: capacity
+[10-05 16:10:02] mhc-exp19-150305: set up (data ok: 21 shards)
+[10-05 16:10:09] v6e-a-global-h4-qk-lr2.4e-2-s2: done — exit 0 in 1334s on mhc-exp19-0920016 (us-central1-b), val 4.3148, tok/s 83807, preempted 0x
+[10-05 16:10:11] v6e-ctrl-mlp1216-qk-lr2.4e-2-s2: FAILED exit 0 (failure 1):
+  
+[10-05 16:10:11] v6e-a-local-h4-qk-lr2.4e-2-s2: FAILED exit 0 (failure 1):
+  
+[10-05 16:10:13] v6e-mhc-h1-qk-lr1.7e-2-s2: start on mhc-exp19-0920016 failed: kex_exchange_identification: read: Connection reset by peer
+
+[10-05 16:10:13] status: 170/240 done, 67 queued, 3 running on 2 VMs, spent $186.68
+[10-05 16:10:41] create mhc-exp19-151907 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 16:11:18] v6e-mhc-h1-qk-lr1.7e-2-s2: started on mhc-exp19-150305 chip 0
+[10-05 16:11:20] v6e-a-global-h4-qk-lr1.7e-2-s2: started on mhc-exp19-150305 chip 1
+[10-05 16:11:21] v6e-ctrl-mlp1216-qk-lr1.7e-2-s2: started on mhc-exp19-150305 chip 2
+[10-05 16:11:23] v6e-residual-qk-lr1.7e-2-s2: started on mhc-exp19-150305 chip 3
+[10-05 16:11:24] v6e-ctrl-mlp1216-qk-lr2.4e-2-s2: started on mhc-exp19-150305 chip 4
+[10-05 16:11:30] v6e-a-global-h4-qk-lr6e-3-s2: done — exit 0 in 1330s on mhc-exp19-0920016 (us-central1-b), val 4.0889, tok/s 83473, preempted 2x
+[10-05 16:11:30] v6e-a-local-h4-qk-lr2.4e-2-s2: started on mhc-exp19-150305 chip 5
+[10-05 16:11:33] v6e-mhc-h1-diag-lr8.5e-3-s0: started on mhc-exp19-0920016 chip 0
+[10-05 16:11:33] v6e-residual-qk-lr2.4e-2-s2: started on mhc-exp19-150305 chip 6
+[10-05 16:11:34] v6e-a-global-h4-diag-lr8.5e-3-s0: started on mhc-exp19-0920016 chip 1
+[10-05 16:11:35] v6e-ctrl-mlp1216-diag-lr8.5e-3-s0: started on mhc-exp19-150305 chip 7
+[10-05 16:11:37] v6e-a-local-h4-diag-lr8.5e-3-s0: started on mhc-exp19-0920016 chip 3
+[10-05 16:11:39] v6e-residual-diag-lr8.5e-3-s0: started on mhc-exp19-0920016 chip 4
+[10-05 16:11:42] v6e-mhc-h1-diag-lr1.2e-2-s0: started on mhc-exp19-0920016 chip 5
+[10-05 16:11:44] v6e-a-global-h4-diag-lr1.2e-2-s0: started on mhc-exp19-0920016 chip 7
+[10-05 16:12:45] create mhc-exp19-167048 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 16:13:22] create mhc-exp19-167048 (v6e-8) in us-central1-a failed: capacity
+[10-05 16:14:10] create mhc-exp19-167048 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 16:14:19] create mhc-exp19-167048 (v6e-8) in us-central1-c failed: capacity
+[10-05 16:14:47] create mhc-exp19-151906 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 16:15:09] v6e-ctrl-mlp1216-qk-lr1.2e-2-s2: done — exit 0 in 1282s on mhc-exp19-0920016 (us-central1-b), val 4.0999, tok/s 85759, preempted 1x
+[10-05 16:15:24] v6e-residual-diag-lr8.5e-3-s0: done — exit 0 in 158s on mhc-exp19-0920016 (us-central1-b), val nan, tok/s 284756, preempted 0x
+[10-05 16:15:27] v6e-ctrl-mlp1216-diag-lr1.2e-2-s0: started on mhc-exp19-0920016 chip 2
+[10-05 16:15:28] v6e-a-local-h4-diag-lr1.2e-2-s0: started on mhc-exp19-0920016 chip 4
+[10-05 16:17:31] create mhc-exp19-167048 (v6e-8) in us-east1-d failed: capacity
+[10-05 16:17:32] create mhc-exp19-169289 (v6e-8) in us-east1-d failed: capacity
+[10-05 16:17:39] create mhc-exp19-169289 (v6e-8) in us-west1-c failed: capacity
+[10-05 16:17:44] create mhc-exp19-167048 (v6e-8) in us-west1-c failed: capacity
+[10-05 16:17:49] create mhc-exp19-167048 (v6e-8) in us-south1-a failed: capacity
+[10-05 16:17:50] create mhc-exp19-169289 (v6e-8) in us-south1-a failed: capacity
+[10-05 16:17:51] v6e-a-local-h4-qk-lr1.2e-2-s2: done — exit 0 in 1383s on mhc-exp19-0920016 (us-central1-b), val 4.2024, tok/s 81029, preempted 2x
+[10-05 16:17:54] v6e-residual-diag-lr1.2e-2-s0: started on mhc-exp19-0920016 chip 6
+[10-05 16:18:51] create mhc-exp19-167048 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 16:18:54] create mhc-exp19-169289 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 16:19:11] v6e-residual-qk-lr1.7e-2-s2: done — exit 0 in 420s on mhc-exp19-150305 (us-central1-b), val 4.2689, tok/s 260339, preempted 1x
+[10-05 16:19:26] v6e-residual-qk-lr2.4e-2-s2: done — exit 0 in 420s on mhc-exp19-150305 (us-central1-b), val 4.3482, tok/s 257257, preempted 1x
+[10-05 16:19:29] v6e-mhc-h1-diag-lr1.7e-2-s0: started on mhc-exp19-150305 chip 3
+[10-05 16:19:31] v6e-a-global-h4-diag-lr1.7e-2-s0: started on mhc-exp19-150305 chip 6
+[10-05 16:19:40] create mhc-exp19-167048 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 16:19:43] create mhc-exp19-169289 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 16:20:28] create mhc-exp19-167048 (v6e-4) in us-central1-a failed: capacity
+[10-05 16:20:31] create mhc-exp19-169289 (v6e-4) in us-central1-a failed: capacity
+[10-05 16:20:57] v6e-mhc-h1-diag-lr1.2e-2-s0: done — exit 0 in 478s on mhc-exp19-0920016 (us-central1-b), val nan, tok/s 70113, preempted 0x
+[10-05 16:21:12] v6e-a-global-h4-diag-lr1.2e-2-s0: done — exit 0 in 501s on mhc-exp19-0920016 (us-central1-b), val nan, tok/s 71237, preempted 0x
+[10-05 16:21:14] create mhc-exp19-167048 (v6e-4) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 16:21:14] create mhc-exp19-169289 (v6e-4) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 16:21:20] create mhc-exp19-167048 (v6e-4) in us-central1-c failed: capacity
+[10-05 16:21:22] v6e-residual-diag-lr1.2e-2-s0: FAILED exit 0 (failure 1):
+  
+[10-05 16:21:23] v6e-residual-diag-lr1.2e-2-s0: start on mhc-exp19-0920016 failed: kex_exchange_identification: read: Connection reset by peer
+
+[10-05 16:21:24] create mhc-exp19-169289 (v6e-4) in us-central1-c failed: capacity
+[10-05 16:21:37] create mhc-exp19-169289 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 16:21:39] create mhc-exp19-167048 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 16:22:40] v6e-ctrl-mlp1216-diag-lr1.2e-2-s0: done — exit 0 in 314s on mhc-exp19-0920016 (us-central1-b), val nan, tok/s 61932, preempted 0x
+[10-05 16:22:43] v6e-residual-diag-lr1.2e-2-s0: started on mhc-exp19-0920016 chip 2
+[10-05 16:22:44] v6e-ctrl-mlp1216-diag-lr1.7e-2-s0: started on mhc-exp19-0920016 chip 5
+[10-05 16:22:46] v6e-a-local-h4-diag-lr1.7e-2-s0: started on mhc-exp19-0920016 chip 6
+[10-05 16:22:49] v6e-residual-diag-lr1.7e-2-s0: started on mhc-exp19-0920016 chip 7
+[10-05 16:25:11] v6e-mhc-h1-diag-lr1.7e-2-s0: done — exit 0 in 274s on mhc-exp19-150305 (us-central1-b), val nan, tok/s 61677, preempted 0x
+[10-05 16:25:11] v6e-a-local-h4-diag-lr1.2e-2-s0: done — exit 0 in 530s on mhc-exp19-0920016 (us-central1-b), val nan, tok/s 66606, preempted 0x
+[10-05 16:25:14] v6e-mhc-h1-diag-lr2.4e-2-s0: started on mhc-exp19-150305 chip 3
+[10-05 16:25:25] v6e-residual-diag-lr1.2e-2-s0: done — exit 0 in 103s on mhc-exp19-0920016 (us-central1-b), val nan, tok/s 248803, preempted 0x
+[10-05 16:25:39] v6e-residual-diag-lr1.7e-2-s0: done — exit 0 in 70s on mhc-exp19-0920016 (us-central1-b), val nan, tok/s 241092, preempted 0x
+[10-05 16:25:41] v6e-a-global-h4-diag-lr2.4e-2-s0: start on mhc-exp19-0920016 failed: kex_exchange_identification: read: Connection reset by peer
+
+[10-05 16:25:42] status: 183/240 done, 44 queued, 13 running on 2 VMs, spent $189.35
+[10-05 16:26:47] v6e-a-global-h4-diag-lr2.4e-2-s0: started on mhc-exp19-0920016 chip 2
+[10-05 16:26:47] create mhc-exp19-1754114 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 16:26:47] create mhc-exp19-1754115 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 16:26:49] v6e-ctrl-mlp1216-diag-lr2.4e-2-s0: started on mhc-exp19-0920016 chip 4
+[10-05 16:26:51] v6e-a-local-h4-diag-lr2.4e-2-s0: started on mhc-exp19-0920016 chip 7
+[10-05 16:26:59] v6e-a-global-h4-diag-lr1.7e-2-s0: done — exit 0 in 339s on mhc-exp19-150305 (us-central1-b), val nan, tok/s 61529, preempted 0x
+[10-05 16:27:02] v6e-residual-diag-lr2.4e-2-s0: started on mhc-exp19-150305 chip 6
+[10-05 16:28:18] v6e-ctrl-mlp1216-diag-lr1.7e-2-s0: done — exit 0 in 242s on mhc-exp19-0920016 (us-central1-b), val nan, tok/s 51675, preempted 0x
+[10-05 16:28:19] v6e-residual-diag-lr2.4e-2-s0: done — exit 0 in 39s on mhc-exp19-150305 (us-central1-b), val nan, tok/s 330166, preempted 0x
+[10-05 16:28:21] v6e-mhc-h1-diag-lr8.5e-3-s1: started on mhc-exp19-0920016 chip 5
+[10-05 16:28:22] v6e-a-global-h4-diag-lr8.5e-3-s1: started on mhc-exp19-150305 chip 6
+[10-05 16:29:39] v6e-mhc-h1-diag-lr2.4e-2-s0: done — exit 0 in 168s on mhc-exp19-150305 (us-central1-b), val nan, tok/s 98493, preempted 0x
+[10-05 16:29:39] v6e-a-local-h4-diag-lr1.7e-2-s0: done — exit 0 in 338s on mhc-exp19-0920016 (us-central1-b), val nan, tok/s 69913, preempted 0x
+[10-05 16:29:42] v6e-ctrl-mlp1216-diag-lr8.5e-3-s1: started on mhc-exp19-150305 chip 3
+[10-05 16:29:43] v6e-a-local-h4-diag-lr8.5e-3-s1: started on mhc-exp19-0920016 chip 6
+[10-05 16:31:00] v6e-ctrl-mlp1216-diag-lr2.4e-2-s0: done — exit 0 in 224s on mhc-exp19-0920016 (us-central1-b), val nan, tok/s 48956, preempted 0x
+[10-05 16:31:14] v6e-a-local-h4-diag-lr2.4e-2-s0: done — exit 0 in 182s on mhc-exp19-0920016 (us-central1-b), val nan, tok/s 95079, preempted 0x
+[10-05 16:31:17] v6e-residual-diag-lr8.5e-3-s1: started on mhc-exp19-0920016 chip 4
+[10-05 16:31:19] v6e-mhc-h1-diag-lr1.2e-2-s1: started on mhc-exp19-0920016 chip 7
+[10-05 16:32:26] created mhc-exp19-1754115 (v6e-4) in us-east1-d
+[10-05 16:32:26] created mhc-exp19-1754114 (v6e-4) in us-east1-d
+[10-05 16:32:46] v6e-a-global-h4-diag-lr2.4e-2-s0: done — exit 0 in 285s on mhc-exp19-0920016 (us-central1-b), val nan, tok/s 52036, preempted 0x
+[10-05 16:33:01] v6e-a-global-h4-diag-lr1.2e-2-s1: started on mhc-exp19-0920016 chip 2
+[10-05 16:33:09] mhc-exp19-1754115: set up (data ok: 21 shards)
+[10-05 16:33:10] mhc-exp19-1754114: set up (data ok: 21 shards)
+[10-05 16:34:07] v6e-ctrl-mlp1216-diag-lr1.2e-2-s1: started on mhc-exp19-1754114 chip 0
+[10-05 16:34:07] v6e-a-local-h4-diag-lr1.2e-2-s1: started on mhc-exp19-1754115 chip 0
+[10-05 16:34:08] v6e-mhc-h1-diag-lr1.7e-2-s1: started on mhc-exp19-1754115 chip 1
+[10-05 16:34:08] v6e-residual-diag-lr1.2e-2-s1: started on mhc-exp19-1754114 chip 1
+[10-05 16:34:09] v6e-ctrl-mlp1216-diag-lr1.7e-2-s1: started on mhc-exp19-1754114 chip 2
+[10-05 16:34:09] v6e-a-global-h4-diag-lr1.7e-2-s1: started on mhc-exp19-1754115 chip 2
+[10-05 16:34:11] v6e-residual-diag-lr1.7e-2-s1: started on mhc-exp19-1754115 chip 3
+[10-05 16:34:11] v6e-a-local-h4-diag-lr1.7e-2-s1: started on mhc-exp19-1754114 chip 3
+[10-05 16:34:19] v6e-mhc-h1-diag-lr8.5e-3-s0: done — exit 0 in 1245s on mhc-exp19-0920016 (us-central1-b), val 5.6454, tok/s 88825, preempted 1x
+[10-05 16:34:19] v6e-mhc-h1-qk-lr1.7e-2-s2: done — exit 0 in 1297s on mhc-exp19-150305 (us-central1-b), val 4.1715, tok/s 85116, preempted 1x
+[10-05 16:34:34] v6e-a-global-h4-diag-lr8.5e-3-s0: done — exit 0 in 1282s on mhc-exp19-0920016 (us-central1-b), val 5.6550, tok/s 87399, preempted 1x
+[10-05 16:34:35] v6e-ctrl-mlp1216-qk-lr1.7e-2-s2: done — exit 0 in 1300s on mhc-exp19-150305 (us-central1-b), val 4.1588, tok/s 84325, preempted 1x
+[10-05 16:34:38] v6e-mhc-h1-diag-lr2.4e-2-s1: started on mhc-exp19-0920016 chip 0
+[10-05 16:34:40] v6e-a-global-h4-diag-lr2.4e-2-s1: started on mhc-exp19-0920016 chip 1
+[10-05 16:34:50] v6e-ctrl-mlp1216-diag-lr8.5e-3-s0: done — exit 0 in 1231s on mhc-exp19-150305 (us-central1-b), val 6.3526, tok/s 89747, preempted 1x
+[10-05 16:34:52] v6e-ctrl-mlp1216-diag-lr2.4e-2-s1: start on mhc-exp19-150305 failed: kex_exchange_identification: read: Connection reset by peer
+
+[10-05 16:35:53] create mhc-exp19-1809216 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 16:36:07] v6e-residual-diag-lr1.7e-2-s1: done — exit 0 in 74s on mhc-exp19-1754115 (us-east1-d), val nan, tok/s 212593, preempted 0x
+[10-05 16:36:10] v6e-ctrl-mlp1216-diag-lr2.4e-2-s1: started on mhc-exp19-1754115 chip 3
+[10-05 16:36:10] v6e-a-local-h4-diag-lr8.5e-3-s0: done — exit 0 in 1328s on mhc-exp19-0920016 (us-central1-b), val 5.3233, tok/s 83956, preempted 1x
+[10-05 16:36:12] v6e-a-global-h4-qk-lr1.7e-2-s2: done — exit 0 in 1367s on mhc-exp19-150305 (us-central1-b), val 4.1934, tok/s 81474, preempted 1x
+[10-05 16:36:25] v6e-residual-diag-lr8.5e-3-s1: done — exit 0 in 237s on mhc-exp19-0920016 (us-central1-b), val nan, tok/s 291554, preempted 0x
+[10-05 16:36:27] v6e-ctrl-mlp1216-qk-lr2.4e-2-s2: done — exit 0 in 1349s on mhc-exp19-150305 (us-central1-b), val 4.2440, tok/s 81784, preempted 0x
+[10-05 16:36:29] v6e-a-local-h4-diag-lr2.4e-2-s1: started on mhc-exp19-0920016 chip 3
+[10-05 16:36:29] create mhc-exp19-1809216 (v6e-8) in us-central1-a failed: capacity
+[10-05 16:36:30] v6e-residual-diag-lr2.4e-2-s1: started on mhc-exp19-150305 chip 0
+[10-05 16:36:30] v6e-mhc-h1-diag-lr8.5e-3-s2: started on mhc-exp19-0920016 chip 4
+[10-05 16:36:32] v6e-a-global-h4-diag-lr8.5e-3-s2: started on mhc-exp19-150305 chip 1
+[10-05 16:36:34] v6e-ctrl-mlp1216-diag-lr8.5e-3-s2: started on mhc-exp19-150305 chip 2
+[10-05 16:36:36] v6e-a-local-h4-diag-lr8.5e-3-s2: started on mhc-exp19-150305 chip 4
+[10-05 16:36:38] v6e-residual-diag-lr8.5e-3-s2: started on mhc-exp19-150305 chip 7
+[10-05 16:37:23] create mhc-exp19-1809216 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 16:37:33] create mhc-exp19-1809216 (v6e-8) in us-central1-c failed: capacity
+[10-05 16:37:53] v6e-residual-diag-lr1.2e-2-s1: done — exit 0 in 115s on mhc-exp19-1754114 (us-east1-d), val nan, tok/s 227480, preempted 0x
+[10-05 16:37:55] v6e-mhc-h1-diag-lr1.2e-2-s2: started on mhc-exp19-1754114 chip 1
+[10-05 16:37:56] v6e-a-local-h4-qk-lr2.4e-2-s2: done — exit 0 in 1429s on mhc-exp19-150305 (us-central1-b), val 4.2878, tok/s 77795, preempted 0x
+[10-05 16:38:10] v6e-residual-diag-lr2.4e-2-s1: done — exit 0 in 56s on mhc-exp19-150305 (us-central1-b), val nan, tok/s 182775, preempted 0x
+[10-05 16:38:13] v6e-a-global-h4-diag-lr1.2e-2-s2: started on mhc-exp19-150305 chip 0
+[10-05 16:38:15] v6e-ctrl-mlp1216-diag-lr1.2e-2-s2: started on mhc-exp19-150305 chip 5
+[10-05 16:39:17] v6e-a-local-h4-diag-lr1.2e-2-s1: back in the queue (state DELETING, attempt 2)
+[10-05 16:39:17] v6e-mhc-h1-diag-lr1.7e-2-s1: back in the queue (state DELETING, attempt 2)
+[10-05 16:39:17] v6e-a-global-h4-diag-lr1.7e-2-s1: back in the queue (state DELETING, attempt 2)
+[10-05 16:39:17] v6e-ctrl-mlp1216-diag-lr2.4e-2-s1: back in the queue (state DELETING, attempt 2)
+[10-05 16:39:19] deleted mhc-exp19-1754115 (state DELETING) — delete failed: ) ABORTED: unable to queue delete operation
+- '@type': type.googleapis.com/google.rpc.ResourceInfo
+  resourceName: projects/PROJECT_ID/locations/us-east1-d/nodes/mhc-exp19-1754115
+
+[10-05 16:39:19] v6e-ctrl-mlp1216-diag-lr1.2e-2-s1: back in the queue (state DELETING, attempt 2)
+[10-05 16:39:19] v6e-ctrl-mlp1216-diag-lr1.7e-2-s1: back in the queue (state DELETING, attempt 2)
+[10-05 16:39:19] v6e-a-local-h4-diag-lr1.7e-2-s1: back in the queue (state DELETING, attempt 2)
+[10-05 16:39:19] v6e-mhc-h1-diag-lr1.2e-2-s2: back in the queue (state DELETING, attempt 2)
+[10-05 16:39:20] deleted mhc-exp19-1754114 (state DELETING) — delete failed: ) ABORTED: unable to queue delete operation
+- '@type': type.googleapis.com/google.rpc.ResourceInfo
+  resourceName: projects/PROJECT_ID/locations/us-east1-d/nodes/mhc-exp19-1754114
+
+[10-05 16:39:35] v6e-mhc-h1-diag-lr2.4e-2-s1: done — exit 0 in 226s on mhc-exp19-0920016 (us-central1-b), val nan, tok/s 48812, preempted 0x
+[10-05 16:39:38] v6e-ctrl-mlp1216-diag-lr1.2e-2-s1: started on mhc-exp19-0920016 chip 0
+[10-05 16:40:55] v6e-a-global-h4-diag-lr8.5e-3-s1: done — exit 0 in 651s on mhc-exp19-150305 (us-central1-b), val nan, tok/s 69616, preempted 0x
+[10-05 16:40:55] v6e-mhc-h1-diag-lr1.2e-2-s1: done — exit 0 in 492s on mhc-exp19-0920016 (us-central1-b), val nan, tok/s 71923, preempted 0x
+[10-05 16:40:58] v6e-a-local-h4-diag-lr1.2e-2-s1: started on mhc-exp19-150305 chip 6
+[10-05 16:41:10] v6e-a-global-h4-diag-lr2.4e-2-s1: done — exit 0 in 293s on mhc-exp19-0920016 (us-central1-b), val nan, tok/s 47259, preempted 0x
+[10-05 16:41:14] v6e-mhc-h1-diag-lr1.7e-2-s1: started on mhc-exp19-0920016 chip 1
+[10-05 16:41:15] v6e-a-global-h4-diag-lr1.7e-2-s1: started on mhc-exp19-0920016 chip 7
+[10-05 16:41:15] status: 208/240 done, 16 queued, 16 running on 2 VMs, spent $193.11
+[10-05 16:42:17] create mhc-exp19-1837817 (v6e-8) in us-east1-d failed: capacity
+[10-05 16:42:25] create mhc-exp19-1809216 (v6e-8) in us-east1-d failed: capacity
+[10-05 16:42:25] create mhc-exp19-1837817 (v6e-8) in us-west1-c failed: capacity
+[10-05 16:42:31] create mhc-exp19-1809216 (v6e-8) in us-west1-c failed: capacity
+[10-05 16:42:32] v6e-a-local-h4-diag-lr2.4e-2-s1: done — exit 0 in 258s on mhc-exp19-0920016 (us-central1-b), val nan, tok/s 42695, preempted 0x
+[10-05 16:42:32] create mhc-exp19-1837817 (v6e-8) in us-south1-a failed: capacity
+[10-05 16:42:35] v6e-ctrl-mlp1216-diag-lr1.7e-2-s1: started on mhc-exp19-0920016 chip 3
+[10-05 16:42:36] create mhc-exp19-1809216 (v6e-8) in us-south1-a failed: capacity
+[10-05 16:43:50] create mhc-exp19-1809216 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 16:43:55] create mhc-exp19-1837817 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 16:44:04] v6e-residual-diag-lr8.5e-3-s2: done — exit 0 in 345s on mhc-exp19-150305 (us-central1-b), val 5.5633, tok/s 316620, preempted 0x
+[10-05 16:44:16] v6e-a-local-h4-diag-lr1.7e-2-s1: started on mhc-exp19-150305 chip 7
+[10-05 16:44:41] create mhc-exp19-1837817 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 16:44:53] create mhc-exp19-1809216 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 16:45:28] create mhc-exp19-1809216 (v6e-4) in us-central1-a failed: capacity
+[10-05 16:45:30] create mhc-exp19-1837817 (v6e-4) in us-central1-a failed: capacity
+[10-05 16:45:33] v6e-mhc-h1-diag-lr8.5e-3-s2: done — exit 0 in 441s on mhc-exp19-0920016 (us-central1-b), val nan, tok/s 67204, preempted 0x
+[10-05 16:45:33] v6e-ctrl-mlp1216-diag-lr1.2e-2-s2: done — exit 0 in 407s on mhc-exp19-150305 (us-central1-b), val nan, tok/s 63088, preempted 0x
+[10-05 16:45:36] v6e-ctrl-mlp1216-diag-lr2.4e-2-s1: started on mhc-exp19-0920016 chip 4
+[10-05 16:45:36] v6e-mhc-h1-diag-lr1.2e-2-s2: started on mhc-exp19-150305 chip 5
+[10-05 16:46:13] create mhc-exp19-1837817 (v6e-4) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 16:46:19] create mhc-exp19-1809216 (v6e-4) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 16:46:24] create mhc-exp19-1837817 (v6e-4) in us-central1-c failed: capacity
+[10-05 16:46:29] create mhc-exp19-1809216 (v6e-4) in us-central1-c failed: capacity
+[10-05 16:46:54] v6e-ctrl-mlp1216-diag-lr1.2e-2-s1: done — exit 0 in 335s on mhc-exp19-0920016 (us-central1-b), val nan, tok/s 69212, preempted 1x
+[10-05 16:47:09] v6e-mhc-h1-diag-lr1.7e-2-s1: done — exit 0 in 299s on mhc-exp19-0920016 (us-central1-b), val nan, tok/s 62405, preempted 1x
+[10-05 16:47:13] v6e-a-local-h4-diag-lr1.2e-2-s2: started on mhc-exp19-0920016 chip 0
+[10-05 16:47:15] v6e-residual-diag-lr1.2e-2-s2: started on mhc-exp19-0920016 chip 1
+[10-05 16:47:38] mhc-exp19-150305: status failed (1): ssh: connect to host 34.72.237.223 port 22: Operation timed out
+[10-05 16:48:40] v6e-ctrl-mlp1216-diag-lr8.5e-3-s1: back in the queue (state PREEMPTED, attempt 2)
+[10-05 16:48:40] v6e-a-global-h4-diag-lr8.5e-3-s2: back in the queue (state PREEMPTED, attempt 2)
+[10-05 16:48:40] v6e-ctrl-mlp1216-diag-lr8.5e-3-s2: back in the queue (state PREEMPTED, attempt 2)
+[10-05 16:48:40] v6e-a-local-h4-diag-lr8.5e-3-s2: back in the queue (state PREEMPTED, attempt 2)
+[10-05 16:48:40] v6e-a-global-h4-diag-lr1.2e-2-s2: back in the queue (state PREEMPTED, attempt 2)
+[10-05 16:48:40] v6e-a-local-h4-diag-lr1.2e-2-s1: back in the queue (state PREEMPTED, attempt 3)
+[10-05 16:48:40] v6e-a-local-h4-diag-lr1.7e-2-s1: back in the queue (state PREEMPTED, attempt 3)
+[10-05 16:48:40] v6e-mhc-h1-diag-lr1.2e-2-s2: back in the queue (state PREEMPTED, attempt 3)
+[10-05 16:50:00] deleted mhc-exp19-150305 (state PREEMPTED)
+[10-05 16:50:15] v6e-mhc-h1-diag-lr8.5e-3-s1: done — exit 0 in 1247s on mhc-exp19-0920016 (us-central1-b), val 5.5054, tok/s 88596, preempted 0x
+[10-05 16:50:29] v6e-a-global-h4-diag-lr1.2e-2-s1: done — exit 0 in 820s on mhc-exp19-0920016 (us-central1-b), val nan, tok/s 84091, preempted 0x
+[10-05 16:50:43] v6e-a-global-h4-diag-lr1.7e-2-s1: done — exit 0 in 338s on mhc-exp19-0920016 (us-central1-b), val nan, tok/s 68633, preempted 1x
+[10-05 16:50:45] v6e-ctrl-mlp1216-diag-lr1.7e-2-s1: FAILED exit 0 (failure 1):
+  
+[10-05 16:50:46] v6e-ctrl-mlp1216-diag-lr2.4e-2-s1: FAILED exit 0 (failure 1):
+  
+[10-05 16:50:46] v6e-residual-diag-lr1.2e-2-s2: FAILED exit 0 (failure 1):
+  
+[10-05 16:50:47] v6e-ctrl-mlp1216-diag-lr8.5e-3-s1: start on mhc-exp19-0920016 failed: kex_exchange_identification: read: Connection reset by peer
+
+[10-05 16:50:47] create mhc-exp19-1809216 (v6e-4) in us-east1-d failed: capacity
+[10-05 16:50:56] create mhc-exp19-1809216 (v6e-4) in us-west1-c failed: capacity
+[10-05 16:50:58] create mhc-exp19-1837817 (v6e-4) in us-east1-d failed: capacity
+[10-05 16:51:03] create mhc-exp19-1837817 (v6e-4) in us-south1-a failed: capacity
+[10-05 16:51:06] create mhc-exp19-1809216 (v6e-4) in us-south1-a failed: capacity
+[10-05 16:51:47] create mhc-exp19-1837817 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 16:51:50] create mhc-exp19-1809216 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 16:51:53] v6e-ctrl-mlp1216-diag-lr8.5e-3-s1: started on mhc-exp19-0920016 chip 1
+[10-05 16:51:55] v6e-a-local-h4-diag-lr1.2e-2-s1: started on mhc-exp19-0920016 chip 2
+[10-05 16:51:58] v6e-ctrl-mlp1216-diag-lr1.7e-2-s1: started on mhc-exp19-0920016 chip 3
+[10-05 16:52:00] v6e-a-local-h4-diag-lr1.7e-2-s1: started on mhc-exp19-0920016 chip 4
+[10-05 16:52:03] v6e-ctrl-mlp1216-diag-lr2.4e-2-s1: started on mhc-exp19-0920016 chip 5
+[10-05 16:52:05] v6e-a-global-h4-diag-lr8.5e-3-s2: started on mhc-exp19-0920016 chip 7
+[10-05 16:52:52] create mhc-exp19-1912519 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 16:53:22] v6e-a-local-h4-diag-lr8.5e-3-s1: done — exit 0 in 1292s on mhc-exp19-0920016 (us-central1-b), val 5.2817, tok/s 85595, preempted 0x
+[10-05 16:53:25] v6e-ctrl-mlp1216-diag-lr8.5e-3-s2: started on mhc-exp19-0920016 chip 6
+[10-05 16:53:39] create mhc-exp19-1912518 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 16:53:39] create mhc-exp19-1912519 (v6e-8) in us-central1-a failed: capacity
+[10-05 16:53:57] create mhc-exp19-1912518 (v6e-8) in us-central1-a failed: capacity
+[10-05 16:54:32] create mhc-exp19-1912519 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 16:54:41] create mhc-exp19-1912519 (v6e-8) in us-central1-c failed: capacity
+[10-05 16:54:42] create mhc-exp19-1912518 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 16:55:46] create mhc-exp19-1912519 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 16:55:47] create mhc-exp19-1912518 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 16:57:11] v6e-a-local-h4-diag-lr1.2e-2-s2: done — exit 0 in 530s on mhc-exp19-0920016 (us-central1-b), val nan, tok/s 71197, preempted 0x
+[10-05 16:57:24] v6e-ctrl-mlp1216-diag-lr1.7e-2-s1: done — exit 0 in 275s on mhc-exp19-0920016 (us-central1-b), val nan, tok/s 59849, preempted 1x
+[10-05 16:57:38] v6e-a-local-h4-diag-lr1.7e-2-s1: done — exit 0 in 272s on mhc-exp19-0920016 (us-central1-b), val nan, tok/s 56237, preempted 2x
+[10-05 16:57:40] v6e-ctrl-mlp1216-diag-lr2.4e-2-s1: FAILED exit 0 (failure 2):
+  
+[10-05 16:57:41] v6e-a-local-h4-diag-lr8.5e-3-s2: start on mhc-exp19-0920016 failed: kex_exchange_identification: read: Connection reset by peer
+
+[10-05 16:57:41] status: 221/240 done, 14 queued, 4 running on 1 VMs, spent $195.29
+[10-05 16:58:42] create mhc-exp19-1946123 (v6e-8) in us-east1-d failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-east1-d.)
+[10-05 16:58:46] v6e-a-local-h4-diag-lr8.5e-3-s2: started on mhc-exp19-0920016 chip 0
+[10-05 16:58:48] v6e-mhc-h1-diag-lr1.2e-2-s2: started on mhc-exp19-0920016 chip 3
+[10-05 16:58:50] v6e-a-global-h4-diag-lr1.2e-2-s2: started on mhc-exp19-0920016 chip 4
+[10-05 16:58:50] create mhc-exp19-1946123 (v6e-8) in us-west1-c failed: capacity
+[10-05 16:58:52] v6e-residual-diag-lr1.2e-2-s2: started on mhc-exp19-0920016 chip 5
+[10-05 16:58:58] create mhc-exp19-1946123 (v6e-8) in us-south1-a failed: capacity
+[10-05 16:59:45] create mhc-exp19-1946123 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 17:16:24] create mhc-exp19-1946122 (v6e-8) in us-east1-d failed:  run: $ gcloud auth login to obtain new credentials. If you have already logged in with a different account, run: $ gcloud config set account ACCOUNT to select an already authenticated account to use.
+[10-05 17:16:25] list failed: onnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NameResolutionError("HTTPSConnection(host='oauth2.googleapis.com', port=443): Failed to resolve 'oauth2.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)"))
+Please run:
+
+  $ gcloud auth login
+
+to obtain new credentials.
+
+If you have already logged in with a different account, run:
+
+  $ gcloud config set account ACCOUNT
+
+to select an already authenticated account to use.
+
+[10-05 17:19:49] v6e-ctrl-mlp1216-diag-lr8.5e-3-s1: back in the queue (state gone, attempt 3)
+[10-05 17:19:49] v6e-a-local-h4-diag-lr1.2e-2-s1: back in the queue (state gone, attempt 4)
+[10-05 17:19:49] v6e-a-global-h4-diag-lr8.5e-3-s2: back in the queue (state gone, attempt 3)
+[10-05 17:19:49] v6e-ctrl-mlp1216-diag-lr8.5e-3-s2: back in the queue (state gone, attempt 3)
+[10-05 17:19:49] v6e-a-local-h4-diag-lr8.5e-3-s2: back in the queue (state gone, attempt 3)
+[10-05 17:19:49] v6e-mhc-h1-diag-lr1.2e-2-s2: back in the queue (state gone, attempt 4)
+[10-05 17:19:49] v6e-a-global-h4-diag-lr1.2e-2-s2: back in the queue (state gone, attempt 3)
+[10-05 17:19:49] v6e-residual-diag-lr1.2e-2-s2: back in the queue (state gone, attempt 3)
+[10-05 17:19:50] deleted mhc-exp19-0920016 (state gone) — delete failed: specified by the [core/account] property
+- '@type': type.googleapis.com/google.rpc.ResourceInfo
+  resourceName: projects/PROJECT_ID/locations/us-central1-b/nodes/mhc-exp19-0920016
+
+[10-05 17:19:50] status: 222/240 done, 18 queued, 0 running on 0 VMs, spent $197.20
+[10-05 17:21:08] create mhc-exp19-2079025 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 17:21:34] create mhc-exp19-2079025 (v6e-8) in us-central1-a failed: capacity
+[10-05 17:23:32] create mhc-exp19-1959624 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 17:23:38] create mhc-exp19-2079025 (v6e-8) in us-central1-b failed: capacity
+[10-05 17:23:48] create mhc-exp19-2079025 (v6e-8) in us-central1-c failed: capacity
+[10-05 17:24:01] create mhc-exp19-1946122 (v6e-8) in us-west1-c failed: capacity
+[10-05 17:24:08] create mhc-exp19-1946122 (v6e-8) in us-south1-a failed: capacity
+[10-05 17:24:33] create mhc-exp19-1959624 (v6e-4) in us-central1-a failed: capacity
+[10-05 17:24:47] create mhc-exp19-2079025 (v6e-8) in us-east1-d failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-east1-d.)
+[10-05 17:24:52] create mhc-exp19-1946122 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 17:25:49] create mhc-exp19-2079025 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 17:29:43] create mhc-exp19-1946122 (v6e-4) in us-central1-b failed: an internal error has occurred
+[10-05 17:30:42] created mhc-exp19-2079025 (v6e-4) in us-central1-b
+[10-05 17:30:44] create mhc-exp19-1946122 (v6e-4) in us-east1-d failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-east1-d.)
+[10-05 17:30:49] created mhc-exp19-1959624 (v6e-4) in us-central1-b
+[10-05 17:30:52] create mhc-exp19-1946122 (v6e-4) in us-west1-c failed: capacity
+[10-05 17:31:02] create mhc-exp19-1946122 (v6e-4) in us-south1-a failed: capacity
+[10-05 17:31:30] mhc-exp19-2079025: set up (data ok: 21 shards)
+[10-05 17:31:45] mhc-exp19-1959624: set up (data ok: 21 shards)
+[10-05 17:31:47] create mhc-exp19-1946122 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 17:32:15] mhc-exp19-1946122: creation was missing from the ledger; logged
+[10-05 17:33:35] deleted mhc-exp19-1946122 (found in state PREEMPTED)
+[10-05 17:33:38] v6e-ctrl-mlp1216-diag-lr8.5e-3-s1: started on mhc-exp19-1959624 chip 0
+[10-05 17:33:38] v6e-a-local-h4-diag-lr1.2e-2-s1: started on mhc-exp19-2079025 chip 0
+[10-05 17:33:40] v6e-a-global-h4-diag-lr8.5e-3-s2: started on mhc-exp19-1959624 chip 1
+[10-05 17:33:40] v6e-ctrl-mlp1216-diag-lr8.5e-3-s2: started on mhc-exp19-2079025 chip 1
+[10-05 17:33:41] v6e-mhc-h1-diag-lr1.2e-2-s2: started on mhc-exp19-2079025 chip 2
+[10-05 17:33:41] v6e-a-local-h4-diag-lr8.5e-3-s2: started on mhc-exp19-1959624 chip 2
+[10-05 17:33:43] v6e-residual-diag-lr1.2e-2-s2: started on mhc-exp19-1959624 chip 3
+[10-05 17:33:43] v6e-a-global-h4-diag-lr1.2e-2-s2: started on mhc-exp19-2079025 chip 3
+[10-05 17:34:47] create mhc-exp19-2162326 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 17:34:48] create mhc-exp19-2162327 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 17:35:30] create mhc-exp19-2162326 (v6e-4) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 17:35:38] create mhc-exp19-2162327 (v6e-4) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 17:35:39] create mhc-exp19-2162326 (v6e-4) in us-central1-c failed: capacity
+[10-05 17:35:46] create mhc-exp19-2162327 (v6e-4) in us-central1-c failed: capacity
+[10-05 17:35:50] status: 222/240 done, 10 queued, 8 running on 2 VMs, spent $202.50
+[10-05 17:37:06] v6e-residual-diag-lr1.2e-2-s2: done — exit 0 in 123s on mhc-exp19-1959624 (us-central1-b), val nan, tok/s 217009, preempted 1x
+[10-05 17:37:09] v6e-mhc-h1-diag-lr1.7e-2-s2: started on mhc-exp19-1959624 chip 3
+[10-05 17:37:57] create mhc-exp19-2182931 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 17:38:33] create mhc-exp19-2182931 (v6e-8) in us-central1-a failed: capacity
+[10-05 17:39:06] create mhc-exp19-2182930 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 17:39:32] create mhc-exp19-2182931 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 17:39:47] create mhc-exp19-2182931 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 17:40:31] v6e-mhc-h1-diag-lr1.2e-2-s2: done — exit 0 in 381s on mhc-exp19-2079025 (us-central1-b), val nan, tok/s 60321, preempted 3x
+[10-05 17:40:34] v6e-a-global-h4-diag-lr1.7e-2-s2: started on mhc-exp19-2079025 chip 2
+[10-05 17:42:34] create mhc-exp19-2182930 (v6e-8) in us-central1-b failed: an internal error has occurred
+[10-05 17:42:43] create mhc-exp19-2182930 (v6e-8) in us-central1-c failed: capacity
+[10-05 17:44:05] v6e-mhc-h1-diag-lr1.7e-2-s2: done — exit 0 in 336s on mhc-exp19-1959624 (us-central1-b), val nan, tok/s 57245, preempted 0x
+[10-05 17:44:08] v6e-ctrl-mlp1216-diag-lr1.7e-2-s2: started on mhc-exp19-1959624 chip 3
+[10-05 17:45:24] v6e-ctrl-mlp1216-diag-lr8.5e-3-s2: done — exit 0 in 609s on mhc-exp19-2079025 (us-central1-b), val nan, tok/s 65814, preempted 2x
+[10-05 17:45:27] v6e-a-local-h4-diag-lr1.7e-2-s2: started on mhc-exp19-2079025 chip 1
+[10-05 17:45:31] create mhc-exp19-2182930 (v6e-8) in us-east1-d failed: capacity
+[10-05 17:45:38] create mhc-exp19-2182930 (v6e-8) in us-west1-c failed: capacity
+[10-05 17:45:48] create mhc-exp19-2182930 (v6e-8) in us-south1-a failed: capacity
+[10-05 17:46:43] v6e-a-local-h4-diag-lr1.2e-2-s1: done — exit 0 in 733s on mhc-exp19-2079025 (us-central1-b), val nan, tok/s 67927, preempted 3x
+[10-05 17:46:46] v6e-residual-diag-lr1.7e-2-s2: started on mhc-exp19-2079025 chip 0
+[10-05 17:46:48] create mhc-exp19-2182930 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 17:47:09] create mhc-exp19-2182930 (v6e-4) in us-central1-a failed: capacity
+[10-05 17:47:48] v6e-a-global-h4-diag-lr1.2e-2-s2: back in the queue (state gone, attempt 4)
+[10-05 17:47:48] v6e-a-global-h4-diag-lr1.7e-2-s2: back in the queue (state gone, attempt 2)
+[10-05 17:47:48] v6e-a-local-h4-diag-lr1.7e-2-s2: back in the queue (state gone, attempt 2)
+[10-05 17:47:48] v6e-residual-diag-lr1.7e-2-s2: back in the queue (state gone, attempt 2)
+[10-05 17:47:49] deleted mhc-exp19-2079025 (state gone) — delete failed: specified by the [core/account] property
+- '@type': type.googleapis.com/google.rpc.ResourceInfo
+  resourceName: projects/PROJECT_ID/locations/us-central1-b/nodes/mhc-exp19-2079025
+
+[10-05 17:47:49] v6e-ctrl-mlp1216-diag-lr8.5e-3-s1: back in the queue (state gone, attempt 4)
+[10-05 17:47:49] v6e-a-global-h4-diag-lr8.5e-3-s2: back in the queue (state gone, attempt 4)
+[10-05 17:47:49] v6e-a-local-h4-diag-lr8.5e-3-s2: back in the queue (state gone, attempt 4)
+[10-05 17:47:49] v6e-ctrl-mlp1216-diag-lr1.7e-2-s2: back in the queue (state gone, attempt 2)
+[10-05 17:47:50] deleted mhc-exp19-1959624 (state gone) — delete failed: specified by the [core/account] property
+- '@type': type.googleapis.com/google.rpc.ResourceInfo
+  resourceName: projects/PROJECT_ID/locations/us-central1-b/nodes/mhc-exp19-1959624
+
+[10-05 17:49:58] create mhc-exp19-2182930 (v6e-4) in us-east1-d failed: capacity
+[10-05 17:50:07] create mhc-exp19-2182930 (v6e-4) in us-west1-c failed: capacity
+[10-05 17:50:16] create mhc-exp19-2182930 (v6e-4) in us-south1-a failed: capacity
+[10-05 17:50:56] status: 227/240 done, 13 queued, 0 running on 0 VMs, spent $203.54
+[10-05 17:51:02] create mhc-exp19-2182930 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 17:51:19] create mhc-exp19-2247032 (v6e-8) in us-central1-b failed: capacity
+[10-05 17:52:58] create mhc-exp19-2271733 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 17:58:12] created mhc-exp19-2271733 (v6e-4) in us-central1-b
+[10-05 17:58:55] mhc-exp19-2271733: set up (data ok: 21 shards)
+[10-05 17:59:12] v6e-ctrl-mlp1216-diag-lr8.5e-3-s1: started on mhc-exp19-2271733 chip 0
+[10-05 17:59:13] v6e-a-global-h4-diag-lr8.5e-3-s2: started on mhc-exp19-2271733 chip 1
+[10-05 17:59:14] v6e-a-local-h4-diag-lr8.5e-3-s2: started on mhc-exp19-2271733 chip 2
+[10-05 17:59:16] v6e-a-global-h4-diag-lr1.2e-2-s2: started on mhc-exp19-2271733 chip 3
+[10-05 17:59:39] created mhc-exp19-2247032 (v6e-4) in us-central1-b
+[10-05 18:00:03] create mhc-exp19-2315634 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 18:00:24] mhc-exp19-2247032: set up (data ok: 21 shards)
+[10-05 18:00:52] create mhc-exp19-2315634 (v6e-8) in us-central1-a failed: capacity
+[10-05 18:01:01] create mhc-exp19-2315634 (v6e-8) in us-central1-c failed: capacity
+[10-05 18:01:24] v6e-a-global-h4-diag-lr1.7e-2-s2: started on mhc-exp19-2247032 chip 0
+[10-05 18:01:25] v6e-ctrl-mlp1216-diag-lr1.7e-2-s2: started on mhc-exp19-2247032 chip 1
+[10-05 18:01:26] v6e-a-local-h4-diag-lr1.7e-2-s2: started on mhc-exp19-2247032 chip 2
+[10-05 18:01:28] v6e-residual-diag-lr1.7e-2-s2: started on mhc-exp19-2247032 chip 3
+[10-05 18:03:09] create mhc-exp19-2315634 (v6e-8) in us-east1-d failed: capacity
+[10-05 18:03:19] create mhc-exp19-2315634 (v6e-8) in us-west1-c failed: capacity
+[10-05 18:03:26] create mhc-exp19-2315634 (v6e-8) in us-south1-a failed: capacity
+[10-05 18:03:29] mhc-exp19-2271733: status failed (1): ssh: connect to host 34.57.158.182 port 22: Operation timed out
+[10-05 18:03:50] create mhc-exp19-2315634 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 18:04:31] v6e-ctrl-mlp1216-diag-lr8.5e-3-s1: back in the queue (state PREEMPTED, attempt 5)
+[10-05 18:04:31] v6e-a-global-h4-diag-lr8.5e-3-s2: back in the queue (state PREEMPTED, attempt 5)
+[10-05 18:04:31] v6e-a-local-h4-diag-lr8.5e-3-s2: back in the queue (state PREEMPTED, attempt 5)
+[10-05 18:04:31] v6e-a-global-h4-diag-lr1.2e-2-s2: back in the queue (state PREEMPTED, attempt 5)
+[10-05 18:04:37] create mhc-exp19-2315634 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 18:05:13] create mhc-exp19-2315634 (v6e-4) in us-central1-a failed: capacity
+[10-05 18:05:52] deleted mhc-exp19-2271733 (state PREEMPTED)
+[10-05 18:06:05] v6e-residual-diag-lr1.7e-2-s2: done — exit 0 in 68s on mhc-exp19-2247032 (us-central1-b), val nan, tok/s 206016, preempted 1x
+[10-05 18:06:09] v6e-ctrl-mlp1216-diag-lr8.5e-3-s1: started on mhc-exp19-2247032 chip 3
+[10-05 18:06:09] status: 228/240 done, 8 queued, 4 running on 1 VMs, spent $204.73
+[10-05 18:07:10] v6e-a-global-h4-diag-lr1.7e-2-s2: back in the queue (state DELETING, attempt 3)
+[10-05 18:07:10] v6e-ctrl-mlp1216-diag-lr1.7e-2-s2: back in the queue (state DELETING, attempt 3)
+[10-05 18:07:10] v6e-a-local-h4-diag-lr1.7e-2-s2: back in the queue (state DELETING, attempt 3)
+[10-05 18:07:10] v6e-ctrl-mlp1216-diag-lr8.5e-3-s1: back in the queue (state DELETING, attempt 6)
+[10-05 18:07:11] deleted mhc-exp19-2247032 (state DELETING) — delete failed: BORTED: unable to queue delete operation
+- '@type': type.googleapis.com/google.rpc.ResourceInfo
+  resourceName: projects/PROJECT_ID/locations/us-central1-b/nodes/mhc-exp19-2247032
+
+[10-05 18:11:22] create mhc-exp19-2363135 (v6e-8) in us-central1-b failed: capacity
+[10-05 18:11:26] create mhc-exp19-2315634 (v6e-4) in us-central1-b failed: capacity
+[10-05 18:11:33] create mhc-exp19-2315634 (v6e-4) in us-central1-c failed: capacity
+[10-05 18:11:50] create mhc-exp19-2363135 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 18:15:18] create mhc-exp19-2363135 (v6e-4) in us-east1-d failed: capacity
+[10-05 18:15:25] create mhc-exp19-2315634 (v6e-4) in us-east1-d failed: capacity
+[10-05 18:15:27] create mhc-exp19-2363135 (v6e-4) in us-west1-c failed: capacity
+[10-05 18:15:31] create mhc-exp19-2315634 (v6e-4) in us-west1-c failed: capacity
+[10-05 18:15:33] create mhc-exp19-2363135 (v6e-4) in us-south1-a failed: capacity
+[10-05 18:15:36] create mhc-exp19-2315634 (v6e-4) in us-south1-a failed: capacity
+[10-05 18:15:51] create mhc-exp19-2363135 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 18:15:53] create mhc-exp19-2315634 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 18:17:01] create mhc-exp19-2418437 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 18:17:42] create mhc-exp19-2418436 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 18:17:48] create mhc-exp19-2418437 (v6e-8) in us-central1-a failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-a.)
+[10-05 18:17:57] create mhc-exp19-2418437 (v6e-8) in us-central1-c failed: capacity
+[10-05 18:18:28] create mhc-exp19-2418436 (v6e-8) in us-central1-a failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-a.)
+[10-05 18:18:59] create mhc-exp19-2418437 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 18:21:31] status: 228/240 done, 12 queued, 0 running on 0 VMs, spent $204.77
+[10-05 18:23:56] create mhc-exp19-2436938 (v6e-8) in us-east1-d failed: capacity
+[10-05 18:24:01] create mhc-exp19-2418436 (v6e-8) in us-east1-d failed: capacity
+[10-05 18:24:03] create mhc-exp19-2436938 (v6e-8) in us-west1-c failed: capacity
+[10-05 18:24:07] create mhc-exp19-2418436 (v6e-8) in us-west1-c failed: capacity
+[10-05 18:24:10] create mhc-exp19-2436938 (v6e-8) in us-south1-a failed: capacity
+[10-05 18:24:13] create mhc-exp19-2418436 (v6e-8) in us-south1-a failed: capacity
+[10-05 18:24:56] create mhc-exp19-2436938 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 18:24:58] create mhc-exp19-2418436 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 18:25:32] create mhc-exp19-2418436 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 18:25:33] create mhc-exp19-2436938 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 18:26:19] create mhc-exp19-2418436 (v6e-4) in us-central1-a failed: capacity
+[10-05 18:26:19] create mhc-exp19-2436938 (v6e-4) in us-central1-a failed: capacity
+[10-05 18:26:55] create mhc-exp19-2418436 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 18:27:06] create mhc-exp19-2436938 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 18:31:30] create mhc-exp19-2486039 (v6e-8) in us-central1-b failed: capacity
+[10-05 18:31:52] create mhc-exp19-2486040 (v6e-8) in us-central1-b failed: capacity
+[10-05 18:31:56] create mhc-exp19-2486039 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 18:32:55] create mhc-exp19-2486040 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 18:36:45] create mhc-exp19-2486040 (v6e-4) in us-central1-b failed: capacity
+[10-05 18:36:51] create mhc-exp19-2486039 (v6e-4) in us-central1-b failed: capacity
+[10-05 18:36:54] status: 228/240 done, 12 queued, 0 running on 0 VMs, spent $204.89
+[10-05 18:36:55] create mhc-exp19-2486040 (v6e-4) in us-central1-c failed: capacity
+[10-05 18:36:57] create mhc-exp19-2486039 (v6e-4) in us-central1-c failed: capacity
+[10-05 18:38:42] create mhc-exp19-2486040 (v6e-4) in us-east1-d failed: capacity
+[10-05 18:38:43] create mhc-exp19-2486039 (v6e-4) in us-east1-d failed: capacity
+[10-05 18:38:50] create mhc-exp19-2486040 (v6e-4) in us-west1-c failed: capacity
+[10-05 18:38:50] create mhc-exp19-2486039 (v6e-4) in us-west1-c failed: capacity
+[10-05 18:38:56] create mhc-exp19-2486040 (v6e-4) in us-south1-a failed: capacity
+[10-05 18:38:56] create mhc-exp19-2486039 (v6e-4) in us-south1-a failed: capacity
+[10-05 18:39:57] create mhc-exp19-2486039 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 18:39:59] create mhc-exp19-2486040 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 18:40:37] create mhc-exp19-2559941 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 18:41:18] create mhc-exp19-2566042 (v6e-8) in us-central1-a failed: capacity
+[10-05 18:41:25] create mhc-exp19-2559941 (v6e-8) in us-central1-a failed: capacity
+[10-05 18:41:27] create mhc-exp19-2566042 (v6e-8) in us-central1-c failed: capacity
+[10-05 18:41:34] create mhc-exp19-2559941 (v6e-8) in us-central1-c failed: capacity
+[10-05 18:42:17] create mhc-exp19-2566042 (v6e-8) in us-east1-d failed: capacity
+[10-05 18:42:25] create mhc-exp19-2566042 (v6e-8) in us-west1-c failed: capacity
+[10-05 18:42:33] create mhc-exp19-2566042 (v6e-8) in us-south1-a failed: capacity
+[10-05 18:42:57] create mhc-exp19-2566042 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 18:44:17] create mhc-exp19-2566042 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 18:44:43] create mhc-exp19-2566042 (v6e-4) in us-central1-a failed: capacity
+[10-05 18:46:10] create mhc-exp19-2590743 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 18:46:28] create mhc-exp19-2559941 (v6e-8) in us-east1-d failed: capacity
+[10-05 18:51:43] create mhc-exp19-2603045 (v6e-8) in us-central1-b failed: capacity
+[10-05 18:51:43] create mhc-exp19-2603044 (v6e-8) in us-central1-b failed: capacity
+[10-05 18:52:19] status: 228/240 done, 12 queued, 0 running on 0 VMs, spent $204.89
+[10-05 18:53:07] create mhc-exp19-2603045 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 18:53:09] create mhc-exp19-2603044 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 18:55:56] create mhc-exp19-2603045 (v6e-4) in us-central1-b failed: capacity
+[10-05 18:55:59] create mhc-exp19-2603044 (v6e-4) in us-central1-b failed: capacity
+[10-05 18:56:04] create mhc-exp19-2603044 (v6e-4) in us-central1-c failed: capacity
+[10-05 18:56:06] create mhc-exp19-2603045 (v6e-4) in us-central1-c failed: capacity
+[10-05 18:57:50] create mhc-exp19-2603045 (v6e-4) in us-east1-d failed: capacity
+[10-05 18:57:50] create mhc-exp19-2603044 (v6e-4) in us-east1-d failed: capacity
+[10-05 18:57:57] create mhc-exp19-2603045 (v6e-4) in us-west1-c failed: capacity
+[10-05 18:57:58] create mhc-exp19-2603044 (v6e-4) in us-west1-c failed: capacity
+[10-05 18:58:03] create mhc-exp19-2603045 (v6e-4) in us-south1-a failed: capacity
+[10-05 18:58:05] create mhc-exp19-2603044 (v6e-4) in us-south1-a failed: capacity
+[10-05 18:59:06] create mhc-exp19-2603044 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 18:59:06] create mhc-exp19-2603045 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 19:00:30] create mhc-exp19-2677046 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 19:00:56] create mhc-exp19-2677046 (v6e-8) in us-central1-a failed: capacity
+[10-05 19:01:01] create mhc-exp19-2677046 (v6e-8) in us-central1-c failed: capacity
+[10-05 19:01:09] create mhc-exp19-2677046 (v6e-8) in us-west1-c failed: capacity
+[10-05 19:01:19] create mhc-exp19-2677046 (v6e-8) in us-south1-a failed: capacity
+[10-05 19:01:39] create mhc-exp19-2677047 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 19:02:06] create mhc-exp19-2677046 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 19:03:15] status: 228/240 done, 12 queued, 0 running on 0 VMs, spent $204.89
+[10-05 19:03:25] create mhc-exp19-od269951 (v6e-4, on-demand) in us-central1-a failed: capacity
+[10-05 19:03:34] create mhc-exp19-od269951 (v6e-4, on-demand) in us-central1-b failed: User does not have permission to submit requests for accelerator type \
+[10-05 19:03:44] create mhc-exp19-od269951 (v6e-4, on-demand) in us-central1-c failed: capacity
+[10-05 19:03:52] create mhc-exp19-269952 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 19:03:52] create mhc-exp19-269953 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 19:03:53] create mhc-exp19-od269951 (v6e-4, on-demand) in us-east1-d failed: User does not have permission to submit requests for accelerator type \
+[10-05 19:04:03] create mhc-exp19-od269951 (v6e-4, on-demand) in us-west1-c failed: capacity
+[10-05 19:04:09] create mhc-exp19-od269951 (v6e-4, on-demand) in us-south1-a failed: capacity
+[10-05 19:04:14] create mhc-exp19-od269951 (v6e-4, on-demand) in us-south1-c failed: capacity
+[10-05 19:04:25] create mhc-exp19-269952 (v6e-4) in us-central1-a failed: capacity
+[10-05 19:04:25] create mhc-exp19-269953 (v6e-4) in us-central1-a failed: capacity
+[10-05 19:04:59] create mhc-exp19-od269951 (v6e-4, on-demand) in asia-southeast1-b failed: capacity
+[10-05 19:09:34] create mhc-exp19-od273648 (v6e-4, on-demand) in us-central1-b failed: User does not have permission to submit requests for accelerator type \
+[10-05 19:09:47] create mhc-exp19-od273648 (v6e-4, on-demand) in us-east1-d failed: User does not have permission to submit requests for accelerator type \
+[10-05 19:09:57] create mhc-exp19-269953 (v6e-4) in us-central1-b failed: capacity
+[10-05 19:09:58] create mhc-exp19-269952 (v6e-4) in us-central1-b failed: capacity
+[10-05 19:10:05] create mhc-exp19-269952 (v6e-4) in us-central1-c failed: capacity
+[10-05 19:10:05] create mhc-exp19-269953 (v6e-4) in us-central1-c failed: capacity
+[10-05 19:13:14] create mhc-exp19-269952 (v6e-4) in us-east1-d failed: capacity
+[10-05 19:13:27] create mhc-exp19-269952 (v6e-4) in us-west1-c failed: capacity
+[10-05 19:13:33] create mhc-exp19-269953 (v6e-4) in us-east1-d failed: capacity
+[10-05 19:13:37] create mhc-exp19-269952 (v6e-4) in us-south1-a failed: capacity
+[10-05 19:13:39] create mhc-exp19-269953 (v6e-4) in us-south1-a failed: capacity
+[10-05 19:13:57] create mhc-exp19-269953 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 19:14:02] create mhc-exp19-269952 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 19:15:44] create mhc-exp19-od2773416 (v6e-4, on-demand) in us-central1-b failed: User does not have permission to submit requests for accelerator type \
+[10-05 19:15:54] create mhc-exp19-od2773416 (v6e-4, on-demand) in us-east1-d failed: User does not have permission to submit requests for accelerator type \
+[10-05 19:18:39] status: 228/240 done, 12 queued, 0 running on 0 VMs, spent $204.89
+[10-05 19:18:52] create mhc-exp19-od2791926 (v6e-4, on-demand) in us-central1-a failed: capacity
+[10-05 19:19:01] create mhc-exp19-od2791926 (v6e-4, on-demand) in us-central1-c failed: capacity
+[10-05 19:19:47] create mhc-exp19-od2798028 (v6e-4, on-demand) in us-west1-c failed: capacity
+[10-05 19:19:55] create mhc-exp19-od2798028 (v6e-4, on-demand) in us-south1-a failed: capacity
+[10-05 19:20:01] create mhc-exp19-od2798028 (v6e-4, on-demand) in us-south1-c failed: capacity
+[10-05 19:20:27] create mhc-exp19-2798029 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 19:20:40] create mhc-exp19-2798030 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 19:20:54] create mhc-exp19-2798030 (v6e-4) in us-central1-a failed: capacity
+[10-05 19:20:58] create mhc-exp19-od2798028 (v6e-4, on-demand) in asia-southeast1-b failed: capacity
+[10-05 19:21:01] create mhc-exp19-2798029 (v6e-4) in us-central1-a failed: capacity
+[10-05 19:21:53] create mhc-exp19-od2810331 (v6e-4, on-demand) in us-central1-b failed: User does not have permission to submit requests for accelerator type \
+[10-05 19:22:03] create mhc-exp19-2798029 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 19:22:08] create mhc-exp19-od2810331 (v6e-4, on-demand) in us-east1-d failed: User does not have permission to submit requests for accelerator type \
+[10-05 19:22:17] create mhc-exp19-2798030 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 19:27:59] create mhc-exp19-od2847345 (v6e-4, on-demand) in us-central1-b failed: User does not have permission to submit requests for accelerator type \
+[10-05 19:28:09] create mhc-exp19-od2847345 (v6e-4, on-demand) in us-east1-d failed: User does not have permission to submit requests for accelerator type \
+[10-05 19:30:00] create mhc-exp19-2835043 (v6e-4) in us-central1-b failed: capacity
+[10-05 19:30:00] create mhc-exp19-2835042 (v6e-4) in us-central1-b failed: capacity
+[10-05 19:30:10] create mhc-exp19-2835042 (v6e-4) in us-central1-c failed: capacity
+[10-05 19:30:10] create mhc-exp19-2835043 (v6e-4) in us-central1-c failed: capacity
+[10-05 19:32:59] create mhc-exp19-2835042 (v6e-4) in us-east1-d failed: capacity
+[10-05 19:33:01] create mhc-exp19-2835043 (v6e-4) in us-east1-d failed: capacity
+[10-05 19:33:07] create mhc-exp19-2835042 (v6e-4) in us-west1-c failed: capacity
+[10-05 19:33:07] create mhc-exp19-2835043 (v6e-4) in us-west1-c failed: capacity
+[10-05 19:33:11] create mhc-exp19-od2878150 (v6e-4, on-demand) in us-central1-b failed: User does not have permission to submit requests for accelerator type \
+[10-05 19:33:13] create mhc-exp19-2835042 (v6e-4) in us-south1-a failed: capacity
+[10-05 19:33:17] create mhc-exp19-2835043 (v6e-4) in us-south1-a failed: capacity
+[10-05 19:33:24] create mhc-exp19-od2878150 (v6e-4, on-demand) in us-east1-d failed: User does not have permission to submit requests for accelerator type \
+[10-05 19:34:07] status: 228/240 done, 12 queued, 0 running on 0 VMs, spent $204.89
+[10-05 19:35:07] create mhc-exp19-288471 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 19:35:07] create mhc-exp19-288472 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 19:35:25] create mhc-exp19-288471 (v6e-8) in us-central1-a failed: capacity
+[10-05 19:35:27] create mhc-exp19-288472 (v6e-8) in us-central1-a failed: capacity
+[10-05 19:41:20] create mhc-exp19-288471 (v6e-8) in us-central1-b failed: capacity
+[10-05 19:41:20] create mhc-exp19-288472 (v6e-8) in us-central1-b failed: capacity
+[10-05 19:41:29] create mhc-exp19-288472 (v6e-8) in us-central1-c failed: capacity
+[10-05 19:41:29] create mhc-exp19-288471 (v6e-8) in us-central1-c failed: capacity
+[10-05 19:43:58] create mhc-exp19-288472 (v6e-8) in us-east1-d failed: capacity
+[10-05 19:44:06] create mhc-exp19-288472 (v6e-8) in us-west1-c failed: capacity
+[10-05 19:44:16] create mhc-exp19-288472 (v6e-8) in us-south1-a failed: capacity
+[10-05 19:44:18] create mhc-exp19-288471 (v6e-8) in us-east1-d failed: capacity
+[10-05 19:45:01] create mhc-exp19-288472 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 19:45:19] create mhc-exp19-288471 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 19:46:00] create mhc-exp19-288472 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 19:46:05] create mhc-exp19-288471 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 19:46:31] create mhc-exp19-288471 (v6e-4) in us-central1-a failed: capacity
+[10-05 19:46:35] create mhc-exp19-288472 (v6e-4) in us-central1-a failed: capacity
+[10-05 19:49:29] status: 228/240 done, 12 queued, 0 running on 0 VMs, spent $204.89
+[10-05 19:51:22] create mhc-exp19-288471 (v6e-4) in us-central1-b failed: capacity
+[10-05 19:51:25] create mhc-exp19-288472 (v6e-4) in us-central1-b failed: capacity
+[10-05 19:51:30] create mhc-exp19-288472 (v6e-4) in us-central1-c failed: capacity
+[10-05 19:51:33] create mhc-exp19-288471 (v6e-4) in us-central1-c failed: capacity
+[10-05 19:55:30] create mhc-exp19-288472 (v6e-4) in us-east1-d failed: capacity
+[10-05 19:55:37] create mhc-exp19-288472 (v6e-4) in us-west1-c failed: capacity
+[10-05 19:55:44] create mhc-exp19-288472 (v6e-4) in us-south1-a failed: capacity
+[10-05 19:56:02] create mhc-exp19-288472 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 19:57:40] create mhc-exp19-302003 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 19:57:45] created mhc-exp19-288471 (v6e-4) in us-east1-d
+[10-05 19:58:06] create mhc-exp19-302003 (v6e-8) in us-central1-a failed: capacity
+[10-05 19:58:27] mhc-exp19-288471: set up (data ok: 21 shards)
+[10-05 19:58:46] v6e-ctrl-mlp1216-diag-lr8.5e-3-s1: started on mhc-exp19-288471 chip 0
+[10-05 19:58:47] v6e-a-global-h4-diag-lr8.5e-3-s2: started on mhc-exp19-288471 chip 1
+[10-05 19:58:48] v6e-a-local-h4-diag-lr8.5e-3-s2: started on mhc-exp19-288471 chip 2
+[10-05 19:58:49] v6e-a-global-h4-diag-lr1.2e-2-s2: started on mhc-exp19-288471 chip 3
+[10-05 20:00:11] create mhc-exp19-302003 (v6e-8) in us-central1-b failed: capacity
+[10-05 20:00:21] create mhc-exp19-302003 (v6e-8) in us-central1-c failed: capacity
+[10-05 20:02:47] create mhc-exp19-302003 (v6e-8) in us-east1-d failed: capacity
+[10-05 20:02:54] create mhc-exp19-302003 (v6e-8) in us-west1-c failed: capacity
+[10-05 20:03:00] create mhc-exp19-302003 (v6e-8) in us-south1-a failed: capacity
+[10-05 20:04:23] create mhc-exp19-302003 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 20:05:10] create mhc-exp19-302003 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 20:05:36] create mhc-exp19-302003 (v6e-4) in us-central1-a failed: capacity
+[10-05 20:06:06] mhc-exp19-288471: status failed (1): ssh: connect to host 136.108.212.166 port 22: Operation timed out
+[10-05 20:06:06] status: 228/240 done, 8 queued, 4 running on 1 VMs, spent $205.52
+[10-05 20:06:10] create mhc-exp19-302003 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 20:07:08] v6e-ctrl-mlp1216-diag-lr8.5e-3-s1: back in the queue (state gone, attempt 2)
+[10-05 20:07:08] v6e-a-global-h4-diag-lr8.5e-3-s2: back in the queue (state gone, attempt 2)
+[10-05 20:07:08] v6e-a-local-h4-diag-lr8.5e-3-s2: back in the queue (state gone, attempt 2)
+[10-05 20:07:08] v6e-a-global-h4-diag-lr1.2e-2-s2: back in the queue (state gone, attempt 2)
+[10-05 20:07:09] deleted mhc-exp19-288471 (state gone) — delete failed: unt specified by the [core/account] property
+- '@type': type.googleapis.com/google.rpc.ResourceInfo
+  resourceName: projects/PROJECT_ID/locations/us-east1-d/nodes/mhc-exp19-288471
+
+[10-05 20:09:55] create mhc-exp19-308295 (v6e-4) in us-central1-b failed: capacity
+[10-05 20:09:56] create mhc-exp19-308294 (v6e-4) in us-central1-b failed: capacity
+[10-05 20:10:06] create mhc-exp19-308295 (v6e-4) in us-central1-c failed: capacity
+[10-05 20:10:11] create mhc-exp19-308294 (v6e-4) in us-central1-c failed: capacity
+[10-05 20:11:16] create mhc-exp19-310147 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 20:11:16] create mhc-exp19-310146 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 20:14:27] create mhc-exp19-310147 (v6e-4) in us-east1-d failed: capacity
+[10-05 20:14:29] create mhc-exp19-310146 (v6e-4) in us-east1-d failed: capacity
+[10-05 20:14:38] create mhc-exp19-310147 (v6e-4) in us-west1-c failed: capacity
+[10-05 20:14:40] create mhc-exp19-310146 (v6e-4) in us-west1-c failed: capacity
+[10-05 20:14:45] create mhc-exp19-310147 (v6e-4) in us-south1-a failed: capacity
+[10-05 20:14:45] create mhc-exp19-310146 (v6e-4) in us-south1-a failed: capacity
+[10-05 20:15:10] create mhc-exp19-310147 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 20:16:04] create mhc-exp19-310146 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 20:16:08] create mhc-exp19-313228 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 20:16:36] create mhc-exp19-313839 (v6e-8) in us-central1-a failed: capacity
+[10-05 20:16:44] create mhc-exp19-313228 (v6e-8) in us-central1-a failed: capacity
+[10-05 20:19:22] create mhc-exp19-313839 (v6e-8) in us-central1-b failed: capacity
+[10-05 20:19:29] create mhc-exp19-313228 (v6e-8) in us-central1-b failed: capacity
+[10-05 20:19:30] create mhc-exp19-313839 (v6e-8) in us-central1-c failed: capacity
+[10-05 20:19:38] create mhc-exp19-313228 (v6e-8) in us-central1-c failed: capacity
+[10-05 20:21:31] status: 228/240 done, 12 queued, 0 running on 0 VMs, spent $205.57
+[10-05 20:21:37] create mhc-exp19-313839 (v6e-8) in us-east1-d failed: capacity
+[10-05 20:21:44] create mhc-exp19-313839 (v6e-8) in us-west1-c failed: capacity
+[10-05 20:21:46] create mhc-exp19-313228 (v6e-8) in us-east1-d failed: capacity
+[10-05 20:21:54] create mhc-exp19-313839 (v6e-8) in us-south1-a failed: capacity
+[10-05 20:21:55] create mhc-exp19-313228 (v6e-8) in us-south1-a failed: capacity
+[10-05 20:23:17] create mhc-exp19-313228 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 20:23:17] create mhc-exp19-313839 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 20:24:18] create mhc-exp19-313839 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 20:24:18] create mhc-exp19-313228 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 20:24:36] create mhc-exp19-313228 (v6e-4) in us-central1-a failed: capacity
+[10-05 20:24:38] create mhc-exp19-313839 (v6e-4) in us-central1-a failed: capacity
+[10-05 20:25:13] create mhc-exp19-313839 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 20:25:13] create mhc-exp19-313228 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 20:29:06] create mhc-exp19-3193811 (v6e-4) in us-central1-b failed: capacity
+[10-05 20:29:06] create mhc-exp19-3193810 (v6e-4) in us-central1-b failed: capacity
+[10-05 20:29:13] create mhc-exp19-3193810 (v6e-4) in us-central1-c failed: capacity
+[10-05 20:29:17] create mhc-exp19-3193811 (v6e-4) in us-central1-c failed: capacity
+[10-05 20:30:09] create mhc-exp19-3218412 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 20:30:10] create mhc-exp19-3218413 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 20:32:16] create mhc-exp19-3218413 (v6e-4) in us-east1-d failed: capacity
+[10-05 20:32:20] create mhc-exp19-3218412 (v6e-4) in us-east1-d failed: capacity
+[10-05 20:32:22] create mhc-exp19-3218413 (v6e-4) in us-west1-c failed: capacity
+[10-05 20:32:26] create mhc-exp19-3218412 (v6e-4) in us-west1-c failed: capacity
+[10-05 20:32:29] create mhc-exp19-3218413 (v6e-4) in us-south1-a failed: capacity
+[10-05 20:32:31] create mhc-exp19-3218412 (v6e-4) in us-south1-a failed: capacity
+[10-05 20:33:15] create mhc-exp19-3218412 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 20:33:15] create mhc-exp19-3218413 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 20:34:51] create mhc-exp19-3243015 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 20:35:06] create mhc-exp19-3243014 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 20:35:12] create mhc-exp19-3243015 (v6e-8) in us-central1-a failed: capacity
+[10-05 20:35:42] create mhc-exp19-3243014 (v6e-8) in us-central1-a failed: capacity
+[10-05 20:36:55] status: 228/240 done, 12 queued, 0 running on 0 VMs, spent $205.57
+[10-05 20:38:20] create mhc-exp19-3243015 (v6e-8) in us-central1-b failed: capacity
+[10-05 20:38:28] create mhc-exp19-3243014 (v6e-8) in us-central1-b failed: capacity
+[10-05 20:38:30] create mhc-exp19-3243015 (v6e-8) in us-central1-c failed: capacity
+[10-05 20:38:36] create mhc-exp19-3243014 (v6e-8) in us-central1-c failed: capacity
+[10-05 20:39:35] create mhc-exp19-3243015 (v6e-8) in us-east1-d failed: capacity
+[10-05 20:39:43] create mhc-exp19-3243015 (v6e-8) in us-west1-c failed: capacity
+[10-05 20:39:47] create mhc-exp19-3243014 (v6e-8) in us-east1-d failed: capacity
+[10-05 20:39:49] create mhc-exp19-3243015 (v6e-8) in us-south1-a failed: capacity
+[10-05 20:39:53] create mhc-exp19-3243014 (v6e-8) in us-south1-a failed: capacity
+[10-05 20:40:07] create mhc-exp19-3243014 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 20:40:09] create mhc-exp19-3243015 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 20:40:43] create mhc-exp19-3243014 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 20:41:19] create mhc-exp19-3243014 (v6e-4) in us-central1-a failed: capacity
+[10-05 20:41:27] create mhc-exp19-3243015 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 20:42:14] create mhc-exp19-3243015 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 20:42:21] create mhc-exp19-3243014 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 20:48:17] create mhc-exp19-3304719 (v6e-4) in us-central1-b failed: capacity
+[10-05 20:48:17] create mhc-exp19-3304718 (v6e-4) in us-central1-b failed: capacity
+[10-05 20:48:26] create mhc-exp19-3304719 (v6e-4) in us-central1-c failed: capacity
+[10-05 20:48:27] create mhc-exp19-3304718 (v6e-4) in us-central1-c failed: capacity
+[10-05 20:50:54] create mhc-exp19-3304718 (v6e-4) in us-east1-d failed: capacity
+[10-05 20:51:02] create mhc-exp19-3304718 (v6e-4) in us-west1-c failed: capacity
+[10-05 20:51:09] create mhc-exp19-3304718 (v6e-4) in us-south1-a failed: capacity
+[10-05 20:51:12] create mhc-exp19-3304719 (v6e-4) in us-east1-d failed: capacity
+[10-05 20:52:13] create mhc-exp19-3304718 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 20:52:17] create mhc-exp19-3304719 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 20:52:20] status: 228/240 done, 12 queued, 0 running on 0 VMs, spent $205.57
+[10-05 20:53:20] create mhc-exp19-3354020 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 20:53:20] create mhc-exp19-3354021 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 20:53:46] create mhc-exp19-3354020 (v6e-8) in us-central1-a failed: capacity
+[10-05 20:53:47] create mhc-exp19-3354021 (v6e-8) in us-central1-a failed: capacity
+[10-05 20:57:55] create mhc-exp19-3354020 (v6e-8) in us-central1-b failed: capacity
+[10-05 20:57:57] create mhc-exp19-3354021 (v6e-8) in us-central1-b failed: capacity
+[10-05 20:58:03] create mhc-exp19-3354020 (v6e-8) in us-central1-c failed: capacity
+[10-05 20:58:06] create mhc-exp19-3354021 (v6e-8) in us-central1-c failed: capacity
+[10-05 21:01:56] create mhc-exp19-3354020 (v6e-8) in us-east1-d failed: capacity
+[10-05 21:01:57] create mhc-exp19-3354021 (v6e-8) in us-east1-d failed: capacity
+[10-05 21:02:04] create mhc-exp19-3354021 (v6e-8) in us-west1-c failed: capacity
+[10-05 21:02:04] create mhc-exp19-3354020 (v6e-8) in us-west1-c failed: capacity
+[10-05 21:02:11] create mhc-exp19-3354020 (v6e-8) in us-south1-a failed: capacity
+[10-05 21:02:14] create mhc-exp19-3354021 (v6e-8) in us-south1-a failed: capacity
+[10-05 21:03:17] create mhc-exp19-3354021 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 21:03:32] create mhc-exp19-3354020 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 21:04:18] create mhc-exp19-3354021 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 21:04:19] create mhc-exp19-3354020 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 21:04:45] create mhc-exp19-3354021 (v6e-4) in us-central1-a failed: capacity
+[10-05 21:04:46] create mhc-exp19-3354020 (v6e-4) in us-central1-a failed: capacity
+[10-05 21:07:09] status: 228/240 done, 12 queued, 0 running on 0 VMs, spent $205.74
+[10-05 21:07:54] create mhc-exp19-344291 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 21:07:56] create mhc-exp19-344292 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 21:08:14] create mhc-exp19-344292 (v6e-8) in us-central1-a failed: capacity
+[10-05 21:08:56] create mhc-exp19-344291 (v6e-8) in us-central1-a failed: capacity
+[10-05 21:14:48] create mhc-exp19-344292 (v6e-8) in us-central1-b failed: capacity
+[10-05 21:14:50] create mhc-exp19-344291 (v6e-8) in us-central1-b failed: capacity
+[10-05 21:14:55] create mhc-exp19-344291 (v6e-8) in us-central1-c failed: capacity
+[10-05 21:14:58] create mhc-exp19-344292 (v6e-8) in us-central1-c failed: capacity
+[10-05 21:17:02] create mhc-exp19-344291 (v6e-8) in us-east1-d failed: capacity
+[10-05 21:17:05] create mhc-exp19-344292 (v6e-8) in us-east1-d failed: capacity
+[10-05 21:17:10] create mhc-exp19-344291 (v6e-8) in us-west1-c failed: capacity
+[10-05 21:17:11] create mhc-exp19-344292 (v6e-8) in us-west1-c failed: capacity
+[10-05 21:17:20] create mhc-exp19-344291 (v6e-8) in us-south1-a failed: capacity
+[10-05 21:17:21] create mhc-exp19-344292 (v6e-8) in us-south1-a failed: capacity
+[10-05 21:18:22] create mhc-exp19-344291 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 21:18:23] create mhc-exp19-344292 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 21:20:08] create mhc-exp19-344291 (v6e-8) in us-east5-a failed: capacity
+[10-05 21:20:10] create mhc-exp19-344292 (v6e-8) in us-east5-a failed: capacity
+[10-05 21:22:31] create mhc-exp19-344291 (v6e-8) in us-east5-b failed: capacity
+[10-05 21:22:33] status: 228/240 done, 12 queued, 0 running on 0 VMs, spent $205.74
+[10-05 21:22:34] create mhc-exp19-344292 (v6e-8) in us-east5-b failed: capacity
+[10-05 21:23:00] status: 228/240 done, 12 queued, 0 running on 0 VMs, spent $205.74
+[10-05 21:23:59] create mhc-exp19-353801 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 21:24:00] create mhc-exp19-353802 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 21:26:04] create mhc-exp19-353801 (v6e-8) in us-central1-a failed: capacity
+[10-05 21:26:06] create mhc-exp19-353802 (v6e-8) in us-central1-a failed: capacity
+[10-05 21:29:32] create mhc-exp19-353801 (v6e-8) in us-central1-b failed: capacity
+[10-05 21:29:34] create mhc-exp19-353802 (v6e-8) in us-central1-b failed: capacity
+[10-05 21:29:43] create mhc-exp19-353801 (v6e-8) in us-central1-c failed: capacity
+[10-05 21:29:44] create mhc-exp19-353802 (v6e-8) in us-central1-c failed: capacity
+[10-05 21:33:34] create mhc-exp19-353802 (v6e-8) in us-east1-d failed: capacity
+[10-05 21:33:34] create mhc-exp19-353801 (v6e-8) in us-east1-d failed: capacity
+[10-05 21:33:42] create mhc-exp19-353802 (v6e-8) in us-west1-c failed: capacity
+[10-05 21:33:43] create mhc-exp19-353801 (v6e-8) in us-west1-c failed: capacity
+[10-05 21:33:52] create mhc-exp19-353802 (v6e-8) in us-south1-a failed: capacity
+[10-05 21:33:52] create mhc-exp19-353801 (v6e-8) in us-south1-a failed: capacity
+[10-05 21:34:17] create mhc-exp19-353802 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 21:34:17] create mhc-exp19-353801 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 21:35:40] create mhc-exp19-353802 (v6e-8) in us-east5-a failed: capacity
+[10-05 21:35:41] create mhc-exp19-353801 (v6e-8) in us-east5-a failed: capacity
+[10-05 21:38:03] create mhc-exp19-353801 (v6e-8) in us-east5-b failed: capacity
+[10-05 21:38:22] create mhc-exp19-353802 (v6e-8) in us-east5-b failed: capacity
+[10-05 21:38:24] status: 228/240 done, 12 queued, 0 running on 0 VMs, spent $205.74
+[10-05 21:38:52] create mhc-exp19-353801 (v6e-8) in us-east5-c failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 0 in zone us-east5-c.)
+[10-05 21:39:10] create mhc-exp19-353802 (v6e-8) in us-east5-c failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 0 in zone us-east5-c.)
+[10-05 21:40:08] create mhc-exp19-353802 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 21:40:10] create mhc-exp19-353801 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 21:40:17] create mhc-exp19-353802 (v6e-4) in us-central1-a failed: capacity
+[10-05 21:43:15] create mhc-exp19-353801 (v6e-4) in us-central1-a failed: capacity
+[10-05 21:44:05] create mhc-exp19-353802 (v6e-4) in us-central1-b failed: capacity
+[10-05 21:44:11] create mhc-exp19-353802 (v6e-4) in us-central1-c failed: capacity
+[10-05 21:45:15] create mhc-exp19-353802 (v6e-4) in us-east1-d failed: capacity
+[10-05 21:45:23] create mhc-exp19-353802 (v6e-4) in us-west1-c failed: capacity
+[10-05 21:45:33] create mhc-exp19-353802 (v6e-4) in us-south1-a failed: capacity
+[10-05 21:46:19] create mhc-exp19-353802 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 21:47:44] create mhc-exp19-353802 (v6e-4) in us-east5-a failed: capacity
+[10-05 21:48:06] create mhc-exp19-353801 (v6e-4) in us-central1-b failed: capacity
+[10-05 21:50:08] create mhc-exp19-353802 (v6e-4) in us-east5-b failed: capacity
+[10-05 21:50:08] create mhc-exp19-353801 (v6e-4) in us-east5-b failed: capacity
+[10-05 21:50:49] create mhc-exp19-353802 (v6e-4) in us-east5-c failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 0 in zone us-east5-c.)
+[10-05 21:50:55] create mhc-exp19-353801 (v6e-4) in us-east5-c failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 0 in zone us-east5-c.)
+[10-05 21:51:29] create mhc-exp19-353801 (v6e-1) in asia-southeast1-b failed: capacity
+[10-05 21:51:35] create mhc-exp19-353802 (v6e-1) in asia-southeast1-b failed: capacity
+[10-05 21:51:53] create mhc-exp19-353802 (v6e-1) in us-central1-a failed: capacity
+[10-05 21:51:55] create mhc-exp19-353801 (v6e-1) in us-central1-a failed: capacity
+[10-05 21:53:14] create mhc-exp19-353802 (v6e-1) in us-central1-b failed: capacity
+[10-05 21:53:17] create mhc-exp19-353801 (v6e-1) in us-central1-b failed: capacity
+[10-05 21:53:22] create mhc-exp19-353802 (v6e-1) in us-central1-c failed: capacity
+[10-05 21:53:26] create mhc-exp19-353801 (v6e-1) in us-central1-c failed: capacity
+[10-05 21:53:49] status: 228/240 done, 12 queued, 0 running on 0 VMs, spent $205.74
+[10-05 21:57:14] create mhc-exp19-353802 (v6e-1) in us-east1-d failed: capacity
+[10-05 21:57:15] create mhc-exp19-353801 (v6e-1) in us-east1-d failed: capacity
+[10-05 21:57:22] create mhc-exp19-353802 (v6e-1) in us-west1-c failed: capacity
+[10-05 21:57:23] create mhc-exp19-353801 (v6e-1) in us-west1-c failed: capacity
+[10-05 21:57:29] create mhc-exp19-353801 (v6e-1) in us-south1-a failed: capacity
+[10-05 21:57:32] create mhc-exp19-353802 (v6e-1) in us-south1-a failed: capacity
+[10-05 21:58:19] create mhc-exp19-353802 (v6e-1) in us-south1-c failed: an internal error has occurred
+[10-05 21:58:32] create mhc-exp19-353801 (v6e-1) in us-south1-c failed: an internal error has occurred
+[10-05 21:59:34] create mhc-exp19-353801 (v6e-1) in us-east5-a failed: capacity
+[10-05 21:59:42] create mhc-exp19-353802 (v6e-1) in us-east5-a failed: capacity
+[10-05 22:01:59] create mhc-exp19-353801 (v6e-1) in us-east5-b failed: capacity
+[10-05 22:02:06] create mhc-exp19-353802 (v6e-1) in us-east5-b failed: capacity
+[10-05 22:02:44] create mhc-exp19-353801 (v6e-1) in us-east5-c failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 0 in zone us-east5-c.)
+[10-05 22:02:54] create mhc-exp19-353802 (v6e-1) in us-east5-c failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 0 in zone us-east5-c.)
+[10-05 22:04:04] create mhc-exp19-377833 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 22:04:22] create mhc-exp19-377834 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 22:04:31] create mhc-exp19-377833 (v6e-8) in us-central1-a failed: capacity
+[10-05 22:04:54] create mhc-exp19-377834 (v6e-8) in us-central1-a failed: capacity
+[10-05 22:09:01] create mhc-exp19-377833 (v6e-8) in us-central1-b failed: capacity
+[10-05 22:09:04] create mhc-exp19-377834 (v6e-8) in us-central1-b failed: capacity
+[10-05 22:09:09] create mhc-exp19-377834 (v6e-8) in us-central1-c failed: capacity
+[10-05 22:09:11] create mhc-exp19-377833 (v6e-8) in us-central1-c failed: capacity
+[10-05 22:09:13] status: 228/240 done, 12 queued, 0 running on 0 VMs, spent $205.74
+[10-05 22:14:03] create mhc-exp19-377834 (v6e-8) in us-east1-d failed: capacity
+[10-05 22:14:04] create mhc-exp19-377833 (v6e-8) in us-east1-d failed: capacity
+[10-05 22:14:12] create mhc-exp19-377834 (v6e-8) in us-west1-c failed: capacity
+[10-05 22:14:12] create mhc-exp19-377833 (v6e-8) in us-west1-c failed: capacity
+[10-05 22:14:18] create mhc-exp19-377834 (v6e-8) in us-south1-a failed: capacity
+[10-05 22:14:18] create mhc-exp19-377833 (v6e-8) in us-south1-a failed: capacity
+[10-05 22:15:20] create mhc-exp19-377833 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 22:15:21] create mhc-exp19-377834 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 22:16:08] create mhc-exp19-377833 (v6e-8) in us-east5-a failed: capacity
+[10-05 22:16:08] create mhc-exp19-377834 (v6e-8) in us-east5-a failed: capacity
+[10-05 22:19:12] create mhc-exp19-377833 (v6e-8) in us-east5-b failed: capacity
+[10-05 22:19:12] create mhc-exp19-377834 (v6e-8) in us-east5-b failed: capacity
+[10-05 22:19:59] create mhc-exp19-377834 (v6e-8) in us-east5-c failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 0 in zone us-east5-c.)
+[10-05 22:20:02] create mhc-exp19-377833 (v6e-8) in us-east5-c failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 0 in zone us-east5-c.)
+[10-05 22:20:36] create mhc-exp19-377834 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 22:20:57] create mhc-exp19-377834 (v6e-4) in us-central1-a failed: capacity
+[10-05 22:21:20] create mhc-exp19-377833 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 22:24:37] status: 228/240 done, 12 queued, 0 running on 0 VMs, spent $205.74
+[10-05 22:27:31] create mhc-exp19-377834 (v6e-4) in us-central1-b failed: capacity
+[10-05 22:27:32] create mhc-exp19-377833 (v6e-4) in us-central1-b failed: capacity
+[10-05 22:27:41] create mhc-exp19-377834 (v6e-4) in us-central1-c failed: capacity
+[10-05 22:27:42] create mhc-exp19-377833 (v6e-4) in us-central1-c failed: capacity
+[10-05 22:31:53] create mhc-exp19-377833 (v6e-4) in us-east1-d failed: capacity
+[10-05 22:31:54] create mhc-exp19-377834 (v6e-4) in us-east1-d failed: capacity
+[10-05 22:32:00] create mhc-exp19-377833 (v6e-4) in us-west1-c failed: capacity
+[10-05 22:32:02] create mhc-exp19-377834 (v6e-4) in us-west1-c failed: capacity
+[10-05 22:32:11] create mhc-exp19-377833 (v6e-4) in us-south1-a failed: capacity
+[10-05 22:32:11] create mhc-exp19-377834 (v6e-4) in us-south1-a failed: capacity
+[10-05 22:33:34] create mhc-exp19-377834 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 22:33:34] create mhc-exp19-377833 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 22:34:58] create mhc-exp19-377834 (v6e-4) in us-east5-a failed: capacity
+[10-05 22:34:58] create mhc-exp19-377833 (v6e-4) in us-east5-a failed: capacity
+[10-05 22:36:58] create mhc-exp19-377834 (v6e-4) in us-east5-b failed: capacity
+[10-05 22:37:03] create mhc-exp19-377833 (v6e-4) in us-east5-b failed: capacity
+[10-05 22:37:42] create mhc-exp19-377834 (v6e-4) in us-east5-c failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 0 in zone us-east5-c.)
+[10-05 22:37:49] create mhc-exp19-377833 (v6e-4) in us-east5-c failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 0 in zone us-east5-c.)
+[10-05 22:38:41] create mhc-exp19-377834 (v6e-1) in asia-southeast1-b failed: capacity
+[10-05 22:38:46] create mhc-exp19-377833 (v6e-1) in asia-southeast1-b failed: capacity
+[10-05 22:40:00] status: 228/240 done, 12 queued, 0 running on 0 VMs, spent $205.74
+[10-05 22:40:49] create mhc-exp19-377834 (v6e-1) in us-central1-a failed: capacity
+[10-05 22:40:51] create mhc-exp19-377833 (v6e-1) in us-central1-a failed: capacity
+[10-05 22:44:17] create mhc-exp19-377833 (v6e-1) in us-central1-b failed: capacity
+[10-05 22:44:22] create mhc-exp19-377834 (v6e-1) in us-central1-b failed: capacity
+[10-05 22:44:27] create mhc-exp19-377833 (v6e-1) in us-central1-c failed: capacity
+[10-05 22:44:31] create mhc-exp19-377834 (v6e-1) in us-central1-c failed: capacity
+[10-05 22:48:20] create mhc-exp19-377833 (v6e-1) in us-east1-d failed: capacity
+[10-05 22:48:21] create mhc-exp19-377834 (v6e-1) in us-east1-d failed: capacity
+[10-05 22:48:29] create mhc-exp19-377834 (v6e-1) in us-west1-c failed: capacity
+[10-05 22:48:31] create mhc-exp19-377833 (v6e-1) in us-west1-c failed: capacity
+[10-05 22:48:35] create mhc-exp19-377833 (v6e-1) in us-south1-a failed: capacity
+[10-05 22:48:39] create mhc-exp19-377834 (v6e-1) in us-south1-a failed: capacity
+[10-05 22:49:24] create mhc-exp19-377834 (v6e-1) in us-south1-c failed: an internal error has occurred
+[10-05 22:49:38] create mhc-exp19-377833 (v6e-1) in us-south1-c failed: an internal error has occurred
+[10-05 22:51:01] create mhc-exp19-377833 (v6e-1) in us-east5-a failed: capacity
+[10-05 22:51:10] create mhc-exp19-377834 (v6e-1) in us-east5-a failed: capacity
+[10-05 22:52:11] create mhc-exp19-377834 (v6e-1) in us-east5-b failed: capacity
+[10-05 22:52:23] create mhc-exp19-377833 (v6e-1) in us-east5-b failed: capacity
+[10-05 22:52:54] create mhc-exp19-377834 (v6e-1) in us-east5-c failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 0 in zone us-east5-c.)
+[10-05 22:53:08] create mhc-exp19-377833 (v6e-1) in us-east5-c failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 0 in zone us-east5-c.)
+[10-05 22:54:20] create mhc-exp19-408015 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 22:54:21] create mhc-exp19-408016 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 22:54:34] create mhc-exp19-408016 (v6e-8) in us-central1-a failed: capacity
+[10-05 22:54:35] create mhc-exp19-408015 (v6e-8) in us-central1-a failed: capacity
+[10-05 22:55:24] status: 228/240 done, 12 queued, 0 running on 0 VMs, spent $205.74
+[10-05 23:01:31] create mhc-exp19-408016 (v6e-8) in us-central1-b failed: capacity
+[10-05 23:01:41] create mhc-exp19-408016 (v6e-8) in us-central1-c failed: capacity
+[10-05 23:01:50] create mhc-exp19-408015 (v6e-8) in us-central1-b failed: capacity
+[10-05 23:05:37] create mhc-exp19-408015 (v6e-8) in us-east1-d failed: capacity
+[10-05 23:05:45] create mhc-exp19-408015 (v6e-8) in us-west1-c failed: capacity
+[10-05 23:05:51] create mhc-exp19-408015 (v6e-8) in us-south1-a failed: capacity
+[10-05 23:05:53] create mhc-exp19-408016 (v6e-8) in us-east1-d failed: capacity
+[10-05 23:06:26] create mhc-exp19-408015 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 23:06:27] create mhc-exp19-408016 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 23:07:31] create mhc-exp19-408015 (v6e-8) in us-east5-a failed: capacity
+[10-05 23:07:50] create mhc-exp19-408016 (v6e-8) in us-east5-a failed: capacity
+[10-05 23:10:48] status: 228/240 done, 12 queued, 0 running on 0 VMs, spent $205.74
+[10-05 23:10:56] create mhc-exp19-408015 (v6e-8) in us-east5-b failed: capacity
+[10-05 23:11:14] create mhc-exp19-408016 (v6e-8) in us-east5-b failed: capacity
+[10-05 23:11:41] create mhc-exp19-408015 (v6e-8) in us-east5-c failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 0 in zone us-east5-c.)
+[10-05 23:12:01] create mhc-exp19-408016 (v6e-8) in us-east5-c failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 0 in zone us-east5-c.)
+[10-05 23:12:45] create mhc-exp19-408016 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 23:12:59] create mhc-exp19-408015 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 23:13:08] create mhc-exp19-408015 (v6e-4) in us-central1-a failed: capacity
+[10-05 23:13:20] create mhc-exp19-408016 (v6e-4) in us-central1-a failed: capacity
+[10-05 23:18:10] create mhc-exp19-408016 (v6e-4) in us-central1-b failed: capacity
+[10-05 23:18:20] create mhc-exp19-408016 (v6e-4) in us-central1-c failed: capacity
+[10-05 23:18:24] create mhc-exp19-408015 (v6e-4) in us-central1-b failed: capacity
+[10-05 23:22:32] create mhc-exp19-408016 (v6e-4) in us-east1-d failed: capacity
+[10-05 23:22:35] create mhc-exp19-408015 (v6e-4) in us-east1-d failed: capacity
+[10-05 23:22:39] create mhc-exp19-408016 (v6e-4) in us-west1-c failed: capacity
+[10-05 23:22:41] create mhc-exp19-408015 (v6e-4) in us-west1-c failed: capacity
+[10-05 23:22:46] create mhc-exp19-408016 (v6e-4) in us-south1-a failed: capacity
+[10-05 23:22:50] create mhc-exp19-408015 (v6e-4) in us-south1-a failed: capacity
+[10-05 23:23:32] create mhc-exp19-408016 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 23:23:35] create mhc-exp19-408015 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 23:24:34] create mhc-exp19-408016 (v6e-4) in us-east5-a failed: capacity
+[10-05 23:24:38] create mhc-exp19-408015 (v6e-4) in us-east5-a failed: capacity
+[10-05 23:26:12] status: 228/240 done, 12 queued, 0 running on 0 VMs, spent $205.74
+[10-05 23:26:17] create mhc-exp19-408016 (v6e-4) in us-east5-b failed: capacity
+[10-05 23:26:20] create mhc-exp19-408015 (v6e-4) in us-east5-b failed: capacity
+[10-05 23:26:58] create mhc-exp19-408016 (v6e-4) in us-east5-c failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 0 in zone us-east5-c.)
+[10-05 23:27:03] create mhc-exp19-408015 (v6e-4) in us-east5-c failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 0 in zone us-east5-c.)
+[10-05 23:27:45] create mhc-exp19-408016 (v6e-1) in asia-southeast1-b failed: capacity
+[10-05 23:28:00] create mhc-exp19-408015 (v6e-1) in asia-southeast1-b failed: capacity
+[10-05 23:28:13] create mhc-exp19-408015 (v6e-1) in us-central1-a failed: capacity
+[10-05 23:28:19] create mhc-exp19-408016 (v6e-1) in us-central1-a failed: capacity
+[10-05 23:30:03] create mhc-exp19-408016 (v6e-1) in us-central1-b failed: capacity

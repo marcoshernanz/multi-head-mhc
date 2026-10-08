@@ -1,0 +1,64 @@
+[{"stream_name":"stdout","time":12.660601773,"data":"[    3.8s] jax                          0.10.2\n"}
+,{"stream_name":"stdout","time":12.660653823,"data":"jaxlib                       0.10.2\n"}
+,{"stream_name":"stdout","time":12.660658433,"data":"libtpu                       0.0.17\n"}
+,{"stream_name":"stdout","time":12.660662023,"data":"numpy                        2.5.0\n"}
+,{"stream_name":"stdout","time":12.660665023,"data":"torch                        2.8.0+cpu\n"}
+,{"stream_name":"stdout","time":12.660668023,"data":"torch_xla                    2.8.0\n"}
+,{"stream_name":"stdout","time":12.660671323,"data":"\n"}
+,{"stream_name":"stdout","time":12.694222586,"data":"[    3.9s] TPU_CHIPS_PER_HOST_BOUNDS=2,4,1\n"}
+,{"stream_name":"stdout","time":12.694242286,"data":"TPU_SKIP_MDS_QUERY=1\n"}
+,{"stream_name":"stdout","time":12.694245866,"data":"TPU_RUNTIME_METRICS_PORTS=8431,8432,8433,8434,8435,8436,8437,8438\n"}
+,{"stream_name":"stdout","time":12.694249226,"data":"TPU_WORKER_ID=0\n"}
+,{"stream_name":"stdout","time":12.694251846,"data":"PJRT_DEVICE=TPU\n"}
+,{"stream_name":"stdout","time":12.694254076,"data":"TPU_WORKER_HOSTNAMES=localhost\n"}
+,{"stream_name":"stdout","time":12.694256566,"data":"TPU_ACCELERATOR_TYPE=v5litepod-8\n"}
+,{"stream_name":"stdout","time":12.694258866,"data":"TPU_HOST_BOUNDS=1,1,1\n"}
+,{"stream_name":"stdout","time":12.694261156,"data":"TPU_PROCESS_ADDRESSES=local\n"}
+,{"stream_name":"stdout","time":12.694263416,"data":"96\n"}
+,{"stream_name":"stdout","time":12.694265686,"data":"               total        used        free      shared  buff/cache   available\n"}
+,{"stream_name":"stdout","time":12.694268166,"data":"Mem:             377           4         358           0          16         373\n"}
+,{"stream_name":"stdout","time":12.694270566,"data":"\n"}
+,{"stream_name":"stdout","time":45.03009542,"data":"[   36.2s] downloaded 21 shards\n"}
+,{"stream_name":"stdout","time":102.430664729,"data":"[   93.6s] single process: SMOKE devices 8 tflops 1.8\n"}
+,{"stream_name":"stdout","time":129.431394776,"data":"[  120.6s] recipe visible_chips chip 0: rc 0 SMOKE devices 1 tflops 1.6\n"}
+,{"stream_name":"stdout","time":129.431427256,"data":"[  120.6s] recipe visible_chips chip 1: rc 0 SMOKE devices 1 tflops 1.7\n"}
+,{"stream_name":"stdout","time":129.895785137,"data":"[  121.1s] recipe visible_chips chip 2: rc 0 SMOKE devices 1 tflops 1.7\n"}
+,{"stream_name":"stdout","time":130.410056568,"data":"[  121.6s] recipe visible_chips chip 3: rc 0 SMOKE devices 1 tflops 1.7\n"}
+,{"stream_name":"stdout","time":130.473663378,"data":"[  121.6s] recipe visible_chips chip 4: rc 0 SMOKE devices 1 tflops 1.7\n"}
+,{"stream_name":"stdout","time":130.637294918,"data":"[  121.8s] recipe visible_chips chip 5: rc 0 SMOKE devices 1 tflops 1.7\n"}
+,{"stream_name":"stdout","time":130.637372338,"data":"[  121.8s] recipe visible_chips chip 6: rc 0 SMOKE devices 1 tflops 1.7\n"}
+,{"stream_name":"stdout","time":130.851177529,"data":"[  122.0s] recipe visible_chips chip 7: rc 0 SMOKE devices 1 tflops 1.6\n"}
+,{"stream_name":"stdout","time":130.851190749,"data":"[  122.0s] per-chip recipe: visible_chips\n"}
+,{"stream_name":"stdout","time":370.8744993,"data":"[  362.0s] d768-a-global-h4-s0: exit 1 in 240s on chip 1\n"}
+,{"stream_name":"stdout","time":390.872980777,"data":"[  382.0s] d768-a-global-h4-s1: exit 1 in 260s on chip 3\n"}
+,{"stream_name":"stdout","time":390.877708326,"data":"[  382.0s] d768-a-global-h4-s2: exit 1 in 260s on chip 5\n"}
+,{"stream_name":"stdout","time":410.870226333,"data":"[  402.0s] d768-mhc-h1-s1: exit 1 in 280s on chip 2\n"}
+,{"stream_name":"stdout","time":420.873824309,"data":"[  412.0s] d768-mhc-h1-s2: exit 1 in 290s on chip 4\n"}
+,{"stream_name":"stdout","time":430.876101329,"data":"[  422.0s] d768-mhc-h1-s0: exit 1 in 300s on chip 0\n"}
+,{"stream_name":"stdout","time":3560.957488253,"data":"[ 3552.1s] ctrl-mlp1992-s0: exit 0 in 3430s on chip 7\n"}
+,{"stream_name":"stdout","time":3690.957468635,"data":"[ 3682.1s] ctrl-mlp1216-s0: exit 0 in 3560s on chip 6\n"}
+,{"stream_name":"stdout","time":3870.962837846,"data":"[ 3862.1s] ctrl-mlp1992-s1: exit 0 in 3480s on chip 3\n"}
+,{"stream_name":"stdout","time":3900.969243124,"data":"[ 3892.1s] ctrl-mlp1216-s1: exit 0 in 3530s on chip 1\n"}
+,{"stream_name":"stdout","time":3910.969334889,"data":"[ 3902.1s] ctrl-mlp1216-s3: exit 0 in 3490s on chip 4\n"}
+,{"stream_name":"stdout","time":4030.97516386,"data":"[ 4022.1s] ctrl-mlp1992-s2: exit 0 in 3620s on chip 2\n"}
+,{"stream_name":"stdout","time":4040.971612637,"data":"[ 4032.1s] ctrl-mlp1992-s3: exit 0 in 3610s on chip 0\n"}
+,{"stream_name":"stdout","time":4050.979318432,"data":"[ 4042.1s] ctrl-mlp1216-s2: exit 0 in 3660s on chip 5\n"}
+,{"stream_name":"stdout","time":7171.042252548,"data":"[ 7162.2s] mhc-h1-s4: exit 0 in 3610s on chip 7\n"}
+,{"stream_name":"stdout","time":7251.299022815,"data":"[ 7242.5s] a-global-h4-s4: exit 0 in 3560s on chip 6\n"}
+,{"stream_name":"stdout","time":7431.039195796,"data":"[ 7422.2s] ctrl-mlp1992-s4: exit 0 in 3520s on chip 4\n"}
+,{"stream_name":"stdout","time":7511.056138408,"data":"[ 7502.2s] mhc-h1-lr4x-s0: exit 0 in 3480s on chip 2\n"}
+,{"stream_name":"stdout","time":7561.051014139,"data":"[ 7552.2s] a-global-h16-s4: exit 0 in 3690s on chip 3\n"}
+,{"stream_name":"stdout","time":7581.066072692,"data":"[ 7572.2s] ctrl-mlp1216-s4: exit 0 in 3680s on chip 1\n"}
+,{"stream_name":"stdout","time":7601.048304803,"data":"[ 7592.2s] a-global-h4-lr4x-s0: exit 0 in 3560s on chip 0\n"}
+,{"stream_name":"stdout","time":7701.048189758,"data":"[ 7692.2s] mhc-h1-lr4x-s1: exit 0 in 3650s on chip 5\n"}
+,{"stream_name":"stdout","time":10571.141238117,"data":"[10562.3s] a-global-h4-lr4x-s1: exit 0 in 3400s on chip 7\n"}
+,{"stream_name":"stdout","time":10921.409629251,"data":"[10912.6s] repeat-mhc-h1-s0: exit 0 in 3670s on chip 6\n"}
+,{"stream_name":"stdout","time":11011.145386935,"data":"[11002.3s] a-global-h4-s5: exit 0 in 3500s on chip 2\n"}
+,{"stream_name":"stdout","time":11121.126166095,"data":"[11112.3s] mhc-h1-s5: exit 0 in 3690s on chip 4\n"}
+,{"stream_name":"stdout","time":11151.158435062,"data":"[11142.3s] ctrl-mlp1216-s5: exit 0 in 3570s on chip 1\n"}
+,{"stream_name":"stdout","time":11191.127312295,"data":"[11182.3s] ctrl-mlp1992-s5: exit 0 in 3590s on chip 0\n"}
+,{"stream_name":"stdout","time":11321.129715692,"data":"[11312.3s] a-global-h16-s5: exit 0 in 3760s on chip 3\n"}
+,{"stream_name":"stdout","time":11321.130643622,"data":"[11312.3s] all done\n"}
+,{"stream_name":"stderr","time":11325.929077941,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":11331.446043543,"data":"[NbConvertApp] Writing 505718 bytes to __results__.html\n"}
+]

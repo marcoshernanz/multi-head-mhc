@@ -1,0 +1,8 @@
+{"params": 27343809, "hc_params": 597569}
+first step (with compilation) 62.4s, compiles 1
+step 1000 val 5.5440 tok/s 65011.05791717106 compiles 10
+step 2000 val 5.0635 tok/s 69752.0083233088 compiles 10
+step 3000 val 4.8416 tok/s 75719.58740654265 compiles 10
+step 4000 val 4.6316 tok/s 79141.81526851842 compiles 10
+step 5000 val 4.4303 tok/s 81266.51132520271 compiles 10
+{"final_val_loss": 4.272279968261719, "tok_s": 82475.88208155853, "xla_compiles": 10, "seconds": 1353.0142226219177, "diverged": false}

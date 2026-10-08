@@ -1,0 +1,167 @@
+/usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow && pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.
+  warnings.warn(
+{"params": 117249113, "hc_params": 7129433}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/tmp/src/mhc_lab/train_xla.py", line 154, in <module>
+    main()
+  File "/tmp/src/mhc_lab/train_xla.py", line 103, in main
+    torch_xla.sync()
+  File "/usr/local/lib/python3.12/site-packages/torch_xla/torch_xla.py", line 87, in sync
+    torch_xla._XLAC._xla_step_marker(
+ValueError: XLA:TPU compile permanent error. Ran out of memory in memory space hbm. Used 20.35G of 15.75G hbm. Exceeded hbm capacity by 4.61G.
+
+Total hbm usage >= 20.61G:
+    reserved        258.00M 
+    program          20.35G 
+    arguments            0B 
+
+Output size 0B; shares 0B with arguments.
+
+Program hbm requirement 20.35G:
+    HLO temp         20.35G (100.0% utilization: Unpadded (19.71G) Padded (19.71G), 3.2% fragmentation (657.62M))
+
+  Largest program allocations in hbm:
+
+  1. Size: 192.00M
+     Shape: f32[48,1024,1024]{1,2,0:T(8,128)}
+     Unpadded size: 192.00M
+     XLA label: fusion.25875.remat = fusion(gte.remat.500, custom-call.81), kind=kOutput, calls=fused_computation.44733.clone
+     Allocation type: HLO temp
+     ==========================
+
+  2. Size: 192.00M
+     Shape: f32[48,1024,1024]{1,2,0:T(8,128)}
+     Unpadded size: 192.00M
+     XLA label: fusion.25859.remat3 = fusion(fusion.478.remat2, custom-call.67), kind=kOutput, calls=fused_computation.44717.clone.clone.clone
+     Allocation type: HLO temp
+     ==========================
+
+  3. Size: 192.00M
+     Shape: f32[48,1024,1024]{1,2,0:T(8,128)}
+     Unpadded size: 192.00M
+     XLA label: fusion.25829.remat3 = fusion(custom-call.448, custom-call.61), kind=kOutput, calls=fused_computation.44687.clone.clone.clone
+     Allocation type: HLO temp
+     ==========================
+
+  4. Size: 192.00M
+     Shape: f32[48,1024,1024]{1,2,0:T(8,128)}
+     Unpadded size: 192.00M
+     XLA label: fusion.25867.remat3 = fusion(fusion.466.remat4, custom-call.76), kind=kOutput, calls=fused_computation.44725.clone.clone.clone
+     Allocation type: HLO temp
+     ==========================
+
+  5. Size: 192.00M
+     Shape: f32[48,1024,1024]{1,2,0:T(8,128)}
+     Unpadded size: 192.00M
+     XLA label: fusion.25834.remat3 = fusion(get-tuple-element.8512, custom-call.61), kind=kOutput, calls=fused_computation.44692.clone.clone.clone
+     Allocation type: HLO temp
+     ==========================
+
+  6. Size: 192.00M
+     Shape: f32[48,1024,1024]{1,2,0:T(8,128)}
+     Unpadded size: 192.00M
+     XLA label: fusion.25835.remat3 = fusion(custom-call.416, custom-call.61), kind=kOutput, calls=fused_computation.44693.clone.clone.clone
+     Allocation type: HLO temp
+     ==========================
+
+  7. Size: 192.00M
+     Shape: f32[48,1024,1024]{1,2,0:T(8,128)}
+     Unpadded size: 192.00M
+     XLA label: fusion.25850.remat3 = fusion(copy-done.203, custom-call.61), kind=kOutput, calls=fused_computation.44708.clone.clone.clone
+     Allocation type: HLO temp
+     ==========================
+
+  8. Size: 192.00M
+     Shape: f32[48,1024,1024]{1,2,0:T(8,128)}
+     Unpadded size: 192.00M
+     XLA label: fusion.25868.remat3 = fusion(fusion.467.remat4, custom-call.76), kind=kOutput, calls=fused_computation.44726.clone.clone.clone
+     Allocation type: HLO temp
+     ==========================
+
+  9. Size: 192.00M
+     Shape: f32[48,1024,1024]{1,2,0:T(8,128)}
+     Unpadded size: 192.00M
+     XLA label: fusion.25860.remat3 = fusion(fusion.479.remat4, custom-call.69), kind=kOutput, calls=fused_computation.44718.clone.clone.clone
+     Allocation type: HLO temp
+     ==========================
+
+  10. Size: 192.00M
+     Shape: f32[48,1024,1024]{1,2,0:T(8,128)}
+     Unpadded size: 192.00M
+     XLA label: fusion.25841.remat3 = fusion(fusion.1657, custom-call.61), kind=kOutput, calls=fused_computation.44699.clone.clone.clone
+     Allocation type: HLO temp
+     ==========================
+
+  11. Size: 192.00M
+     Shape: f32[48,1024,1024]{1,2,0:T(8,128)}
+     Unpadded size: 192.00M
+     XLA label: fusion.25836.remat3 = fusion(copy-done.195, custom-call.61), kind=kOutput, calls=fused_computation.44694.clone.clone.clone
+     Allocation type: HLO temp
+     ==========================
+
+  12. Size: 192.00M
+     Shape: f32[48,1024,1024]{1,2,0:T(8,128)}
+     Unpadded size: 192.00M
+     XLA label: fusion.25830.remat3 = fusion(get-tuple-element.8480, custom-call.61), kind=kOutput, calls=fused_computation.44688.clone.clone.clone
+     Allocation type: HLO temp
+     ==========================
+
+  13. Size: 192.00M
+     Shape: f32[48,1024,1024]{1,2,0:T(8,128)}
+     Unpadded size: 192.00M
+     XLA label: fusion.25843.remat3 = fusion(copy-done.198, custom-call.61), kind=kOutput, calls=fused_computation.44701.clone.clone.clone
+     Allocation type: HLO temp
+     ==========================
+
+  14. Size: 192.00M
+     Shape: f32[48,1024,1024]{1,2,0:T(8,128)}
+     Unpadded size: 192.00M
+     XLA label: fusion.25851.remat3 = fusion(custom-call.419, custom-call.61), kind=kOutput, calls=fused_computation.44709.clone.clone.clone
+     Allocation type: HLO temp
+     ==========================
+
+  15. Size: 192.00M
+     Shape: f32[48,1024,1024]{1,2,0:T(8,128)}
+     Unpadded size: 192.00M
+     XLA label: fusion.25845.remat3 = fusion(custom-call.417, custom-call.61), kind=kOutput, calls=fused_computation.44703.clone.clone.clone
+     Allocation type: HLO temp
+     ==========================
+
+  16. Size: 192.00M
+     Shape: f32[48,1024,1024]{1,2,0:T(8,128)}
+     Unpadded size: 192.00M
+     XLA label: fusion.25869.remat3 = fusion(fusion.468.remat3, custom-call.78), kind=kOutput, calls=fused_computation.44727.clone.clone.clone
+     Allocation type: HLO temp
+     ==========================
+
+  17. Size: 192.00M
+     Shape: f32[48,1024,1024]{1,2,0:T(8,128)}
+     Unpadded size: 192.00M
+     XLA label: fusion.25858.remat3 = fusion(fusion.477.remat5, custom-call.67), kind=kOutput, calls=fused_computation.44716.clone.clone.clone
+     Allocation type: HLO temp
+     ==========================
+
+  18. Size: 192.00M
+     Shape: f32[48,1024,1024]{1,2,0:T(8,128)}
+     Unpadded size: 192.00M
+     XLA label: fusion.25855.remat3 = fusion(custom-call.420, custom-call.63), kind=kOutput, calls=fused_computation.44713.clone.clone.clone
+     Allocation type: HLO temp
+     ==========================
+
+  19. Size: 192.00M
+     Shape: f32[48,1024,1024]{1,2,0:T(8,128)}
+     Unpadded size: 192.00M
+     XLA label: fusion.25854.remat3 = fusion(gte.remat.186, custom-call.63), kind=kOutput, calls=fused_computation.44712.clone.clone.clone
+     Allocation type: HLO temp
+     ==========================
+
+  20. Size: 192.00M
+     Shape: f32[48,1024,1024]{1,2,0:T(8,128)}
+     Unpadded size: 192.00M
+     XLA label: fusion.25866.remat3 = fusion(fusion.465.remat3, custom-call.74), kind=kOutput, calls=fused_computation.44724.clone.clone.clone
+     Allocation type: HLO temp
+     ==========================
+
+

@@ -1,0 +1,3 @@
+{"params": 27341621, "hc_params": 596405}
+step 100 val 7.2822 tok/s 18620
+{"final_val_loss": 7.026431894302368, "tok_s": 18726.53140607931, "peak_mem_gb": 5.342039552, "seconds": 133.1164906024933, "diverged": false}

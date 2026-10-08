@@ -1,0 +1,146 @@
+[10-05 16:46:44] status: 0/75 done, 75 queued, 0 running on 0 VMs, spent $194.06
+[10-05 16:48:01] create mhc-exp20-188042 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 16:48:28] create mhc-exp20-188042 (v6e-8) in us-central1-a failed: capacity
+[10-05 16:48:56] create mhc-exp20-188041 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 16:49:22] create mhc-exp20-188042 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 16:49:32] create mhc-exp20-188042 (v6e-8) in us-central1-c failed: capacity
+[10-05 16:49:48] create mhc-exp20-188041 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 16:50:58] create mhc-exp20-188042 (v6e-8) in us-east1-d failed: capacity
+[10-05 16:51:06] create mhc-exp20-188042 (v6e-8) in us-west1-c failed: capacity
+[10-05 16:51:13] create mhc-exp20-188042 (v6e-8) in us-south1-a failed: capacity
+[10-05 16:51:47] create mhc-exp20-188042 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 16:52:50] create mhc-exp20-188042 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 16:53:26] create mhc-exp20-188042 (v6e-4) in us-central1-a failed: capacity
+[10-05 16:54:49] create mhc-exp20-188042 (v6e-4) in us-central1-b failed: capacity
+[10-05 16:54:55] create mhc-exp20-188042 (v6e-4) in us-central1-c failed: capacity
+[10-05 16:55:33] create mhc-exp20-188041 (v6e-8) in us-east1-d failed: capacity
+[10-05 17:00:51] create mhc-exp20-188042 (v6e-4) in us-east1-d failed: an internal error has occurred
+[10-05 17:16:23] list failed: onnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NameResolutionError("HTTPSConnection(host='oauth2.googleapis.com', port=443): Failed to resolve 'oauth2.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)"))
+Please run:
+
+  $ gcloud auth login
+
+to obtain new credentials.
+
+If you have already logged in with a different account, run:
+
+  $ gcloud config set account ACCOUNT
+
+to select an already authenticated account to use.
+
+[10-05 17:16:24] create mhc-exp20-188041 (v6e-4) in us-east1-d failed:  run: $ gcloud auth login to obtain new credentials. If you have already logged in with a different account, run: $ gcloud config set account ACCOUNT to select an already authenticated account to use.
+[10-05 17:19:46] status: 0/75 done, 75 queued, 0 running on 0 VMs, spent $197.19
+[10-05 17:23:36] create mhc-exp20-188042 (v6e-4) in us-west1-c failed: capacity
+[10-05 17:23:43] create mhc-exp20-188042 (v6e-4) in us-south1-a failed: capacity
+[10-05 17:24:01] create mhc-exp20-188041 (v6e-4) in us-west1-c failed: capacity
+[10-05 17:24:45] create mhc-exp20-188042 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 17:24:47] create mhc-exp20-188041 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 17:24:54] mhc-exp20-188041: creation was missing from the ledger; logged
+[10-05 17:25:52] deleted mhc-exp20-188041 (found in state PREEMPTED)
+[10-05 17:26:53] create mhc-exp20-211524 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 17:27:43] create mhc-exp20-211524 (v6e-8) in us-central1-a failed: capacity
+[10-05 17:28:11] create mhc-exp20-211523 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 17:28:25] create mhc-exp20-211524 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 17:28:35] create mhc-exp20-211524 (v6e-8) in us-central1-c failed: capacity
+[10-05 17:29:22] create mhc-exp20-211523 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 17:30:27] create mhc-exp20-211523 (v6e-8) in us-east1-d failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-east1-d.)
+[10-05 17:30:35] create mhc-exp20-211523 (v6e-8) in us-west1-c failed: capacity
+[10-05 17:30:46] create mhc-exp20-211523 (v6e-8) in us-south1-a failed: capacity
+[10-05 17:32:09] create mhc-exp20-211523 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 17:32:46] create mhc-exp20-211524 (v6e-8) in us-east1-d failed: capacity
+[10-05 17:32:58] create mhc-exp20-211523 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 17:33:21] create mhc-exp20-211524 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 17:33:34] create mhc-exp20-211523 (v6e-4) in us-central1-a failed: capacity
+[10-05 17:33:34] create mhc-exp20-211524 (v6e-4) in us-central1-a failed: capacity
+[10-05 17:35:07] status: 0/75 done, 75 queued, 0 running on 0 VMs, spent $202.44
+[10-05 17:38:26] create mhc-exp20-211523 (v6e-4) in us-central1-b failed: an internal error has occurred
+[10-05 17:38:27] create mhc-exp20-211524 (v6e-4) in us-central1-b failed: an internal error has occurred
+[10-05 17:38:38] create mhc-exp20-211523 (v6e-4) in us-central1-c failed: capacity
+[10-05 17:38:38] create mhc-exp20-211524 (v6e-4) in us-central1-c failed: capacity
+[10-05 17:40:44] create mhc-exp20-211523 (v6e-4) in us-east1-d failed: capacity
+[10-05 17:40:49] create mhc-exp20-211524 (v6e-4) in us-east1-d failed: capacity
+[10-05 17:40:54] create mhc-exp20-211523 (v6e-4) in us-west1-c failed: capacity
+[10-05 17:40:56] create mhc-exp20-211524 (v6e-4) in us-west1-c failed: capacity
+[10-05 17:41:00] create mhc-exp20-211523 (v6e-4) in us-south1-a failed: capacity
+[10-05 17:41:04] create mhc-exp20-211524 (v6e-4) in us-south1-a failed: capacity
+[10-05 17:42:02] create mhc-exp20-211523 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 17:42:06] create mhc-exp20-211524 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 17:42:52] create mhc-exp20-221396 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 17:42:52] create mhc-exp20-221395 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 17:43:56] create mhc-exp20-222008 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 17:44:45] create mhc-exp20-222008 (v6e-8) in us-central1-a failed: capacity
+[10-05 17:45:09] create mhc-exp20-222007 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 17:46:00] create mhc-exp20-222007 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 17:46:10] create mhc-exp20-222007 (v6e-8) in us-central1-c failed: capacity
+[10-05 17:46:18] create mhc-exp20-222007 (v6e-8) in us-west1-c failed: capacity
+[10-05 17:46:24] create mhc-exp20-222007 (v6e-8) in us-south1-a failed: capacity
+[10-05 17:47:11] create mhc-exp20-222007 (v6e-4) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 17:47:56] create mhc-exp20-222007 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 17:49:55] create mhc-exp20-225089 (v6e-8) in us-east1-d failed: capacity
+[10-05 17:50:31] status: 0/75 done, 75 queued, 0 running on 0 VMs, spent $203.54
+[10-05 17:50:59] create mhc-exp20-225089 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 17:51:20] create mhc-exp20-222008 (v6e-8) in us-central1-b failed: capacity
+[10-05 17:52:04] create mhc-exp20-222008 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 17:52:18] create mhc-exp20-225089 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 17:52:38] create mhc-exp20-222008 (v6e-4) in us-central1-a failed: capacity
+[10-05 17:52:43] create mhc-exp20-225089 (v6e-4) in us-central1-a failed: capacity
+[10-05 17:55:01] create mhc-exp20-2281611 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 17:55:02] create mhc-exp20-2281610 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 17:55:49] create mhc-exp20-2294012 (v6e-4) in us-central1-c failed: capacity
+[10-05 17:55:50] create mhc-exp20-2294013 (v6e-4) in us-central1-c failed: capacity
+[10-05 17:58:37] create mhc-exp20-2294012 (v6e-4) in us-east1-d failed: capacity
+[10-05 17:58:39] create mhc-exp20-2294013 (v6e-4) in us-east1-d failed: capacity
+[10-05 17:58:46] create mhc-exp20-2294012 (v6e-4) in us-west1-c failed: capacity
+[10-05 17:58:47] create mhc-exp20-2294013 (v6e-4) in us-west1-c failed: capacity
+[10-05 17:58:55] create mhc-exp20-2294012 (v6e-4) in us-south1-a failed: capacity
+[10-05 17:58:56] create mhc-exp20-2294013 (v6e-4) in us-south1-a failed: capacity
+[10-05 18:00:12] create mhc-exp20-2318614 (v6e-8) in us-central1-a failed: capacity
+[10-05 18:00:13] create mhc-exp20-2318615 (v6e-8) in us-central1-a failed: capacity
+[10-05 18:00:58] create mhc-exp20-2318615 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 18:00:58] create mhc-exp20-2318614 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 18:02:01] create mhc-exp20-2318615 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 18:02:02] create mhc-exp20-2318614 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 18:03:38] create mhc-exp20-2337116 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 18:03:46] create mhc-exp20-2337116 (v6e-8) in us-central1-c failed: capacity
+[10-05 18:03:53] create mhc-exp20-2337116 (v6e-8) in us-west1-c failed: capacity
+[10-05 18:04:02] create mhc-exp20-2337117 (v6e-8) in asia-southeast1-b failed: capacity
+[10-05 18:04:03] create mhc-exp20-2337116 (v6e-8) in us-south1-a failed: capacity
+[10-05 18:04:07] create mhc-exp20-2337117 (v6e-8) in us-south1-a failed: capacity
+[10-05 18:05:47] create mhc-exp20-2337116 (v6e-4) in us-central1-b failed: capacity
+[10-05 18:05:50] create mhc-exp20-2337117 (v6e-4) in us-central1-b failed: capacity
+[10-05 18:05:55] status: 0/75 done, 75 queued, 0 running on 0 VMs, spent $204.72
+[10-05 18:07:21] create mhc-exp20-2355518 (v6e-8) in us-east1-d failed: capacity
+[10-05 18:07:22] create mhc-exp20-2355519 (v6e-8) in us-east1-d failed: capacity
+[10-05 18:07:50] create mhc-exp20-2355518 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 18:07:57] create mhc-exp20-2355519 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 18:08:38] create mhc-exp20-2355518 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 18:09:14] create mhc-exp20-2355518 (v6e-4) in us-central1-a failed: capacity
+[10-05 18:09:24] create mhc-exp20-2355519 (v6e-4) in asia-southeast1-b failed: capacity
+[10-05 18:09:59] create mhc-exp20-2355519 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 18:10:00] create mhc-exp20-2355518 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 18:10:48] create mhc-exp20-2380120 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-05 18:11:13] create mhc-exp20-2386221 (v6e-4) in us-central1-c failed: capacity
+[10-05 18:11:13] create mhc-exp20-2386222 (v6e-4) in us-central1-c failed: capacity
+[10-05 18:13:53] create mhc-exp20-2398625 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 18:13:54] create mhc-exp20-2398626 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 18:15:20] create mhc-exp20-2398626 (v6e-4) in us-east1-d failed: capacity
+[10-05 18:15:20] create mhc-exp20-2398625 (v6e-4) in us-east1-d failed: capacity
+[10-05 18:15:28] create mhc-exp20-2398625 (v6e-4) in us-west1-c failed: capacity
+[10-05 18:15:28] create mhc-exp20-2398626 (v6e-4) in us-west1-c failed: capacity
+[10-05 18:15:34] create mhc-exp20-2398625 (v6e-4) in us-south1-a failed: capacity
+[10-05 18:15:38] create mhc-exp20-2398626 (v6e-4) in us-south1-a failed: capacity
+[10-05 18:15:51] create mhc-exp20-2398625 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 18:15:55] create mhc-exp20-2398626 (v6e-4) in us-south1-c failed: an internal error has occurred
+[10-05 18:19:19] create mhc-exp20-2417028 (v6e-8) in us-central1-a failed: capacity
+[10-05 18:19:19] create mhc-exp20-2417027 (v6e-8) in us-central1-a failed: capacity
+[10-05 18:19:26] create mhc-exp20-2417027 (v6e-8) in us-central1-c failed: capacity
+[10-05 18:19:28] create mhc-exp20-2417028 (v6e-8) in us-central1-c failed: capacity
+[10-05 18:19:37] create mhc-exp20-2417027 (v6e-8) in us-west1-c failed: capacity
+[10-05 18:19:37] create mhc-exp20-2417028 (v6e-8) in us-west1-c failed: capacity
+[10-05 18:19:43] create mhc-exp20-2417027 (v6e-8) in us-south1-a failed: capacity
+[10-05 18:19:43] create mhc-exp20-2417028 (v6e-8) in us-south1-a failed: capacity
+[10-05 18:21:06] create mhc-exp20-2417028 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 18:21:08] create mhc-exp20-2417027 (v6e-8) in us-south1-c failed: an internal error has occurred
+[10-05 18:21:17] status: 0/75 done, 75 queued, 0 running on 0 VMs, spent $204.77
+[10-05 18:22:27] create mhc-exp20-2417028 (v6e-4) in us-central1-b failed: vm.create) Aborting wait for operation https://tpu.googleapis.com/v2/projects/PROJECT_ID/locations/us-central1-b/operations/operation-1791224469128-65d1bf2320667-091d3e7c-a1b98a8e.
+[10-05 18:22:28] create mhc-exp20-2417027 (v6e-4) in us-central1-b failed: vm.create) Aborting wait for operation https://tpu.googleapis.com/v2/projects/PROJECT_ID/locations/us-central1-b/operations/operation-1791224470411-65d1bf2459a2f-a1f8ebb5-c847e07c.

@@ -1,0 +1,16 @@
+/home/marcoshernanz/venv/lib/python3.12/site-packages/torch_xla/experimental/gru.py:113: SyntaxWarning: invalid escape sequence '\_'
+  * **h_n**: tensor of shape :math:`(D * \text{num\_layers}, H_{out})` or
+{"params": 111903833, "hc_params": 1784153}
+first step (with compilation) 142.6s, compiles 3
+step 500 val 5.6633 tok/s 11143.113147510514 compiles 7
+step 1000 val 5.1804 tok/s 10720.380306982363 compiles 7
+step 1500 val 4.8387 tok/s 10799.517598861346 compiles 7
+step 2000 val 4.6280 tok/s 10863.541278032784 compiles 7
+step 2500 val 4.4834 tok/s 10912.310282673914 compiles 7
+step 3000 val 4.3671 tok/s 10944.582220250126 compiles 7
+step 3500 val 4.2693 tok/s 10964.117175542311 compiles 7
+step 4000 val 4.1850 tok/s 10979.75934283131 compiles 7
+step 4500 val 4.1205 tok/s 10964.447072524921 compiles 7
+step 5000 val 4.0704 tok/s 10956.712412805917 compiles 7
+step 5500 val 4.0326 tok/s 10954.076796613383 compiles 7
+{"final_val_loss": 3.9593185424804687, "tok_s": 10955.91623209899, "xla_compiles": 7, "seconds": 9194.04448223114, "diverged": false}

@@ -1,0 +1,13 @@
+{
+ "a-global-h8-s0": "exit 0 in 2176s on gpu 0",
+ "a-local-h8-gain8-s0": "exit 0 in 2278s on gpu 1",
+ "a-local-h8-gain8-s1": "exit 0 in 1979s on gpu 0",
+ "a-local-h8-gain8-s2": "exit 0 in 2196s on gpu 1",
+ "a-local-h8-s1": "exit 0 in 2028s on gpu 0",
+ "a-local-h8-s2": "exit 0 in 2198s on gpu 1",
+ "static-h8-s0": "exit 0 in 1790s on gpu 0",
+ "mhc-h1-s1": "exit 0 in 1420s on gpu 1",
+ "mhc-h1-s2": "exit 0 in 1225s on gpu 0",
+ "static-h1-s0": "exit 0 in 1186s on gpu 1",
+ "residual-s1": "exit 0 in 766s on gpu 0"
+}

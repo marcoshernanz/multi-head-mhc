@@ -1,0 +1,1 @@
+[10-04 05:51:03] this batch now runs in a shared controller with exp11_v6e_check, exp15_d768_v6e, exp12_d384_lr_grid, exp14_head_parts, exp18_d768_parts, exp16_conn_lr, exp17_parts_best_lr; its log is results/exp11_v6e_check/controller.log

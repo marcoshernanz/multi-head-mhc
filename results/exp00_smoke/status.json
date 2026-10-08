@@ -1,0 +1,10 @@
+{
+ "d384-residual": "exit 0 in 89s on gpu 0",
+ "d384-mhc-h1": "exit 0 in 495s on gpu 1",
+ "d384-mhc-h8-global": "exit 0 in 566s on gpu 0",
+ "d384-mhc-h1-eager": "exit 0 in 138s on gpu 0",
+ "d512-residual": "exit 0 in 101s on gpu 0",
+ "d384-mhc-h8-local": "exit 0 in 554s on gpu 1",
+ "d512-mhc-h1": "exit 0 in 520s on gpu 0",
+ "d384-mhc-h64-local": "exit 0 in 1007s on gpu 1"
+}

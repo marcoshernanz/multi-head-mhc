@@ -1,0 +1,12 @@
+{
+ "residual": "exit 0 in 47s on gpu 0",
+ "mhc-h1-old-sinkhorn": "exit 0 in 298s on gpu 0",
+ "mhc-h1-new": "exit 0 in 2347s on gpu 1",
+ "mhc-h8-local-new": "exit 0 in 2478s on gpu 0",
+ "mhc-h8-global-new": "exit 0 in 2572s on gpu 1",
+ "mhc-h1-mb16": "skipped (deadline)",
+ "residual-mb16": "skipped (deadline)",
+ "mhc-h16-local-new": "skipped (deadline)",
+ "mhc-h1-eager": "skipped (deadline)",
+ "mhc-h64-local-new": "exit 0 in 2552s on gpu 0"
+}

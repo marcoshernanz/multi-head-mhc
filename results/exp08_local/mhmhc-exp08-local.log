@@ -1,0 +1,43 @@
+[{"stream_name":"stdout","time":8.610685809,"data":"[    4.1s] jax                          0.10.2\n"}
+,{"stream_name":"stdout","time":8.610774669,"data":"jaxlib                       0.10.2\n"}
+,{"stream_name":"stdout","time":8.610780339,"data":"libtpu                       0.0.17\n"}
+,{"stream_name":"stdout","time":8.610784239000001,"data":"numpy                        2.5.0\n"}
+,{"stream_name":"stdout","time":8.610787449,"data":"torch                        2.8.0+cpu\n"}
+,{"stream_name":"stdout","time":8.610790709,"data":"torch_xla                    2.8.0\n"}
+,{"stream_name":"stdout","time":8.610793679,"data":"\n"}
+,{"stream_name":"stdout","time":8.656254614,"data":"[    4.2s] TPU_CHIPS_PER_HOST_BOUNDS=2,4,1\n"}
+,{"stream_name":"stdout","time":8.656284264,"data":"TPU_SKIP_MDS_QUERY=1\n"}
+,{"stream_name":"stdout","time":8.656288814,"data":"TPU_RUNTIME_METRICS_PORTS=8431,8432,8433,8434,8435,8436,8437,8438\n"}
+,{"stream_name":"stdout","time":8.656292624,"data":"TPU_WORKER_ID=0\n"}
+,{"stream_name":"stdout","time":8.656295794,"data":"PJRT_DEVICE=TPU\n"}
+,{"stream_name":"stdout","time":8.656298664,"data":"TPU_WORKER_HOSTNAMES=localhost\n"}
+,{"stream_name":"stdout","time":8.656301804,"data":"TPU_ACCELERATOR_TYPE=v5litepod-8\n"}
+,{"stream_name":"stdout","time":8.656304774,"data":"TPU_HOST_BOUNDS=1,1,1\n"}
+,{"stream_name":"stdout","time":8.656307674,"data":"TPU_PROCESS_ADDRESSES=local\n"}
+,{"stream_name":"stdout","time":8.656310754,"data":"96\n"}
+,{"stream_name":"stdout","time":8.656313804,"data":"               total        used        free      shared  buff/cache   available\n"}
+,{"stream_name":"stdout","time":8.656317484,"data":"Mem:             377           4         358           0          16         373\n"}
+,{"stream_name":"stdout","time":8.656320594,"data":"\n"}
+,{"stream_name":"stdout","time":31.565434243,"data":"[   27.1s] downloaded 21 shards\n"}
+,{"stream_name":"stdout","time":89.621669364,"data":"[   85.1s] single process: SMOKE devices 8 tflops 1.8\n"}
+,{"stream_name":"stdout","time":113.592956578,"data":"[  109.1s] recipe visible_chips chip 0: rc 0 SMOKE devices 1 tflops 1.7\n"}
+,{"stream_name":"stdout","time":118.718343522,"data":"[  114.2s] recipe visible_chips chip 1: rc 0 SMOKE devices 1 tflops 1.8\n"}
+,{"stream_name":"stdout","time":118.718394262,"data":"[  114.2s] recipe visible_chips chip 2: rc 0 SMOKE devices 1 tflops 1.8\n"}
+,{"stream_name":"stdout","time":118.718537852,"data":"[  114.2s] recipe visible_chips chip 3: rc 0 SMOKE devices 1 tflops 1.7\n"}
+,{"stream_name":"stdout","time":118.718644262,"data":"[  114.2s] recipe visible_chips chip 4: rc 0 SMOKE devices 1 tflops 1.8\n"}
+,{"stream_name":"stdout","time":118.718804292,"data":"[  114.2s] recipe visible_chips chip 5: rc 0 SMOKE devices 1 tflops 1.8\n"}
+,{"stream_name":"stdout","time":118.718947252,"data":"[  114.2s] recipe visible_chips chip 6: rc 0 SMOKE devices 1 tflops 1.7\n"}
+,{"stream_name":"stdout","time":118.718996162,"data":"[  114.2s] recipe visible_chips chip 7: rc 0 SMOKE devices 1 tflops 1.7\n"}
+,{"stream_name":"stdout","time":118.719059962,"data":"[  114.2s] per-chip recipe: visible_chips\n"}
+,{"stream_name":"stdout","time":3568.810693406,"data":"[ 3564.3s] a-local-h2-s6: exit 0 in 3450s on chip 2\n"}
+,{"stream_name":"stdout","time":3658.822812479,"data":"[ 3654.3s] a-local-h2-s7: exit 0 in 3540s on chip 3\n"}
+,{"stream_name":"stdout","time":3658.823232819,"data":"[ 3654.3s] a-local-h2-s9: exit 0 in 3540s on chip 5\n"}
+,{"stream_name":"stdout","time":3668.825628783,"data":"[ 3664.3s] a-local-h2-s4: exit 0 in 3550s on chip 0\n"}
+,{"stream_name":"stdout","time":3678.811015138,"data":"[ 3674.3s] a-local-h2-s5: exit 0 in 3560s on chip 1\n"}
+,{"stream_name":"stdout","time":3728.818663676,"data":"[ 3724.3s] a-local-h4-s4: exit 0 in 3610s on chip 6\n"}
+,{"stream_name":"stdout","time":3788.827663479,"data":"[ 3784.3s] a-local-h2-s8: exit 0 in 3670s on chip 4\n"}
+,{"stream_name":"stdout","time":3828.826310964,"data":"[ 3824.3s] a-local-h4-s5: exit 0 in 3710s on chip 7\n"}
+,{"stream_name":"stdout","time":3828.827147234,"data":"[ 3824.3s] all done\n"}
+,{"stream_name":"stderr","time":3833.104395628,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":3836.069564305,"data":"[NbConvertApp] Writing 480633 bytes to __results__.html\n"}
+]

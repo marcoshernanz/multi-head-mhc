@@ -1,0 +1,45 @@
+[10-03 20:11:05] status: 0/24 done, 24 queued, 0 running on 0 VMs, spent $4.97
+[10-03 20:12:04] create mhc-exp14-582653 (v6e-8) in asia-southeast1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone asia-southeast1-b.)
+[10-03 20:12:06] create mhc-exp14-582651 (v6e-8) in asia-southeast1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone asia-southeast1-b.)
+[10-03 20:12:09] create mhc-exp14-582652 (v6e-8) in asia-southeast1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone asia-southeast1-b.)
+[10-03 20:12:56] create mhc-exp14-582653 (v6e-4) in asia-southeast1-b failed: capacity
+[10-03 20:13:00] create mhc-exp14-582652 (v6e-4) in asia-southeast1-b failed: an internal error has occurred
+[10-03 20:13:49] create mhc-exp14-582652 (v6e-8) in us-central1-a failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-a.)
+[10-03 20:14:01] create mhc-exp14-582651 (v6e-4) in asia-southeast1-b failed: capacity
+[10-03 20:14:12] create mhc-exp14-582653 (v6e-1) in asia-southeast1-b failed: an internal error has occurred
+[10-03 20:14:40] create mhc-exp14-582652 (v6e-4) in us-central1-a failed: capacity
+[10-03 20:14:59] create mhc-exp14-582653 (v6e-8) in us-central1-a failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-a.)
+[10-03 20:15:02] create mhc-exp14-582651 (v6e-1) in asia-southeast1-b failed: capacity
+[10-03 20:15:13] create mhc-exp14-582652 (v6e-1) in us-central1-a failed: capacity
+[10-03 20:15:36] create mhc-exp14-582651 (v6e-8) in us-central1-a failed: capacity
+[10-03 20:15:44] create mhc-exp14-582653 (v6e-4) in us-central1-a failed: capacity
+[10-03 20:16:04] create mhc-exp14-582652 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-03 20:16:08] create mhc-exp14-582653 (v6e-1) in us-central1-a failed: capacity
+[10-03 20:16:08] create mhc-exp14-582651 (v6e-4) in us-central1-a failed: capacity
+[10-03 20:16:40] create mhc-exp14-582651 (v6e-1) in us-central1-a failed: capacity
+[10-03 20:16:49] create mhc-exp14-582653 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-03 20:16:50] create mhc-exp14-582652 (v6e-4) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-03 20:17:26] create mhc-exp14-582651 (v6e-8) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-03 20:17:30] create mhc-exp14-582653 (v6e-4) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-03 20:17:34] create mhc-exp14-582652 (v6e-1) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-03 20:17:39] create mhc-exp14-582652 (v6e-8) in us-central1-c failed: capacity
+[10-03 20:17:45] create mhc-exp14-582652 (v6e-4) in us-central1-c failed: capacity
+[10-03 20:17:50] create mhc-exp14-582652 (v6e-1) in us-central1-c failed: capacity
+[10-03 20:18:11] create mhc-exp14-582651 (v6e-4) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-03 20:18:16] create mhc-exp14-582653 (v6e-1) in us-central1-b failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-central1-b.)
+[10-03 20:19:09] create mhc-exp14-582653 (v6e-8) in us-east1-d failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-east1-d.)
+[10-03 20:20:10] create mhc-exp14-582653 (v6e-4) in us-east1-d failed: quota (Quota limit 'TPUV6EPreemptiblePerProjectPerZoneForTPUAPI' has been exceeded. Limit: 16 in zone us-east1-d.)
+[10-03 20:21:11] this batch now runs in a shared controller with exp11_v6e_check, exp13_d384_long, exp12_d384_lr_grid, exp14_head_parts; its log is results/exp11_v6e_check/controller.log
+[10-03 20:51:00] this batch now runs in a shared controller with exp11_v6e_check, exp15_d768_v6e, exp12_d384_lr_grid, exp14_head_parts, exp13_d384_long; its log is results/exp11_v6e_check/controller.log
+[10-03 21:05:12] this batch now runs in a shared controller with exp11_v6e_check, exp15_d768_v6e, exp12_d384_lr_grid, exp14_head_parts, exp13_d384_long; its log is results/exp11_v6e_check/controller.log
+[10-03 21:17:40] this batch now runs in a shared controller with exp11_v6e_check, exp15_d768_v6e, exp12_d384_lr_grid, exp14_head_parts, exp13_d384_long; its log is results/exp11_v6e_check/controller.log
+[10-03 21:25:07] this batch now runs in a shared controller with exp11_v6e_check, exp15_d768_v6e, exp12_d384_lr_grid, exp14_head_parts, exp13_d384_long; its log is results/exp11_v6e_check/controller.log
+[10-03 21:26:59] this batch now runs in a shared controller with exp11_v6e_check, exp15_d768_v6e, exp12_d384_lr_grid, exp14_head_parts, exp13_d384_long; its log is results/exp11_v6e_check/controller.log
+[10-03 21:51:31] this batch now runs in a shared controller with exp11_v6e_check, exp15_d768_v6e, exp12_d384_lr_grid, exp14_head_parts, exp13_d384_long; its log is results/exp11_v6e_check/controller.log
+[10-03 22:27:10] this batch now runs in a shared controller with exp11_v6e_check, exp15_d768_v6e, exp12_d384_lr_grid, exp14_head_parts, exp13_d384_long; its log is results/exp11_v6e_check/controller.log
+[10-03 23:52:51] this batch now runs in a shared controller with exp11_v6e_check, exp15_d768_v6e, exp12_d384_lr_grid, exp14_head_parts; its log is results/exp11_v6e_check/controller.log
+[10-04 00:58:54] this batch now runs in a shared controller with exp11_v6e_check, exp15_d768_v6e, exp12_d384_lr_grid, exp14_head_parts; its log is results/exp11_v6e_check/controller.log
+[10-04 04:12:46] this batch now runs in a shared controller with exp11_v6e_check, exp15_d768_v6e, exp12_d384_lr_grid, exp14_head_parts; its log is results/exp11_v6e_check/controller.log
+[10-04 04:25:55] this batch now runs in a shared controller with exp11_v6e_check, exp15_d768_v6e, exp12_d384_lr_grid, exp14_head_parts, exp16_conn_lr; its log is results/exp11_v6e_check/controller.log
+[10-04 05:21:45] this batch now runs in a shared controller with exp11_v6e_check, exp15_d768_v6e, exp12_d384_lr_grid, exp14_head_parts, exp16_conn_lr, exp17_parts_best_lr; its log is results/exp11_v6e_check/controller.log
+[10-04 05:51:03] this batch now runs in a shared controller with exp11_v6e_check, exp15_d768_v6e, exp12_d384_lr_grid, exp14_head_parts, exp18_d768_parts, exp16_conn_lr, exp17_parts_best_lr; its log is results/exp11_v6e_check/controller.log

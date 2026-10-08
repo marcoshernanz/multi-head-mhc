@@ -1,0 +1,12 @@
+{
+ "v6e-mhc-h1-conn4-lr2x-s0": "done",
+ "v6e-mhc-h1-conn4-lr0.7x-s0": "exit 0 in 1231s on mhc-exp11-642934 (us-central1-b), val 4.1377, tok/s 88689, preempted 0x",
+ "v6e-a-global-h4-conn4-lr0.7x-s0": "exit 0 in 1280s on mhc-exp11-642934 (us-central1-b), val 4.1086, tok/s 85442, preempted 0x",
+ "v6e-mhc-h1-conn4-lr2x-s1": "exit 0 in 1229s on mhc-exp11-642934 (us-central1-b), val 5.0703, tok/s 89074, preempted 0x",
+ "v6e-mhc-h1-conn4-lr0.7x-s1": "exit 0 in 1223s on mhc-exp11-642934 (us-central1-b), val 4.0944, tok/s 89579, preempted 0x",
+ "v6e-a-global-h4-conn4-lr0.7x-s1": "exit 0 in 1259s on mhc-exp11-642934 (us-central1-b), val 4.1031, tok/s 88172, preempted 0x",
+ "v6e-mhc-h1-conn4-lr2x-s2": "exit 0 in 1213s on mhc-exp11-642934 (us-central1-b), val 5.0782, tok/s 90423, preempted 0x",
+ "v6e-mhc-h1-conn4-lr0.7x-s2": "exit 0 in 1457s on mhc-exp11-82553115 (us-central1-b), val 4.1419, tok/s 73911, preempted 0x",
+ "v6e-a-global-h4-conn4-lr0.7x-s2": "exit 0 in 1245s on mhc-exp11-642934 (us-central1-b), val 4.1086, tok/s 88339, preempted 0x",
+ "_attempts": {}
+}

@@ -1,0 +1,23 @@
+{
+ "args": {
+  "out": "/kaggle/working/runs/residual",
+  "data_dir": null,
+  "conn": "residual",
+  "hc_heads": 1,
+  "hc_predictor": "global",
+  "dim": 384,
+  "layers": 8,
+  "heads": 6,
+  "mlp_dim": 1024,
+  "micro_batch": 8,
+  "seq_len": 1024,
+  "steps": 30,
+  "old_sinkhorn": 0,
+  "compile": 1
+ },
+ "first_step_s": 28.765620470046997,
+ "median_step_s": 0.10910248756408691,
+ "tok_s": 75085.36407282199,
+ "peak_mem_gb": 3.282777088,
+ "total_s": 31.93714928627014
+}

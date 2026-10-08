@@ -1,0 +1,10 @@
+{
+ "a-local-h2-s6": "exit 0 in 3450s on chip 2",
+ "a-local-h2-s7": "exit 0 in 3540s on chip 3",
+ "a-local-h2-s9": "exit 0 in 3540s on chip 5",
+ "a-local-h2-s4": "exit 0 in 3550s on chip 0",
+ "a-local-h2-s5": "exit 0 in 3560s on chip 1",
+ "a-local-h4-s4": "exit 0 in 3610s on chip 6",
+ "a-local-h2-s8": "exit 0 in 3670s on chip 4",
+ "a-local-h4-s5": "exit 0 in 3710s on chip 7"
+}

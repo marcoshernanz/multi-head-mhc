@@ -1,0 +1,7 @@
+{"params": 27344337, "hc_params": 599121}
+step 500 val 5.6740 tok/s 22703
+step 1000 val 5.2339 tok/s 22760
+step 1500 val 4.8922 tok/s 22770
+step 2000 val 4.6650 tok/s 22730
+step 2500 val 4.5271 tok/s 22721
+{"final_val_loss": 4.414746344089508, "tok_s": 22722.50473896126, "peak_mem_gb": 4.649881088, "seconds": 2189.1583681106567, "diverged": false}

@@ -1,0 +1,18 @@
+{"params": 31516113, "hc_params": 4770897}
+W0926 12:22:21.293000 260 torch/_inductor/utils.py:1679] [0/0] Not enough SMs to use max_autotune_gemm mode
+/usr/local/lib/python3.12/dist-packages/torch/_inductor/lowering.py:7627: UserWarning: 
+Online softmax is disabled on the fly since Inductor decides to
+split the reduction. Cut an issue to PyTorch if this is an
+important use case and you want to speed it up with online
+softmax.
+
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/_inductor/lowering.py:7627: UserWarning: 
+Online softmax is disabled on the fly since Inductor decides to
+split the reduction. Cut an issue to PyTorch if this is an
+important use case and you want to speed it up with online
+softmax.
+
+  warnings.warn(
+step 100 val 7.3030 tok/s 17440
+{"final_val_loss": 7.045164346694946, "tok_s": 17160.34902298099, "peak_mem_gb": 4.399435264, "seconds": 555.4902465343475, "diverged": false}

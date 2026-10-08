@@ -1,0 +1,10 @@
+{
+ "mhc-h1-lrhalf-s0": "exit 0 in 3500s on chip 2",
+ "a-global-h4-lrhalf-s0": "exit 0 in 3520s on chip 3",
+ "ctrl-mlp1216-lr2x-s1": "exit 0 in 3570s on chip 1",
+ "ctrl-mlp1216-lr2x-s0": "exit 0 in 3620s on chip 0",
+ "ctrl-mlp1216-lrhalf-s1": "exit 0 in 3620s on chip 7",
+ "mhc-h1-lrhalf-s1": "exit 0 in 3630s on chip 5",
+ "a-global-h4-lrhalf-s1": "exit 0 in 3680s on chip 6",
+ "ctrl-mlp1216-lrhalf-s0": "exit 0 in 3680s on chip 4"
+}

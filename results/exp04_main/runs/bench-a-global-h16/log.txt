@@ -1,0 +1,5 @@
+/usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow && pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.
+  warnings.warn(
+{"params": 36286961, "hc_params": 9541745}
+first step (with compilation) 110.5s, compiles 1
+{"final_val_loss": 7.249851226806641, "tok_s": 26397.49449140077, "xla_compiles": 4, "seconds": 375.18270468711853, "diverged": false}
