@@ -1,0 +1,18 @@
+{
+  "id": "marcoshernanz/mhmhc-exp06-controls",
+  "title": "mhmhc-exp06-controls",
+  "code_file": "mhmhc-exp06-controls.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": true,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": [],
+  "machine_shape": "TpuV5E8",
+  "docker_image": "gcr.io/kaggle-private-byod/python-tpuvm@sha256:a2111cb9be558ea4bc187754bb95d7b65e90d8259434f1eb0e0ab1193ff498c0"
+}

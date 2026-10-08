@@ -1,0 +1,182 @@
+[
+ {
+  "name": "ctrl-mlp1216-lr2x-s0",
+  "args": [
+   "--steps",
+   "6000",
+   "--warmup",
+   "200",
+   "--eval-every",
+   "1000",
+   "--log-every",
+   "25",
+   "--hc-layout",
+   "streams",
+   "--seed",
+   "0",
+   "--lr",
+   "6e-3",
+   "--mlp-dim",
+   "1216"
+  ],
+  "expected_seconds": 3700,
+  "timeout": 4200
+ },
+ {
+  "name": "ctrl-mlp1216-lr2x-s1",
+  "args": [
+   "--steps",
+   "6000",
+   "--warmup",
+   "200",
+   "--eval-every",
+   "1000",
+   "--log-every",
+   "25",
+   "--hc-layout",
+   "streams",
+   "--seed",
+   "1",
+   "--lr",
+   "6e-3",
+   "--mlp-dim",
+   "1216"
+  ],
+  "expected_seconds": 3700,
+  "timeout": 4200
+ },
+ {
+  "name": "mhc-h1-lrhalf-s0",
+  "args": [
+   "--steps",
+   "6000",
+   "--warmup",
+   "200",
+   "--eval-every",
+   "1000",
+   "--log-every",
+   "25",
+   "--hc-layout",
+   "streams",
+   "--seed",
+   "0",
+   "--lr",
+   "1.5e-3"
+  ],
+  "expected_seconds": 3700,
+  "timeout": 4200
+ },
+ {
+  "name": "a-global-h4-lrhalf-s0",
+  "args": [
+   "--steps",
+   "6000",
+   "--warmup",
+   "200",
+   "--eval-every",
+   "1000",
+   "--log-every",
+   "25",
+   "--hc-layout",
+   "streams",
+   "--seed",
+   "0",
+   "--lr",
+   "1.5e-3",
+   "--hc-heads",
+   "4"
+  ],
+  "expected_seconds": 3700,
+  "timeout": 4200
+ },
+ {
+  "name": "ctrl-mlp1216-lrhalf-s0",
+  "args": [
+   "--steps",
+   "6000",
+   "--warmup",
+   "200",
+   "--eval-every",
+   "1000",
+   "--log-every",
+   "25",
+   "--hc-layout",
+   "streams",
+   "--seed",
+   "0",
+   "--lr",
+   "1.5e-3",
+   "--mlp-dim",
+   "1216"
+  ],
+  "expected_seconds": 3700,
+  "timeout": 4200
+ },
+ {
+  "name": "mhc-h1-lrhalf-s1",
+  "args": [
+   "--steps",
+   "6000",
+   "--warmup",
+   "200",
+   "--eval-every",
+   "1000",
+   "--log-every",
+   "25",
+   "--hc-layout",
+   "streams",
+   "--seed",
+   "1",
+   "--lr",
+   "1.5e-3"
+  ],
+  "expected_seconds": 3700,
+  "timeout": 4200
+ },
+ {
+  "name": "a-global-h4-lrhalf-s1",
+  "args": [
+   "--steps",
+   "6000",
+   "--warmup",
+   "200",
+   "--eval-every",
+   "1000",
+   "--log-every",
+   "25",
+   "--hc-layout",
+   "streams",
+   "--seed",
+   "1",
+   "--lr",
+   "1.5e-3",
+   "--hc-heads",
+   "4"
+  ],
+  "expected_seconds": 3700,
+  "timeout": 4200
+ },
+ {
+  "name": "ctrl-mlp1216-lrhalf-s1",
+  "args": [
+   "--steps",
+   "6000",
+   "--warmup",
+   "200",
+   "--eval-every",
+   "1000",
+   "--log-every",
+   "25",
+   "--hc-layout",
+   "streams",
+   "--seed",
+   "1",
+   "--lr",
+   "1.5e-3",
+   "--mlp-dim",
+   "1216"
+  ],
+  "expected_seconds": 3700,
+  "timeout": 4200
+ }
+]

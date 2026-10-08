@@ -1,0 +1,134 @@
+[
+ {
+  "name": "mhc-h8-local-lr3e-3",
+  "args": [
+   "--steps",
+   "3000",
+   "--warmup",
+   "200",
+   "--eval-every",
+   "500",
+   "--seed",
+   "0",
+   "--hc-heads",
+   "8",
+   "--hc-predictor",
+   "local",
+   "--lr",
+   "3e-3"
+  ]
+ },
+ {
+  "name": "mhc-hc-lr3e-3",
+  "args": [
+   "--steps",
+   "3000",
+   "--warmup",
+   "200",
+   "--eval-every",
+   "500",
+   "--seed",
+   "0",
+   "--lr",
+   "3e-3"
+  ]
+ },
+ {
+  "name": "mhc-hc-lr1.5e-3",
+  "args": [
+   "--steps",
+   "3000",
+   "--warmup",
+   "200",
+   "--eval-every",
+   "500",
+   "--seed",
+   "0",
+   "--lr",
+   "1.5e-3"
+  ]
+ },
+ {
+  "name": "mhc-hc-lr6e-3",
+  "args": [
+   "--steps",
+   "3000",
+   "--warmup",
+   "200",
+   "--eval-every",
+   "500",
+   "--seed",
+   "0",
+   "--lr",
+   "6e-3"
+  ]
+ },
+ {
+  "name": "mhc-sym-lr3e-3",
+  "args": [
+   "--steps",
+   "3000",
+   "--warmup",
+   "200",
+   "--eval-every",
+   "500",
+   "--seed",
+   "0",
+   "--hc-init",
+   "sym",
+   "--lr",
+   "3e-3"
+  ]
+ },
+ {
+  "name": "residual-lr3e-3",
+  "args": [
+   "--steps",
+   "3000",
+   "--warmup",
+   "200",
+   "--eval-every",
+   "500",
+   "--seed",
+   "0",
+   "--conn",
+   "residual",
+   "--lr",
+   "3e-3"
+  ]
+ },
+ {
+  "name": "residual-lr1.5e-3",
+  "args": [
+   "--steps",
+   "3000",
+   "--warmup",
+   "200",
+   "--eval-every",
+   "500",
+   "--seed",
+   "0",
+   "--conn",
+   "residual",
+   "--lr",
+   "1.5e-3"
+  ]
+ },
+ {
+  "name": "residual-lr6e-3",
+  "args": [
+   "--steps",
+   "3000",
+   "--warmup",
+   "200",
+   "--eval-every",
+   "500",
+   "--seed",
+   "0",
+   "--conn",
+   "residual",
+   "--lr",
+   "6e-3"
+  ]
+ }
+]

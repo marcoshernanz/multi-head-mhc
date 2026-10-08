@@ -1,0 +1,203 @@
+[
+ {
+  "name": "a-global-h8-s0",
+  "args": [
+   "--steps",
+   "3000",
+   "--warmup",
+   "200",
+   "--eval-every",
+   "500",
+   "--lr",
+   "3e-3",
+   "--seed",
+   "0",
+   "--hc-heads",
+   "8"
+  ]
+ },
+ {
+  "name": "a-local-h8-gain8-s0",
+  "args": [
+   "--steps",
+   "3000",
+   "--warmup",
+   "200",
+   "--eval-every",
+   "500",
+   "--lr",
+   "3e-3",
+   "--seed",
+   "0",
+   "--hc-heads",
+   "8",
+   "--hc-predictor",
+   "local",
+   "--hc-local-gain",
+   "8"
+  ]
+ },
+ {
+  "name": "a-local-h8-gain8-s1",
+  "args": [
+   "--steps",
+   "3000",
+   "--warmup",
+   "200",
+   "--eval-every",
+   "500",
+   "--lr",
+   "3e-3",
+   "--seed",
+   "1",
+   "--hc-heads",
+   "8",
+   "--hc-predictor",
+   "local",
+   "--hc-local-gain",
+   "8"
+  ]
+ },
+ {
+  "name": "a-local-h8-gain8-s2",
+  "args": [
+   "--steps",
+   "3000",
+   "--warmup",
+   "200",
+   "--eval-every",
+   "500",
+   "--lr",
+   "3e-3",
+   "--seed",
+   "2",
+   "--hc-heads",
+   "8",
+   "--hc-predictor",
+   "local",
+   "--hc-local-gain",
+   "8"
+  ]
+ },
+ {
+  "name": "a-local-h8-s1",
+  "args": [
+   "--steps",
+   "3000",
+   "--warmup",
+   "200",
+   "--eval-every",
+   "500",
+   "--lr",
+   "3e-3",
+   "--seed",
+   "1",
+   "--hc-heads",
+   "8",
+   "--hc-predictor",
+   "local"
+  ]
+ },
+ {
+  "name": "a-local-h8-s2",
+  "args": [
+   "--steps",
+   "3000",
+   "--warmup",
+   "200",
+   "--eval-every",
+   "500",
+   "--lr",
+   "3e-3",
+   "--seed",
+   "2",
+   "--hc-heads",
+   "8",
+   "--hc-predictor",
+   "local"
+  ]
+ },
+ {
+  "name": "static-h8-s0",
+  "args": [
+   "--steps",
+   "3000",
+   "--warmup",
+   "200",
+   "--eval-every",
+   "500",
+   "--lr",
+   "3e-3",
+   "--seed",
+   "0",
+   "--hc-heads",
+   "8",
+   "--hc-predictor",
+   "static"
+  ]
+ },
+ {
+  "name": "mhc-h1-s1",
+  "args": [
+   "--steps",
+   "3000",
+   "--warmup",
+   "200",
+   "--eval-every",
+   "500",
+   "--lr",
+   "3e-3",
+   "--seed",
+   "1"
+  ]
+ },
+ {
+  "name": "mhc-h1-s2",
+  "args": [
+   "--steps",
+   "3000",
+   "--warmup",
+   "200",
+   "--eval-every",
+   "500",
+   "--lr",
+   "3e-3",
+   "--seed",
+   "2"
+  ]
+ },
+ {
+  "name": "static-h1-s0",
+  "args": [
+   "--steps",
+   "3000",
+   "--warmup",
+   "200",
+   "--eval-every",
+   "500",
+   "--lr",
+   "3e-3",
+   "--seed",
+   "0",
+   "--hc-predictor",
+   "static"
+  ]
+ },
+ {
+  "name": "residual-s1",
+  "args": [
+   "--steps",
+   "3000",
+   "--warmup",
+   "200",
+   "--eval-every",
+   "500",
+   "--lr",
+   "3e-3",
+   "--seed",
+   "1",
+   "--conn",
+   "residual"
+  ]
+ }
+]

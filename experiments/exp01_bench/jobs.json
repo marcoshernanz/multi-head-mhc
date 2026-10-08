@@ -1,0 +1,96 @@
+[
+ {
+  "module": "mhc_lab.bench",
+  "name": "residual",
+  "args": [
+   "--conn",
+   "residual"
+  ]
+ },
+ {
+  "module": "mhc_lab.bench",
+  "name": "mhc-h1-new",
+  "args": [
+   "--hc-heads",
+   "1"
+  ]
+ },
+ {
+  "module": "mhc_lab.bench",
+  "name": "mhc-h1-old-sinkhorn",
+  "args": [
+   "--hc-heads",
+   "1",
+   "--old-sinkhorn",
+   "1"
+  ]
+ },
+ {
+  "module": "mhc_lab.bench",
+  "name": "mhc-h8-local-new",
+  "args": [
+   "--hc-heads",
+   "8",
+   "--hc-predictor",
+   "local"
+  ]
+ },
+ {
+  "module": "mhc_lab.bench",
+  "name": "mhc-h8-global-new",
+  "args": [
+   "--hc-heads",
+   "8"
+  ]
+ },
+ {
+  "module": "mhc_lab.bench",
+  "name": "mhc-h64-local-new",
+  "args": [
+   "--hc-heads",
+   "64",
+   "--hc-predictor",
+   "local"
+  ]
+ },
+ {
+  "module": "mhc_lab.bench",
+  "name": "mhc-h1-mb16",
+  "args": [
+   "--hc-heads",
+   "1",
+   "--micro-batch",
+   "16"
+  ]
+ },
+ {
+  "module": "mhc_lab.bench",
+  "name": "residual-mb16",
+  "args": [
+   "--conn",
+   "residual",
+   "--micro-batch",
+   "16"
+  ]
+ },
+ {
+  "module": "mhc_lab.bench",
+  "name": "mhc-h16-local-new",
+  "args": [
+   "--hc-heads",
+   "16",
+   "--hc-predictor",
+   "local"
+  ]
+ },
+ {
+  "module": "mhc_lab.bench",
+  "name": "mhc-h1-eager",
+  "args": [
+   "--hc-heads",
+   "1",
+   "--compile",
+   "0"
+  ]
+ }
+]

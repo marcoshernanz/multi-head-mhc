@@ -1,0 +1,17 @@
+{
+  "id": "marcoshernanz/mhmhc-exp02-pilot",
+  "title": "mhmhc-exp02-pilot",
+  "code_file": "mhmhc-exp02-pilot.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}
