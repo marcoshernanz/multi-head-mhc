@@ -7,7 +7,7 @@ Manifold-constrained hyper-connections (mHC) widen the residual stream of a tran
 from, writes to and mixes with a doubly stochastic matrix. One coefficient per copy is shared by all channels. Multi-head mHC
 splits the channels into h groups and gives each group its own read, write and mix, while keeping the guarantees of mHC.
 
-We trained GPT-style models of 27M and 112M parameters on FineWeb-Edu, 626 TPU runs in all, and compared each variant at its own
+We trained GPT-style models of 27M and 112M parameters on FineWeb-Edu, 629 TPU runs in all, and compared each variant at its own
 best learning rate against mHC (same parameter count) or against an MLP control that spends the same extra parameters on a wider
 feed-forward layer. The main findings:
 
