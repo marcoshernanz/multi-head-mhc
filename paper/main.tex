@@ -144,8 +144,11 @@ fixed uniform average of the same layers, and Kimi K3 \citep{kimi2026k3} ships s
 Small-scale comparisons of residual variants depend on how they are controlled. A per-channel residual gate compared against
 parameter-matched baselines was within noise up to 320M parameters and significant at 590M \citep{kramer2026reviewresiduals}.
 With the learning rate tuned per architecture at 400M parameters, the best learning rate of mHC equals that of the pre-norm
-residual \citep{wang2026depthbench}. We also tune the learning rate of each variant and find that this choice decides the result
-(\cref{sec:best-lr}).
+residual \citep{wang2026depthbench}. More broadly, most of the transformer modifications that \citet{narang2021modifications}
+reimplemented in one shared code base did not meaningfully improve performance, and standard LSTMs outperformed more recent
+recurrent architectures in language modeling once all of them were tuned by the same large-scale hyperparameter search
+\citep{melis2018evaluation}. We
+also tune the learning rate of each variant and find that this choice decides the result (\cref{sec:best-lr}).
 
 Raising the learning rate reproduces in small models two instabilities first seen in large ones \citep{wortsman2023proxies}. In
 the first, attention logits grow until attention collapses onto one key. This appeared at about 8B parameters while vision
