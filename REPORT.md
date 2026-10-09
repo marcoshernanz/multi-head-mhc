@@ -19,9 +19,9 @@ to a different mechanism (Multi-Head Attention Residuals), builds the joint (nh)
 or uses A's per-channel limit without any mix (Qwen3.8-Next's Gated Residual, SiHC). Several 2026 designs drop the stream mix
 altogether, which is the one part that makes A new.
 
-**Does it work?** 626 training runs on TPUs at 27M (d384) and 112M (d768) parameters: 603 of 98M tokens (117 on Kaggle's v5e,
-39 on Google Cloud v5e, 447 on Google Cloud v6e, 228 of them the stability test of 5.13), 15 of 393M tokens and 8 short
-throughput benchmarks on Kaggle, plus 19 shorter GPU runs. Every comparison is paired by
+**Does it work?** 629 training runs on TPUs at 27M (d384) and 112M (d768) parameters: 603 of 98M tokens (117 on Kaggle's v5e,
+39 on Google Cloud v5e, 447 on Google Cloud v6e, 228 of them the stability test of 5.13), 15 of 393M tokens and 11 short
+compile-time and throughput runs on Kaggle, plus 19 shorter GPU runs. Every comparison is paired by
 seed; an effect "exists" if the mean difference exceeds 2 standard errors and every seed agrees in sign.
 
 - **At a well-chosen learning rate, heads are worth their parameters and no more.** With global predictors (each head predicts
@@ -577,11 +577,12 @@ the original at every logged step and evaluation (`results/cloud_checks/`). So a
 | global h4 − mHC h1 | −0.019 ± 0.006 (9/10) | −0.024 ± 0.005 (3/3) | −0.015 ± 0.007 (3/3) |
 | global h4 − ctrl-mlp1216 | +0.005 ± 0.007 (2/10) | +0.017 ± 0.024 (1/3) | +0.023 ± 0.008 (0/3) |
 | ctrl-mlp1216 − mHC h1 | −0.024 ± 0.009 (8/10) | −0.041 ± 0.024 (2/3) | −0.038 ± 0.009 (3/3) |
-| local h4 − mHC h1 | −0.006 ± 0.005 (3/4) | −0.006 ± 0.008 (2/3) | −0.018 ± 0.012 (2/3) |
+| local h4 − mHC h1 | +0.003 ± 0.008 (3/6) | −0.006 ± 0.008 (2/3) | −0.018 ± 0.012 (2/3) |
 | mHC h1 − residual | −0.045 ± 0.006 (4/4) | −0.041 ± 0.007 (3/3) | −0.041 ± 0.004 (3/3) |
 
-- Every gap has the same sign on both chips. The pre-registered test, agreement within the v5e SE, passes for two of five gaps
-  against all v5e seeds and three of five against the v5e runs of the same seeds; the misses are 0.009–0.018. Measured against the
+- On seeds 0–2 every gap has the same sign on both chips. Over all v5e seeds, local h4 − mHC h1 has the other sign (+0.003 on six
+  seeds). The pre-registered test, agreement within the v5e SE, passes for two of five gaps against all v5e seeds and three of five
+  against the v5e runs of the same seeds; the misses are 0.009–0.021. Measured against the
   combined SE of two independent estimates, no gap differs by more than 1.7 SE (next point: the runs are independent in effect).
 - Per run, v6e − v5e is +0.007 ± 0.004 on average (15 pairs), with a standard deviation of 0.014: as large as the seed-to-seed
   spread of a variant on one chip (0.012–0.018). So a v6e run is not a noisy copy of its v5e twin. It behaves like a new seed: the same
