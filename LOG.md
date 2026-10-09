@@ -817,3 +817,13 @@ Chronological. Every entry: what was done, why, what came out, pointers to files
   introduction points to it (28 pages, no overfull boxes). Checked before publishing: no tokens, keys or account details in any
   file; all five data figures regenerate identical to the committed PDFs except for the creation date; every README command runs;
   a short CPU training run works.
+
+## 2026-10-09
+
+- 11:06 UTC: **shorter abstract**, 273 → 191 words (11 → 10 sentences). For comparison, the 49 cited papers whose abstracts
+  Semantic Scholar has: median 185 words (quartiles 146 and 226); mHC 149, Hyper-Connections 112, Frac-Connections 120,
+  MUDDFormer 143, the 2026 mHC variants 175–264, Narang et al. 2021 (a negative result on transformer changes) 114. Only Multi-Head
+  Attention Residuals (291) was longer than ours. Kept every main claim: the design, the runs and controls, no gain at equal
+  parameters (both cases), the 27M checks, the shared-learning-rate illusion, the failure above the optimum and QK-norm, and the
+  stability verdict. Dropped: the 40% figure, "which the heads do not prevent", and the gradient-norm difference that survives
+  QK-norm (all in the introduction and 5.5). Still 28 pages, no overfull boxes, contents on page 2.
