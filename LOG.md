@@ -827,3 +827,16 @@ Chronological. Every entry: what was done, why, what came out, pointers to files
   parameters (both cases), the 27M checks, the shared-learning-rate illusion, the failure above the optimum and QK-norm, and the
   stability verdict. Dropped: the 40% figure, "which the heads do not prevent", and the gradient-norm difference that survives
   QK-norm (all in the introduction and 5.5). Still 28 pages, no overfull boxes, contents on page 2.
+- 19:08 UTC: **all 41 references checked again** against their primary sources: metadata, and every sentence of the paper that
+  cites each one. The four ICLR 2027 submissions are now read in full on OpenReview (`notes/literature/reference_check_2026-10-09.md`).
+  uHC's group-wise read is our per-head read with a local predictor, its write-back adds unmatched parameters, it keeps the mix of
+  mHC, and it gains 0.006 and 0.008 over mHC at 46M and 128M; the 0.128 at 363M is against an mHC baseline 0.093 worse than the
+  residual. Fixed in the paper: the ViT-22B logit instability appeared at about 8B, with Zhai et al. cited for the name and
+  Henry et al. for QK-norm itself; OLMo 2 normalizes the whole query and key projections, so our per-head QK-norm follows Gemma 3
+  and Qwen3 (also in `model.py`); Qwen3.8-Next's stress test is of its new architecture and optimizer on a 25B MoE (3B active)
+  with a 201-step median; mHC uses three linear maps; MUDDFormer predicts its depth weights; VWN widens the stream before
+  splitting it; SiHC (954M) is not a large design; Wortsman et al. do not rule out the architecture for loss spikes; the
+  temperature control of the anonymous MHAR submission explains the split over a single query; osHC bounds the product of the
+  mixes; MHAR's gain was larger at 350M and 1B than at 100M; the uHC paragraph, its row in Table 1 and the limitation now follow
+  the full text. Bib: three titles as on the source, Fleuret's ç, Pawar's full name, ViT-22B at ICML 2023, OLMo 2's COLM paper as
+  the shorter version, and updated version and venue notes. Still 28 pages, no overfull boxes.
