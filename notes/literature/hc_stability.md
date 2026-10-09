@@ -349,6 +349,9 @@ That is the gap our exp10 occupies.
 
 ### 3.6 uHC — ICLR 2027 submission `Qnj7Lf8Bz2` (2026-09-19). ABSTRACT only
 
+*Update 2026-10-09: the full text has now been read. Its stability evidence is gradient-norm curves and an AdamW-state probe,
+with no high-LR test. See `reference_check_2026-10-09.md`.*
+
 The closest published item to our read/write half, and the only family paper to attach a stability
 claim to group-wise coefficients. Verbatim from the abstract: existing HC share "readout patterns
 across feature dimensions"; uHC introduces **Group-Wise Feature Readout** for feature-dependent stream
