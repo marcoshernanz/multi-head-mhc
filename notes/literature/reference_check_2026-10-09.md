@@ -131,3 +131,26 @@ Submission 27583, posted 2026-09-17, modified 2026-10-05, 19 pages.
 - **Controls and stability:** the residual-connection review of Kramer et al., DepthBench, Lourie et al. and the Adam instability
   of Molybog et al.
 - **Models and gated attention:** Gemma 3, Qwen3, gated attention and the Transformer.
+
+## Second pass, the same day
+
+Every citing sentence was read again against the full text of its source.
+
+- **TEMPER (`gu2026temper`).** It keeps the mix of mHC and redesigns the dense maps that predict the coefficients, so it is no
+  longer in the list of works that re-parameterize the mix.
+- **xHC (`zhang2026xhc`).** It updates only 4 of its 16 streams per sublayer.
+- **SiHC (`liang2026sihc`) and identityHC (`anon2026simplehc`).** Both fix the mix to the identity. Table 1 now says so.
+- **Kramer et al. (`kramer2026reviewresiduals`).** The gate is significant at 590M and only a trend at 1B.
+- **Melis et al. (`melis2018evaluation`).** The claim is about properly regularized LSTMs.
+- **Wortsman et al. (`wortsman2023proxies`).** The sensitivity caps each loss at the loss at initialization, which we take as
+  ln 16384.
+- **Qwen3.8-Next (`qiu2026qwen38next`).** The spike count uses a rolling 201-step median.
+- **Gemma 3 and Qwen3.** The reports say they use QK-norm but not its form. The per-head RMSNorm before RoPE is in their code,
+  so the paper no longer attributes the form to them.
+- **Gated attention (`qiu2025gatedattention`).** It does not tune the learning rate of each design, so the paper now says only
+  that the more stable design had the lower loss in the comparisons reported.
+- **Multi-head attention (`vaswani2017attention`).** Described as several smaller heads with their own projections that beat a
+  single full-width head at a similar cost.
+- **QK-norm history.** Henry et al. introduced it for translation, and ViT-22B applied a LayerNorm form of it.
+- **Attention Residuals (`kimi2026attnres`).** §5.3 tests per-head depth aggregation with 16 heads on Block AttnRes and finds it
+  slightly worse (1.752 against 1.746). This is now cited in Related Work and in 6.3.
