@@ -840,3 +840,7 @@ Chronological. Every entry: what was done, why, what came out, pointers to files
   mixes; MHAR's gain was larger at 350M and 1B than at 100M; the uHC paragraph, its row in Table 1 and the limitation now follow
   the full text. Bib: three titles as on the source, Fleuret's ç, Pawar's full name, ViT-22B at ICML 2023, OLMo 2's COLM paper as
   the shorter version, and updated version and venue notes. Still 28 pages, no overfull boxes.
+- 20:40 UTC: **two citations added** to Related Work, both checked at the source: Narang et al. (EMNLP 2021), where most
+  transformer modifications reimplemented in one code base did not meaningfully improve performance, and Melis et al. (ICLR
+  2018), where standard LSTMs beat newer recurrent architectures once all were tuned by the same hyperparameter search. Still
+  28 pages, no overfull boxes.
