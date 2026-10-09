@@ -1,7 +1,7 @@
 """Are TPU v6e results (micro-batch 16) on the same scale as the v5e ones (micro-batch 8 x 2)? Checks exp11 against its v5e twins.
 
 Usage: cd analysis && uv run python hardware_check.py ../results/exp11_v6e_check ../results/exp04_main ../results/exp06_controls \
-           ../results/exp07_scale ../results/exp09_d768_lr ../results/exp10_d384_lr
+           ../results/exp07_scale ../results/exp08_local ../results/exp09_d768_lr ../results/exp10_d384_lr
 The first directory holds the v6e runs (named "v6e-<variant>[-<tag>]-s<seed>"); the others the v5e runs with the same name minus
 "v6e-". Prints, per variant and LR: each seed's v5e and v6e final val loss and their difference, the v5e seed-to-seed spread of
 that variant (all its v5e seeds), the mean v6e − v5e shift over all pairs; then the paired gaps the report uses, on each chip;
