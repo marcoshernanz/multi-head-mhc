@@ -117,12 +117,15 @@ ICLR 2027 submissions on OpenReview, `notes/literature/recheck_2026-10-04.md`):
 
 **Closest work** (each checked at the source):
 
-- **uHC: Uncoupled Hyper-Connections (ICLR 2027 submission, OpenReview `Qnj7Lf8Bz2`, 2026-09-19; abstract only, the full text is
-  not openly downloadable)**: names design A's premise as the bottleneck ("readout patterns are shared across feature dimensions")
-  and adds Group-Wise Feature Readout "for feature-dependent stream aggregation", plus a Low-Rank Directional Write-Back, at
-  46M–363M; validation loss 2.947 (mHC) → 2.819 at 363M. That is A's per-group read with a different write; the abstract has no
-  per-group H_res. Whether its comparison is parameter-matched is unknown. exp14's "pre" variant (per-head read only, global
-  predictor) is this project's test of the same read, against the MLP line.
+- **uHC: Uncoupled Hyper-Connections (ICLR 2027 submission, OpenReview `Qnj7Lf8Bz2`, 2026-09-19; full text read 2026-10-09)**:
+  names design A's premise as the bottleneck ("readout patterns are shared across feature dimensions") and adds Group-Wise
+  Feature Readout "for feature-dependent stream aggregation", plus a Low-Rank Directional Write-Back, at 46M–363M; validation
+  loss 2.947 (mHC) → 2.819 at 363M. The full text shows that the read is computed for each of 4 groups from the group's own slice,
+  which is A's per-group read with the local predictor and the parameter count of mHC; the write-back adds parameters with no
+  matched control, and H_res is mHC's, unchanged. Its gain over mHC is 0.006 and 0.008 at 46M and 128M, and the 0.128 at 363M is
+  against an mHC baseline 0.093 worse than the residual, at one shared LR per scale and with no seeds reported. exp14's "pre"
+  variant (per-head read only, global predictor) is this project's test of the same read, against the MLP line. See
+  `notes/literature/reference_check_2026-10-09.md`.
 
 - **Multi-Head Attention Residuals (MHAR, arXiv 2607.27230 v2, Jul 2026)**: the same head split (contiguous channel groups,
   independent routers, block-diagonal, H = 1 recovers the parent), but applied to the depth-attention read of Attention Residuals,
