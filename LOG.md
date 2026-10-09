@@ -844,3 +844,17 @@ Chronological. Every entry: what was done, why, what came out, pointers to files
   transformer modifications reimplemented in one code base did not meaningfully improve performance, and Melis et al. (ICLR
   2018), where standard LSTMs beat newer recurrent architectures once all were tuned by the same hyperparameter search. Still
   28 pages, no overfull boxes.
+- 21:35 UTC: **every number in the paper recomputed from `results/`** with the repo's scripts (about 680 values, tables and
+  figures included), and the cited sentences read once more against their sources. No number was wrong in sign or count.
+  Fixed: the chip table used four v5e seeds of local h4 where six exist (`hardware_check.py` now reads `exp08_local`), so that
+  gap is +0.003 ± 0.008 (3/6) over all v5e seeds, the opposite sign to v6e, and the misses are 0.014–0.021; the run count is 629,
+  since the 3 finished compile-time probes of exp03 were not counted; Table 6 now lists all variants at 3e-3, adding static h8,
+  the static joint mix and local h8 and h16, none of them established; 3e-3 is called the pilot rate of mHC, not its tuned v5e
+  rate; Appendix A and Table 3 say which runs used v5e; small roundings (0.0008, −0.003 for the 112M line, 0.037–0.048 for
+  QK-norm, below 0.5%, logits and entropies as seed means); the loss-spike claims are limited to runs with per-step logs; the
+  112M residual crosses the clip most often at three of four rates. Sources: TEMPER redesigns the dense predictor maps, not the
+  mix; xHC updates a few of its streams per sublayer; SiHC and identityHC fix the mix to the identity; Kramer et al. see only a
+  trend at 1B; Melis et al.'s LSTMs are regularized; Wortsman et al. cap at the loss at initialization; the Qwen median is
+  rolling; Gemma 3 and Qwen3 state QK-norm but not its form; gated attention did not tune each design; multi-head attention
+  described as in Vaswani et al. Added the per-head ablation of Attention Residuals (1.752 against 1.746 for 16 heads) to Related
+  Work and 6.3. Now 29 pages, no overfull boxes.
