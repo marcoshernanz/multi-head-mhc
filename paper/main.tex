@@ -19,19 +19,15 @@
 \maketitle
 
 \begin{abstract}
-  Manifold-constrained hyper-connections (mHC) widen the residual stream of a transformer into several copies that each layer reads
-  from, writes to and mixes, with one coefficient per copy shared by all channels. We study multi-head mHC, which splits the
-  channels into groups and gives each group its own read, write and doubly stochastic mix while keeping the guarantees of mHC.
-  Across 626 training runs with models of 27M and 112M parameters, we tune the learning rate of every main variant and compare
-  against controls with the same number of parameters. Multi-head mHC gives no gain at equal parameters. With the parameter count of
-  mHC it is no better than mHC, and when it adds parameters it is no better than spending them on a wider feed-forward layer. At 27M
-  the result also holds with QK-norm, with four times the training tokens and for each per-head block on its own. At a single
-  learning rate shared by all variants the heads appear to improve on mHC by 40\% of mHC's gain over the residual connection, but a
-  wider feed-forward layer with the same parameters gains as much. Without QK-norm the heads degrade more gently when the learning
-  rate is too high. We trace this failure to attention-logit growth, which the heads do not prevent, and find that QK-norm removes
-  both the failure and the advantage of the heads. The only difference left with QK-norm is that the gradient norm of mHC
-  occasionally exceeds the clipping threshold where that of the heads almost never does, and this does not show in the loss. We find
-  no evidence that multi-head mHC would make larger models more stable.
+   Manifold-constrained hyper-connections (mHC) widen the residual stream into several copies that each layer reads from, writes to
+  and mixes, with one coefficient per copy shared by all channels. Multi-head mHC gives each group of channels its own read, write
+  and doubly stochastic mix while keeping the guarantees of mHC. In 626 training runs at 27M and 112M parameters, we tune the
+  learning rate of every main variant and compare against parameter-matched controls. Multi-head mHC gives no gain at equal
+  parameters. With the parameter count of mHC it is no better than mHC, and when it adds parameters it is no better than a wider
+  feed-forward layer. At 27M this holds with QK-norm, with four times the tokens and for each per-head block on its own. At a single
+  shared learning rate the heads appear to beat mHC, but a wider feed-forward layer with the same parameters gains as much. Without
+  QK-norm the heads degrade more gently at too high a learning rate. QK-norm removes the attention-logit growth behind this failure
+  and with it the advantage of the heads. We find no evidence that multi-head mHC would make larger models more stable.
 \end{abstract}
 
 \tableofcontents
