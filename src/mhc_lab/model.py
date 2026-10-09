@@ -42,7 +42,7 @@ class ModelConfig:
     rope_theta: float = 10000.0
     norm_eps: float = 1e-20  # mHC's RMSNorm epsilon
     init_std: float = 0.02
-    qk_norm: bool = False  # RMSNorm on each attention head's queries and keys before RoPE (as in Qwen3, Gemma 3, OLMo 2)
+    qk_norm: bool = False  # RMSNorm on each attention head's queries and keys before RoPE (as in Qwen3 and Gemma 3)
 
 
 class RMSNorm(nn.Module):
