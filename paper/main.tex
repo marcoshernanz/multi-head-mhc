@@ -25,9 +25,9 @@
   learning rate of every main variant and compare against parameter-matched controls. Multi-head mHC gives no gain at equal
   parameters. With the parameter count of mHC it is no better than mHC, and when it adds parameters it is no better than a wider
   feed-forward layer. At 27M this holds with QK-norm, with four times the tokens and for each per-head block on its own. At a single
-  shared learning rate the heads appear to beat mHC, but a wider feed-forward layer with the same parameters gains as much. Without
-  QK-norm the heads degrade more gently at too high a learning rate. QK-norm removes the attention-logit growth behind this failure
-  and with it the advantage of the heads. We find no evidence that multi-head mHC would make larger models more stable.
+  shared learning rate, heads that add parameters beat mHC, but a wider feed-forward layer with the same parameters gains as much.
+  Without QK-norm the heads degrade more gently at too high a learning rate. QK-norm removes the attention-logit growth behind this
+  failure and with it the advantage of the heads. We find no evidence that multi-head mHC would make larger models more stable.
 \end{abstract}
 
 \tableofcontents
