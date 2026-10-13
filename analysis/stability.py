@@ -376,23 +376,39 @@ def main() -> None:
                 print(f"    {lr:g} {NAMES[v]:20s} " + "  ".join(f"{k}: {x[0]:7.1f} {x[1]:.2f} {x[2]:6.1f}" for k, x in row.items()))
         out["recipes"][recipe] = res
 
-    # S3's verdict; with runs missing without QK-norm (exp19: 12 at 8.5e-3 and above could not be run), for every outcome of them,
-    # each diverged or finite at 4.5, 5.5 or 7.0
+    # S3's verdict; with runs missing without QK-norm (exp19: 12 at 8.5e-3 and above could not be run), (1) for every combination of
+    # them diverged or finite at 4.5, 5.5 or 7.0, and (2) for each one finite at any loss from 4.0 to l0 in steps of 0.001 with the
+    # others diverged: the losses at which that run alone would change the verdict
     with_qk = out["recipes"]["qk-norm"]["dS"]
     if all(p in with_qk for p in ("global-h4 - mhc", "local-h4 - mhc")):
         missing = [(v, lr, s) for v in VARIANTS for lr in GRID for s in SEEDS if (False, v, lr, s) not in runs]
         known = {(v, lr, s): capped(r) for (q, v, lr, s), r in runs.items() if not q}
-        verdicts = {}
+
+        def verdict_of(values: dict) -> str:
+            sens = {v: sensitivity(values, v) for v in ("global-h4", "local-h4", "mhc")}
+            without = {f"{a} - mhc": st.mean(sens[a][s] - sens["mhc"][s] for s in SEEDS) for a in ("global-h4", "local-h4")}
+            return s3_verdict(with_qk, without)
+
+        verdicts, changes = {}, {}
         if len(missing) <= 16:
             for fill in (4.5, 5.5, 7.0) if missing else (None,):
                 for outcome in itertools.product((L0, fill), repeat=len(missing)):
-                    values = known | dict(zip(missing, outcome))
-                    sens = {v: sensitivity(values, v) for v in ("global-h4", "local-h4", "mhc")}
-                    without = {f"{a} - mhc": st.mean(sens[a][s] - sens["mhc"][s] for s in SEEDS) for a in ("global-h4", "local-h4")}
-                    verdict = s3_verdict(with_qk, without)
+                    verdict = verdict_of(known | dict(zip(missing, outcome)))
                     verdicts[verdict] = verdicts.get(verdict, 0) + 1
-        print(f"\nS3 verdict ({len(missing)} runs without QK-norm missing; every outcome of them): {verdicts}")
-        out["s3_verdict"] = {"missing": [list(m) for m in missing], "verdicts": verdicts}
+            diverged = known | {m: L0 for m in missing}
+            for m in missing:
+                losses = [4.0 + i / 1000 for i in range(int((L0 - 4.0) * 1000) + 1)]
+                flips = [x for x in losses if verdict_of(diverged | {m: x}) != verdict_of(diverged)]
+                if flips:
+                    changes[m] = (round(min(flips), 3), round(max(flips), 3))
+        print(f"\nS3 verdict ({len(missing)} runs without QK-norm missing; each combination of them diverged or finite at 4.5, 5.5 "
+              f"or 7.0): {verdicts}")
+        for (v, lr, s), (lo, hi) in changes.items():
+            print(f"  with the others diverged, {NAMES[v]} at {lr:g} seed {s} alone changes it if it ends between {lo:.3f} and {hi:.3f}")
+        if missing and not changes:
+            print("  with the others diverged, no single missing run changes it at any final loss")
+        out["s3_verdict"] = {"missing": [list(m) for m in missing], "verdicts": verdicts,
+                             "single_run_changes": [[*m, *r] for m, r in changes.items()]}
 
     if args.json:
         args.json.write_text(json.dumps(out, indent=1, default=str))
