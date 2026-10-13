@@ -13,11 +13,12 @@ feed-forward layer. The main findings:
 
 - Multi-head mHC gives no gain at equal parameters. With mHC's parameter count it is no better than mHC, and when it adds
   parameters it is no better than a wider feed-forward layer.
-- At 27M this also holds with QK-norm, with four times the training tokens (393M), and for each per-head block on its own.
+- At 27M this also holds with QK-norm, with four times the training tokens (393M, at one learning rate), and, at the best learning
+  rate of mHC, for each per-head block on its own.
 - At one shared learning rate the heads seem to improve on mHC, but a wider feed-forward layer with the same parameters gains as
   much.
-- Without QK-norm the heads degrade more gently when the learning rate is too high. The failure is attention-logit growth, which
-  the heads do not prevent, and QK-norm removes both the failure and the advantage of the heads.
+- Without QK-norm the heads degrade more gently when the learning rate is too high. At 27M the failure is attention-logit growth,
+  which the heads do not prevent, and QK-norm removes both the failure and the advantage of the heads.
 
 ## Layout
 
