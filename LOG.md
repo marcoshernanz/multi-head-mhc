@@ -858,3 +858,16 @@ Chronological. Every entry: what was done, why, what came out, pointers to files
   rolling; Gemma 3 and Qwen3 state QK-norm but not its form; gated attention did not tune each design; multi-head attention
   described as in Vaswani et al. Added the per-head ablation of Attention Residuals (1.752 against 1.746 for 16 heads) to Related
   Work and 6.3. Now 29 pages, no overfull boxes.
+
+## 2026-10-13
+
+- 12:54 UTC: **final check before release.** Section 5.5 said the QK-norm verdict holds for every outcome of the 12 missing
+  runs. It does not: had global h4 on seed 2 at 8.5e-3 finished, as 7 of the 12 runs at that rate did, with a
+  loss between 5.7 and 6.9, the second condition of the 2026-10-05 11:47 rule would fail for it and the tolerance would not
+  count as removed. Section 5.5 and the limitations now say so. Also fixed: three roundings (−0.029 ± 0.004 for read and write
+  at 3e-3, 0.013–0.023, 0.011 ± 0.032); Section 5.2 now names both established changes; the ordering of vec(X) in Eq. 3; the
+  v5e residual's best rate in bold in the 112M grid; the D = 768 read-and-write result given as its excess over the MLP line.
+  Citations reworded to match their sources: OLMo 2 applies RMSNorm to the query and key projections, Qwen3.8-Next calls its
+  read gate a key contributor to stability, the Adam instability is behind the loss spikes of the 546B model, DenseFormer
+  weights the outputs of earlier blocks, the mHC initialization follows HC. Tables 5 and 6 and Figures 5 and 6 moved next to
+  their first mention. Still 29 pages, no overfull boxes; the arXiv source compiles from a clean directory to the same text.
