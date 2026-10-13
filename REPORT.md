@@ -960,9 +960,10 @@ Final val loss, mean over the seeds (of 0–2) that end finite; "div": every see
   +0.011 ± 0.007 (0/3). Without QK-norm the full-grid S exists only on the seeds whose grids are complete: global h4 − mHC h1
   −0.013 (s0) and +0.472 (s1), local h4 − mHC h1 −0.067 and −0.038, global h4 − control −0.102 (s0). It is dominated by whether a
   run diverges at 8.5e-3, which adds about 0.47 to that seed's S. By the rule ("removes it" if neither with-QK dS is a negative
-  effect and both are within a third of their no-QK size or of opposite sign), **QK-norm removes it**, and the verdict is the same
-  for every outcome of the 12 missing runs (12288 of 12288 cases, each run diverging or ending at 4.5, 5.5 or 7.0;
-  `analysis/stability.py` prints it). "Neither is an effect" is read as "dS < 0 is an effect for neither"; both with-QK dS are
+  effect and both are within a third of their no-QK size or of opposite sign), **QK-norm removes it** if the 12 missing runs
+  diverge, as every finished run at 1.2e-2 and above did, and in all 12288 cases with each of them diverging or ending at 4.5, 5.5
+  or 7.0. Of the three missing at 8.5e-3, where 7 of the 12 finished runs ended at 5.3–6.4, one alone could change it: had
+  global h4 seed 2 ended between 5.73 and 6.95, the second condition would fail for global h4 (`analysis/stability.py` prints both). "Neither is an effect" is read as "dS < 0 is an effect for neither"; both with-QK dS are
   effects in the other direction, which the rule's "or of opposite sign" counts as removal. Descriptive, over the five LRs where
   no run diverges (1.5e-3 to 6e-3): without QK-norm −0.018 ± 0.013 (2/3), −0.028 ± 0.010 (3/3, effect) and −0.048 ± 0.012 (3/3,
   effect) for the three pairs; with it +0.004 ± 0.001 (0/3, effect), +0.000 ± 0.005 (2/3) and +0.007 ± 0.005 (1/3). The tolerance
@@ -1089,8 +1090,8 @@ LR tolerance, and detecting a 0.017 gap against the control's seed noise would t
   the gradient-norm reading of exp19 (late clip crossings), which was noticed in its logs rather than pre-registered.
 - **The stability test (exp19)** runs at d384 only, three seeds per LR, one batch size, AdamW with β2 = 0.95, clipping at 1.0 and a
   6000-step cosine schedule: it cannot show instabilities that appear only in long or large runs, or under a constant LR as in
-  Qwen's stress test. Twelve of its 240 runs (without QK-norm, 8.5e-3 and above) could not run; S3's verdict is the same for
-  every outcome of them. The d768 test with QK-norm (exp20) could not run (spot capacity, 5.14), so the gradient-norm difference is
+  Qwen's stress test. Twelve of its 240 runs (without QK-norm, 8.5e-3 and above) could not run; S3's verdict holds if they
+  diverge, as every finished run at 1.2e-2 and above did, and one of the three at 8.5e-3 (global h4 seed 2) could change it. The d768 test with QK-norm (exp20) could not run (spot capacity, 5.14), so the gradient-norm difference is
   tested at d768 only without QK-norm and at every 25th step. With QK-norm, mHC h1 and the residual are best at the grid's lowest
   LR (1.5e-3), so their optimum may lie lower; that would widen mHC h1's lead over local h4 and shrink the heads' excess S by as much
   as mHC h1's best loss falls (its loss changes by less than 0.01 from 1.5e-3 to 3e-3).
@@ -1119,8 +1120,8 @@ LR tolerance, and detecting a 0.017 gap against the control's seed noise would t
 - `analysis/`: correctness checks (`checks/`); `aggregate.py` and `sweep.py` (per-run tables and paired comparisons, the rule
   "|mean| > 2 SE and all seeds agree"), `params_frontier.py` (5.4's MLP line), `hardware_check.py` (exp11), `lr_sweep.py` (LR
   curves and the comparisons at each variant's best LR, either chip), `lr_figure.py` (the paper's LR figure, `figures/lr_v6e.png`),
-  `head_parts.py` (exp14/exp17 read-outs, with the line test), `stability.py` (exp19's read-outs S1–S5, S3's verdict over every outcome of
-  the missing runs, late clip crossings, and the same at d768 with `--width 768`), `stability_figure.py` (the paper's stability figure); `paper_figures.py` writes the
+  `head_parts.py` (exp14/exp17 read-outs, with the line test), `stability.py` (exp19's read-outs S1–S5, S3's verdict over outcomes of
+  the missing runs and the losses at which one of them alone would change it, late clip crossings, and the same at d768 with `--width 768`), `stability_figure.py` (the paper's stability figure); `paper_figures.py` writes the
   paper's other figures to `paper/figures/` (with `paper_style.py`, and `lr_figure.py` and `params_frontier.py` run with
   `--paper`).
 - `paper/`: the LaTeX write-up (`latexmk` in `paper/`; the method drawing is `paper/figures/src/method.tex`).
