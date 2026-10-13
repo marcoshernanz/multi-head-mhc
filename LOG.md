@@ -871,3 +871,14 @@ Chronological. Every entry: what was done, why, what came out, pointers to files
   read gate a key contributor to stability, the Adam instability is behind the loss spikes of the 546B model, DenseFormer
   weights the outputs of earlier blocks, the mHC initialization follows HC. Tables 5 and 6 and Figures 5 and 6 moved next to
   their first mention. Still 29 pages, no overfull boxes; the arXiv source compiles from a clean directory to the same text.
+- 20:16 UTC: **paper reread until a full pass found nothing.** With QK-norm the heads' gradient norm crosses the clipping
+  threshold less often than that of mHC, not never (global h4 on 0.4% of late steps above 8.5e-3, local h4 on 0.9% at 1.2e-2),
+  so the introduction and Section 6.2 now say "less often". The abstract limits the block result to the four subsets tested;
+  Related Work says tuning decides whether the heads appear to beat mHC; the introduction says the heads degrade less just
+  above the optimum; mHC's coefficients are described as shared by all channels, since the mix is n × n. Chips named for the
+  112M clipping figures and the connection-rate runs (both v6e); the residual left out where it was not run (v5e at 1.5e-3,
+  112M at 2.1e-3); the 629 runs are the TPU runs, the 19 GPU pilot runs being extra; v5e ran a 112M grid with two seeds.
+  Defined at first use: the main variants, the three per-head blocks, local and global heads and the MLP control in Figure 1,
+  QK-norm in the introduction; per-step logging covers the replays. FineWeb-Edu, RoFormer, SwiGLU, AdamW, RMSNorm, GPT-2 and
+  BPE are now cited; these seven entries are not yet checked against their arXiv listings. Still 29 pages; both arXiv
+  archives compile from a clean directory to the same text as `build/main.pdf`.
