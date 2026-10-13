@@ -20,14 +20,14 @@
 
 \begin{abstract}
    Manifold-constrained hyper-connections (mHC) widen the residual stream into several copies that each layer reads from, writes to
-  and mixes, with one coefficient per copy shared by all channels. Multi-head mHC gives each group of channels its own read, write
+  and mixes, with coefficients shared by all channels. Multi-head mHC gives each group of channels its own read, write
   and doubly stochastic mix while keeping the guarantees of mHC. In 629 training runs at 27M and 112M parameters, we tune the
   learning rate of every main variant and compare against parameter-matched controls. Multi-head mHC gives no gain at equal
   parameters. With the parameter count of mHC it is no better than mHC, and when it adds parameters it is no better than a wider
   feed-forward layer. At 27M this holds with QK-norm and, at one learning rate, with four times the tokens. At the best learning
-  rate of mHC it also holds when only some of the read, write and mix are made per group. At a single shared learning rate, heads
+  rate of mHC it also holds for each tested variant that makes only some of the read, write and mix per group. At a shared learning rate tuned for mHC in a pilot, heads
   that add parameters beat mHC, but a wider feed-forward layer with the same parameters gains as much. Without QK-norm the heads
-  degrade more gently at too high a learning rate, where every variant fails through attention-logit growth. QK-norm removes this
+  degrade more gently at too high a learning rate, where at 27M every variant fails through attention-logit growth. QK-norm removes this
   growth and with it the advantage of the heads. Apart from a smoother gradient norm that does not show in the loss, we find no
   evidence that multi-head mHC would make larger models more stable.
 \end{abstract}
@@ -46,7 +46,8 @@ $D$-dimensional vector, so all channels of the stream take the same route throug
 \begin{figure}[!b]
   \centering
   \includegraphics[width=\linewidth]{summary}
-  \caption{Summary of the main comparisons. Each row is a difference in final validation loss with the standard error of
+  \caption{Summary of the main comparisons. Local heads have the parameter count of mHC. Global heads add parameters and are compared
+    with the MLP control, mHC with its feed-forward layer widened to the same count (\cref{sec:predictors} and~\cref{sec:controls}). Each row is a difference in final validation loss with the standard error of
     \cref{sec:stats}, shown as the mean $\pm$ 2~SE over seeds. Filled markers show established effects, with $|\text{mean}| >
     2$~SE and all seeds agreeing in sign. The columns on the right give the mean $\pm$ SE and the number of seeds on which the first
     model is better. The second group of rows uses QK-norm and the others do not. The 112M rows other than mHC $-$ residual pool
@@ -64,27 +65,27 @@ channels its own pattern of connections to earlier layers (\cref{sec:depth}).
 
 This paper asks whether multi-head mHC gives a better model for the same parameters and compute. We ran a controlled study at 27M
 and 112M parameters, 629 training runs on TPU v5e and v6e. Runs are paired by seed, every model that adds parameters is
-compared with a control that spends the same parameters on a wider feed-forward layer, and every main variant has a learning-rate
-grid at both widths. At 27M we also repeat the grid with QK-norm, ablate the per-head blocks and train with four times the tokens.
+compared with what the same parameters buy in a wider feed-forward layer, and every main variant has a learning-rate
+grid at both widths. At 27M we also ablate the per-head blocks (read, write and mix), train with four times the tokens and repeat the grid with QK-norm, which normalizes the queries and keys of each attention head \citep{henry2020qknorm}.
 Decision rules were written down before the results they decide. They are public, with the code and the results of every run
 (\cref{app:implementation}).
 
 The answer is no (\cref{fig:main}). With every model at its own best learning rate, heads at the parameter count of mHC are no
 better than mHC, and heads that add parameters are no better than mHC with a feed-forward layer widened to the same count. This holds at both widths, and at 27M it holds with QK-norm and, at one learning rate, with four times the tokens. At 27M and
 the best learning rate of mHC,
-no subset of the three per-head blocks uses its parameters better than the feed-forward layer (\cref{sec:parts}). Compared in the
+no subset of the three per-head blocks that we tested uses its parameters better than the feed-forward layer (\cref{sec:parts}). Compared in the
 more common way, at one shared learning rate and without a parameter-matched control, the heads that add parameters beat mHC by about 40\% of mHC's gain over
 the residual connection, at $h = 4$ on 9 of 10 seeds. It takes both controls to see that this gain comes from the extra parameters and the choice of
 learning rate (\cref{sec:fixed-lr} and~\cref{sec:lesson}).
 
-The heads change how training fails when the learning rate is too high. Without QK-norm they degrade less than mHC above the optimal
+The heads change how training fails when the learning rate is too high. Without QK-norm they degrade less than mHC just above the optimal
 learning rate, and robustness of this kind, measured in smaller models, has been used as a proxy for the instabilities of large
 runs \citep{wortsman2023proxies, qiu2026qwen38next}. We tested whether this tolerance amounts to a stability benefit and found no evidence that
-it does (\cref{sec:tolerance}, \cref{sec:qknorm} and~\cref{sec:scale}). Above the optimum every variant fails through
+it does (\cref{sec:tolerance}, \cref{sec:qknorm} and~\cref{sec:scale}). At 27M every variant fails above the optimum through
 attention-logit growth, and the heads do not prevent it. QK-norm, which current open models use, removes the failure, and with
-QK-norm the heads are more sensitive to the learning rate than mHC. In the stability test only one run, which fails, has loss
-spikes. The one difference in favor of the heads that survives QK-norm is that they keep the gradient norm below the clipping
-threshold where that of mHC occasionally crosses it. This does not show in the loss, and whether it would matter in a large model is untested.
+QK-norm the heads are more sensitive to the learning rate than mHC. In this test only one run, which fails, has loss
+spikes. The one difference in favor of the heads that survives QK-norm is that their gradient norm crosses the clipping
+threshold less often than that of mHC. This does not show in the loss, and whether it would matter in a large model is untested.
 
 \section{Related Work}
 \label{sec:related}
@@ -95,7 +96,7 @@ zhou2026kromhc, dandachi2026gomhc, lyubinin2026tbpmhc, liu2026shc, guo2026ohc} o
 or carries a static form of mHC to state space models \citep{mutlu2026mhcssm}. Some designs use channel groups as the streams
 themselves \citep{zhu2025fracconnections} or widen the stream and split it into such groups \citep{seed2025vwn}, with one shared
 mix in both. None of them gives each group of channels its own copies and its own mix. In a trained mHC model a typical site uses
-only about two of its four streams \citep{zhao2026howdoesmhc}, and when the copies start identical they can collapse onto a
+only about two of its four copies \citep{zhao2026howdoesmhc}, and when the copies start identical they can collapse onto a
 dominant one \citep{alimaskina2026streamcollapse}.
 
 The value of the mix itself has been questioned. Several recent designs drop it \citep{qiu2026qwen38next, ge2026chimera,
@@ -110,17 +111,17 @@ that of the write, and the mix of little value once the read and write are expre
 per-channel read and write maps, with the mix fixed to the identity, in pixel diffusion transformers whose streams hold different
 subpatches. uHC \citep{anon2026uhc}, a concurrent submission, argues, as our design assumes, that readout patterns shared across
 feature dimensions are a bottleneck. It computes the read of each group of channels from that group's own slice of the copies,
-which is our per-head read with a local predictor, and adds a low-rank write-back with extra parameters while keeping the mix of
+which is our per-head read with a local predictor (\cref{sec:predictors}), and adds a low-rank write-back with extra parameters while keeping the mix of
 mHC. Its validation loss is lower than that of mHC by 0.006 and 0.008 at 46M and 128M parameters and by 0.128 at 363M, where its
-mHC baseline is 0.093 worse than the residual connection. All methods share one learning rate per scale, and no seed count is
+mHC baseline is 0.093 worse than the residual connection. In that work all methods share one learning rate per scale, and no seed count is
 reported. \Cref{sec:parts} tests the per-head read alone, with a global predictor, against the gain that the same
 parameters bring in the feed-forward layer. The
 per-group mix is the one part of our design that none of these has.
 
 \begin{table}[ht]
   \centering
-  \caption{Where the connection coefficients are shared in the designs closest to multi-head mHC. ``Shared'' means one
-    coefficient per copy for all channels. The mix is one $n \times n$ matrix over the copies, doubly stochastic in mHC and in our
+  \caption{Where the connection coefficients are shared in the designs closest to multi-head mHC. ``Shared'' means the
+    same coefficients for all channels. Each mix is an $n \times n$ matrix over the copies, doubly stochastic in mHC and in our
     design.}
   \label{tab:related}
   \small
@@ -150,13 +151,13 @@ Depth-Attention \citep{zeng2026depthattention}, per-head softmax mixing over dep
 (2.2115 against 2.2153 at 500M parameters), and Kimi K3 \citep{kimi2026k3} ships single-head Attention Residuals.
 
 Small-scale comparisons of residual variants depend on how they are controlled. A per-channel residual gate compared against
-parameter-matched baselines was within noise up to 320M parameters, significant at 590M and larger but only a trend at 1B
+parameter-matched baselines was within noise up to 320M parameters, significant at 590M but only a trend at 1B
 \citep{kramer2026reviewresiduals}. With the learning rate tuned per architecture at 400M parameters, the best learning rate of mHC
 equals that of the pre-norm residual \citep{wang2026depthbench}. More broadly, most of the transformer modifications that
 \citet{narang2021modifications} reimplemented in one shared code base did not meaningfully improve performance, and
 well-regularized standard LSTMs outperformed more recent recurrent architectures in language modeling once all of them were tuned
-by the same large-scale hyperparameter search \citep{melis2018evaluation}. We also tune the learning rate of each variant and find
-that this choice decides the result (\cref{sec:best-lr}).
+by the same large-scale hyperparameter search \citep{melis2018evaluation}. We also tune the learning rate of each main variant and find
+that this choice decides whether the heads appear to beat mHC (\cref{sec:best-lr} and~\cref{sec:fixed-lr}).
 
 Raising the learning rate reproduces in small models two instabilities first seen in large ones \citep{wortsman2023proxies}. In
 the first, attention logits grow until attention collapses onto one key. This appeared at about 8B parameters while vision
@@ -164,7 +165,7 @@ transformers were scaled to 22B \citep{dehghani2023vit22b} and is known as atten
 \citep{zhai2023entropycollapse}. In the second, the output logits drift. A normalization of the queries and keys, QK-norm, removes
 the first, and a z-loss, a penalty on the squared log of the softmax normalizer of the output, removes the second. QK-norm was introduced for translation \citep{henry2020qknorm}, was applied in a LayerNorm form
 to attention-logit growth by \citet{dehghani2023vit22b} and is now standard in open models \citep{olmo2024olmo2, gemma2025gemma3,
-yang2025qwen3}. Qwen3.8-Next stress-tests its new architecture and optimizer against the structure they replace at two to four
+yang2025qwen3}. Qwen3.8-Next stress-tests its new architecture and optimizer against what they replace at two to four
 times the optimal learning rate and counts loss spikes and clipped steps \citep{qiu2026qwen38next}. We use the same measures to
 ask whether the tolerance of the heads to a too-high learning rate is a stability benefit (\cref{sec:tolerance}, \cref{sec:qknorm}
 and~\cref{sec:scale}).
@@ -207,7 +208,7 @@ The sublayer is unchanged and takes as input the concatenation of the group inpu
   \centering
   \includegraphics[width=\linewidth]{method}
   \caption{One sublayer of mHC (a) and of multi-head mHC (b). mHC reads the $n$ copies into the sublayer input $u$, mixes them and
-    writes the output $y$ back, with one coefficient per copy for all $D$ channels. Multi-head mHC gives each of the $h$ channel
+    writes the output $y$ back, with the same coefficients for all $D$ channels. Multi-head mHC gives each of the $h$ channel
     groups (shown in different colors) its own read, mix and write. The sublayer $F$ is the same in both.}
   \label{fig:method}
 \end{figure}
@@ -244,7 +245,7 @@ cost of a wider stream.
 \label{sec:predictors}
 
 How the coefficients of each group are produced is a separate choice. A \emph{local} predictor computes the coefficients of group
-$g$ from its own $n \times D/h$ slice of the stream and has the parameters of mHC, cut into $h$ blocks. A \emph{global} predictor
+$g$ from its own $n \times D/h$ slice of the RMS-normalized stream and has the parameters of mHC, cut into $h$ blocks. A \emph{global} predictor
 computes the coefficients of every group from the whole stream and has $h$ times the parameters of the mHC predictor. A
 \emph{static} predictor uses the biases only. \Cref{tab:params} gives the parameter counts. At $D = 384$, global $h = 4$ adds 1.8M
 parameters to mHC (6.5\%) and $h = 16$ adds 9M (33\%), so every model with global heads needs a control with the same parameter
@@ -274,7 +275,7 @@ count (\cref{sec:controls}).
 \subsection{Ablations and other variants}
 \label{sec:variants}
 
-Any subset of the three blocks can be made per head while the others are predicted once and shared by all groups. With no block
+Any subset of the three blocks (read, write and mix) can be made per head while the others are predicted once and shared by all groups. With no block
 per head the model is exactly mHC, and with only the read per head and a local predictor it is the group-wise readout of uHC
 \citep{anon2026uhc}. We tested two side variants. The first is a joint $(nh) \times (nh)$ doubly stochastic mix over (copy, group)
 pieces, which lets groups exchange channels. The second is mHC with $n = 8$ copies. We did not test a mixture of several Sinkhorn
@@ -286,23 +287,23 @@ matrices, since the doubly stochastic matrices form a convex set and such a mixt
 \subsection{Models, data and training}
 \label{sec:training}
 
-The models are pre-norm GPTs with rotary attention, SwiGLU feed-forward layers and an untied output layer (\cref{tab:setup}). They
-are trained on FineWeb-Edu with a 16,384-token BPE vocabulary, using random 1024-token windows from a 200M-token pool, and validated
-on a fixed set of 819k tokens. Training uses AdamW with $\beta = (0.9, 0.95)$, weight decay 0.1 on matrices, 200 warmup steps,
+The models are pre-norm GPTs \citep{radford2019gpt2} with rotary attention \citep{su2021roformer}, SwiGLU feed-forward layers \citep{shazeer2020glu} and an untied output layer (\cref{tab:setup}). They
+are trained on FineWeb-Edu \citep{penedo2024fineweb} with a 16,384-token BPE vocabulary \citep{sennrich2016bpe}, using random 1024-token windows from a 200M-token pool, and validated
+on a fixed set of 819k tokens. Training uses AdamW \citep{loshchilov2019adamw} with $\beta = (0.9, 0.95)$, weight decay 0.1 on matrices, 200 warmup steps,
 cosine decay to 10\% of the peak learning rate and gradient clipping at 1.0. Each run takes 6000 steps of $16 \times 1024$ tokens,
 or 98M tokens. The connection runs in float32 and the rest of the model in bf16. mHC follows the published recipe, with
 $n = 4$, 20 Sinkhorn iterations, $\alpha$ initialized to 0.01 and, as in HC \citep{zhu2024hyperconnections}, an initialization close to the pre-norm
 residual.
 
-For the stability test of \cref{sec:tolerance} and~\cref{sec:qknorm}, the five main variants at 27M are also trained with QK-norm,
-an RMSNorm on the queries and keys of each attention head before the rotary embedding. Gemma~3 and Qwen3 also use QK-norm
+For the stability test of \cref{sec:tolerance} and~\cref{sec:qknorm}, the five main variants at 27M (\cref{sec:lrs}) are also trained with QK-norm,
+an RMSNorm \citep{zhang2019rmsnorm} on the queries and keys of each attention head before the rotary embedding. Gemma~3 and Qwen3 also use QK-norm
 \citep{gemma2025gemma3, yang2025qwen3}, and OLMo~2 normalizes the query and key projections with RMSNorm \citep{olmo2024olmo2}. These runs use nine learning rates from \lr{1.5} to \lr{24} spaced by a factor of about $\sqrt{2}$, and the
-grid without QK-norm is extended to the same top. They log the loss and the gradient norm before clipping at every step. Every 250
+grid without QK-norm is extended to the same top. These runs, the extension and the replays of \cref{sec:tolerance} log the loss and the gradient norm before clipping at every step instead of every 25th. Every 250
 steps they log the largest attention logit and the mean attention entropy of every layer on four fixed validation sequences.
 
 \begin{table}[ht]
   \centering
-  \caption{The two model sizes and their training. At 112M on v6e the residual has 3 seeds at every learning rate.}
+  \caption{The two model sizes and their training. At 112M on v6e the residual has only 3 seeds at its best learning rate.}
   \label{tab:setup}
   \small
   \begin{tabular}{lll}
@@ -323,7 +324,7 @@ steps they log the largest attention logit and the mean attention entropy of eve
 \subsection{Baselines, controls and learning rates}
 \label{sec:controls}
 
-Every comparison includes mHC and the plain residual connection. Global heads add parameters, so each is compared with mHC widened
+Every main comparison includes mHC and the plain residual connection. Global heads add parameters, so global $h = 4$ and $h = 16$ are each compared with mHC widened
 in the feed-forward layer to the same parameter count, which we call the \emph{MLP control} (\cref{tab:params}). Local heads have
 the parameter count of mHC and are compared with mHC directly. For other variants we use the \emph{MLP line}, which is piecewise linear
 in the parameter count and passes through mHC and its widened versions. It gives the loss that the same parameters buy in the feed-forward
@@ -331,21 +332,21 @@ layer.
 \label{sec:lrs}
 
 The first experiments used a single peak learning rate, \lr{3}, which was the best for mHC in a pilot. We then mapped the learning
-rate of mHC, global and local $h = 4$, the MLP control and the residual, so that each can be compared at its own best. The best
+rate of the five \emph{main variants}, mHC, global and local $h = 4$, the MLP control and the residual, so that each can be compared at its own best. The best
 learning rate is the one with the lowest mean final loss over seeds 0--2 (0--1 where only two seeds were run), a rule fixed in advance.
 
 \subsection{Statistics and hardware}
 \label{sec:stats}
 \label{sec:hardware}
 
-For a given seed, every variant starts from the same weights outside the connection and sees the same batches, so differences at
-the same learning rate are paired by seed. We report the mean difference in final validation loss, first model minus second, with its
+For a given seed, every variant sees the same batches and, except for the MLP controls, starts from the same weights outside the
+connection, so differences at the same learning rate are paired by seed. We report the mean difference in final validation loss, first model minus second, with its
 standard error and the number of seeds on which the first model is better. We call an effect \emph{established} when $|\text{mean}| > 2$~SE and
 all seeds agree in sign, a rule fixed before the main runs. Comparisons between variants at different learning rates, and all
-comparisons at the best learning rates at $D = 768$, use the two-sample standard error. Where both chips ran the same
+comparisons of variants at their own best learning rates at $D = 768$, use the two-sample standard error. Where both chips ran the same
 comparison, we pool the two by inverse variance as independent estimates.
 
-Every run uses one TPU chip, either v5e or v6e. The two chips are not interchangeable, since the same run on v6e behaves like a
+Each of the 629 runs uses one TPU chip, either v5e or v6e. The two chips are not interchangeable, since the same run on v6e behaves like a
 new seed of the v5e run. Each experiment therefore stays on one chip type with its own baselines, and we never compare numbers
 from different chips directly (\cref{app:chips,app:implementation}).
 
@@ -363,7 +364,7 @@ variants.
 The learning-rate grids put the optimum of mHC, global $h = 4$, the MLP control and the residual at \lr{2.1} at 27M on TPU v6e.
 Local $h = 4$ is best at \lr{3}, ahead of its value at \lr{2.1} by 0.003 (\cref{fig:lr}, left). At 112M the optimum is \lr{0.75}
 for mHC, local $h = 4$ and the control. Global $h = 4$ and the residual are best at \lr{1.06}, ahead of their values at \lr{0.75}
-by 0.0008 and 0.0016 (\cref{fig:lr}, right). The v5e grid, which has the residual only at \lr{1.5}, puts every optimum in the
+by 0.0008 and 0.0016 (\cref{fig:lr}, right). The v5e grid, which has the residual only at \lr{1.5}, puts the optimum of every other variant in the
 same place (\cref{app:grids}). The heads therefore move the optimum by at most one grid point, and they change the range of
 learning rates within 0.02 of each variant's own best by at most one point. At 27M this range covers two grid points for mHC and
 both head variants and three for the control and the residual. At 112M it covers three points for global $h = 4$, two for mHC,
@@ -376,7 +377,7 @@ the control and the residual, and one for local $h = 4$.
     show the mean over seeds 0--2 and dots show single seeds. The axis is symlog and linear below 0.05, and the shaded band marks
     losses within 0.02 of the best variant. The range of good learning rates in the text is measured from each
     variant's own best. The heads move the optimum and the range of good learning rates by at most one grid
-    point. Just above the optimum, at \lr{4.2} and \lr{1.5}, global $h = 4$ lies below mHC and the control.}
+    point. At twice the optimum of mHC, \lr{4.2} and \lr{1.5}, global $h = 4$ lies below mHC and the control.}
   \label{fig:lr}
 \end{figure}
 
@@ -487,9 +488,9 @@ learning rate and seeds provide the shorter length (\cref{tab:long}).
 
 Neither of the two comparisons of interest changes by an established amount. At 393M tokens global $h = 4$ and its control are tied
 ($+0.000 \pm 0.019$), and local heads are within noise of mHC ($-0.009 \pm 0.005$). Two changes are established. The gain of mHC over the residual grows from 0.041 to 0.048,
-and the lead of the control over mHC shrinks by 0.018 on every seed while the heads keep theirs. Relative to the control, the
+and the lead of the control over mHC shrinks by $0.018 \pm 0.001$ on every seed while the heads keep theirs. Relative to the control, the
 heads gain $0.017 \pm 0.011$ with the longer training, on 2 of 3 seeds, which is not established. On these seeds the lead of the control over the heads at 98M tokens (0.017) is larger than its ten-seed value
-(0.005), so part of the shift is a return to the mean, and a single longer point with three seeds cannot show a trend. If anything, the shared learning rate favors the heads. On v6e at 98M tokens it
+(0.005), so part of the shift is a return to the mean, and a single longer point with three seeds cannot show a trend. If anything, the shared learning rate favors the heads over mHC. On v6e at 98M tokens it
 lies above the optimum of every variant except local $h = 4$, a regime in which the tolerance of the heads helps them
 (\cref{sec:tolerance}).
 
@@ -524,21 +525,21 @@ local heads gain nothing there, and a learning rate above the optimum, which \lr
 \subsection{Behavior above the optimal learning rate}
 \label{sec:tolerance}
 
-The heads move the optimum and the range of good learning rates by at most one grid point (\cref{sec:best-lr}), but just beyond
-that range, where every variant is at least 0.04 worse than its own best, they degrade less than mHC and the control. At 27M and \lr{4.2}, twice the optimum, global $h = 4$ is
+The heads move the optimum and the range of good learning rates by at most one grid point (\cref{sec:best-lr}), but at the next grid
+point above all of these ranges, where every variant is at least 0.04 worse than its own best, they degrade less than mHC and the control. At 27M and \lr{4.2}, twice the optimum, global $h = 4$ is
 $0.045 \pm 0.010$ ahead of its control (3 of 3 seeds, \cref{fig:main}), although it trails the control by 0.018--0.026 at every
 lower learning rate of the grid (\cref{fig:lr}, left). At 112M and \lr{1.5}, again twice the optimum, global and local $h = 4$
-lead mHC by 0.063 and 0.026 on every seed on v6e, and by 0.068 and 0.069 on v5e. Only one grid point lies between the range of good learning rates and failure. At the next learning
+lead mHC by 0.063 and 0.026 on every seed on v6e, and by 0.068 and 0.069 on v5e. This is the only grid point between these ranges and failure. At the next learning
 rate, \lr{6} at 27M and \lr{2.1} at 112M, every variant run there ends 0.7--1.1 above its own best, and from \lr{8.5} at 27M runs
 diverge or end more than 1 above the best. The heads therefore do not make a higher learning rate usable. They fail at the same learning rate as mHC and degrade less just before it. One of our early 112M results was an instance of this tolerance.
 At \lr{1.5} on TPU v5e, half the 27M rate and untuned, global $h = 4$ led its control by $0.034 \pm 0.013$ (2 of 2 seeds), but
-that rate is twice the optimum and costs every variant 0.09--0.18. Robustness to the learning rate in small models has been
+that rate is twice the optimum and costs mHC, the heads and the control 0.09--0.18. Robustness to the learning rate in small models has been
 proposed as a proxy for the instabilities of large runs \citep{wortsman2023proxies}. We therefore asked what fails, whether there
 are loss spikes to count, and whether the tolerance survives QK-norm.
 
 To see what fails, we replayed the 27M runs at \lr{2.1}, \lr{4.2} and \lr{6} with per-step logs and diagnostics
 (\cref{sec:training}). All 42 replays reproduce the losses of the original runs bit for bit. Above the optimum, attention logits
-grow until each attention head puts almost all of its weight on one key. This is the first of the two instabilities that
+grow until the attention heads of most layers put almost all of their weight on one key. This is the first of the two instabilities that
 \citet{wortsman2023proxies} reproduce in small models \citep[see also][]{dehghani2023vit22b, zhai2023entropycollapse}. At step
 1000 the largest attention logit is 47--77 at \lr{2.1}, 470--720 at \lr{4.2} and 1930--2710 at \lr{6} (\cref{fig:stability},
 middle left), and the lowest mean attention entropy of any layer falls from 1.1--1.8 nats to 0.04--0.07 and then to 0.01. This
@@ -554,10 +555,10 @@ As in the residual, the first attention layer of both head variants stays almost
     final validation loss above the best mean of each panel against the peak learning rate. Lines show the mean over seeds 0--2, or over
     the seeds that ran where runs are missing, and dots show single seeds. The
     axis is symlog and linear below 0.05, and a diverged run counts as $\ln 16384$. The middle row shows the largest attention logit
-    over layers at step 1000, which nearly coincides for all variants. Without QK-norm it lacks \lr{1.5} and \lr{3},
-    which were not replayed with diagnostics, and the rates above \lr{12}, where runs diverge before step 1000. The bottom row shows the share of steps in the last 80\% of training whose gradient norm before
-    clipping exceeds 1.0, from every 25th step for the runs at \lr{1.5} and \lr{3} without QK-norm. The middle and bottom rows are
-    averaged over seeds. QK-norm removes the failure and the tolerance of the heads, but not their smoother gradient norm.}
+    over layers at step 1000, averaged over the seeds that reach that step. It nearly coincides for all variants. Without QK-norm
+    it lacks \lr{1.5} and \lr{3}, which were not replayed with diagnostics, and the rates above \lr{12}, where every run diverges
+    before step 1000. The bottom row shows the share of steps in the last 80\% of training whose gradient norm before clipping
+    exceeds 1.0, averaged over seeds, from every 25th step for the runs at \lr{1.5} and \lr{3} without QK-norm. QK-norm removes the failure and the tolerance of the heads, but not their smoother gradient norm.}
   \label{fig:stability}
 \end{figure}
 
@@ -570,7 +571,7 @@ Qwen3.8-Next, steps more than 0.1 above a rolling median over 201 steps, does no
 step-to-step noise crosses that threshold on about 8\% of steps at every learning rate where training completes, including the
 optimum.
 
-We also asked whether the tolerance without QK-norm reflects slower connection dynamics. Scaling the learning rate of every
+We also asked whether the tolerance without QK-norm reflects slower connection dynamics. On TPU v6e, scaling the learning rate of every
 connection parameter of mHC by 0.25 changed nothing at \lr{3}, \lr{4.2} or \lr{6}. Scaling that of global $h = 4$ by 4
 strengthened the tolerance instead of removing it, and global $h = 4$ then ended 0.20 better than before at \lr{6} ($\pm 0.05$, 3
 of 3 seeds). Because the decoupled weight decay of AdamW scales with the learning rate, this setting also shrinks the weights of
@@ -585,7 +586,7 @@ a faster connection strengthens it only when the split is present.
 With QK-norm no run diverges on the grid, which reaches \lr{24}, sixteen times its lowest learning rate. The largest attention logit at step 1000,
 averaged over seeds, stays between 15 and 26, and at \lr{24} every variant ends 0.18--0.21 above its own best
 (\cref{fig:stability}, right). QK-norm also lowers the best loss of every variant, by 0.037--0.048. Above the optimum the heads
-now lose more than mHC. We measure this with the learning-rate sensitivity of \citet{wortsman2023proxies}, the mean over the grid
+now degrade more than mHC. We measure this with the learning-rate sensitivity of \citet{wortsman2023proxies}, the mean over the grid
 of the final loss above the model's own best, with each loss capped at the loss at initialization, taken as $\ln 16384$. With
 QK-norm, global and local $h = 4$ are more sensitive than mHC by $0.015 \pm 0.002$ and $0.006 \pm 0.003$, on each of the 3 seeds
 (\cref{tab:stability}).
@@ -595,11 +596,11 @@ adds about 0.47 to the sensitivity of a seed. Over the five learning rates up to
 $h = 4$ are less sensitive than mHC without QK-norm, by $0.018 \pm 0.013$ (2 of 3 seeds) and $0.028 \pm 0.010$ (3 of 3), but not
 with it ($+0.004 \pm 0.001$ and $+0.000 \pm 0.005$). The rule we fixed before these runs compares the sensitivity over all nine
 learning rates. It counts the tolerance as removed if, with QK-norm, neither head variant is established as less sensitive than
-mHC and each difference has the opposite sign to its value without QK-norm or is less than a third of it. Twelve runs without
-QK-norm, all at \lr{8.5} or above, could not be run (\cref{sec:limitations}). If they diverged, as all 36 finished runs at \lr{12} and above did, both conditions
-hold, and by this rule QK-norm removes the tolerance. One of them, global $h = 4$ on seed 2 at \lr{8.5}, might have finished
-instead, as 7 of the 12 runs at that rate did, at losses of 5.3 to 6.4. Had it ended between 5.7 and 6.9, the second condition
-would fail for global $h = 4$, and the rule would not count the tolerance as removed. With QK-norm the heads also trail their parameter-matched
+mHC and each difference has the opposite sign to its value without QK-norm or is at most a third of it. Twelve runs without
+QK-norm, all at \lr{8.5} or above, could not be run (\cref{sec:limitations}). If they had run and diverged, as all 36 finished runs at \lr{12} and above did, both conditions
+would hold, and by this rule QK-norm would remove the tolerance. Of the 12 finished runs at \lr{8.5}, 7 ended at losses of 5.3 to 6.4, and
+of the three runs missing there, one could change the verdict. Had global $h = 4$ on seed 2 ended between 5.7 and 6.9, the
+second condition would fail for global $h = 4$, and the rule would not count the tolerance as removed. With QK-norm the heads also trail their parameter-matched
 baselines at all nine learning rates, global $h = 4$ trailing the control by 0.011--0.052 and local $h = 4$ trailing mHC by
 0.006--0.066.
 
@@ -610,9 +611,9 @@ clipping stays below 0.9 in the last 80\% of training for both head variants on 
 it reaches 6--16 for mHC and 6--20 for the control. At \lr{6}, where every variant fails, all of them cross the clipping threshold
 on 29--84\% of those steps. With QK-norm the difference extends over the whole grid above the optimum of mHC, \lr{1.5}. At that
 optimum mHC crosses the threshold on 0.03\% of the late steps, on 0.1\% at \lr{2.1}, which is still within 0.01 of its best, and
-on 0.3--3\% from \lr{3} upwards. The control behaves in the same way. Global $h = 4$ crosses on almost none of the late
+on 0.3--3\% from \lr{3} upward. The control behaves in the same way. Global $h = 4$ crosses on almost none of the late
 steps up to \lr{8.5} and on 0.4\% above it, local $h = 4$ on at most 0.15\% except at \lr{12} (0.9\%), and the residual on at most
-0.1\%. Paired by seed, both head variants cross less often than mHC at every learning rate from \lr{2.1} to \lr{17} and on every
+0.1\%. Paired by seed, both head variants cross less often than mHC at every learning rate from \lr{2.1} to \lr{24} and on every
 seed. These are small counts, since 0.1\% of the 4800 late steps is five steps.
 
 The difference does not reach the loss. No run with QK-norm has a loss spike, clipping caps the gradient norm at 1.0, and with QK-norm, mHC ends
@@ -621,9 +622,9 @@ that mHC adds at 27M, although the authors of mHC report a gradient norm as stea
 \citep{xie2026mhc}.
 
 At 112M our data cannot settle the question. The 112M runs are without QK-norm and log every 25th step, which is too sparse to see
-a rate like mHC's 0.1\% at 27M. From \lr{0.53} to \lr{1.5} no variant crosses on more than 1\% of the logged late steps, and the
+a rate like mHC's 0.1\% at 27M. From \lr{0.53} to \lr{1.5} on TPU v6e, no variant crosses on more than 1\% of the logged late steps, and the
 residual, which almost never crosses at 27M, crosses most often at three of these four learning rates. At \lr{2.1}, 2.8 times the
-optimum, where every variant has failed, the heads cross on 28--38\% and mHC on 85\%, as at 27M and \lr{6}. A repeat at 112M with
+optimum, where every variant run there has failed, the heads cross on 28--38\% and mHC on 85\%, as at 27M and \lr{6}. A repeat at 112M with
 QK-norm and per-step logs could not be run (\cref{sec:limitations}).
 
 \begin{table}[ht]
@@ -709,12 +710,12 @@ the read alone by less than twice its standard error, so the few extra parameter
 feed-forward layer. The per-head mix alone costs 1.2M parameters, nearly four
 times as many as the read or the write, and buys less than those parameters would in the feed-forward layer. At \lr{6}, per-head
 read and write with a shared mix lead mHC by 2.6 times as much as the full split does ($-0.179 \pm 0.060$, 3 of 3 seeds), and in the
-last 80\% of training their gradient norm peaks lower than that of any other variant at that rate (5 on average over seeds,
+last 80\% of training their gradient norm, logged every 25th step, peaks lower than that of any other variant at that rate in the grid without QK-norm (5 on average over seeds,
 against 16 for the full split and 51 for mHC). The per-head mix alone keeps none of the lead and peaks highest of the split variants (93).
 
 At the optimum the gains seen at \lr{3} are gone. No variant lies below the MLP line by more than twice its standard error. Every
 one trails the MLP control of global $h = 4$, which has the parameter count of the full split, on every seed, by 0.013--0.023,
-and the per-head read alone, which is the group-wise readout of uHC with
+and the per-head read alone, which is the group-wise readout of uHC but with
 a global predictor, is $+0.002 \pm 0.015$ against mHC. The write alone comes closest. It beats mHC on every seed by $0.009 \pm
 0.003$, but the MLP line gives $-0.004$ at its parameter count, and the remaining excess of $-0.005$ falls short of
 $2\,\mathrm{SE} = 0.006$.
@@ -723,7 +724,7 @@ better use of parameters.
 
 A rule fixed before these results sent the read alone and the read and write together to $D = 768$ if they beat the MLP line at
 \lr{3} by more than twice the standard error and on every seed. The read alone missed this bar (excess $-0.019$ against
-$2\,\mathrm{SE} = 0.022$), and read and write together met it. At $D = 768$ and \lr{0.75} on TPU v6e, the variant with read and write per head is $-0.006 \pm 0.004$ against mHC (3 of 5 seeds), an excess over the
+$2\,\mathrm{SE} = 0.022$), and read and write together met it. At $D = 768$ and \lr{0.75} on TPU v6e, paired by seed, the variant with read and write per head is $-0.006 \pm 0.004$ against mHC (3 of 5 seeds), an excess over the
 MLP line at its parameter count of $-0.002$ against $2\,\mathrm{SE} = 0.008$, with 2 of 5 seeds below the line. Against the MLP
 control of global $h = 4$ it differs by $+0.005 \pm 0.007$. The rule did not cover the write alone, which was therefore not run at $D = 768$.
 
@@ -736,7 +737,7 @@ control of global $h = 4$ it differs by $+0.005 \pm 0.007$. The rule did not cov
 At the pilot learning rate of mHC, global $h = 4$ looked like a clear improvement, 0.019 better than mHC on 9 of 10 seeds and about
 40\% of the gain of mHC over the residual. Two controls removed this gain. The same parameters in a wider feed-forward layer gain
 as much, and with every variant at its own best learning rate the lead disappears at both widths. What remained was an advantage
-above the optimum, which describes how training fails and says little about the model one would train, and QK-norm removes it.
+above the optimum, which describes how training fails and says little about the model one would train, and at 27M QK-norm removes it.
 Connection variants are often compared at one shared learning rate and at unequal parameter counts. Our results suggest that both
 controls are needed before a gain in this family is read as structural.
 
@@ -752,19 +753,19 @@ four times its optimal learning rate, counted in loss spikes and clip crossings,
 125B-parameter production model \citep{qiu2026qwen38next}. For four reasons, our results do not support the same argument for
 multi-head mHC.
 
-First, the failure we observe is one that QK-norm removes. Above the optimum our models fail through attention-logit growth, the
+First, the failure we observe is one that QK-norm removes. Above the optimum our 27M models fail through attention-logit growth, the
 first of the two instabilities of \citet{wortsman2023proxies}, and the heads do not prevent it (\cref{sec:tolerance}). QK-norm
 prevents it at every learning rate we tried, and with QK-norm the tolerance of the heads is gone (\cref{sec:qknorm}). Current open
 models use QK-norm \citep{olmo2024olmo2, gemma2025gemma3, yang2025qwen3}, as Wortsman et al.\ do by default, so the property we
 measured belongs to a recipe without this protection.
 
-Second, the heads change how much the loss rises above the optimum but leave unchanged the learning rate at which models start
-to fail. Wortsman et al.\ show that this learning rate falls as models grow when attention logits are not normalized,
-and they predict it by extrapolating the largest attention logit. Without QK-norm, mHC, both head
+Second, the heads change how much the loss rises above the optimum but leave unchanged the learning rate at which models
+fail (\cref{sec:tolerance}). Wortsman et al.\ show that this learning rate falls as models grow when attention logits are not normalized,
+and they predict it by extrapolating the largest attention logit. At 27M without QK-norm, mHC, both head
 variants and the residual first lose more than 0.1 at \lr{6}, and the control at \lr{4.2}. With QK-norm, all of them except the
 residual first do so at \lr{17}. Wortsman et al.\ also remark that in practice a lower
-sensitivity matters little when the optimal learning rate does not change. With heads the
-optimum stays within one grid point of that of mHC at both widths (\cref{sec:best-lr}).
+sensitivity matters little when the optimal learning rate does not change. Without QK-norm, the
+optimum with heads stays within one grid point of that of mHC at both widths (\cref{sec:best-lr}).
 
 Third, there are no loss spikes for the heads to reduce. Wortsman et al.\ study slow divergence and leave loss spikes out of
 scope, tying them to the optimizer through the second-moment decay rate of Adam. Wherever training does not fail, none of the 27M
@@ -782,13 +783,13 @@ rate and was unstable only at ten times that rate \citep{olmo2024olmo2}. Sensiti
 also shrinks as models grow \citep{lourie2026smallscale}, so a difference in sensitivity measured in small models may matter
 less in large ones.
 
-The gradient norm is the one measure that favors the heads. They keep it under the clipping threshold where that of mHC crosses
-it, with QK-norm as well (\cref{sec:qknorm}), and gradient-norm curves are part of how the HC family argues for stability. We
-still cannot claim it as a benefit. What the heads remove at 27M is a roughness that mHC adds and the residual does not have, so
+The gradient norm is the one measure that favors the heads even with QK-norm. The gradient norm of the heads crosses the clipping threshold less often
+than that of mHC (\cref{sec:qknorm}), and gradient-norm curves are part of how the HC family argues for stability. We
+still cannot claim this as a benefit. What the heads remove at 27M is a roughness that mHC adds and the residual does not have, so
 at most they restore the profile of the residual, which the authors of mHC report for mHC at 27B. The roughness costs
 mHC nothing we can measure, since with QK-norm, mHC has no loss spikes and a lower loss than the heads at every learning rate. Near
 the optimum the difference does not show at 112M, the one larger model we have, although there we only have runs without QK-norm,
-logged too sparsely to detect rates as low as those of mHC at 27M. To our knowledge, nobody has tested whether clip crossings in a
+logged too sparsely to detect crossings as rare as those of mHC at 27M. To our knowledge, nobody has tested whether clip crossings in a
 small model foretell loss spikes in a large one, and Qwen3.8-Next counts them in the large model itself.
 
 What we can report is a gentler failure above the optimum and a smoother gradient norm. Neither is a stability benefit we can
@@ -815,12 +816,13 @@ norm of the split variants there. This agrees with the recent designs that
 drop the stream mix \citep{qiu2026qwen38next, ge2026chimera, liang2026sihc} and with the finding that read and write gates alone
 match mHC \citep{anon2026simplehc}.
 
-The tolerance needs the split, since a faster connection gives mHC none of it, and it sits in the per-group read and write. It is not
+Within mHC the tolerance needs the split, since a faster connection gives mHC none of it, and it sits in the per-group read and write. It is not
 resistance to the failure itself, because attention logits grow almost as fast with heads as without them. A plausible explanation, which we
 did not test, is that per-group coefficients let the connection turn down the channel groups whose updates grow too large, which a
-single scalar per copy cannot do without silencing every channel at once. The one diagnostic in which the heads differ, a first
-attention layer that stays almost uniform, is shared with the residual, which is not tolerant, so it explains at most part of the
-effect.
+single scalar per copy cannot do without silencing every channel at once. The one attention diagnostic in which the heads differ, a first
+attention layer that stays almost uniform, is shared with the residual. At 27M the residual is also less sensitive than mHC over
+the five learning rates up to \lr{6} ($-0.019 \pm 0.006$, 3 of 3 seeds), so this layer may be part of the explanation, but we did
+not test whether it causes the tolerance.
 
 \subsection{Limitations}
 \label{sec:limitations}
@@ -865,11 +867,11 @@ them, and where both ran the same comparison we report both. Finally, we tested 
 
 At 27M and 112M parameters, with every variant at its own best learning rate and against parameter-matched controls, multi-head
 mHC gives no gain at equal parameters. With a global predictor it gains at most what its extra parameters gain in the feed-forward
-layer, and at the parameter count of mHC it gains nothing. At 27M the comparison comes out the same with QK-norm and, at one learning rate, with four times the tokens, and at the best learning rate of mHC no subset of the per-head blocks uses its parameters better than the
-feed-forward layer.
+layer, and at the parameter count of mHC it gains nothing. At 27M the comparison comes out the same with QK-norm and, at one learning rate, with four times the tokens, and at the best learning rate of mHC no subset of the per-head blocks that we tested uses its parameters better
+than the feed-forward layer.
 
-Without QK-norm, the per-group read and write make multi-head mHC fail more gently at too-high learning rates. This failure
-is attention-logit growth, which the heads do not prevent. QK-norm removes it and makes the heads more sensitive to the learning
+Without QK-norm, multi-head mHC fails more gently at too-high learning rates. At 27M this tolerance sits in the per-group read
+and write, and the failure is attention-logit growth, which the heads do not prevent. QK-norm removes it and makes the heads more sensitive to the learning
 rate than mHC, and in the stability test only a run that failed had loss spikes, so we cannot offer the tolerance as a stability
 benefit for larger models. The one difference in favor of the heads that survives QK-norm is a smoother gradient norm,
 which does not reach the loss at 27M and which we could not test with QK-norm at 112M. Whether it matters at scale remains open.
@@ -885,8 +887,8 @@ small ones.
 \section{Comparability Across Chips}
 \label{app:chips}
 
-TPU v5e, first on Kaggle and later on Google Cloud, ran the experiments of \cref{sec:fixed-lr}, the 393M-token runs, half of the
-112M grid and a few 27M runs at other learning rates. On Google Cloud, a partial replay of a 27M run and a full replay of a 112M
+TPU v5e, first on Kaggle and later on Google Cloud, ran the experiments of \cref{tab:fixed-lr}, the 393M-token runs, a
+112M grid with two seeds and a few 27M runs at other learning rates. On Google Cloud, a partial replay of a 27M run and a full replay of a 112M
 Kaggle run were bit-identical at every logged step. All other TPU runs used spot TPU v6e. Before reading any v6e result, we
 repeated on v6e the runs on which the $D = 384$ and $D = 768$ conclusions rested, with pass criteria fixed beforehand. Each run
 had to fall within the seed-to-seed range of its variant on v5e, and each paired gap had to agree in sign and lie within the v5e
@@ -895,18 +897,18 @@ standard error.
 \begin{table}[ht]
   \centering
   \caption{The same comparisons on the two chips. Paired gaps at $D = 384$ and \lr{3}, given as mean $\pm$ SE and the number of
-    seeds on which the first model is better.}
+    seeds on which the first model is better. $\est$ marks established effects.}
   \label{tab:chips}
   \small
   \begin{tabular}{lccc}
     \toprule
     gap & v5e, all seeds & v5e, seeds 0--2 & v6e, seeds 0--2 \\
     \midrule
-    global $h = 4$ $-$ mHC & $-0.019 \pm 0.006$ (9/10) & $-0.024 \pm 0.005$ (3/3) & $-0.015 \pm 0.007$ (3/3) \\
-    global $h = 4$ $-$ MLP control & $+0.005 \pm 0.007$ (2/10) & $+0.017 \pm 0.024$ (1/3) & $+0.023 \pm 0.008$ (0/3) \\
-    MLP control $-$ mHC & $-0.024 \pm 0.009$ (8/10) & $-0.041 \pm 0.024$ (2/3) & $-0.038 \pm 0.009$ (3/3) \\
+    global $h = 4$ $-$ mHC & $-0.019 \pm 0.006$ (9/10) & $-0.024 \pm 0.005\est$ (3/3) & $-0.015 \pm 0.007\est$ (3/3) \\
+    global $h = 4$ $-$ MLP control & $+0.005 \pm 0.007$ (2/10) & $+0.017 \pm 0.024$ (1/3) & $+0.023 \pm 0.008\est$ (0/3) \\
+    MLP control $-$ mHC & $-0.024 \pm 0.009$ (8/10) & $-0.041 \pm 0.024$ (2/3) & $-0.038 \pm 0.009\est$ (3/3) \\
     local $h = 4$ $-$ mHC & $+0.003 \pm 0.008$ (3/6) & $-0.006 \pm 0.008$ (2/3) & $-0.018 \pm 0.012$ (2/3) \\
-    mHC $-$ residual & $-0.045 \pm 0.006$ (4/4) & $-0.041 \pm 0.007$ (3/3) & $-0.041 \pm 0.004$ (3/3) \\
+    mHC $-$ residual & $-0.045 \pm 0.006\est$ (4/4) & $-0.041 \pm 0.007\est$ (3/3) & $-0.041 \pm 0.004\est$ (3/3) \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -923,8 +925,8 @@ Against the combined standard error of two independent estimates, no gap differs
 
 At \lr{6} ($D = 384$, seeds 0--1), where every variant fails, the loss rises sharply early in training on both chips and
 recovers as the learning rate decays. The final loss depends on when it recovers, and the same seed lands up to 0.21 apart on the two chips. Both
-head variants stay ahead of mHC and the control on average, by 0.05--0.17 on v6e and 0.19--0.29 on v5e, and damp the late gradient
-spikes on both chips. The largest late gradient norm, averaged over seeds, is 14 and 9 for global and local $h = 4$ against 69 for
+head variants stay ahead of mHC and the control on average, by 0.05--0.17 on v6e and 0.19--0.29 on v5e. Over the late steps logged every 25th, the
+largest gradient norm, averaged over seeds, is 14 and 9 for global and local $h = 4$ against 69 for
 mHC and 559 for the control on v6e, and 7, 13, 24 and 97 on v5e.
 
 At 112M and \lr{1.5} ($D = 768$, seeds 0--1), global $h = 4$ leads mHC by 0.068 on v5e and 0.051 on v6e, but its lead over the
