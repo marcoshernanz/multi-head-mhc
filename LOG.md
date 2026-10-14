@@ -882,3 +882,13 @@ Chronological. Every entry: what was done, why, what came out, pointers to files
   QK-norm in the introduction; per-step logging covers the replays. FineWeb-Edu, RoFormer, SwiGLU, AdamW, RMSNorm, GPT-2 and
   BPE are now cited; these seven entries are not yet checked against their arXiv listings. Still 29 pages; both arXiv
   archives compile from a clean directory to the same text as `build/main.pdf`.
+
+## 2026-10-14
+
+- 08:02 UTC: **the seven standard-component references checked.** FineWeb (arXiv:2406.17557v2, NeurIPS 2024, which
+  introduces FineWeb-Edu), RoFormer (arXiv:2104.09864v5, Neurocomputing 568), GLU variants (arXiv:2002.05202v1, which defines
+  SwiGLU), AdamW (arXiv:1711.05101v3, ICLR 2019), RMSNorm (arXiv:1910.07467v1, NeurIPS 2019) and BPE (arXiv:1508.07909v5,
+  ACL 2016) match their arXiv listings in title, authors and year; the GPT-2 report matches its PDF, and its Section 2.3
+  moves layer normalization to the input of each sub-block, as the pre-norm citation needs. Each entry now has a `checked`
+  field. The bibliography the paper prints is unchanged, byte for byte. The contact address is now marcos@hernanz.io and the
+  head note no longer carries a date (previous commit).
