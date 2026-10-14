@@ -892,3 +892,16 @@ Chronological. Every entry: what was done, why, what came out, pointers to files
   moves layer normalization to the input of each sub-block, as the pre-norm citation needs. Each entry now has a `checked`
   field. The bibliography the paper prints is unchanged, byte for byte. The contact address is now marcos@hernanz.io and the
   head note no longer carries a date (previous commit).
+- 08:12 UTC: **submitted to arXiv** as submit/8199211, cs.LG, CC BY 4.0, comments "29 pages, 6 figures, 11 tables. Code and
+  raw results: https://github.com/marcoshernanz/multi-head-mhc". Before submitting, every page-content stream of the PDF arXiv
+  compiled (TeX Live 2025) was checked to be byte-identical to a local build of the uploaded zip; the only additions are the
+  preview stamp in the left margin and its font. Submitted before the 14:00 ET cutoff. README, CITATION.cff and the paper
+  link on hernanz.io get the arXiv ID once it is assigned.
+- 08:18 UTC: **the submission is on hold for moderation**, so it is announced only once a moderator releases it, not
+  necessarily at 2026-10-14 20:00 ET. Checked after submitting: the uploaded zip has the same main.tex, preamble.tex and
+  figures as origin/main and the same main.bbl as a fresh build; all fonts are embedded; the PDF title and author are set;
+  no citation or reference is undefined. Of the 50 links in the PDF, the 45 arXiv ones give the cited title (arXiv API)
+  and authors (the three team-authored entries as noted in the bib), the four OpenReview ones open the cited ICLR 2027
+  submissions with the recorded numbers, and the repository link resolves. The run counts match `results/`: 603 + 15 + 11
+  = 629 completed TPU runs (156 v5e, 447 v6e at 98M tokens), and 8 + 11 = 19 GPU pilot runs (smoke tests and the three
+  aliased pilot copies not counted). The GitHub description said 626 TPU runs and now says 629.
