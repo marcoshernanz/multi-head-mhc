@@ -905,3 +905,10 @@ Chronological. Every entry: what was done, why, what came out, pointers to files
   submissions with the recorded numbers, and the repository link resolves. The run counts match `results/`: 603 + 15 + 11
   = 629 completed TPU runs (156 v5e, 447 v6e at 98M tokens), and 8 + 11 = 19 GPU pilot runs (smoke tests and the three
   aliased pilot copies not counted). The GitHub description said 626 TPU runs and now says 629.
+
+## 2026-10-16
+
+- **The paper PDF is public at https://hernanz.io/multi-head-mhc.pdf** while the arXiv submission is still on hold. It is a
+  fresh `latexmk` build of this commit's `paper/`, the source that was submitted (29 pages, no undefined references). The README
+  title, the CITATION.cff report URL, the repository's website field and hernanz.io now point at it; they move to the arXiv
+  abstract once the ID is assigned.
