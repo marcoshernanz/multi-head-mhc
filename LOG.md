@@ -912,3 +912,7 @@ Chronological. Every entry: what was done, why, what came out, pointers to files
   fresh `latexmk` build of this commit's `paper/`, the source that was submitted (29 pages, no undefined references). The README
   title, the CITATION.cff report URL, the repository's website field and hernanz.io now point at it; they move to the arXiv
   abstract once the ID is assigned.
+- **Published on alphaXiv as 2610.multi-head-mhc** (https://www.alphaxiv.org/abs/2610.multi-head-mhc, v1, submitted
+  2026-10-16), from the same PDF; the abstract alphaXiv extracted matches the paper's. The README title, the CITATION.cff report URL,
+  the repository's website field and hernanz.io now point at the alphaXiv page; https://hernanz.io/multi-head-mhc.pdf stays up.
+  The arXiv submission is still on hold.

@@ -1,7 +1,7 @@
 # Multi-Head mHC: No Gain at Equal Parameters
 
 Code, raw results and paper source for the technical report
-[*Multi-Head mHC: No Gain at Equal Parameters*](https://hernanz.io/multi-head-mhc.pdf) (Marcos Hernanz, October 2026).
+[*Multi-Head mHC: No Gain at Equal Parameters*](https://www.alphaxiv.org/abs/2610.multi-head-mhc) (Marcos Hernanz, October 2026).
 
 Manifold-constrained hyper-connections (mHC) widen the residual stream of a transformer into n = 4 copies that each layer reads
 from, writes to and mixes with a doubly stochastic matrix. One coefficient per copy is shared by all channels. Multi-head mHC
